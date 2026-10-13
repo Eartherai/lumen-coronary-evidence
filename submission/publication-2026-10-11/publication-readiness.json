@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-11",
+  "status": "local_hardening_complete_release_verification_pending_publication_handoff_prepared",
+  "github_authenticated": false,
+  "git_remotes": [],
+  "account_actions_performed": false,
+  "baseline": {
+    "source_archive": "output/submission-2026-10-10-audit/lumen-source.zip",
+    "sha256": "1137b487c87fc4397d8af3bce7912f44c3f41c7aff854e3147f9ce346334dff2",
+    "bytes": 55376902,
+    "manifest_files": 216,
+    "source_verification": "output/submission-2026-10-10-audit/source-verification.json",
+    "status": "passed",
+    "local_commit": "279f46c26b154c8d850dc8e3fd800866f5978a2f",
+    "tracked_payload_comparison": "All tracked files match except two deliberately excluded video-editor .media ledger files",
+    "historical_dist_source_preserved": true,
+    "final_holdout_rescored": false
+  },
+  "source_ci": {
+    "existing_pages_workflow": ".github/workflows/pages.yml",
+    "proposed_independent_workflow": "submission/publication-2026-10-11/source-ci.yml",
+    "recommended_install_path": ".github/workflows/source-ci.yml",
+    "installed_by_this_agent": false,
+    "checks": [
+      "Python standard-library runtime tests",
+      "Profile decision-rule Node tests",
+      "Static build enforcing ten source bindings and full 4840-output SHAP receipt",
+      "Browser parity, cohort filters and repository subpaths",
+      "Outcome direction and opt-in runtime measurement timer/unfinished action checks"
+    ],
+    "required_cohort_source_receipts_tracked": true,
+    "pages_uploaded_directory": "dist/site",
+    "pages_trigger_branch": "main",
+    "installed_by_root": true,
+    "installed_path": ".github/workflows/source-ci.yml"
+  },
+  "video": {
+    "file": "output/video/lumen-demo.mp4",
+    "sha256": "50ac052afe6f583e79d6deb02b6c40fcfb4dd106e499b1a10dbdb6173cabe53e",
+    "bytes": 25469444,
+    "duration_seconds": 342.833333,
+    "english_audio": true
+  },
+  "secret_signature_audit": "submission/publication-2026-10-11/git-secret-scan.json",
+  "final_oct11_archive": "dist/release-2026-10-11/lumen-submission-source.zip",
+  "final_oct11_archive_sha256": null,
+  "root_owned_remaining_work": [
+    "Bind verified Oct11 source archive and local commit in package sidecars"
+  ],
+  "human_owned_publication": [
+    "Actual public GitHub URL",
+    "Actual public or unlisted YouTube URL",
+    "Real full names, accounts, eligibility and one-team membership",
+    "Final Devpost confirmation"
+  ],
+  "official_rules_rechecked_date": "2026-10-11",
+  "deadline": "2026-10-15T00:15:00+05:30",
+  "final_oct11_exact_hash_location": "output/submission-2026-10-11/source-verification.json"
+}

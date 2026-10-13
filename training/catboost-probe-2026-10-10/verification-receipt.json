@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "fit_identity_checks": 200,
+  "candidate_selection_and_threshold_checks": 60,
+  "outer_partition_checks": 20,
+  "paired_target_metric_checks": 4,
+  "holdout_scored": false,
+  "model_fits_in_verifier": 0,
+  "scope": "Saved receipts/numerical identities verified; does not establish statistical/clinical superiority",
+  "hashes": {
+    "README.md": "c954a1ab74b1d326ba7c6d9de318c7d1b6a74a28d790a4c275bd773ed13088cf",
+    "benchmark.json": "d3a96ab4fe9066e8c6824146f4a3c69b0e57c4923e45230a0e91449153c47e7a",
+    "development-oof.csv": "24dd1e4b7023a3e78aa3e5b3ca4bc2b2e5a1154f52399d635b79fcf3f590e902",
+    "fit-ledger.json": "1cc2d94d19cd632b4d53d0d936bf6e0b9ad574eaafd4158c7f29a3903c621572",
+    "fold-training-identities.json": "0841afc789f382d8dbe3916b1bc9aaafb6e3587e6a95af88fc0a926a348d69ef",
+    "inner-oof-predictions.json": "a63e84becab138325be61123ec29ed1ef4ca5365d443b5bbf9c392eaf38b92d4",
+    "probe.py": "95b2035571a471c44abddf81373b525d77e89ce08d3d82b149f7d0cecd1b360e",
+    "progress.json": "d9526708fb8e6606df302a2f7feaabd2ab10617b2e772c25264c475af0ab7003",
+    "protocol.json": "26a8740447b0807a0d35ff421e93e90ba45c9bab5a9f6fb24a1b0a276d1540ea",
+    "run-declaration.json": "e2ddf42747d180b7b9397b1bf0d9e60755d79b98cc7b079c1e41d9881df7984b",
+    "verify.py": "5e9c81848e76ced87e63342bd04a8b9f6965fa1220bf672bcc1af7c4b98e3d34"
+  }
+}

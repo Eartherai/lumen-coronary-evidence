@@ -1,0 +1,27 @@
+{
+  "anatomy": {
+    "original_sha256": "58aa1c807a27a202acff001e0090499ae3225a6dcc56e752a364512d72e7ec79",
+    "dense_sha256": "903387122ac79a70394d6e0f4eba75ee901224ec917dd75486cd9782c66f2bc0",
+    "change": "Keyframes every24frames, unchanged source timing/dimensions; no content or speed edits"
+  },
+  "profiles": {
+    "original_sha256": "07cf0b5856ecbc216ef2d9147e813fbf567d7c0889b214907e9d8eb7dd6bd009",
+    "dense_sha256": "2beb63d4b0799ef0071a7fbee93896cf171f7ccf73d1ef0a8750e63b49eb1f4e",
+    "change": "Keyframes every24frames, unchanged source timing/dimensions; no content or speed edits"
+  },
+  "errors": {
+    "original_sha256": "1b9cfa3189cc2846a59ccdc5246d89c6cc7db29f2da6e318f5725fefb0c156fc",
+    "dense_sha256": "f6b1c4ab4d5cdd7dcf5c22dac51a1ac6583a53ad04e4694a63d4a916f86a9cad",
+    "change": "Keyframes every24frames, unchanged source timing/dimensions; no content or speed edits"
+  },
+  "new-input-final": {
+    "original_sha256": "55eee8ed799fed0c7517302aa404123104c64c8f517f8d7ab734da0b874174ee",
+    "dense_sha256": "6296ac89d85d3560c21a9af470a9c92c3bd84e93da82674d69db9406887ed750",
+    "change": "Keyframes every24frames, unchanged source timing/dimensions; no content or speed edits"
+  },
+  "validation": {
+    "original_sha256": "fbdf980eff662d6b2111c8f1bb5b0711981a673bde2444850bb8f3a1b98e74e8",
+    "dense_sha256": "844745601c94731b4fad3469ca26134ca397f6069218179890244fa81242cc6d",
+    "change": "Keyframes every24frames, unchanged source timing/dimensions; no content or speed edits"
+  }
+}

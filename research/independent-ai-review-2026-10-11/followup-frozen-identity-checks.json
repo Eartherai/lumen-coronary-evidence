@@ -1,0 +1,18 @@
+{
+  "scope": "Read-only hash comparison; no fitting/scoring",
+  "checked_at_utc": "2026-10-10T19:56:34.572961+00:00",
+  "all_match": true,
+  "checks": {
+    "coronary-evidence/artifacts/cohort-audit.json": true,
+    "coronary-evidence/artifacts/availability-models.json": true,
+    "coronary-evidence/artifacts/availability-profiles.json": true,
+    "coronary-evidence/artifacts/final_models.json": true,
+    "coronary-evidence/artifacts/final_evaluation.json": true,
+    "coronary-evidence/submission/final-protocol-freeze.json": true,
+    "coronary-evidence/submission/clinical-groups.json": true,
+    "coronary-evidence/public/assets/cohort-audit-verification.json": true,
+    "coronary-evidence/public/assets/anatomy-provenance.json": true,
+    "coronary-evidence/training/results/split.json": true,
+    "research/source-extracts/Track A.txt": true
+  }
+}

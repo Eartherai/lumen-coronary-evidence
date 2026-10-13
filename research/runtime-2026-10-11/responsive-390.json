@@ -1,0 +1,22 @@
+{
+  "schema": "lumen-responsive-ui-check-v1",
+  "requested_viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "canvas": {
+    "bottom": 825.59375,
+    "height": 360,
+    "left": 15,
+    "right": 375,
+    "top": 465.59375,
+    "width": 360,
+    "x": 15,
+    "y": 465.59375
+  },
+  "document_width": 390,
+  "page_scroll_width": 390,
+  "isolate_checkbox_checked": true,
+  "ui_status": "Only the LCX reference vessel is visible.",
+  "scope": "CUA software check on same Mac; no physical phone or second device tested"
+}

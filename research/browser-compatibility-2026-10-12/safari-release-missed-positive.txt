@@ -1,0 +1,183 @@
+The following is a diff from the previous accessibility tree for Window: "Lumen | Coronary Evidence Explorer" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 30, 33-36, 38, 65-68, 72-74, 77, 82-105, 110, 117-165, 295-330, 334, 338-359, 524
+~						22 text 242 development records 61 records in the separate frozen test UCI411-020 was chosen using recorded development outcomes. Its fold-excluded predictions and actual labels are shown together. Editing inputs explores the model and removes the outcome comparison.
+~							27 pop up button (collapsed) Development case, Value: Audit record UCI411-020, Secondary Actions: Expand
++							596 text All recorded inputs (+ echo) · 55 model inputs. Separately fitted and validated.
++							597 text 47
++							598 text Age in years
++							599 text F
++							600 text Recorded sex
++								601 text Recorded measurements
++								602 text LCX reference vessel selected.
++							603 toggle button Overall CAD 8.3% Below research threshold, Value: off
++							604 toggle button LAD 15.3% Below research threshold, Value: off
++							605 toggle button LCX 22.2% Below research threshold, Value: on
++							606 toggle button RCA 15.2% Below research threshold, Value: off
++							607 text LCX
++							608 text Left circumflex artery
++							609 text 22.2%
+~								76 text Model probability Validation fold 2
++							610 text Below research threshold at 33.0%. Threshold selected from training-fold predictions. This is a research operating point.
++							611 text Age
++							612 text 47
++							613 text Decreases model estimate
++							614 text -0.23
++							615 text Typical Chest Pain
++							616 text 0
++							617 text Decreases model estimate
++							618 text -0.15
++							619 text BUN
++							620 text 10
++							621 text Decreases model estimate
++							622 text -0.12
++							623 text Hypertension
++							624 text 0
++							625 text Decreases model estimate
++							626 text -0.10
++							627 text HB
++							628 text 15.4
++							629 text Increases model estimate
++							630 text +0.07
++							631 text Diabetes
++							632 text 0
++							633 text Decreases model estimate
++							634 text -0.07
+~							109 button (disabled) Recorded labels revealed
++							635 text CAD
++							636 text CAD recorded · missed positive
++							637 text LAD
++							638 text Negative label · agrees
++							639 text LCX
++							640 text Stenosis recorded · missed positive
++							641 text RCA
++							642 text Negative label · agrees
++							643 text Agreement uses each model’s training-selected threshold. Positive means a recorded dataset label.
++							644 text Compare available evidence
++							645 heading One record. Five input profiles., Value: 2
++								646 text One record. Five input profiles.
++							647 text UCI411-020 · fold 2 · this record was excluded from every model below.
++							648 link Download comparison, Value: blob:http://127.0.0.1:8828/9bc44159-623b-4b32-98cc-cab7d8df0d26
++							649 text Scroll the comparison horizontally on smaller screens to inspect every profile.
++							650 text LCX
++							651 text 10.2%–23.0% across profiles Same research flag
++							652 image LCX profile comparison. History, 17 inputs: 14.0%, threshold 31.0%, below threshold; + examination, 31 inputs: 10.2%, threshold 29.0%, below threshold; + ECG, 38 inputs: 23.0%, threshold 35.0%, below threshold; + laboratory, 52 inputs: 22.5%, threshold 33.0%, below threshold; + echo, 55 inputs: 22.2%, threshold 33.0%, below threshold
++							653 text Model probability Each model’s fitted threshold
++							654 container All target and profile comparisons
++								655 table Compare all four targets. Select a cell to update anatomy and explanation.
++									656 text Compare all four targets. Select a cell to update anatomy and explanation.
++									657 row (selectable) Target
+History
+17 inputs
++ examination
+31 inputs
++ ECG
+38 inputs
++ laboratory
+52 inputs
++ echo
+55 inputs
++									658 row (selectable)
++										659 cell (selectable) CAD Same flag
++											660 toggle button CAD Same flag, Value: off
++										661 cell (selectable) CAD, 17 inputs, probability 38.0%, threshold 47.0%, below research threshold
++										662 cell (selectable) CAD, 31 inputs, probability 30.5%, threshold 61.0%, below research threshold
++										663 cell (selectable) CAD, 38 inputs, probability 27.5%, threshold 65.0%, below research threshold
++										664 cell (selectable) CAD, 52 inputs, probability 7.6%, threshold 50.0%, below research threshold
++										665 cell (selectable) CAD, 55 inputs, probability 8.3%, threshold 42.0%, below research threshold
++									666 row (selectable)
++										667 cell (selectable) LAD Same flag
++											668 toggle button LAD Same flag, Value: off
++										669 cell (selectable) LAD, 17 inputs, probability 39.8%, threshold 47.0%, below research threshold
++										670 cell (selectable) LAD, 31 inputs, probability 26.4%, threshold 48.0%, below research threshold
++										671 cell (selectable) LAD, 38 inputs, probability 19.5%, threshold 39.0%, below research threshold
++										672 cell (selectable) LAD, 52 inputs, probability 16.1%, threshold 39.0%, below research threshold
++										673 cell (selectable) LAD, 55 inputs, probability 15.3%, threshold 31.0%, below research threshold
++									674 row (selectable)
++										675 cell (selectable) LCX Same flag
++											676 toggle button LCX Same flag, Value: on
++										677 cell (selectable) LCX, 17 inputs, probability 14.0%, threshold 31.0%, below research threshold
++										678 cell (selectable) LCX, 31 inputs, probability 10.2%, threshold 29.0%, below research threshold
++										679 cell (selectable) LCX, 38 inputs, probability 23.0%, threshold 35.0%, below research threshold
++										680 cell (selectable) LCX, 52 inputs, probability 22.5%, threshold 33.0%, below research threshold
++										681 cell (selectable) LCX, 55 inputs, probability 22.2%, threshold 33.0%, below research threshold
++									682 row (selectable)
++										683 cell (selectable) RCA Same flag
++											684 toggle button RCA Same flag, Value: off
++										685 cell (selectable) RCA, 17 inputs, probability 23.6%, threshold 25.0%, below research threshold
++										686 cell (selectable) RCA, 31 inputs, probability 11.2%, threshold 27.0%, below research threshold
++										687 cell (selectable) RCA, 38 inputs, probability 14.4%, threshold 28.0%, below research threshold
++										688 cell (selectable) RCA, 52 inputs, probability 14.6%, threshold 26.0%, below research threshold
++										689 cell (selectable) RCA, 55 inputs, probability 15.2%, threshold 26.0%, below research threshold
++							690 text The same recorded values are projected into each input set. Differences include refitting and calibration; they do not isolate the effect of a test. The displayed range is not a confidence interval, and this ordering is not a recommended care sequence.
++							691 summary View exact comparison JSON, Value: off
++								692 text View exact comparison JSON
++								693 row (selectable)
++									694 cell (selectable) CAD
+173 positive / 69 negative
++									695 cell (selectable) 0.926
+0.89–0.96
++									696 cell (selectable) 0.911
++									697 cell (selectable) 0.942
++									698 cell (selectable) 0.881
++									699 cell (selectable) 0.868
++									700 cell (selectable) 0.096
++									701 cell (selectable) 22 / 10
++								702 row (selectable)
++									703 cell (selectable) LAD
+141 positive / 101 negative
++									704 cell (selectable) 0.814
+0.76–0.86
++									705 cell (selectable) 0.794
++									706 cell (selectable) 0.887
++									707 cell (selectable) 0.718
++									708 cell (selectable) 0.731
++									709 cell (selectable) 0.174
++									710 cell (selectable) 49 / 16
++								711 row (selectable)
++									712 cell (selectable) LCX
+92 positive / 150 negative
++									713 cell (selectable) 0.701
+0.63–0.77
++									714 cell (selectable) 0.602
++									715 cell (selectable) 0.815
++									716 cell (selectable) 0.478
++									717 cell (selectable) 0.591
++									718 cell (selectable) 0.211
++									719 cell (selectable) 82 / 17
++								720 row (selectable)
++									721 cell (selectable) RCA
+89 positive / 153 negative
++									722 cell (selectable) 0.722
+0.65–0.78
++									723 cell (selectable) 0.605
++									724 cell (selectable) 0.809
++									725 cell (selectable) 0.483
++									726 cell (selectable) 0.612
++									727 cell (selectable) 0.202
++									728 cell (selectable) 77 / 17
++						729 image LCX development probability reliability: 26 records, mean estimate 15.0%, observed 7.7%; 114 records, mean estimate 31.4%, observed 30.7%; 84 records, mean estimate 48.0%, observed 51.2%; 16 records, mean estimate 67.5%, observed 68.8%; 2 records, mean estimate 87.0%, observed 50.0%
++						730 table
++							731 row (selectable) LCX profile
+AUC
+F1
++							732 row (selectable)
++								733 cell (selectable) History · 17
++								734 cell (selectable) 0.736
++								735 cell (selectable) 0.626
++							736 row (selectable)
++								737 cell (selectable) History + examination · 31
++								738 cell (selectable) 0.732
++								739 cell (selectable) 0.630
++							740 row (selectable)
++								741 cell (selectable) History + examination + ECG · 38
++								742 cell (selectable) 0.714
++								743 cell (selectable) 0.608
++							744 row (selectable)
++								745 cell (selectable) History + examination + ECG + laboratory · 52
++								746 cell (selectable) 0.706
++								747 cell (selectable) 0.600
++							748 row (selectable)
++								749 cell (selectable) All recorded inputs (+ echo) · 55
++								750 cell (selectable) 0.701
++								751 cell (selectable) 0.602
+~				417 scroll bar (settable, float) 0.04374615

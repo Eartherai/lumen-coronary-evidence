@@ -1,0 +1,11 @@
+{
+  "captured_at_utc": "2026-10-10T19:56:34.566646+00:00",
+  "review_scope": "read-only code/tests follow-up; no browser verification",
+  "files": {
+    "coronary-evidence/public/outcome-description.js": "ab7a4e2eb9388da2890ad2155961b6b1adb18d3b22372343454867b8a3cb59d9",
+    "coronary-evidence/public/runtime-probe.js": "d531d64365f13aa89b2d3b1f29250d428216fea766891df243c552d507904337",
+    "coronary-evidence/public/app.js": "78c902e7efe0a8b6167c5d167d34dfd31408a7fffbb085a113832dead47c29ea",
+    "coronary-evidence/tests/test_outcome_description.mjs": "6378aeccfaf46fa3973554571f59cef8d172c77412ce473e3f10d028e6142944",
+    "coronary-evidence/tests/test_runtime_probe.mjs": "871bfc83fb5fa990b78a5055c3b97ccc1dbc9de75d9ed0a648f8e5c22bed6917"
+  }
+}

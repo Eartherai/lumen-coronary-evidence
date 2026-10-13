@@ -1,0 +1,582 @@
+{
+  "targets": {
+    "CAD": {
+      "selection": {
+        "family": "balanced_sigmoid",
+        "C": 0.01,
+        "inner_log_loss": 0.3360256900870193,
+        "inner_roc_auc": 0.9130434782608695,
+        "operating_threshold": 0.21,
+        "inner_threshold_f1_training_diagnostic": 0.9105691056910569
+      },
+      "candidates": [
+        {
+          "family": "unweighted",
+          "C": 0.01,
+          "inner_log_loss": 0.4412837775288455,
+          "inner_roc_auc": 0.913546117114853,
+          "operating_threshold": 0.57,
+          "inner_threshold_f1_training_diagnostic": 0.907103825136612
+        },
+        {
+          "family": "unweighted",
+          "C": 0.1,
+          "inner_log_loss": 0.33813632281513806,
+          "inner_roc_auc": 0.9102789645639607,
+          "operating_threshold": 0.44,
+          "inner_threshold_f1_training_diagnostic": 0.9060773480662984
+        },
+        {
+          "family": "unweighted",
+          "C": 1.0,
+          "inner_log_loss": 0.42559826099730425,
+          "inner_roc_auc": 0.8936918823825081,
+          "operating_threshold": 0.37,
+          "inner_threshold_f1_training_diagnostic": 0.9025069637883009
+        },
+        {
+          "family": "unweighted",
+          "C": 10.0,
+          "inner_log_loss": 0.8649416553617955,
+          "inner_roc_auc": 0.8690625785373208,
+          "operating_threshold": 0.19,
+          "inner_threshold_f1_training_diagnostic": 0.8876404494382022
+        },
+        {
+          "family": "balanced",
+          "C": 0.01,
+          "inner_log_loss": 0.48248499479620693,
+          "inner_roc_auc": 0.9128759319762084,
+          "operating_threshold": 0.37,
+          "inner_threshold_f1_training_diagnostic": 0.907103825136612
+        },
+        {
+          "family": "balanced",
+          "C": 0.1,
+          "inner_log_loss": 0.36436986518578224,
+          "inner_roc_auc": 0.9107816034179443,
+          "operating_threshold": 0.26,
+          "inner_threshold_f1_training_diagnostic": 0.9041095890410958
+        },
+        {
+          "family": "balanced",
+          "C": 1.0,
+          "inner_log_loss": 0.4534962488254465,
+          "inner_roc_auc": 0.8933567898131859,
+          "operating_threshold": 0.21,
+          "inner_threshold_f1_training_diagnostic": 0.9025069637883009
+        },
+        {
+          "family": "balanced",
+          "C": 10.0,
+          "inner_log_loss": 0.8988012015999485,
+          "inner_roc_auc": 0.8693138979643126,
+          "operating_threshold": 0.11,
+          "inner_threshold_f1_training_diagnostic": 0.8876404494382022
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.3380064885284994,
+          "inner_roc_auc": 0.9137136633995141,
+          "operating_threshold": 0.19,
+          "inner_threshold_f1_training_diagnostic": 0.9105691056910569
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.34052382844879764,
+          "inner_roc_auc": 0.9072631314400602,
+          "operating_threshold": 0.38,
+          "inner_threshold_f1_training_diagnostic": 0.9116022099447514
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.3698352466918819,
+          "inner_roc_auc": 0.8895032252659797,
+          "operating_threshold": 0.38,
+          "inner_threshold_f1_training_diagnostic": 0.9016393442622951
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.4081751553856555,
+          "inner_roc_auc": 0.8647901482784618,
+          "operating_threshold": 0.29,
+          "inner_threshold_f1_training_diagnostic": 0.8865435356200527
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.3360256900870193,
+          "inner_roc_auc": 0.9130434782608695,
+          "operating_threshold": 0.21,
+          "inner_threshold_f1_training_diagnostic": 0.9105691056910569
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.3404604608698308,
+          "inner_roc_auc": 0.9077657702940436,
+          "operating_threshold": 0.39,
+          "inner_threshold_f1_training_diagnostic": 0.9116022099447514
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.3688471605394943,
+          "inner_roc_auc": 0.8902571835469548,
+          "operating_threshold": 0.35,
+          "inner_threshold_f1_training_diagnostic": 0.9021739130434783
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.40814383273309657,
+          "inner_roc_auc": 0.8646226019938006,
+          "operating_threshold": 0.29,
+          "inner_threshold_f1_training_diagnostic": 0.8865435356200527
+        }
+      ],
+      "inner_selection_seed": 2026,
+      "final_calibration_seed": 3026,
+      "diagnostics_only": true,
+      "holdout_scored": false
+    },
+    "LAD": {
+      "selection": {
+        "family": "balanced_sigmoid",
+        "C": 0.01,
+        "inner_log_loss": 0.5205321757157849,
+        "inner_roc_auc": 0.8146899796362614,
+        "operating_threshold": 0.36,
+        "inner_threshold_f1_training_diagnostic": 0.810126582278481
+      },
+      "candidates": [
+        {
+          "family": "unweighted",
+          "C": 0.01,
+          "inner_log_loss": 0.5589155029084908,
+          "inner_roc_auc": 0.8179200898813286,
+          "operating_threshold": 0.49,
+          "inner_threshold_f1_training_diagnostic": 0.8126984126984127
+        },
+        {
+          "family": "unweighted",
+          "C": 0.1,
+          "inner_log_loss": 0.5396642240785277,
+          "inner_roc_auc": 0.7991714065023524,
+          "operating_threshold": 0.34,
+          "inner_threshold_f1_training_diagnostic": 0.80625
+        },
+        {
+          "family": "unweighted",
+          "C": 1.0,
+          "inner_log_loss": 0.7077611565069097,
+          "inner_roc_auc": 0.7776139316059265,
+          "operating_threshold": 0.31,
+          "inner_threshold_f1_training_diagnostic": 0.7934426229508197
+        },
+        {
+          "family": "unweighted",
+          "C": 10.0,
+          "inner_log_loss": 1.0742910156634793,
+          "inner_roc_auc": 0.7568990941647357,
+          "operating_threshold": 0.06,
+          "inner_threshold_f1_training_diagnostic": 0.7739938080495357
+        },
+        {
+          "family": "balanced",
+          "C": 0.01,
+          "inner_log_loss": 0.5672306898328336,
+          "inner_roc_auc": 0.8179200898813286,
+          "operating_threshold": 0.42,
+          "inner_threshold_f1_training_diagnostic": 0.8126984126984127
+        },
+        {
+          "family": "balanced",
+          "C": 0.1,
+          "inner_log_loss": 0.5442334042732372,
+          "inner_roc_auc": 0.8004353626852047,
+          "operating_threshold": 0.28,
+          "inner_threshold_f1_training_diagnostic": 0.8087774294670846
+        },
+        {
+          "family": "balanced",
+          "C": 1.0,
+          "inner_log_loss": 0.7109910610900791,
+          "inner_roc_auc": 0.77922898672846,
+          "operating_threshold": 0.26,
+          "inner_threshold_f1_training_diagnostic": 0.7908496732026143
+        },
+        {
+          "family": "balanced",
+          "C": 10.0,
+          "inner_log_loss": 1.0860923635393809,
+          "inner_roc_auc": 0.7597781054701215,
+          "operating_threshold": 0.14,
+          "inner_threshold_f1_training_diagnostic": 0.7687296416938111
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.5211956533312283,
+          "inner_roc_auc": 0.8137771223930903,
+          "operating_threshold": 0.36,
+          "inner_threshold_f1_training_diagnostic": 0.8126984126984127
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.5445141506283453,
+          "inner_roc_auc": 0.7940453619830068,
+          "operating_threshold": 0.35,
+          "inner_threshold_f1_training_diagnostic": 0.8099688473520249
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.5685663038844657,
+          "inner_roc_auc": 0.7729092058141984,
+          "operating_threshold": 0.46,
+          "inner_threshold_f1_training_diagnostic": 0.7908496732026143
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.5896852501861676,
+          "inner_roc_auc": 0.7554244786180745,
+          "operating_threshold": 0.46,
+          "inner_threshold_f1_training_diagnostic": 0.7777777777777778
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.5205321757157849,
+          "inner_roc_auc": 0.8146899796362614,
+          "operating_threshold": 0.36,
+          "inner_threshold_f1_training_diagnostic": 0.810126582278481
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.5433698984347425,
+          "inner_roc_auc": 0.7955901973176042,
+          "operating_threshold": 0.35,
+          "inner_threshold_f1_training_diagnostic": 0.8125
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.5675194421498228,
+          "inner_roc_auc": 0.7741029422091146,
+          "operating_threshold": 0.48,
+          "inner_threshold_f1_training_diagnostic": 0.7947019867549668
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.5885511939190313,
+          "inner_roc_auc": 0.7589354680148866,
+          "operating_threshold": 0.47,
+          "inner_threshold_f1_training_diagnostic": 0.778816199376947
+        }
+      ],
+      "inner_selection_seed": 2026,
+      "final_calibration_seed": 3026,
+      "diagnostics_only": true,
+      "holdout_scored": false
+    },
+    "LCX": {
+      "selection": {
+        "family": "unweighted",
+        "C": 0.01,
+        "inner_log_loss": 0.6220712345579512,
+        "inner_roc_auc": 0.675,
+        "operating_threshold": 0.3,
+        "inner_threshold_f1_training_diagnostic": 0.6264150943396226
+      },
+      "candidates": [
+        {
+          "family": "unweighted",
+          "C": 0.01,
+          "inner_log_loss": 0.6220712345579512,
+          "inner_roc_auc": 0.675,
+          "operating_threshold": 0.3,
+          "inner_threshold_f1_training_diagnostic": 0.6264150943396226
+        },
+        {
+          "family": "unweighted",
+          "C": 0.1,
+          "inner_log_loss": 0.6650396950079955,
+          "inner_roc_auc": 0.6579710144927536,
+          "operating_threshold": 0.16,
+          "inner_threshold_f1_training_diagnostic": 0.6021505376344086
+        },
+        {
+          "family": "unweighted",
+          "C": 1.0,
+          "inner_log_loss": 0.8454737765114041,
+          "inner_roc_auc": 0.6350000000000001,
+          "operating_threshold": 0.08,
+          "inner_threshold_f1_training_diagnostic": 0.5777777777777777
+        },
+        {
+          "family": "unweighted",
+          "C": 10.0,
+          "inner_log_loss": 1.0966276332496827,
+          "inner_roc_auc": 0.6335507246376811,
+          "operating_threshold": 0.26,
+          "inner_threshold_f1_training_diagnostic": 0.5675675675675675
+        },
+        {
+          "family": "balanced",
+          "C": 0.01,
+          "inner_log_loss": 0.6420883675984012,
+          "inner_roc_auc": 0.6768840579710145,
+          "operating_threshold": 0.4,
+          "inner_threshold_f1_training_diagnostic": 0.623574144486692
+        },
+        {
+          "family": "balanced",
+          "C": 0.1,
+          "inner_log_loss": 0.6807445040655297,
+          "inner_roc_auc": 0.6576811594202899,
+          "operating_threshold": 0.25,
+          "inner_threshold_f1_training_diagnostic": 0.6
+        },
+        {
+          "family": "balanced",
+          "C": 1.0,
+          "inner_log_loss": 0.8574460511754268,
+          "inner_roc_auc": 0.6344927536231885,
+          "operating_threshold": 0.13,
+          "inner_threshold_f1_training_diagnostic": 0.5830258302583026
+        },
+        {
+          "family": "balanced",
+          "C": 10.0,
+          "inner_log_loss": 1.1076176457477092,
+          "inner_roc_auc": 0.6341304347826087,
+          "operating_threshold": 0.23,
+          "inner_threshold_f1_training_diagnostic": 0.5690376569037657
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.6408103002933493,
+          "inner_roc_auc": 0.6505797101449275,
+          "operating_threshold": 0.32,
+          "inner_threshold_f1_training_diagnostic": 0.6050420168067226
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.6415868389734027,
+          "inner_roc_auc": 0.630144927536232,
+          "operating_threshold": 0.32,
+          "inner_threshold_f1_training_diagnostic": 0.582995951417004
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.6429062534916503,
+          "inner_roc_auc": 0.6176811594202898,
+          "operating_threshold": 0.35,
+          "inner_threshold_f1_training_diagnostic": 0.5725806451612904
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.6464852676283619,
+          "inner_roc_auc": 0.6159420289855073,
+          "operating_threshold": 0.25,
+          "inner_threshold_f1_training_diagnostic": 0.5609756097560976
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.6386534722248699,
+          "inner_roc_auc": 0.6545652173913042,
+          "operating_threshold": 0.32,
+          "inner_threshold_f1_training_diagnostic": 0.6
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.6396895947067083,
+          "inner_roc_auc": 0.6355072463768116,
+          "operating_threshold": 0.3,
+          "inner_threshold_f1_training_diagnostic": 0.5799256505576208
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.6425606060359838,
+          "inner_roc_auc": 0.6140579710144927,
+          "operating_threshold": 0.36,
+          "inner_threshold_f1_training_diagnostic": 0.5666666666666667
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.6473072524124376,
+          "inner_roc_auc": 0.613623188405797,
+          "operating_threshold": 0.26,
+          "inner_threshold_f1_training_diagnostic": 0.5609756097560976
+        }
+      ],
+      "inner_selection_seed": 2026,
+      "final_calibration_seed": 3026,
+      "diagnostics_only": true,
+      "holdout_scored": false
+    },
+    "RCA": {
+      "selection": {
+        "family": "balanced_sigmoid",
+        "C": 0.01,
+        "inner_log_loss": 0.5814766235259221,
+        "inner_roc_auc": 0.7323198942498348,
+        "operating_threshold": 0.25,
+        "inner_threshold_f1_training_diagnostic": 0.623574144486692
+      },
+      "candidates": [
+        {
+          "family": "unweighted",
+          "C": 0.01,
+          "inner_log_loss": 0.594300850324208,
+          "inner_roc_auc": 0.735110523610193,
+          "operating_threshold": 0.3,
+          "inner_threshold_f1_training_diagnostic": 0.622568093385214
+        },
+        {
+          "family": "unweighted",
+          "C": 0.1,
+          "inner_log_loss": 0.5971758503465413,
+          "inner_roc_auc": 0.7227730043328192,
+          "operating_threshold": 0.17,
+          "inner_threshold_f1_training_diagnostic": 0.6230769230769231
+        },
+        {
+          "family": "unweighted",
+          "C": 1.0,
+          "inner_log_loss": 0.7608312759393889,
+          "inner_roc_auc": 0.6982448410075641,
+          "operating_threshold": 0.1,
+          "inner_threshold_f1_training_diagnostic": 0.6024096385542169
+        },
+        {
+          "family": "unweighted",
+          "C": 10.0,
+          "inner_log_loss": 1.1719523911516576,
+          "inner_roc_auc": 0.670558860248219,
+          "operating_threshold": 0.05,
+          "inner_threshold_f1_training_diagnostic": 0.5950413223140496
+        },
+        {
+          "family": "balanced",
+          "C": 0.01,
+          "inner_log_loss": 0.6201921980603273,
+          "inner_roc_auc": 0.7345964603069692,
+          "operating_threshold": 0.39,
+          "inner_threshold_f1_training_diagnostic": 0.6217228464419475
+        },
+        {
+          "family": "balanced",
+          "C": 0.1,
+          "inner_log_loss": 0.6155711912868859,
+          "inner_roc_auc": 0.7247558199309687,
+          "operating_threshold": 0.25,
+          "inner_threshold_f1_training_diagnostic": 0.6230769230769231
+        },
+        {
+          "family": "balanced",
+          "C": 1.0,
+          "inner_log_loss": 0.7717718122571143,
+          "inner_roc_auc": 0.7020635969743704,
+          "operating_threshold": 0.14,
+          "inner_threshold_f1_training_diagnostic": 0.5976095617529881
+        },
+        {
+          "family": "balanced",
+          "C": 10.0,
+          "inner_log_loss": 1.1832999115998415,
+          "inner_roc_auc": 0.671586986854667,
+          "operating_threshold": 0.07,
+          "inner_threshold_f1_training_diagnostic": 0.5934959349593496
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.5821117993518796,
+          "inner_roc_auc": 0.7331277080120437,
+          "operating_threshold": 0.26,
+          "inner_threshold_f1_training_diagnostic": 0.6230769230769231
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.5890588276035573,
+          "inner_roc_auc": 0.7223323786443416,
+          "operating_threshold": 0.28,
+          "inner_threshold_f1_training_diagnostic": 0.625
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.6022406531237591,
+          "inner_roc_auc": 0.6999339061467283,
+          "operating_threshold": 0.3,
+          "inner_threshold_f1_training_diagnostic": 0.5992217898832685
+        },
+        {
+          "family": "unweighted_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.6188523369232131,
+          "inner_roc_auc": 0.6718072996989058,
+          "operating_threshold": 0.32,
+          "inner_threshold_f1_training_diagnostic": 0.5758754863813229
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.01,
+          "inner_log_loss": 0.5814766235259221,
+          "inner_roc_auc": 0.7323198942498348,
+          "operating_threshold": 0.25,
+          "inner_threshold_f1_training_diagnostic": 0.623574144486692
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 0.1,
+          "inner_log_loss": 0.5877449620493261,
+          "inner_roc_auc": 0.7243886318572372,
+          "operating_threshold": 0.27,
+          "inner_threshold_f1_training_diagnostic": 0.6259541984732825
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 1.0,
+          "inner_log_loss": 0.6018061544774437,
+          "inner_roc_auc": 0.7040464125725197,
+          "operating_threshold": 0.3,
+          "inner_threshold_f1_training_diagnostic": 0.6023166023166023
+        },
+        {
+          "family": "balanced_sigmoid",
+          "C": 10.0,
+          "inner_log_loss": 0.6193189711284577,
+          "inner_roc_auc": 0.6721010501578909,
+          "operating_threshold": 0.32,
+          "inner_threshold_f1_training_diagnostic": 0.5836575875486382
+        }
+      ],
+      "inner_selection_seed": 2026,
+      "final_calibration_seed": 3026,
+      "diagnostics_only": true,
+      "holdout_scored": false
+    }
+  },
+  "runtime_seconds": 6.139,
+  "holdout_scored": false
+}

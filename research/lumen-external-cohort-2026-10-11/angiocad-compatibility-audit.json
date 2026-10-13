@@ -1,0 +1,546 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-10T19:43:38.051676+00:00",
+  "dataset": "AngioCAD",
+  "source_doi": "10.5281/zenodo.15826856",
+  "source_paper_doi": "10.1016/j.cmpb.2026.109368",
+  "source_workbook_sha256": "978f2415ab52f11724e1ef00bb63597b8497487afd84b97f7112fc7975a33295",
+  "input_schema_sha256": "cd55a04d557691c3f2e9107235374def18f934ba7a17752f557a264ba630fd1f",
+  "admission_protocol_sha256": "6414ec97fb4786afaacb352158534e818b6c33e8ce880231d69a2c205dccec1f",
+  "decision": "REJECT_FOR_FROZEN_LUMEN_55_FEATURE_EXTERNAL_VALIDATION",
+  "decision_basis": "All 14 examination and all 7 ECG inputs are absent; 33 of 55 inputs have no header candidate. Matching names and seven potential aliases have unverified clinical semantics and units. Outcome target mapping and overlap safeguards are not completed.",
+  "patient_values_read": false,
+  "patient_outcomes_read": false,
+  "predictions_made": false,
+  "counts": {
+    "exact_name_only": 15,
+    "possible_alias_only": 7,
+    "no_header_candidate": 33
+  },
+  "feature_mapping": [
+    {
+      "lumen_feature": "Age",
+      "group": "history",
+      "source_header": "Age",
+      "header_cell": "C1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Weight",
+      "group": "history",
+      "source_header": "Weight",
+      "header_cell": "E1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Length",
+      "group": "history",
+      "source_header": "Length",
+      "header_cell": "D1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Sex",
+      "group": "history",
+      "source_header": "Sex",
+      "header_cell": "B1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "BMI",
+      "group": "history",
+      "source_header": "BMI",
+      "header_cell": "F1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "DM",
+      "group": "history",
+      "source_header": "DM",
+      "header_cell": "K1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "HTN",
+      "group": "history",
+      "source_header": "HTN",
+      "header_cell": "L1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Current Smoker",
+      "group": "history",
+      "source_header": "Current Smoker",
+      "header_cell": "P1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "EX-Smoker",
+      "group": "history",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "FH",
+      "group": "history",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Obesity",
+      "group": "history",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "CRF",
+      "group": "history",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "CVA",
+      "group": "history",
+      "source_header": "Stroke",
+      "header_cell": "S1",
+      "status": "possible-alias-not-approved",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Airway disease",
+      "group": "history",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Thyroid Disease",
+      "group": "history",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "CHF",
+      "group": "history",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "DLP",
+      "group": "history",
+      "source_header": "Hyperlipidemia",
+      "header_cell": "O1",
+      "status": "possible-alias-not-approved",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "BP",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "PR",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Edema",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Weak Peripheral Pulse",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Lung rales",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Systolic Murmur",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Diastolic Murmur",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Typical Chest Pain",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Dyspnea",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Function Class",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Atypical",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Nonanginal",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Exertional CP",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "LowTH Ang",
+      "group": "examination",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Q Wave",
+      "group": "ecg",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "St Elevation",
+      "group": "ecg",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "St Depression",
+      "group": "ecg",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Tinversion",
+      "group": "ecg",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "LVH",
+      "group": "ecg",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Poor R Progression",
+      "group": "ecg",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "BBB",
+      "group": "ecg",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "FBS",
+      "group": "laboratory",
+      "source_header": "FBS",
+      "header_cell": "AG1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "CR",
+      "group": "laboratory",
+      "source_header": "Cr",
+      "header_cell": "AH1",
+      "status": "possible-alias-not-approved",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "TG",
+      "group": "laboratory",
+      "source_header": "TG",
+      "header_cell": "AC1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "LDL",
+      "group": "laboratory",
+      "source_header": "LDL",
+      "header_cell": "AF1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "HDL",
+      "group": "laboratory",
+      "source_header": "HDL",
+      "header_cell": "AE1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "BUN",
+      "group": "laboratory",
+      "source_header": "BUN ",
+      "header_cell": "AI1",
+      "status": "possible-alias-not-approved",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "ESR",
+      "group": "laboratory",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "HB",
+      "group": "laboratory",
+      "source_header": "Hgb",
+      "header_cell": "AJ1",
+      "status": "possible-alias-not-approved",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "K",
+      "group": "laboratory",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Na",
+      "group": "laboratory",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "WBC",
+      "group": "laboratory",
+      "source_header": "leukocytes",
+      "header_cell": "AL1",
+      "status": "possible-alias-not-approved",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Lymph",
+      "group": "laboratory",
+      "source_header": "Lymph",
+      "header_cell": "AP1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Neut",
+      "group": "laboratory",
+      "source_header": "Neut",
+      "header_cell": "AM1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "PLT",
+      "group": "laboratory",
+      "source_header": "PLT",
+      "header_cell": "AQ1",
+      "status": "exact-name-only-semantic-unit-unverified",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "EF-TTE",
+      "group": "echo",
+      "source_header": "LVEF",
+      "header_cell": "M1",
+      "status": "possible-alias-not-approved",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "Region RWMA",
+      "group": "echo",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    },
+    {
+      "lumen_feature": "VHD",
+      "group": "echo",
+      "source_header": null,
+      "header_cell": null,
+      "status": "not-present-in-released-header",
+      "units": "unverified",
+      "harmonization": "not approved; no input values mapped"
+    }
+  ],
+  "outcome_related_headers_quarantined": {
+    "dominance": "G1",
+    "Right Coronary Series": "H1",
+    "Left Coronary Series": "I1",
+    "Diagnosis": "J1",
+    "LVEF dysfunction": "N1",
+    "IHD": "R1",
+    "Gensini Score": "AS1",
+    "LM": "AT1",
+    "Prox LAD": "AU1",
+    "Mid LAD": "AV1",
+    "Dist LAD": "AW1",
+    "1st dig": "AX1",
+    "2nd dig": "AY1",
+    "Prox LCX": "AZ1",
+    "Mid LCX": "BA1",
+    "Dist LCX": "BB1",
+    "OM": "BC1",
+    "Prox RCA": "BD1",
+    "Mid RCA": "BE1",
+    "Dist RCA": "BF1",
+    "PDA": "BG1",
+    "PLB": "BH1"
+  },
+  "outcome_semantics": "Seven stenosis severity categories are stated in dataset metadata; exact values/boundaries and aggregation rules for original Cath/LAD/LCX/RCA were not examined or assumed.",
+  "provenance": "Primary paper identifies retrospective angiographic data from Shahid Chamran Heart Center, Isfahan. Original Lumen cohort is Shahid Rajaei, Tehran. Institutional origin supports independence, but collection dates, patient overlap, segment aggregation and selection have not been audited.",
+  "workbook_dimensions": "Main!A1:BH380; a declared used range is not a confirmed patient count. No row-count or completeness inference made.",
+  "access": "Public/Open verified through browser, CC BY 4.0. Direct automated HTTP403 errors were environment-specific; they do not establish restricted access.",
+  "allowed_next_action": "Obtain an independently governed cohort with all measured groups and matching angiography endpoints, or define a different task/model with a new prospective protocol and explicit limits. Do not score this source through full-group imputation."
+}

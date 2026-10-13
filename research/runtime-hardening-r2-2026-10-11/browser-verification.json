@@ -1,0 +1,93 @@
+{
+  "schema": "lumen-delayed-failure-browser-review-v1",
+  "created_utc": "2026-10-11T09:10:40.622178+00:00",
+  "reviewer": "Codex AI, actual Chromium via CUA",
+  "browser": "Codex in-app Chromium on this Mac",
+  "physical_devices": 1,
+  "status": "passed",
+  "checks": [
+    {
+      "name": "stale_prediction_failure_after_new_case_commit",
+      "result": "passed",
+      "actions": "Held case171 recalculation, loaded case128, then returned synthetic HTTP503 for old recalculation",
+      "observed_case": "UCI411-128",
+      "caption_case": "UCI411-128",
+      "error_hidden": true,
+      "error_text": "",
+      "case_load_status_hidden": true,
+      "prediction_disabled": false
+    },
+    {
+      "name": "stale_prediction_failure_during_newer_case_load",
+      "result": "passed",
+      "actions": "Held case128 recalculation, began and held case050 load, returned synthetic HTTP503 for old recalculation, then completed case050",
+      "during_load_requested_case": "UCI411-050",
+      "during_load_displayed_caption_case": "UCI411-128",
+      "during_load_error_hidden": true,
+      "during_load_prediction_disabled": true,
+      "during_load_loading_notice_visible": true,
+      "after_case_loaded": "UCI411-050",
+      "after_error_hidden": true,
+      "after_loading_notice_hidden": true,
+      "after_prediction_disabled": false
+    }
+  ],
+  "source_bindings_recorded_after_checks": {
+    "public/app.js": {
+      "bytes": 37307,
+      "sha256": "bc7837cd5fee21e96b0be5a880c313ac889c4f66e6dd3c91814aa4285a55fd2a"
+    },
+    "public/evidence-journey.js": {
+      "bytes": 8036,
+      "sha256": "6ce3c8df5efd68119c2c70cc3a0964afb417ecfeec37c1fc11f41df9d1492254"
+    },
+    "public/index.html": {
+      "bytes": 9753,
+      "sha256": "5171107ee73fa38fa4936bfa8120a4611d6b293ac5b83cf180f6b0bc5d68453a"
+    },
+    "tests/test_case_transition.mjs": {
+      "bytes": 15523,
+      "sha256": "bca3b15c7aeb1bdfa1125349a83dec9e2f57f2980f765c844bec14e908c9229e"
+    },
+    "research/runtime-hardening-r2-2026-10-11/failure_server.py": {
+      "bytes": 1864,
+      "sha256": "71a4091b7d65aed88f051cac03263a5473702a814b122d8cc88330284b229104"
+    }
+  },
+  "sources_unchanged_since_first_held_prediction": true,
+  "regression_tests": 17,
+  "full_node_tests": 52,
+  "original_journey_paths": 64,
+  "screenshots": {
+    "stale-error-after-new-case.png": {
+      "bytes": 72237,
+      "sha256": "4a27c35e1f45ffc2e9d148cf5a0b50ab9aa2e433350d811c9e33a8f02c834793"
+    },
+    "stale-error-during-case-load.png": {
+      "bytes": 50095,
+      "sha256": "3c558aac4465b8344724f2e8f61c0c21f845f54002f5c083b05f507a250d259a"
+    }
+  },
+  "frozen_artifacts": {
+    "artifacts/final_evaluation.json": {
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "artifacts/final_models.json": {
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6"
+    },
+    "submission/final-protocol-freeze.json": {
+      "bytes": 1792,
+      "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305"
+    }
+  },
+  "clinical_models_changed": false,
+  "final_evaluation_rescored": false,
+  "human_usability_study": false,
+  "temporary_network_blocking_cleared": true,
+  "network_blocking_kind": "No CDP network block used in this revision; separate test-only HTTP fault harness stopped after saved observations",
+  "fault_harness_stopped": true,
+  "actual_app_server_unchanged": true,
+  "scope": "Two actual browser interactions under explicitly synthetic delayed HTTP failures; not human usability, clinical validity, hardware-display latency or a second-device test. Earlier five case/profile/focus checks retain historical pre-R2 source hashes."
+}

@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "video_sha256": "50ac052afe6f583e79d6deb02b6c40fcfb4dd106e499b1a10dbdb6173cabe53e",
+  "bytes": 25469444,
+  "duration_seconds": 342.833333,
+  "expected_duration_seconds": 342.805,
+  "width": 1920,
+  "height": 1080,
+  "fps": "24/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "encoding_checks_passed": true,
+  "english_audio": true,
+  "narration_generated": "Local Kokoro ONNX af_heart speed .93; synthetic, not human voice",
+  "audit_opening": "Actual CUA static screenshots explicitly labelled; recorded development outcomes used for selection",
+  "remaining_footage": "Existing actual CUA interaction clips at original speed, then final captured still",
+  "composition_checks": {
+    "lint": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "runtime": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "layout": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "motion": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    },
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0
+    }
+  },
+  "chapter_audio_alignment": [
+    {
+      "chapter": "audit",
+      "source_voice": "voice-audit.wav",
+      "correlation": 0.9995248317718506,
+      "seconds_checked": 5.0,
+      "passed": true
+    },
+    {
+      "chapter": "01",
+      "source_voice": "voice-01.wav",
+      "correlation": 0.9996381998062134,
+      "seconds_checked": 5.0,
+      "passed": true
+    },
+    {
+      "chapter": "02",
+      "source_voice": "voice-02.wav",
+      "correlation": 0.9995589852333069,
+      "seconds_checked": 5.0,
+      "passed": true
+    },
+    {
+      "chapter": "03",
+      "source_voice": "voice-03.wav",
+      "correlation": 0.9993347525596619,
+      "seconds_checked": 5.0,
+      "passed": true
+    },
+    {
+      "chapter": "04",
+      "source_voice": "voice-04.wav",
+      "correlation": 0.9502643346786499,
+      "seconds_checked": 5.0,
+      "passed": true
+    },
+    {
+      "chapter": "05",
+      "source_voice": "voice-05.wav",
+      "correlation": 0.9992252588272095,
+      "seconds_checked": 5.0,
+      "passed": true
+    },
+    {
+      "chapter": "06",
+      "source_voice": "voice-06.wav",
+      "correlation": 0.9997112154960632,
+      "seconds_checked": 5.0,
+      "passed": true
+    }
+  ],
+  "visual_review": "Eight actual encoded frames inspected: both new opening states and each of six original chapters. No missing media, clipped authored text or blank chapter observed.",
+  "visual_review_frames_seconds": [
+    15,
+    46,
+    83.326,
+    128.083,
+    175.047,
+    221.649,
+    269.078,
+    318.624
+  ],
+  "training_gpu_used": false,
+  "cloud_rendering_used": false,
+  "render": "HyperFrames0.8.143 local Apple M5 hardware graphics;24fps2workers",
+  "sources": {
+    "timeline-manifest.json": "3f644c11199976bbeed3c8dd6a762341f7dad9a4b5cedc6f7ba1c94a7b7f0eb0",
+    "check-audit.json": "8ee2a3b1371ec6036e2ccff708a0f0a1276efc33c5e1890b06b9a3dd52149e13"
+  },
+  "visual_review_frame_hashes": {
+    "frame-08.jpg": "25f69b7365905ce369db1bbc86e562be161fad92511b758dbb0237f3073ec5e3",
+    "frame-03.jpg": "42b938fe5ed771395f4788b6ad4dc2caacd92129675e6bb02a169269226b0a35",
+    "frame-02.jpg": "acd69fae280faa6494349ef15ca402ea5afe9cfce26e51445d8ebf1823b2363a",
+    "frame-01.jpg": "3adb51b946998e69e690d50588d65f40e1b7737942a7c30ad84358859531dac4",
+    "frame-05.jpg": "3e21902d3499ecdbc0e3f7bcb36fc2563efb5daa8e6f640e7527aa13dfd4fdca",
+    "frame-04.jpg": "1b3df7473740fe1e13e56c3db8c618aec3c79ea5a5edd0532aecac9e72ec1bd2",
+    "frame-06.jpg": "48aef080b425ab238508a0ec9076f20bb7d322fe7cedbb19ce4e461f56f966c0",
+    "frame-07.jpg": "5fae8eb2b5057e839681c5edb8418610055bf6cd3adfa011d57965ac8d93f2a7"
+  }
+}

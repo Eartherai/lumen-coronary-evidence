@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "retrieved_at_utc": "2026-10-11T12:44:26.311623+00:00",
+  "purpose": "Self-hosted Lumen interface typography; no production font network request required.",
+  "font": {
+    "path": "public/assets/fonts/figtree-latin.woff2",
+    "family": "Figtree",
+    "style": "normal",
+    "requested_weight_range": [
+      400,
+      800
+    ],
+    "subset": "latin",
+    "format": "woff2",
+    "source_url": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DaRvzig.woff2",
+    "resolved_source_url": "https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DaRvzig.woff2",
+    "source_content_type": "font/woff2",
+    "source_css_url": "https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&display=swap",
+    "source_css_sha256": "f51df3e6dedac314e87a18403bbe8c6d2e018a23da9dcc240970a0ae990f7d67",
+    "source_css_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "source_css_face": "@font-face {\n  font-family: 'Figtree';\n  font-style: normal;\n  font-weight: 400 800;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4S9DaRvzig.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}",
+    "bytes": 20184,
+    "sha256": "8330490a01c60c196eae00b823de8102275aaa5862e7b76a7af21b8745338928",
+    "woff2_header": {
+      "signature": "wOF2",
+      "declared_bytes": 20184,
+      "table_count": 19
+    },
+    "modified": false
+  },
+  "license": {
+    "path": "public/assets/fonts/OFL-figtree.txt",
+    "license": "SIL Open Font License 1.1",
+    "source_repository": "https://github.com/google/fonts",
+    "source_repository_path": "ofl/figtree/OFL.txt",
+    "source_commit": "59f428d689f570e2929fbcaa59eeb15012deb460",
+    "source_url": "https://raw.githubusercontent.com/google/fonts/59f428d689f570e2929fbcaa59eeb15012deb460/ofl/figtree/OFL.txt",
+    "source_commit_api_url": "https://api.github.com/repos/google/fonts/commits?path=ofl/figtree/OFL.txt&per_page=1",
+    "bytes": 4388,
+    "sha256": "140d37233e7f3ce7313798befa9600893bcceaf41a55fa0fa5ad52f7f657a268",
+    "modified": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "evidence_mode": "source_verified_with_deterministic_module_reproduction",
+  "browser_used": false,
+  "clinical_inputs_used": false,
+  "frozen_predictions_or_outcomes_used": false,
+  "runtime_probe_sha256": "d531d64365f13aa89b2d3b1f29250d428216fea766891df243c552d507904337",
+  "created_at_utc": "2026-10-10T19:56:03.253Z",
+  "no_frame_duration_case": {
+    "requested_duration_ms": 1000,
+    "actual_wait_ms": 1102.511166,
+    "sample_remained_active": true,
+    "finish_reason": null,
+    "frame_callbacks": 0
+  },
+  "unfinished_operation_case": {
+    "operation_begun": true,
+    "capture_finished_at_ms": 1001,
+    "capture_status": "measured",
+    "operation_still_omitted_before_late_end": true,
+    "operation_still_omitted_after_late_end": true,
+    "operations_exported": []
+  }
+}

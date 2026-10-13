@@ -1,0 +1,74 @@
+[
+  {
+    "key": "source-zalizadeh-primary",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4253773/fullTextXML",
+    "retrieved_utc": "2026-10-10T19:40:37.218631+00:00",
+    "status": 200,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4253773/fullTextXML",
+    "bytes": 67792,
+    "sha256": "f20b828e9838dc7d25861cf9dd88a127392c2fa9b94c83ab7d0d57066ec53f13",
+    "saved_as": "source-zalizadeh-primary.xml"
+  },
+  {
+    "key": "multid4cad-primary",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12475242/fullTextXML",
+    "retrieved_utc": "2026-10-10T19:40:37.218884+00:00",
+    "status": 200,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12475242/fullTextXML",
+    "bytes": 77894,
+    "sha256": "d9ce571bff185f9b93b659912720891b66a820573a2e7619f32ae6448378a109",
+    "saved_as": "multid4cad-primary.xml"
+  },
+  {
+    "key": "arcade-primary",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10764944/fullTextXML",
+    "retrieved_utc": "2026-10-10T19:40:37.218970+00:00",
+    "status": 200,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10764944/fullTextXML",
+    "bytes": 82898,
+    "sha256": "b0bbbd3f1cfe75a5e5430eac28c390b6d92d3bbb4c241fd83f99104563da59af",
+    "saved_as": "arcade-primary.xml"
+  },
+  {
+    "key": "confirm-primary",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7821703/fullTextXML",
+    "retrieved_utc": "2026-10-10T19:40:37.219032+00:00",
+    "error": "HTTPError: HTTP Error 500: "
+  },
+  {
+    "key": "uci411-metadata",
+    "url": "https://archive.ics.uci.edu/dataset/411",
+    "retrieved_utc": "2026-10-10T19:40:38.433202+00:00",
+    "status": 200,
+    "final_url": "https://archive.ics.uci.edu/dataset/411/extention+of+z+alizadeh+sani+dataset",
+    "bytes": 97105,
+    "sha256": "7d9ad6ea3811ddece4deebc4254a8a719eeeaa23be0c8abd0ced67ee6b9e13a1",
+    "saved_as": "uci411-metadata.html"
+  },
+  {
+    "key": "uci412-metadata",
+    "url": "https://archive.ics.uci.edu/dataset/412",
+    "retrieved_utc": "2026-10-10T19:40:38.583835+00:00",
+    "status": 200,
+    "final_url": "https://archive.ics.uci.edu/dataset/412/z+alizadeh+sani",
+    "bytes": 93791,
+    "sha256": "c0191eaa409cef01a4f29edced0cbd48105aa248303e70e76b525b6014844ff0",
+    "saved_as": "uci412-metadata.html"
+  },
+  {
+    "key": "arcade-datacite-metadata",
+    "url": "https://api.datacite.org/dois/10.5281/zenodo.10390295",
+    "retrieved_utc": "2026-10-10T19:40:38.753089+00:00",
+    "status": 200,
+    "final_url": "https://api.datacite.org/dois/10.5281/zenodo.10390295",
+    "bytes": 17991,
+    "sha256": "88839b53dc309a56e61d859ab2609cd5fc29e5d01bec8c7a4cf100f075b2c465",
+    "saved_as": "arcade-datacite-metadata.json"
+  },
+  {
+    "key": "angiocad-oai-metadata",
+    "url": "https://zenodo.org/oai2d?verb=GetRecord&identifier=oai:zenodo.org:15826856&metadataPrefix=oai_datacite",
+    "retrieved_utc": "2026-10-10T19:40:38.866572+00:00",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  }
+]

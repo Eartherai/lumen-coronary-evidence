@@ -1,0 +1,29 @@
+{
+  "scope": "Exploratory development-only supplement; excluded from primary submission metrics and untouched final holdout",
+  "files": {
+    "README.md": {
+      "bytes": 8421,
+      "sha256": "c937f37575477dce530c2450fc30156842b547540959c240698cf87e39a6feea"
+    },
+    "probe.py": {
+      "bytes": 12563,
+      "sha256": "89cfb298ae72066b249f399047884b22426227f713b600c76224286a4be8734c"
+    },
+    "protocol.json": {
+      "bytes": 4413,
+      "sha256": "66b86778064adfa98c547c158a4faa5bdbd68684e25981fb1b1822e0460c9f4a"
+    },
+    "results.json": {
+      "bytes": 19876,
+      "sha256": "2019688d76a9ae64f2160b82872b286b16745801d21aa54d39da6d3c198927a6"
+    },
+    "row-decisions.csv": {
+      "bytes": 36428,
+      "sha256": "b36905e284e2ce5a8155bae15cc30a84d7f26128910cc41576f1538775bbb169"
+    },
+    "verification-receipt.json": {
+      "bytes": 3016,
+      "sha256": "fa872b2eb39e17b2d249cd102efc93770c64bb3ea5243bb483cf406d0437afdc"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "verification": "Clean release payload verification; in-package record",
+  "final_holdout_rescored": false,
+  "models_retrained": false,
+  "checks": {
+    "manifest": {
+      "status": "passed",
+      "files_checked": 308,
+      "mismatches": []
+    },
+    "required_files": {
+      "status": "passed",
+      "missing": []
+    },
+    "relocated_availability_source": {
+      "status": "passed",
+      "corrected_workspace_ancestor_dependency": true,
+      "group_source_exists_inside_extracted_release": true,
+      "non_frozen_availability_source_only": true
+    },
+    "frozen_artifacts": {
+      "status": "passed",
+      "n_frozen_source_files_checked": 5,
+      "saved_final_evaluation_hashes_verified": true,
+      "runtime_final_models_match_evaluated_models": true,
+      "final_holdout_rescored": false
+    },
+    "portable_models": {
+      "status": "passed",
+      "case_profile_target_predictions_checked": 160,
+      "maximum_case_probability_error": 0.0,
+      "final_models_runtime_checked_on_unscored_development_input": 4,
+      "training_identity_exclusions_checked": true,
+      "final_holdout_rescored": false
+    },
+    "npm_ci_offline": {
+      "command": [
+        "npm",
+        "ci",
+        "--offline",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "returncode": 0,
+      "seconds": 1.955,
+      "stdout": "\nadded 1 package in 384ms\n",
+      "stderr": ""
+    },
+    "unit_tests": {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "seconds": 1.448,
+      "stdout": "",
+      "stderr": "test_case_journey_prediction_and_explicit_labels_from_every_fold (test_cohort_api.CohortHTTPTests.test_case_journey_prediction_and_explicit_labels_from_every_fold) ... ok\ntest_editing_and_label_injection (test_cohort_api.CohortHTTPTests.test_editing_and_label_injection) ... ok\ntest_full_outcome_aware_catalog_keeps_original_eight (test_cohort_api.CohortHTTPTests.test_full_outcome_aware_catalog_keeps_original_eight) ... ok\ntest_wrong_roster_profile_and_new_input_route_rejected (test_cohort_api.CohortHTTPTests.test_wrong_roster_profile_and_new_input_route_rejected) ... ok\ntest_all_compact_probabilities_and_exact_reconstruction (test_cohort_api.CohortRuntimeTests.test_all_compact_probabilities_and_exact_reconstruction) ... ok\ntest_every_model_excludes_its_whole_outer_fold (test_cohort_api.CohortRuntimeTests.test_every_model_excludes_its_whole_outer_fold) ... ok\ntest_labels_cannot_change_predictions (test_cohort_api.CohortRuntimeTests.test_labels_cannot_change_predictions) ... ok\ntest_validator_rejects_duplicate_row_and_contaminated_fold (test_cohort_api.CohortRuntimeTests.test_validator_rejects_duplicate_row_and_contaminated_fold) ... ok\ntest_case_endpoint_does_not_reveal_truth_and_labels_are_separate (test_inference.HTTPContractTests.test_case_endpoint_does_not_reveal_truth_and_labels_are_separate) ... ok\ntest_journey_endpoint_excludes_recorded_outcomes_and_rejects_unknown_case (test_inference.HTTPContractTests.test_journey_endpoint_excludes_recorded_outcomes_and_rejects_unknown_case) ... ok\ntest_predict_endpoint_returns_predictions_only_and_rejects_labels (test_inference.HTTPContractTests.test_predict_endpoint_returns_predictions_only_and_rejects_labels) ... ok\ntest_each_availability_profile_uses_its_exact_refitted_feature_set (test_inference.ModelContractTests.test_each_availability_profile_uses_its_exact_refitted_feature_set) ... ok\ntest_edited_measurement_changes_model_without_changing_case_or_using_labels (test_inference.ModelContractTests.test_edited_measurement_changes_model_without_changing_case_or_using_labels) ... ok\ntest_every_displayed_case_excluded_from_all_four_fitted_models (test_inference.ModelContractTests.test_every_displayed_case_excluded_from_all_four_fitted_models) ... ok\ntest_journey_matches_all_excluding_profile_snapshots_without_recorded_outcomes (test_inference.ModelContractTests.test_journey_matches_all_excluding_profile_snapshots_without_recorded_outcomes) ... ok\ntest_live_predictions_match_saved_oof_and_all_contributions_reconstruct (test_inference.ModelContractTests.test_live_predictions_match_saved_oof_and_all_contributions_reconstruct) ... ok\ntest_new_inputs_use_frozen_final_models_without_recorded_outcomes (test_inference.ModelContractTests.test_new_inputs_use_frozen_final_models_without_recorded_outcomes) ... ok\ntest_out_of_range_missing_and_unseen_categories_are_diagnosed (test_inference.ModelContractTests.test_out_of_range_missing_and_unseen_categories_are_diagnosed) ... ok\ntest_recorded_truth_is_not_used_for_inference (test_inference.ModelContractTests.test_recorded_truth_is_not_used_for_inference) ... ok\ntest_targets_missing_fields_and_nonfinite_values_rejected (test_inference.ModelContractTests.test_targets_missing_fields_and_nonfinite_values_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 1.259s\n\nOK\n"
+    },
+    "outcome_and_runtime_probe": {
+      "command": [
+        "node",
+        "--test",
+        "tests/test_outcome_description.mjs",
+        "tests/test_runtime_probe.mjs"
+      ],
+      "returncode": 0,
+      "seconds": 0.159,
+      "stdout": "\u2714 Positive flag on recorded negative is a false alarm, never a missed positive (0.526625ms)\n\u2714 Negative flag on recorded positive is a missed positive; both correct states agree (0.058042ms)\n\u2714 An observed case may change from false alarm to agreement when the shared threshold changes (2.041709ms)\n\u2714 Equality at the cutoff is positive and invalid recorded labels are rejected (0.127208ms)\n\u2714 Frame rate is derived from observed intervals rather than an assumed refresh rate (0.444041ms)\n\u2714 DOM and next-render callback latency are distinct measured endpoints, with clinical values stripped (1.115416ms)\n\u2714 Background transitions invalidate foreground FPS; samples are opt-in and bounded (0.152416ms)\n\u2714 A new capture discards unfinished operations from the old sample (0.095708ms)\n\u2714 The independent deadline ends a capture with no render callbacks (0.133458ms)\n\u2714 Restart cancels its old deadline and a late old timer cannot finish the new capture (0.088583ms)\n\u2714 Finish is idempotent and manual stop cancels the pending deadline (0.101875ms)\n\u2714 An unfinished action remains exported with null endpoints and elapsed lower bound (0.110042ms)\n\u2714 DOM completion without a later render callback has a separate incomplete status (0.094583ms)\n\u2714 A trailing render stall invalidates foreground rate while retaining raw observations (0.110708ms)\n\u2714 A late first frame cannot make a tiny observed subspan a valid whole-sample rate (0.312125ms)\n\u2714 Boundary coverage of exactly 250 ms remains valid and completed actions keep both endpoints (0.076542ms)\n\u2714 An explicitly hidden start is invalid even without a later visibility transition (0.071167ms)\n\u2714 Context loss invalidates a visible well-covered sample and repeated reasons stay unique (0.060417ms)\n\u2714 Only the allowlisted context-loss reason is collected, and restart clears it (0.120459ms)\n\u2139 tests 19\n\u2139 suites 0\n\u2139 pass 19\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 86.327916\n",
+      "stderr": ""
+    },
+    "frontend_comparison": {
+      "command": [
+        "node",
+        "tests/test_journey.mjs"
+      ],
+      "returncode": 0,
+      "seconds": 0.074,
+      "stdout": "Verified all 64 case/target/rule paths, thresholds, receipt routing and the nonmonotonic LAD example.\n",
+      "stderr": ""
+    },
+    "static_build": {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/build_static_demo.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.174,
+      "stdout": "{\n  \"site\": \"/private/var/folders/cb/88h_3zwx0bq8xbdkl2cqp7qm0000gn/T/lumen-release-verification-9yj3mquu/lumen/dist/site\",\n  \"files\": 25,\n  \"bytes\": 9394135,\n  \"n_public_development_cases\": 8,\n  \"n_audit_development_cases\": 242,\n  \"n_audit_profile_predictions\": 4840,\n  \"final_holdout_inputs_included\": false\n}\n",
+      "stderr": ""
+    },
+    "static_runtime": {
+      "command": [
+        "node",
+        "--test",
+        "tests/test_static_client.mjs"
+      ],
+      "returncode": 0,
+      "seconds": 0.316,
+      "stdout": "\u2714 all 160 saved development profile predictions and hidden-outcome routes match (22.928083ms)\n\u2714 edited, missing, unknown-category and synthetic inputs match Python portable inference (28.8175ms)\n\u2714 frozen final models reproduce Python on public development inputs without outcome scoring (26.12275ms)\n\u2714 schemas, evidence and target/nonfinite/request validation preserve the server contract (4.019625ms)\n\u2714 the built demo resolves under a repository subpath and never transmits prediction requests (64.600209ms)\n\u2139 tests 5\n\u2139 suites 0\n\u2139 pass 5\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 243.417833\n",
+      "stderr": ""
+    },
+    "cohort_runtime_and_filters": {
+      "command": [
+        "node",
+        "--test",
+        "tests/test_cohort_static.mjs",
+        "tests/test_cohort_filters.mjs"
+      ],
+      "returncode": 0,
+      "seconds": 0.763,
+      "stdout": "\u2714 Complete audit includes 242 unique development records and five folds (0.59075ms)\n\u2714 All outcome, agreement and fold filters recompute from the shared decision rule (64.107959ms)\n\u2714 All-five agreement retains genuine mistakes rather than implying confidence (0.376083ms)\n\u2714 Fixed rule changes cohort membership and exact probability ties are positive (0.218542ms)\n\u2714 Record search, export and inspector use the identical target, threshold and outcomes (0.478833ms)\n\u2714 all 4840 portable scores match compact OOF and every excluding-fold model (138.571875ms)\n\u2714 all 4840 browser probabilities, baselines and grouped terms match actual Python runtime (415.404834ms)\n\u2714 legacy catalog remains eight; audit catalog is explicitly outcome aware and replies do not alias it (6.773083ms)\n\u2714 every fold has correct case/journey/label/edited inference separation (3.20325ms)\n\u2714 recorded labels never affect inference and target injection is rejected (16.07375ms)\n\u2714 one cached public load supports subsequent audit inference without network POSTs (14.4855ms)\n\u2139 tests 11\n\u2139 suites 0\n\u2139 pass 11\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 690.259875\n",
+      "stderr": ""
+    },
+    "http_runtime": {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-c",
+        "\nimport json, threading\nfrom urllib.request import Request, urlopen\nimport server\nhttp=server.ThreadingHTTPServer(('127.0.0.1',0),server.Handler)\nthread=threading.Thread(target=http.serve_forever,daemon=True);thread.start()\nbase='http://127.0.0.1:'+str(http.server_port)\nchecks={}\ntry:\n    for route in ['/', '/app.js','/style.css','/vendor/three.module.js','/vendor/three.core.js',\n                  '/vendor/addons/controls/OrbitControls.js',\n                  '/assets/anatomy.json','/assets/anatomy-provenance.json','/api/cases','/api/schema','/api/profiles','/api/final-evaluation']:\n        with urlopen(base+route, timeout=5) as response:\n            assert response.status==200\n            assert len(response.read())>0\n            checks[route]=200\n    case=next(iter(server.CASES.values()))\n    req=Request(base+'/api/predict-new',data=json.dumps({'inputs':case['inputs']}).encode(),headers={'Content-Type':'application/json'})\n    with urlopen(req,timeout=5) as response:\n        prediction=json.load(response)\n        assert prediction['kind']=='unlabelled'\n        assert len(prediction['predictions'])==4\n        checks['/api/predict-new']=200\nfinally:\n    http.shutdown();http.server_close();thread.join(timeout=3)\nprint(json.dumps({'status':'passed','routes':checks,'standard_library_runtime':True,'final_holdout_rescored':False}))\n"
+      ],
+      "returncode": 0,
+      "seconds": 0.645,
+      "stdout": "{\"status\": \"passed\", \"routes\": {\"/\": 200, \"/app.js\": 200, \"/style.css\": 200, \"/vendor/three.module.js\": 200, \"/vendor/three.core.js\": 200, \"/vendor/addons/controls/OrbitControls.js\": 200, \"/assets/anatomy.json\": 200, \"/assets/anatomy-provenance.json\": 200, \"/api/cases\": 200, \"/api/schema\": 200, \"/api/profiles\": 200, \"/api/final-evaluation\": 200, \"/api/predict-new\": 200}, \"standard_library_runtime\": true, \"final_holdout_rescored\": false}\n",
+      "stderr": ""
+    },
+    "shap": {
+      "command": [
+        "uv",
+        "run",
+        "--offline",
+        "--python",
+        "3.12",
+        "--with-requirements",
+        "requirements-explanation.txt",
+        "python",
+        "verify_shap.py"
+      ],
+      "returncode": 1,
+      "seconds": 0.395,
+      "stdout": "",
+      "stderr": "error: No solution found when resolving `--with` dependencies\n  cause: Because numpy was not found in the cache and you require numpy==2.5.3, we can conclude that your requirements are unsatisfiable.\n\nhint: Packages were unavailable because the network was disabled. When the network is disabled, registry packages may only be read from the cache.\n"
+    },
+    "final_evaluation_unchanged": {
+      "status": "passed"
+    }
+  },
+  "findings": [],
+  "verified_content_sha256": "26ba410ab439359de68ab4c89ce2f684215db3a15f468b523bc557ada5212713",
+  "verified_content_files": 308,
+  "status": "failed",
+  "failed_checks": [
+    "shap"
+  ],
+  "runtime_seconds": 6.34,
+  "verification_scope": "All release payload files excluding submission/release-verification.json itself; verified_content_sha256 hashes the sorted manifest entries of that payload. Exact ZIP verification is the separate dist/release-verification.json sidecar."
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "frozen_at_utc": "2026-10-05T19:35:01.194619+00:00",
+  "primary_profile": "full",
+  "n_features": 55,
+  "excluded_features": [
+    "Cath",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "primary_method": "V2 regularized logistic procedure selected solely inside development training folds",
+  "model_selection": "Three target-stratified inner folds; pooled inner OOF log loss selects C and unweighted/balanced/optional cross-fitted sigmoid calibration",
+  "c_grid": [
+    0.01,
+    0.1,
+    1,
+    10
+  ],
+  "threshold_selection": "F1 maximized on selected candidate inner OOF scores over 0.05..0.95 in 0.01 increments; ties closest to 0.5 then higher",
+  "final_training": "242 frozen development records; no final holdout fitting, calibration, threshold selection or feature-profile selection",
+  "evaluation": "61 frozen final holdout records scored once after this freeze; ROC-AUC, accuracy, precision, recall, F1, Brier, confusion counts and conditional patient-bootstrap intervals",
+  "availability_profiles": "Exploratory development comparisons; reduced profiles do not replace the primary full-input procedure",
+  "post_evaluation_policy": "Do not retune models or thresholds using final outcomes. UI, reproducibility and presentation fixes may continue with scores retained.",
+  "source_sha256": {
+    "benchmark.py": "674ce592908ddc54bfd5e0cd33045bb39667917f1d5283bb75ec6a94df5b2c0e",
+    "experiment_v2.py": "e7fe46df843c46dbf52ad7da3886681e01d2a641bd004eda973a9f70e9d888fd",
+    "fit_final_development.py": "09f19698eb764fe4b928bd02eee7f9a1b4d91179302dc5098fc9ffcd8b9d6a8e",
+    "predict.py": "3a081e8fc2eef1d53263765c00a91a17d2f85c184cde0ae67f429e006e8367b7",
+    "results/split.json": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "declared_utc": "2026-10-09T20:03:41.350128+00:00",
+  "script_sha256": "95b2035571a471c44abddf81373b525d77e89ce08d3d82b149f7d0cecd1b360e",
+  "protocol_sha256": "26a8740447b0807a0d35ff421e93e90ba45c9bab5a9f6fb24a1b0a276d1540ea",
+  "command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 VECLIB_MAXIMUM_THREADS=2 uv run --offline --python 3.12 --with catboost==1.2.8 --with pandas==3.0.6 --with openpyxl==3.1.5 --with scikit-learn==1.9.1 --with joblib==1.6.0 python training/catboost-probe-2026-10-10/probe.py",
+  "model_execution_started": false
+}

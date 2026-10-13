@@ -1,0 +1,32 @@
+{
+  "schema": "lumen-hardening-r2-report-delivery-v1",
+  "created_utc": "2026-10-11T09:14:09.333425+00:00",
+  "status": "passed",
+  "files": {
+    "lumen-report-hardening-r2-2026-10-11.pdf": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/lumen-report-hardening-r2-2026-10-11.pdf",
+      "bytes": 25533,
+      "sha256": "e2ddf023ec79fe71c9de1697794e6e9193917fc38d3f17e54121c64c8dd5903b"
+    },
+    "lumen-report-hardening-r2-2026-10-11.provenance.json": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/lumen-report-hardening-r2-2026-10-11.provenance.json",
+      "bytes": 7497,
+      "sha256": "7afcf67604b15e5cfcc90a0cf6d9a440b66511d42b11364d927c134346f79d6c"
+    },
+    "lumen-report-hardening-r2-2026-10-11.qa.json": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/lumen-report-hardening-r2-2026-10-11.qa.json",
+      "bytes": 8622,
+      "sha256": "a4b9d7160a186dcebb24f1d839256427177827de61d3282a4ecaef8154400f80"
+    },
+    "build_report_hardening_r2_20261011.py": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/build_report_hardening_r2_20261011.py",
+      "bytes": 7379,
+      "sha256": "9f42729abb84d3823c549f0e6f7547a3ca4d906d2b55753b2702107186eaef17"
+    }
+  },
+  "pages": 6,
+  "all_page_visual_reviews": "passed",
+  "source_bindings": "passed",
+  "preservation": "passed",
+  "frozen_artifacts": "passed"
+}

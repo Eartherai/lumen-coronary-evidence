@@ -1,0 +1,21 @@
+{
+  "schema": "lumen-browser-attempt-v1",
+  "date": "2026-10-11",
+  "surface": "Safari through native CUA app handle",
+  "url": "http://127.0.0.1:8776/",
+  "same_physical_mac": true,
+  "controls_loaded": true,
+  "vessel_selection_actions_completed": 3,
+  "score_observed": "LAD 94.4% at 39.0%; UCI411-171",
+  "anatomy_rendering_visually_verified": false,
+  "frame_callbacks_observed": 0,
+  "fps_claim": null,
+  "sample_stopped_manually": true,
+  "sample_status_observed": "invalid_for_foreground_fps",
+  "raw_capture_exported": false,
+  "reason_raw_capture_not_exported": "Unexpected site download permission was cancelled. No permission change was made.",
+  "native_focus_limitation": "Coordinate attempt returned noWindowsAvailable while AX observations/actions remained available; actual foreground rendering could not be established.",
+  "root_cause": "unresolved; do not infer Safari incompatibility from this automated attempt",
+  "second_browser_engine_passed": false,
+  "second_physical_device_tested": false
+}

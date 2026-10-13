@@ -1,0 +1,5 @@
+# Lumen: evidence you can inspect
+
+The film presents a working research application. Real UI captures are the focal object; large text on the left tells judges exactly what to inspect. Dark ink, pale text and mint match the application. Use generic system sans-serif and monospace, generous spacing, and one clear claim per chapter. Six separate compositions use hard cuts. No decorative patient imagery, simulated results, clinical claims or competition claims. English narration is locally generated and disclosed. Show named reference anatomy, a frozen validation diagram, exact SHAP reconstruction, independently refitted input profiles, observed errors and reproducibility.
+
+Motion: title settles once, information arrives as narration develops, and each chapter has a slow progress rule tied to duration. Captured interaction plays at its original speed, followed by an explicit still of its last recorded state. Charts use the registry animated-bar-chart growth recipe with actual data. No invented UI interactions.

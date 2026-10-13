@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "name": "Lumen operational feature-availability groups",
+  "created_date": "2026-10-06",
+  "n_input_features": 55,
+  "excluded_target_fields": [
+    "Cath",
+    "CAD",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "groups": {
+    "history": [
+      "Age",
+      "Weight",
+      "Length",
+      "Sex",
+      "BMI",
+      "DM",
+      "HTN",
+      "Current Smoker",
+      "EX-Smoker",
+      "FH",
+      "Obesity",
+      "CRF",
+      "CVA",
+      "Airway disease",
+      "Thyroid Disease",
+      "CHF",
+      "DLP"
+    ],
+    "examination": [
+      "BP",
+      "PR",
+      "Edema",
+      "Weak Peripheral Pulse",
+      "Lung rales",
+      "Systolic Murmur",
+      "Diastolic Murmur",
+      "Typical Chest Pain",
+      "Dyspnea",
+      "Function Class",
+      "Atypical",
+      "Nonanginal",
+      "Exertional CP",
+      "LowTH Ang"
+    ],
+    "ecg": [
+      "Q Wave",
+      "St Elevation",
+      "St Depression",
+      "Tinversion",
+      "LVH",
+      "Poor R Progression",
+      "BBB"
+    ],
+    "laboratory": [
+      "FBS",
+      "CR",
+      "TG",
+      "LDL",
+      "HDL",
+      "BUN",
+      "ESR",
+      "HB",
+      "K",
+      "Na",
+      "WBC",
+      "Lymph",
+      "Neut",
+      "PLT"
+    ],
+    "echo": [
+      "EF-TTE",
+      "Region RWMA",
+      "VHD"
+    ]
+  },
+  "counts": {
+    "history": 17,
+    "examination": 14,
+    "ecg": 7,
+    "laboratory": 14,
+    "echo": 3
+  },
+  "cumulative_profiles": [
+    {
+      "id": "history",
+      "groups": [
+        "history"
+      ],
+      "n_features": 17
+    },
+    {
+      "id": "history_exam",
+      "groups": [
+        "history",
+        "examination"
+      ],
+      "n_features": 31
+    },
+    {
+      "id": "history_exam_ecg",
+      "groups": [
+        "history",
+        "examination",
+        "ecg"
+      ],
+      "n_features": 38
+    },
+    {
+      "id": "history_exam_ecg_lab",
+      "groups": [
+        "history",
+        "examination",
+        "ecg",
+        "laboratory"
+      ],
+      "n_features": 52
+    },
+    {
+      "id": "all",
+      "groups": [
+        "history",
+        "examination",
+        "ecg",
+        "laboratory",
+        "echo"
+      ],
+      "n_features": 55
+    }
+  ],
+  "sources": [
+    {
+      "id": "uci411",
+      "url": "https://archive.ics.uci.edu/dataset/411/extention+of+z+alizadeh+sani+dataset",
+      "supports": "303 records, four broad groups, vessel targets, source dataset. Current variable descriptions/units are blank."
+    },
+    {
+      "id": "authors2013",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4253773/",
+      "doi": "https://doi.org/10.5812/cardiovascmed.10888",
+      "full_text_xml": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4253773/fullTextXML",
+      "supports": "Primary authors. Tables 1/2 verify listed age/weight/BMI/EF units and many abbreviation expansions; most lab units are absent."
+    },
+    {
+      "id": "authors2012",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3660711/",
+      "supports": "Primary authors. Tables 1/2/3 identify demographic, symptom/examination and ECG group headings. Accessible XML contains these tables as images; individual image units were not inspected."
+    }
+  ],
+  "verified_units": {
+    "Age": {
+      "unit": "years",
+      "source_id": "authors2013",
+      "location": "Table 1",
+      "status": "explicit"
+    },
+    "Weight": {
+      "unit": "kg",
+      "source_id": "authors2013",
+      "location": "Table 1",
+      "status": "explicit"
+    },
+    "BMI": {
+      "unit": "kg/m^2",
+      "source_id": "authors2013",
+      "location": "Table 1",
+      "status": "explicit"
+    },
+    "EF-TTE": {
+      "unit": "percent",
+      "source_id": "authors2013",
+      "location": "Table 2 EF (%)",
+      "status": "explicit EF unit; mapping to EF-TTE column based on supplied feature name and echo group"
+    }
+  },
+  "unverified_units": [
+    "Length",
+    "BP",
+    "PR",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT"
+  ],
+  "caveats": [
+    "Five groups are an operational experiment definition informed by source broad categories; separating laboratory and echo is our choice.",
+    "History includes demographic and recorded medical-history indicators. This grouping is not a validated clinical workflow or acquisition order.",
+    "Do not infer units from typical clinical use or development min/max values.",
+    "Original paper inconsistently expands CR as Creatine; retain source name pending stronger source verification.",
+    "Region RWMA is a recorded echo feature/code, not anatomical coordinates, a lesion location, or a source-verified abnormal-region count.",
+    "Original paper uses its own BMI-derived Obesity indicator; preserve the recorded category rather than recomputing a modern clinical definition.",
+    "Keep source category spelling Fmale in fitted encoding even if the display wording is explained.",
+    "Each feature-availability model must be separately fitted and evaluated within training folds. Nulling groups in a full-feature model is imputation sensitivity, not validated group availability.",
+    "Do not tune profiles or operating thresholds against final holdout labels. No final holdout data was read to define these groups.",
+    "A validation delta describes model evidence, not causal benefit, medical test utility, treatment effects or test cost."
+  ],
+  "validation": {
+    "disjoint": true,
+    "exhaustive_against_current_schema": true,
+    "excluded_labels_absent": true,
+    "n_unique": 55
+  }
+}

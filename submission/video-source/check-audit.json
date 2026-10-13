@@ -1,0 +1,316 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 5,
+    "findings": [
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 209.492,
+        "selector": "div.bars > span:nth-of-type(1) > b:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 93.02,
+          "top": 524.94,
+          "right": 150.58,
+          "bottom": 550.94,
+          "width": 57.56,
+          "height": 26
+        },
+        "containerSelector": "div.bars > span:nth-of-type(1)",
+        "text": "0.828",
+        "fixHint": "Text is 58px x 26px inside 104px x 190px and overflows by up to 35px; increase the container height to at least ~225px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 70,
+          "top": 559.94,
+          "right": 173.59,
+          "bottom": 750.38,
+          "width": 103.59,
+          "height": 190.44
+        },
+        "overflow": {
+          "top": 35
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-optf"
+        },
+        "sourceFile": "compositions/chapter-04.html",
+        "bbox": {
+          "x": 93.02,
+          "y": 524.94,
+          "width": 57.56,
+          "height": 26
+        },
+        "firstSeen": 209.492,
+        "lastSeen": 209.492,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          209.492
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 209.492,
+        "selector": "div.bars > span:nth-of-type(2) > b:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 214.61,
+          "top": 503.55,
+          "right": 272.17,
+          "bottom": 529.55,
+          "width": 57.56,
+          "height": 26
+        },
+        "containerSelector": "div.bars > span:nth-of-type(2)",
+        "text": "0.921",
+        "fixHint": "Text is 58px x 26px inside 104px x 212px and overflows by up to 35px; increase the container height to at least ~247px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 191.59,
+          "top": 538.55,
+          "right": 295.19,
+          "bottom": 750.38,
+          "width": 103.59,
+          "height": 211.83
+        },
+        "overflow": {
+          "top": 35
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-c0gf"
+        },
+        "sourceFile": "compositions/chapter-04.html",
+        "bbox": {
+          "x": 214.61,
+          "y": 503.55,
+          "width": 57.56,
+          "height": 26
+        },
+        "firstSeen": 209.492,
+        "lastSeen": 209.492,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          209.492
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 209.492,
+        "selector": "div.bars > span:nth-of-type(3) > b:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 336.2,
+          "top": 499.88,
+          "right": 393.77,
+          "bottom": 525.88,
+          "width": 57.57,
+          "height": 26
+        },
+        "containerSelector": "div.bars > span:nth-of-type(3)",
+        "text": "0.937",
+        "fixHint": "Text is 58px x 26px inside 104px x 216px and overflows by up to 35px; increase the container height to at least ~251px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 313.19,
+          "top": 534.88,
+          "right": 416.8,
+          "bottom": 750.38,
+          "width": 103.61,
+          "height": 215.5
+        },
+        "overflow": {
+          "top": 35
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-fykg"
+        },
+        "sourceFile": "compositions/chapter-04.html",
+        "bbox": {
+          "x": 336.2,
+          "y": 499.88,
+          "width": 57.57,
+          "height": 26
+        },
+        "firstSeen": 209.492,
+        "lastSeen": 209.492,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          209.492
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 209.492,
+        "selector": "div.bars > span:nth-of-type(4) > b:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 457.81,
+          "top": 503.33,
+          "right": 515.38,
+          "bottom": 529.33,
+          "width": 57.57,
+          "height": 26
+        },
+        "containerSelector": "div.bars > span:nth-of-type(4)",
+        "text": "0.922",
+        "fixHint": "Text is 58px x 26px inside 104px x 212px and overflows by up to 35px; increase the container height to at least ~247px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 434.8,
+          "top": 538.33,
+          "right": 538.39,
+          "bottom": 750.38,
+          "width": 103.59,
+          "height": 212.05
+        },
+        "overflow": {
+          "top": 35
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-bm5e"
+        },
+        "sourceFile": "compositions/chapter-04.html",
+        "bbox": {
+          "x": 457.81,
+          "y": 503.33,
+          "width": 57.57,
+          "height": 26
+        },
+        "firstSeen": 209.492,
+        "lastSeen": 209.492,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          209.492
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 209.492,
+        "selector": "div.bars > span:nth-of-type(5) > b:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 579.41,
+          "top": 502.41,
+          "right": 636.97,
+          "bottom": 528.41,
+          "width": 57.56,
+          "height": 26
+        },
+        "containerSelector": "div.bars > span:nth-of-type(5)",
+        "text": "0.926",
+        "fixHint": "Text is 58px x 26px inside 104px x 213px and overflows by up to 35px; increase the container height to at least ~248px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 556.39,
+          "top": 537.41,
+          "right": 659.98,
+          "bottom": 750.38,
+          "width": 103.59,
+          "height": 212.97
+        },
+        "overflow": {
+          "top": 35
+        },
+        "dataAttributes": {
+          "data-hf-id": "hf-d7di"
+        },
+        "sourceFile": "compositions/chapter-04.html",
+        "bbox": {
+          "x": 579.41,
+          "y": 502.41,
+          "width": 57.56,
+          "height": 26
+        },
+        "firstSeen": 209.492,
+        "lastSeen": 209.492,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          209.492
+        ]
+      }
+    ],
+    "duration": 342.805,
+    "samples": [
+      19.045,
+      57.134,
+      95.224,
+      133.313,
+      171.403,
+      209.492,
+      247.581,
+      285.671,
+      323.76
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 5,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      19.045,
+      95.224,
+      171.403,
+      247.581,
+      323.76
+    ],
+    "checked": 63,
+    "passed": 63
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.143",
+    "latestVersion": "0.8.143",
+    "updateAvailable": false
+  }
+}

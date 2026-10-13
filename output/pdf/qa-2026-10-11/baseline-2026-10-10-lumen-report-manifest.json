@@ -1,0 +1,72 @@
+{
+  "pages": 6,
+  "report_sha256": "ac19b47b551e6710024be5d71628844c132e86b3b4282acaab8a46bd90f2ce17",
+  "report_bytes": 24432,
+  "n_audit_development_records": 242,
+  "n_introductory_cases": 8,
+  "n_final_holdout_records": 61,
+  "final_holdout_rescored": false,
+  "models_refitted": false,
+  "sources": {
+    "v1": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/training/results/benchmark.json",
+      "sha256": "07a5a373d9f405fc02d049245a88c7566591185e6517c2f6eaf6b28adae064fb"
+    },
+    "v2": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/training/results-v2/benchmark.json",
+      "sha256": "b5834e5a88fca39b5fb46367c5ea0e43a9f0517bb48d6a04c0904c9c05c23ba6"
+    },
+    "v3": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/training/results-v3/benchmark.json",
+      "sha256": "96d2a5847c894009f0e77a6356878d6fcc32b0f2bcb0b083bc03321e48bda93f"
+    },
+    "availability": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/training/results-availability/benchmark.json",
+      "sha256": "f5d4d69d30f0960e628a4600deadab742aedbe955efb3e8549e04e095b6d8dde"
+    },
+    "final": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/artifacts/final_evaluation.json",
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "shap": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/training/results-availability/shap-verification.json",
+      "sha256": "faf88489a2696f375a6250c54b303d15a4f8d4a774d143f6852254cbe7e51eff"
+    },
+    "cohort": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/artifacts/cohort-audit.json",
+      "sha256": "1f2f388bdb071523d79164962a1c562813810dd28768cd8de8062d7bd1155432"
+    },
+    "cohort_shap": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/public/assets/cohort-audit-verification.json",
+      "sha256": "bab7424b4f9debfa3e80a57931666de60997e6a559b50f635522b4cf7109c196"
+    },
+    "report_source": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/submission/build_report.py",
+      "sha256": "09a7febef9e0947e54038d389eecb5b11c5edba54b6d5ef22b30e1287c65f5a0"
+    },
+    "later_catboost_development_probe": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-audit-lab/training/catboost-probe-2026-10-10/benchmark.json",
+      "sha256": "d3a96ab4fe9066e8c6824146f4a3c69b0e57c4923e45230a0e91449153c47e7a"
+    }
+  },
+  "visual_review": {
+    "status": "passed",
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "method": "Poppler PNG inspection; latest regenerated page pixels equal inspected pages byte-for-byte",
+    "rendered_page_sha256": {
+      "page-1.png": "0bde50a70be2f9673d81dfacf66ac2eb6c717b80f7783d55ba0ee20a1155811b",
+      "page-3.png": "81bd592a06764cad1997b8a553359b4264f95115e91b4190f789536aaecc5062",
+      "page-2.png": "92ea0bdfb384da728334b7c94820febd80d17dc69989c4c96942089c9f2eb064",
+      "page-6.png": "bf9b07b5e94f1193e8eaf5d6da79c1ef5ad90418952064da016f2fa40697d6e5",
+      "page-5.png": "5bba5e561b88f53c9ec717ceeb70276b0ca92a564155589b41af13a1270a2448",
+      "page-4.png": "c31a5d513e437d9bae8402dd76cad408a55214ef3adde903d1e8e08dc9778fb8"
+    }
+  }
+}

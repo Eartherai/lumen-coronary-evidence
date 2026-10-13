@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "protocol_id": "lumen-independent-review-2026-10-11-v1",
+  "prepared_at_utc": "2026-10-10T19:44:49.548086+00:00",
+  "protocol_state": "frozen_before_sessions",
+  "human_review_status": "unmeasured_pending",
+  "human_sessions": [],
+  "ai_review_status": "not_yet_recorded",
+  "ai_review_records": [],
+  "scope": "Formative interface comprehension and task review of an educational public-data research prototype, not clinical/diagnostic/patient-outcome validation.",
+  "allowed_reviewer_kinds": {
+    "human": "Independent consenting person; eligible only when not exposed to answers/rehearsal or project construction. Use session-template.json.",
+    "ai": "Technical/UI claim inspection using ai-review-template.json. No human timing, comprehension metrics or signoff; never pooled with humans."
+  },
+  "source_sha256": {
+    "coronary-evidence/artifacts/cohort-audit.json": "1f2f388bdb071523d79164962a1c562813810dd28768cd8de8062d7bd1155432",
+    "coronary-evidence/artifacts/availability-models.json": "6797ad90aaf52573e12b0629f97ae0aad850b6e06c0ac9b74a9ea969d084cbd5",
+    "coronary-evidence/artifacts/availability-profiles.json": "d6d7dfeb4f757362012c4905e16e0c70466b50e8ea0cfb9e1ccfb48f5ab786ef",
+    "coronary-evidence/artifacts/final_models.json": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+    "coronary-evidence/artifacts/final_evaluation.json": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944",
+    "coronary-evidence/submission/final-protocol-freeze.json": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305",
+    "coronary-evidence/submission/clinical-groups.json": "abaa2c77d7b4b1b48e3c78422ee50c5561761f34a61421f95f107372a6ca8d19",
+    "coronary-evidence/public/assets/cohort-audit-verification.json": "bab7424b4f9debfa3e80a57931666de60997e6a559b50f635522b4cf7109c196",
+    "coronary-evidence/public/assets/anatomy-provenance.json": "fcf1d507c05fcddcb1564490b4b4031177b52126684c51155bc89627dc363f91",
+    "coronary-evidence/training/results/split.json": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b",
+    "research/source-extracts/Track A.txt": "a2dce86153c826f94bb377d20d7fbb362e730b91b333e03700c4a6d282feb8cf"
+  },
+  "frozen_model_counts": {
+    "n_development": 242,
+    "n_holdout": 61,
+    "audit_outer_models": 100,
+    "audit_outputs": 4840,
+    "primary_final_models": 4,
+    "primary_profile": "full",
+    "n_full_inputs": 55
+  },
+  "case_selection": {
+    "T1": {
+      "policy": "Minimum SHA-256 of seed + colon + case ID across all saved development IDs; not selected using truth or predictions.",
+      "seed": "lumen-reviewer-kit-2026-10-11:T1",
+      "selected_case_id": "UCI411-276"
+    },
+    "T3": {
+      "policy": "Minimum SHA-256 of seed + colon + case ID among LCX full probabilities at or above learned threshold but below 0.5. Illustrates rule change, not an unbiased performance sample.",
+      "seed": "lumen-reviewer-kit-2026-10-11:T3",
+      "selected_case_id": "UCI411-057"
+    },
+    "T4_T5_T6": "Predeclared explanatory cases already used by evidence loop; their selection is explicit, not representative clinical evidence."
+  },
+  "participant_protocol": {
+    "target_independent_human_reviewers": 3,
+    "role_sampling": "Record actual convenience recruitment; aim for at least one unfamiliar with ML and one familiar if available. No qualification inferred.",
+    "introduction_file": "moderator-guide.md",
+    "unstructured_orientation_seconds": 45,
+    "order": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5",
+      "T6"
+    ],
+    "learning_limit": "Fixed order creates carryover; do not claim all tasks measure initial use.",
+    "no_personal_health_information": true,
+    "consent_required": true,
+    "optional_recording_requires_separate_consent": true
+  },
+  "timing_contract": {
+    "clock": "Monotonic stopwatch; nearest second. Record UTC start/end separately.",
+    "start": "Prompt finished and prepared starting state loaded. Later loading counts.",
+    "stop": "First declared final answer, abandonment or time cap.",
+    "continuous_think_aloud_required": false,
+    "pause_only_external_interruption": true,
+    "timeouts": "Retain cap and incomplete criteria; never count as successful 0-second completion.",
+    "technical_failure": "Retain attempted denominator; report separately.",
+    "later_coached_corrections": "Debrief feedback, not measured score upgrade."
+  },
+  "scoring_contract": {
+    "functional_complete": "All task functional criteria demonstrated within cap, with evidence and no hints.",
+    "conceptual_correct": "First final response satisfies every task conceptual criterion without a critical misconception. Missing explanation is incomplete; not automatically a misconception.",
+    "numeric_acceptance": "UI-reported values accepted at displayed rounding: 0.1 percentage point for probabilities/cutoffs; 0.001 log-odds for rounded score fields. No requirement to reproduce full precision verbally.",
+    "assistance": "Exact prompt repetition is allowed and logged. Control hints/solution steps/answer confirmation make task assisted.",
+    "earlier_utterances": "Preserve critical earlier statements and any spontaneous self-correction. First final response is the primary correctness score.",
+    "denominator": "All eligible attempted tasks in the same build wave, including failures/timeouts/assistance. Do not select best reviewers."
+  },
+  "tasks": [
+    {
+      "task_id": "T1",
+      "time_cap_seconds": 120,
+      "starting_state": "Ordinary fresh landing state; full profile; learned rule; ordinary LCX/error audit filters. Do not preopen requested record.",
+      "functional_completion": [
+        "Locate UCI411-276 in complete audit by record ID after handling nonmatching filters.",
+        "Select LAD and open record in explorer.",
+        "Report full probability/cutoff, recorded label and matching flag."
+      ],
+      "conceptual_completion": [
+        "Identify complete development cohort; distinguish it from final holdout."
+      ],
+      "critical_misunderstandings": [
+        "M_HOLDOUT_SCOPE"
+      ],
+      "case_id": "UCI411-276",
+      "target": "LAD",
+      "profile": "full",
+      "participant_prompt": "Find **UCI411-276** in the complete cohort audit. For **LAD**, report its full-input probability, cutoff, recorded label, and whether the flag matches that label. State which record set you are searching. Finish with the record open in the explorer."
+    },
+    {
+      "task_id": "T2",
+      "time_cap_seconds": 180,
+      "starting_state": "Ordinary fresh landing state; learned rule; do not preselect shared-miss preset.",
+      "functional_completion": [
+        "Set LCX, missed positive, all five agree, all folds, empty ID query.",
+        "Report nine matching records and select one of them.",
+        "Report positive truth and five negative flags for selected record.",
+        "Report 60 errors among 172 agreeing records, distinguishing cohort summary from nine-record filtered roster."
+      ],
+      "conceptual_completion": [
+        "Agreement among separately fitted profiles does not establish confidence or correctness.",
+        "Outcome-aware development audit is not a new final or blinded test."
+      ],
+      "critical_misunderstandings": [
+        "M_AGREEMENT_CONFIDENCE",
+        "M_HOLDOUT_SCOPE"
+      ],
+      "target": "LCX",
+      "profile": "full",
+      "participant_prompt": "Using the training-selected rule, find a **recorded positive LCX record missed by all five profiles**. Report the matching roster size and the selected record's ID. For that record, report the recorded outcome and the five profile flags. Also report the cohort count of errors among records with five agreeing flags. What can you conclude from the agreement?"
+    },
+    {
+      "task_id": "T3",
+      "time_cap_seconds": 150,
+      "starting_state": "UCI411-057, full, LCX, learned; audit all outcomes/any behavior/all folds/ID UCI411-057.",
+      "functional_completion": [
+        "Read learned probability/cutoff/positive flag.",
+        "Switch shared rule to fixed 50% and read unchanged probability/new cutoff/negative flag.",
+        "Verify whole-cohort LCX missed positives and false alarms are 17/82 before and 63/18 after."
+      ],
+      "conceptual_completion": [
+        "Only decision rule/flags/filter results/counts change; probability, score/contributions and probability-based colors do not.",
+        "No claim that threshold choice improves probability ranking or is medically validated."
+      ],
+      "critical_misunderstandings": [
+        "M_THRESHOLD_PROBABILITY",
+        "M_MEDICAL_VALIDITY"
+      ],
+      "case_id": "UCI411-057",
+      "target": "LCX",
+      "profile": "full",
+      "participant_prompt": "The moderator opens **UCI411-057**, full inputs, **LCX**, using the training-selected rule. Record its probability, cutoff and flag. Switch to the fixed 50% rule and report those three values again. Check the audit's missed-positive and false-alarm counts before and after. Explain what changed in the system and what you can infer from it."
+    },
+    {
+      "task_id": "T4",
+      "time_cap_seconds": 150,
+      "starting_state": "UCI411-128, full, LAD, learned; original inputs; editor closed.",
+      "functional_completion": [
+        "Report profile-order flags positive/negative/negative/negative/positive.",
+        "Select History + examination then full; correctly report their probabilities and cutoffs.",
+        "Observe current explorer inputs/explanation and selected profile following each chosen cell."
+      ],
+      "conceptual_completion": [
+        "Profiles are independently fitted with 17/31/38/52/55 cumulative predictors, not hidden inputs in one model.",
+        "Profile differences do not establish causal test utility or clinical acquisition order."
+      ],
+      "critical_misunderstandings": [
+        "M_PROFILE_CAUSAL",
+        "M_PROFILE_REFIT"
+      ],
+      "case_id": "UCI411-128",
+      "target": "LAD",
+      "profiles": [
+        "history",
+        "history_exam",
+        "history_exam_ecg",
+        "history_exam_ecg_lab",
+        "full"
+      ],
+      "participant_prompt": "The moderator opens **UCI411-128**, **LAD**, using the training-selected rule. Compare all five input profiles, then select **History + examination**, and finally **All measurements**. Report each profile's flag, the two selected profiles' probabilities and cutoffs, and whether the explorer and explanation follow the selected cell. Explain what the differences between the profiles establish."
+    },
+    {
+      "task_id": "T5",
+      "time_cap_seconds": 180,
+      "starting_state": "UCI411-128, full, LAD, learned; original labels revealed; Age 62; editor closed.",
+      "functional_completion": [
+        "Change only Age 62 to 63 and recalculate.",
+        "Observe edited values/updated score with original truth hidden, reveal disabled and original profile comparison paused.",
+        "Restore recorded values; verify original profile comparison and recorded-label reveal available again."
+      ],
+      "conceptual_completion": [
+        "No observed edited-patient outcome exists; original truth cannot evaluate edited predictions.",
+        "Changes are model sensitivity, not treatment effects.",
+        "Edited record retains its excluding-fold model."
+      ],
+      "critical_misunderstandings": [
+        "M_EDITED_TRUTH",
+        "M_EDIT_TREATMENT"
+      ],
+      "case_id": "UCI411-128",
+      "target": "LAD",
+      "profile": "full",
+      "edit": {
+        "Age": {
+          "from": 62,
+          "to": 63
+        }
+      },
+      "participant_prompt": "The moderator opens **UCI411-128**, full inputs, with the original recorded labels revealed. Change only **Age from 62 to 63** and update the prediction. Try to compare the edited prediction with a recorded outcome and inspect the same-record profile comparison. Describe what the interface permits and why. Restore the recorded values, then show that the original comparison can be used again. Explain what the edit tells you."
+    },
+    {
+      "task_id": "T6",
+      "time_cap_seconds": 180,
+      "starting_state": "UCI411-171, full, learned; CAD selected; overview/all vessels; score closed; record shell state.",
+      "functional_completion": [
+        "Select LAD using the named anatomy label or actual vessel mesh; record which.",
+        "Rotate and zoom, focus or isolate LAD, then restore overview.",
+        "Open complete score; read baseline 0.569, all-term sum 2.248, log-odds 2.817 and probability 94.4%."
+      ],
+      "conceptual_completion": [
+        "Generic named reference geometry/whole-vessel color cannot localize plaque or give patient-specific anatomy.",
+        "Probability is predicted status probability, not percentage arterial narrowing.",
+        "Baseline plus all terms is in log-odds; sigmoid converts final score to probability; six displayed terms are not the complete sum.",
+        "Contributions are model associations, not percentage-point effects or causes."
+      ],
+      "critical_misunderstandings": [
+        "M_ANATOMY_LOCALIZATION",
+        "M_PERCENT_STENOSIS",
+        "M_SHAP_PERCENT_POINTS",
+        "M_SHAP_CAUSAL"
+      ],
+      "case_id": "UCI411-171",
+      "target": "LAD",
+      "profile": "full",
+      "participant_prompt": "The moderator opens **UCI411-171**, full inputs, starting with overall CAD selected. Select **LAD using its anatomy label or vessel mesh**. Rotate and zoom the view, focus or isolate that vessel, and restore the overview. Open the complete score calculation. Report the baseline, sum of all contributions, final score and LAD probability. Explain what the probability, vessel color, and a displayed contribution describe, and what the display can tell you about this person's anatomy."
+    }
+  ],
+  "misunderstanding_codes": {
+    "M_HOLDOUT_SCOPE": "Claims the audit contains final-test records, is a new final/blinded evaluation, or uses models fitted on the displayed outer fold.",
+    "M_AGREEMENT_CONFIDENCE": "Claims five agreeing profiles establish reliable confidence/correctness.",
+    "M_THRESHOLD_PROBABILITY": "Claims a decision-rule switch changes model probability, attribution or probability ranking.",
+    "M_MEDICAL_VALIDITY": "Claims the threshold/probability is clinically validated from current evidence.",
+    "M_PROFILE_CAUSAL": "Treats profile deltas as causal test utility, medical test order, cost benefit or an uncertainty interval.",
+    "M_PROFILE_REFIT": "Claims profiles are one fitted full model with unavailable groups simply hidden/nulled.",
+    "M_EDITED_TRUTH": "Uses original recorded truth to evaluate edited input outputs.",
+    "M_EDIT_TREATMENT": "Describes input edits as established treatment/counterfactual patient effects.",
+    "M_ANATOMY_LOCALIZATION": "Claims generic vessel display identifies patient-specific plaque or lesion coordinates.",
+    "M_PERCENT_STENOSIS": "Treats predicted probability as percentage arterial narrowing.",
+    "M_SHAP_PERCENT_POINTS": "Adds log-odds contributions directly as probability percentage points.",
+    "M_SHAP_CAUSAL": "Claims contributions establish causes/treatment effects."
+  },
+  "provisional_human_release_gates": {
+    "authority": "Project-chosen readiness checks, not official rubric, clinical validation or population estimates.",
+    "status": "pending_unmeasured",
+    "minimum_eligible_reviewers_per_build_wave": 3,
+    "functional_gate": "For every task, at least ceil(2*n/3) of all n eligible attempted reviewers complete all functional criteria unassisted within cap.",
+    "concept_gate": "Every eligible reviewer gives a correct first final conceptual response on T2-T6; at least ceil(2*n/3) on T1. Any final critical misconception blocks this provisional gate.",
+    "technical_gate": "No unresolved defect that changes shown identities/outputs/flags/truth separation or prevents a core path.",
+    "human_submitter_gate": "Separate real human code/evidence/video review and all eight judge concepts; cannot be met by an AI review.",
+    "retention": "Retain failed waves and record changed build/protocol. Fresh independent retesting after a fix; never upgrade an old score from coaching.",
+    "reporting": "Exact successes/attempts per task, concepts, assistance, timeouts, faults and individual times. With n<3: review incomplete. No clinical or population usability claim."
+  },
+  "optional_baseline": {
+    "state": "preparation_pending_not_run",
+    "instructions": "baseline-orientation.md",
+    "requires_new_freeze": "Actual unedited baseline captures, answer regions, camera/viewport/build hashes and shuffled allocation block must be frozen before enrollment.",
+    "separate_from_core_gate": true
+  },
+  "rubric_snapshot": {
+    "source": "research/source-extracts/Track A.txt",
+    "weights_percent": {
+      "predictive_performance": 30,
+      "3d_visualization": 25,
+      "clinical_interpretability": 20,
+      "system_integration": 15,
+      "technical_implementation": 10
+    },
+    "note": "Supplied snapshot; no rubric score or live event-rule recheck claimed."
+  },
+  "publication_boundary": "No external messaging/account publication in this kit. Real human identity/eligibility/URLs/submission remain pending in existing handoff; AI is not a human teammate."
+}

@@ -1,0 +1,371 @@
+LUMEN / CORONARY EVIDENCE EXPLORER
+FINAL HOLDOUT EVALUATED
+Educational research prototype | 2026-10-11
+1 / 6
+TRACK A / TECHNICAL REPORT
+Lumen
+Coronary Evidence Explorer
+Connect each coronary prediction to named anatomy and exact model reasoning. Challenge the demonstration
+with the complete development cohort, including false positives, missed disease and incorrect flags that persist
+across five input profiles.
+FINAL HOLDOUT EVALUATED
+Development and final test evidence are reported separately. All claims remain limited to the evaluated source
+dataset.
+242 records
+Every development row
+No curated success selection
+20 model views
+5 profiles x 4 targets
+Exclude the entire outer fold
+One audit trail
+Find, inspect, reveal
+Recorded outcomes disclosed
+Five profiles can agree and still be wrong.
+LCX: 60 incorrect flags among 172 agreeing development records. Agreement is not confidence.
+Figure 1. Development audit design and its recorded counterexample. This is a static evidence diagram, not a browser screenshot.
+Every model view uses an excluding-fold model.
+Clinical targets
+Data partition
+Deployment compute
+CAD + LAD + LCX + RCA
+242 development
+61 final holdout
+CPU experiments + inference
+Portable browser runtime
+Contribution. A reproducible audit connects all 242 development records to their excluding-fold models,
+five-profile comparisons, generic named arteries and exact explanations. Outcome-aware filters expose failures
+beyond the eight introductory examples. Source-bound receipts support inspection; this is an engineering
+contribution, not a claim of a new diagnostic algorithm.
+Educational research prototype. Not validated for clinical use or a substitute for diagnostic imaging. Probabilities do not describe
+stenosis severity or patient-specific plaque locations.
+
+
+LUMEN / CORONARY EVIDENCE EXPLORER
+FINAL HOLDOUT EVALUATED
+Educational research prototype | 2026-10-11
+2 / 6
+01 / DATA AND VALIDATION
+Keep outcomes out of the inputs
+303 records
+Source hash checked
+242 development
+Nested model selection
+61 final holdout
+Scored once after freeze
+All four target columns are excluded from every input pipeline.
+Source and targets. The UCI extension of Z-Alizadeh Sani contains 303 records [1]. Cath supplies the overall
+CAD label; LAD, LCX and RCA supply vessel status. All four angiography columns are excluded from every task,
+leaving 55 predictors. Source hashes and frozen row identities are saved.
+Preprocessing. Numeric median imputation and scaling, plus categorical imputation and one-hot encoding, are
+refitted within each training partition. Inference preserves the fitted values and reports unseen categories. Original
+source spelling is retained in the encoder.
+Input group
+Count
+Operational availability meaning
+History
+17
+Demographics and recorded history indicators
+Examination
+14
+Recorded symptoms and examination findings
+ECG
+7
+Recorded ECG indicators
+Laboratory
+14
+Laboratory measurements, source encodings retained
+Echo
+3
+EF-TTE, Region RWMA and VHD
+The five availability groups are an explicit experiment definition informed by the source categories. Laboratory and echo are split
+operationally; the dataset does not establish a temporal care pathway. Verified units are used only where supported by source
+evidence [1,2].
+Nested selection (V2). Five shared CAD-stratified outer folds evaluate the entire selection procedure. Three
+target-stratified inner folds select C (0.01, 0.1, 1, 10), unweighted/balanced logistic fitting, and optional sigmoid
+calibration by pooled inner log loss. Calibrated candidates use further cross-fitted training scores; outer validation
+records are excluded from fitting and calibration [4,5].
+Operating rule. The selected candidate maximizes inner out-of-fold F1 over thresholds 0.05-0.95 at 0.01 steps.
+Ties favor proximity to 0.5, then the higher point. Outer classification metrics use the threshold fitted without each
+validation record. AUC and Brier use probabilities, independent of this classification threshold [6].
+Development audit: 0 missing cells; 0 duplicated input rows; 1 CAD/vessel label discrepancy preserved. V2
+followed inspection of V1 development results, so development evidence includes experiment-selection
+uncertainty.
+
+
+LUMEN / CORONARY EVIDENCE EXPLORER
+FINAL HOLDOUT EVALUATED
+Educational research prototype | 2026-10-11
+3 / 6
+02 / PREDICTIVE EVIDENCE
+Detection improves with a cost
+V2 pooled development out-of-fold results, n=242. Each record is predicted by an excluding outer model. Intervals
+bootstrap fixed OOF predictions (1,000 resamples); they omit refitting and experiment-selection uncertainty.
+Target
+AUC
+95% AUC interval
+Acc.
+Prec.
+Recall
+F1
+Brier
+CAD
+0.926
+0.889 - 0.956
+0.868
+0.881
+0.942
+0.911
+0.096
+LAD
+0.814
+0.759 - 0.864
+0.731
+0.718
+0.887
+0.794
+0.174
+LCX
+0.701
+0.632 - 0.765
+0.591
+0.478
+0.815
+0.602
+0.211
+RCA
+0.722
+0.653 - 0.783
+0.612
+0.483
+0.809
+0.605
+0.202
+Figure 2. Lower fitted operating thresholds increase LCX/RCA recall while reducing precision. This is a classification tradeoff; vessel
+discrimination does not improve over the initial baseline.
+RCA precision
+RCA recall
+LCX precision
+LCX recall
+0
+0.25
+0.5
+0.75
+1
+V1: fixed 0.5
+V2: inner F1 threshold
+V2 selected rule
+True positive
+False negative
+False positive
+True negative
+LCX
+75
+17
+82
+68
+RCA
+72
+17
+77
+76
+The initial fixed-0.5 V1 baseline had LCX/RCA recall 0.228/0.236 and precision 0.636/0.724. V2 raises recall to
+0.815/0.809 while precision falls to 0.478/0.483. The additional false positives remain visible, rather than being
+hidden behind a higher F1.
+Probability quality. Brier and log loss are reported alongside ranking and classification metrics. A sigmoid step
+does not establish calibrated probabilities in a new population; Brier mixes reliability and discrimination, and the
+saved reliability bins are small [5].
+These are development results, not external validation or medical operating thresholds. The four independent
+models do not impose a coherent joint CAD/vessel distribution.
+
+
+LUMEN / CORONARY EVIDENCE EXPLORER
+FINAL HOLDOUT EVALUATED
+Educational research prototype | 2026-10-11
+4 / 6
+03 / INPUT PROFILES AND COHORT AUDIT
+Agreement must survive a failure audit
+Five cumulative input profiles are fitted separately under the same frozen development identities and outer folds.
+The full-input profile reuses V2. This evaluates model evidence with available groups; it does not estimate medical
+test utility, cost or causal benefit.
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+CAD
+LAD
+LCX
+RCA
+AUC
+History
++ exam
++ ECG
++ lab
++ echo
+Figure 3. Development ROC-AUC by cumulative input profile. Each profile has its own nested fitting, calibration selection and
+threshold rule; groups are not merely nulled in the full-input model.
+All 242 records, including stable incorrect flags
+Target
+Five profiles agree / 242
+Incorrect among agreeing
+FP / FN
+CAD
+182
+12
+10 / 2
+LAD
+161
+33
+32 / 1
+LCX
+172
+60
+51 / 9
+RCA
+164
+58
+56 / 2
+Each flag uses its model's already fitted research threshold. Agreement selects a subset; it does not improve a retained prediction. LCX
+remains wrong on 60/172 agreeing records, and RCA on 58/164. These overlapping models are not independent witnesses.
+The audit filters by target, outcome, profile agreement, outer fold and a shared fixed/research decision rule. Every selected record
+opens the anatomy and exact score. Recorded outcomes define filters: this is descriptive development review, not a blind or
+prospective test.
+Bounded model comparisons remain exploratory
+V1 and V3 retained prior/tree baselines. A later 200-fit nested CatBoost CPU probe took 190.33s and 423MB peak RAM: LAD AUC
+improved from 0.814 to 0.829, while CAD/RCA weakened and LCX was unchanged. These mixed development results did not replace
+the frozen V2 procedure or reopen final evaluation.
+Measured elapsed time in the local CPU runs: V1 14.4s, V2 39.6s, V3 19.9s, availability 121.1s. V2 timing includes bounded search,
+export checks, conditional bootstraps and artifact creation. No GPU was used.
+Model-family and input-profile decisions were frozen before final holdout scoring. Final outcomes were not used to retune the submitted
+procedure.
+
+
+LUMEN / CORONARY EVIDENCE EXPLORER
+FINAL HOLDOUT EVALUATED
+Educational research prototype | 2026-10-11
+5 / 6
+04 / ANATOMY AND INTEGRATION
+One mapping from score to vessel
+Browser
+3D meshes + inputs
+Python API
+Schema + case routing
+JSON artifacts
+Score + explanation
+Truth reveal is a separate API path. Edited inputs have no observed edited outcome.
+Reference geometry. Official BodyParts3D memberships define heart FMA7088, LAD FMA3862, LCX FMA3895
+and RCA FMA50039 [3]. Source OBJ parts are merged, triangulated and transformed into selectable Three.js
+groups [7]. Provenance retains hashes, memberships and modifications.
+Visual semantics. The target selects matching geometry, probability and explanation. Overview, opposite view,
+mesh-bound focus and isolation complement rotate/zoom and the surface toggle. Isolation restores the chosen
+surface state. Probability colors the whole vessel; no patient geometry or lesion coordinates are inferred.
+Grouped interventional linear SHAP (log-odds)
+For encoded values z, training means mu, coefficients beta and intercept b:
+reference = b + sum(beta[j] * mu[j])
+contribution[j] = beta[j] * (z[j] - mu[j])
+score = reference + sum(contribution[j])
+probability = sigmoid(score)
+Encoded terms are grouped into raw inputs; calibration slope/offset enter coefficients/intercept. The waterfall
+shows reference, six largest terms, residual and final score. Sigmoid applies at the endpoint; sigmoid(reference) is
+not mean predicted probability.
+Actual SHAP LinearExplainer with an Independent masker verifies the decomposition [9] using all encoded
+training-fold rows. Masks break feature dependencies and may form invalid one-hot states. Terms are
+interventional model log-odds, not conditional explanations or percentage-point probability changes.
+Correlation-aware explanations can assign different credit. Terms show model associations; input edits explore
+fitted-model sensitivity, not treatment effects or clinical interventions.
+Verification and interaction
+The compact export matched all 4,840 saved development probabilities exactly. It retains eight introductory cases plus the complete
+development audit. Contributions are calculated lazily from the same 100 profile/target/fold models; labels never enter inference.
+The separate complete-cohort actual-SHAP certificate passed 4,840 explanations across 100 models; maximum grouped-term error
+5.55e-17 and reconstructed score error 5.33e-15, tolerance 1e-12. Its Independent background excludes the record, the entire outer
+fold and every final holdout row. The original 160-explanation certificate remains scoped to the eight-case roster. These checks verify
+the specified decomposition, not clinical explanation utility.
+Audit selections open the anatomy, score waterfall and five-profile matrix. Outcome-aware selection is disclosed; label reveal is
+separate from inference. Edits disable matching outcome comparison; unlabelled inputs use frozen full-development models.
+AI software checks, 11 October. The fresh six-task review found stale case context and false alarms described as misses; corrections
+were browser-checked. Five earlier case/profile failure, retry and keyboard checks passed on 11 October. Two synthetic delayed
+HTTP503 checks confirmed old prediction errors cannot replace a newer case or release prediction controls during its load; the new
+case then completes normally. Five review tasks completed; the sixth evidenced rotation, zoom and target mapping with an unretained
+focus/isolation screenshot. These bounded AI-operated checks do not measure human comprehension or usability.
+
+
+LUMEN / CORONARY EVIDENCE EXPLORER
+FINAL HOLDOUT EVALUATED
+Educational research prototype | 2026-10-11
+6 / 6
+05 / FINAL EVIDENCE AND REPRODUCIBILITY
+Evidence boundaries and release record
+Final holdout: n=61. The primary full-input procedure was frozen before scoring once. No holdout fitting,
+calibration, threshold or profile selection was performed.
+Target
+AUC
+95% AUC interval
+Acc.
+Prec.
+Recall
+F1
+Brier
+CAD
+0.908
+0.815 - 0.972
+0.836
+0.851
+0.930
+0.889
+0.110
+LAD
+0.893
+0.804 - 0.966
+0.852
+0.814
+0.972
+0.886
+0.126
+LCX
+0.748
+0.621 - 0.859
+0.607
+0.535
+0.852
+0.657
+0.216
+RCA
+0.724
+0.579 - 0.844
+0.590
+0.500
+0.760
+0.603
+0.209
+Positive/negative counts: CAD 43/18; LAD 36/25; LCX 27/34; RCA 25/36. Fitted thresholds: CAD 0.21, LAD 0.36, LCX 0.30, RCA 0.25.
+Conditional intervals use 1,000 fixed-prediction patient resamples; no refitting uncertainty.
+LCX: 23 TP, 4 FN, 20 FP, 14 TN. RCA: 19 TP, 6 FN, 19 FP, 17 TN.
+Limits
+Small dataset; no external or prospective validation. A bounded cohort search admitted no full-55-input source: public AngioCAD lacks
+the examination and ECG groups [10]. LCX/RCA have limited discrimination and a large false-positive cost. Intervals omit refitting
+uncertainty. Independent targets can disagree. Generic anatomy cannot locate plaque; edits lack outcome labels.
+Reproduce and verify
+Run npm ci, python3 server.py; open http://127.0.0.1:8766/. Python standard library or the static browser performs
+inference. Ordinary WebGL renders anatomy. docs/cohort-audit.md gives audit and pinned CPU verification commands.
+Measured local runtime, 11 October. Saved pre-watchdog Chromium captures on this M5, 683 x 760, DPR 2; idle/action 10/10s:
+58.8/58.6 foreground render callbacks/s. 8 completed actions: 6.9-19.7ms to DOM update; longest callback interval 264.2ms. These
+narrow main-thread render-submission samples exclude GPU completion, physical-display latency, hosted speed, human usability and
+second-device evidence. Safari rendering has not passed.
+Credits and AI assistance
+UCI 411: Alizadehsani, R., Roshanzamir, M., & Sani, Z. (2013), CC BY 4.0 [1]. BodyParts3D, © The Database Center for Life Science,
+CC Attribution 4.0 International [3]. Geometry was merged, triangulated, translated and rotated. Three.js is MIT licensed [7].
+OpenAI Codex assisted with research, code, experiments, debugging, AI review and documents. The human submitter owns
+verification and judging explanations; human review/signoff remain pending. AI assistance is declared here/README and must appear
+in Devpost Built With [8].
+Primary references
+[1] UCI extension of Z-Alizadeh Sani. DOI: 10.24432/C5461K.
+[2] Alizadehsani et al. Laboratory and echocardiography features (2013). DOI: 10.5812/cardiovascmed.10888.
+[3] BodyParts3D archive: license and source download.
+[4] scikit-learn: nested cross-validation.
+[5] scikit-learn: probability calibration.
+[6] scikit-learn: tuning the decision threshold.
+[7] Three.js documentation.
+[8] Multimodal AI Hackathon 2026: rules; supplied Track A and submission guidelines.
+[9] SHAP LinearExplainer: interventional linear attribution.
+[10] AngioCAD primary paper: 10.1016/j.cmpb.2026.109368; official feature workbook.

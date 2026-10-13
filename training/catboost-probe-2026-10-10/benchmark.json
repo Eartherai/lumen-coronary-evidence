@@ -1,0 +1,3487 @@
+{
+  "scope": "Exploratory development only; no final holdout access/scoring/model replacement",
+  "protocol_sha256": "26a8740447b0807a0d35ff421e93e90ba45c9bab5a9f6fb24a1b0a276d1540ea",
+  "script_sha256": "95b2035571a471c44abddf81373b525d77e89ce08d3d82b149f7d0cecd1b360e",
+  "source_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "split_sha256": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b",
+  "baseline_oof_sha256": "89495f838f0441e9e1493a33c2f0e6ced9223346784aee0e3d44283379aa080c",
+  "n_development": 242,
+  "n_locked_holdout": 61,
+  "holdout_scored": false,
+  "numeric_features": [
+    "Age",
+    "Weight",
+    "Length",
+    "BMI",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "BP",
+    "PR",
+    "Edema",
+    "Typical Chest Pain",
+    "Function Class",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA"
+  ],
+  "categorical_features": [
+    "Sex",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Dyspnea",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "VHD"
+  ],
+  "categorical_cardinality_development_diagnostic": {
+    "Sex": 2,
+    "Obesity": 2,
+    "CRF": 2,
+    "CVA": 2,
+    "Airway disease": 2,
+    "Thyroid Disease": 2,
+    "CHF": 2,
+    "DLP": 2,
+    "Weak Peripheral Pulse": 2,
+    "Lung rales": 2,
+    "Systolic Murmur": 2,
+    "Diastolic Murmur": 2,
+    "Dyspnea": 2,
+    "Atypical": 2,
+    "Nonanginal": 2,
+    "Exertional CP": 1,
+    "LowTH Ang": 2,
+    "LVH": 2,
+    "Poor R Progression": 2,
+    "BBB": 3,
+    "VHD": 4
+  },
+  "versions": {
+    "python": "3.12.13",
+    "catboost": "1.2.8",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1"
+  },
+  "environment": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "cpu_count": 10,
+    "thread_count_per_fit": 2,
+    "gpu_used": false
+  },
+  "started_utc": "2026-10-09T20:03:58.269574+00:00",
+  "status": "complete",
+  "targets": {
+    "CAD": {
+      "status": "complete",
+      "outer_folds": [
+        {
+          "fold": 0,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.32529559900331934,
+              "operating_threshold": 0.44,
+              "inner_threshold_f1_training_diagnostic": 0.9059233449477352
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.3162916390339565,
+              "operating_threshold": 0.44,
+              "inner_threshold_f1_training_diagnostic": 0.9181494661921709
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.33768386473495604,
+              "operating_threshold": 0.37,
+              "inner_threshold_f1_training_diagnostic": 0.9047619047619048
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.3162916390339565,
+            "operating_threshold": 0.44,
+            "inner_threshold_f1_training_diagnostic": 0.9181494661921709
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.8571428571428572,
+            "average_precision": 0.930279974150989,
+            "accuracy": 0.7959183673469388,
+            "precision": 0.8048780487804879,
+            "recall": 0.9428571428571428,
+            "f1": 0.868421052631579,
+            "brier": 0.1324145819531818,
+            "log_loss": 0.4268537411822339,
+            "confusion_matrix_tn_fp_fn_tp": [
+              6,
+              8,
+              2,
+              33
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.8571428571428572,
+            "average_precision": 0.930279974150989,
+            "accuracy": 0.8163265306122449,
+            "precision": 0.825,
+            "recall": 0.9428571428571428,
+            "f1": 0.88,
+            "brier": 0.1324145819531818,
+            "log_loss": 0.4268537411822339,
+            "confusion_matrix_tn_fp_fn_tp": [
+              7,
+              7,
+              2,
+              33
+            ]
+          }
+        },
+        {
+          "fold": 1,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.3708968703147757,
+              "operating_threshold": 0.56,
+              "inner_threshold_f1_training_diagnostic": 0.9154929577464789
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.369312855978095,
+              "operating_threshold": 0.5,
+              "inner_threshold_f1_training_diagnostic": 0.9192982456140351
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.38084188270753455,
+              "operating_threshold": 0.48,
+              "inner_threshold_f1_training_diagnostic": 0.9052631578947369
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.369312855978095,
+            "operating_threshold": 0.5,
+            "inner_threshold_f1_training_diagnostic": 0.9192982456140351
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.9755102040816327,
+            "average_precision": 0.9912690647083359,
+            "accuracy": 0.9183673469387755,
+            "precision": 0.918918918918919,
+            "recall": 0.9714285714285714,
+            "f1": 0.9444444444444444,
+            "brier": 0.071241142735093,
+            "log_loss": 0.2535984760732803,
+            "confusion_matrix_tn_fp_fn_tp": [
+              11,
+              3,
+              1,
+              34
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.9755102040816327,
+            "average_precision": 0.9912690647083359,
+            "accuracy": 0.9183673469387755,
+            "precision": 0.918918918918919,
+            "recall": 0.9714285714285714,
+            "f1": 0.9444444444444444,
+            "brier": 0.071241142735093,
+            "log_loss": 0.2535984760732803,
+            "confusion_matrix_tn_fp_fn_tp": [
+              11,
+              3,
+              1,
+              34
+            ]
+          }
+        },
+        {
+          "fold": 2,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.3569439136820816,
+              "operating_threshold": 0.56,
+              "inner_threshold_f1_training_diagnostic": 0.9032258064516129
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.3426135331008322,
+              "operating_threshold": 0.39,
+              "inner_threshold_f1_training_diagnostic": 0.910958904109589
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.3540966908854752,
+              "operating_threshold": 0.43,
+              "inner_threshold_f1_training_diagnostic": 0.9103448275862069
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.3426135331008322,
+            "operating_threshold": 0.39,
+            "inner_threshold_f1_training_diagnostic": 0.910958904109589
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.9252747252747253,
+            "average_precision": 0.9697781418867926,
+            "accuracy": 0.8958333333333334,
+            "precision": 0.9166666666666666,
+            "recall": 0.9428571428571428,
+            "f1": 0.9295774647887324,
+            "brier": 0.09259764344698933,
+            "log_loss": 0.30818126901871723,
+            "confusion_matrix_tn_fp_fn_tp": [
+              10,
+              3,
+              2,
+              33
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.9252747252747253,
+            "average_precision": 0.9697781418867926,
+            "accuracy": 0.8958333333333334,
+            "precision": 0.9166666666666666,
+            "recall": 0.9428571428571428,
+            "f1": 0.9295774647887324,
+            "brier": 0.09259764344698933,
+            "log_loss": 0.30818126901871723,
+            "confusion_matrix_tn_fp_fn_tp": [
+              10,
+              3,
+              2,
+              33
+            ]
+          }
+        },
+        {
+          "fold": 3,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.3481913169954049,
+              "operating_threshold": 0.54,
+              "inner_threshold_f1_training_diagnostic": 0.916083916083916
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.33267449146735045,
+              "operating_threshold": 0.47,
+              "inner_threshold_f1_training_diagnostic": 0.9204152249134948
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.3354621506924704,
+              "operating_threshold": 0.53,
+              "inner_threshold_f1_training_diagnostic": 0.916083916083916
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.33267449146735045,
+            "operating_threshold": 0.47,
+            "inner_threshold_f1_training_diagnostic": 0.9204152249134948
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.9306722689075629,
+            "average_precision": 0.9732912501725147,
+            "accuracy": 0.8333333333333334,
+            "precision": 0.8823529411764706,
+            "recall": 0.8823529411764706,
+            "f1": 0.8823529411764706,
+            "brier": 0.10490021835346115,
+            "log_loss": 0.3264975458658455,
+            "confusion_matrix_tn_fp_fn_tp": [
+              10,
+              4,
+              4,
+              30
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.9306722689075629,
+            "average_precision": 0.9732912501725147,
+            "accuracy": 0.8125,
+            "precision": 0.8787878787878788,
+            "recall": 0.8529411764705882,
+            "f1": 0.8656716417910447,
+            "brier": 0.10490021835346115,
+            "log_loss": 0.3264975458658455,
+            "confusion_matrix_tn_fp_fn_tp": [
+              10,
+              4,
+              5,
+              29
+            ]
+          }
+        },
+        {
+          "fold": 4,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.3462127212518522,
+              "operating_threshold": 0.53,
+              "inner_threshold_f1_training_diagnostic": 0.9192982456140351
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.3326860290847433,
+              "operating_threshold": 0.44,
+              "inner_threshold_f1_training_diagnostic": 0.9236111111111112
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.3384884976146889,
+              "operating_threshold": 0.41,
+              "inner_threshold_f1_training_diagnostic": 0.9241379310344827
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.3326860290847433,
+            "operating_threshold": 0.44,
+            "inner_threshold_f1_training_diagnostic": 0.9236111111111112
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.9285714285714284,
+            "average_precision": 0.973438550030308,
+            "accuracy": 0.9166666666666666,
+            "precision": 0.9411764705882353,
+            "recall": 0.9411764705882353,
+            "f1": 0.9411764705882353,
+            "brier": 0.0935376382126669,
+            "log_loss": 0.313481195654895,
+            "confusion_matrix_tn_fp_fn_tp": [
+              12,
+              2,
+              2,
+              32
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.9285714285714284,
+            "average_precision": 0.973438550030308,
+            "accuracy": 0.8958333333333334,
+            "precision": 0.9393939393939394,
+            "recall": 0.9117647058823529,
+            "f1": 0.9253731343283582,
+            "brier": 0.0935376382126669,
+            "log_loss": 0.313481195654895,
+            "confusion_matrix_tn_fp_fn_tp": [
+              12,
+              2,
+              3,
+              31
+            ]
+          }
+        }
+      ],
+      "oof": {
+        "roc_auc": 0.9148027142498115,
+        "average_precision": 0.9585736082657912,
+        "accuracy": 0.871900826446281,
+        "precision": 0.8901098901098901,
+        "recall": 0.9364161849710982,
+        "f1": 0.9126760563380282,
+        "brier": 0.09896212607584752,
+        "log_loss": 0.3258423105430338,
+        "confusion_matrix_tn_fp_fn_tp": [
+          49,
+          20,
+          11,
+          162
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.9148027142498115,
+        "average_precision": 0.9585736082657912,
+        "accuracy": 0.8677685950413223,
+        "precision": 0.8938547486033519,
+        "recall": 0.9248554913294798,
+        "f1": 0.9090909090909091,
+        "brier": 0.09896212607584752,
+        "log_loss": 0.3258423105430338,
+        "confusion_matrix_tn_fp_fn_tp": [
+          50,
+          19,
+          13,
+          160
+        ]
+      },
+      "v2_paired_same_rows": {
+        "roc_auc": 0.9260283153221078,
+        "average_precision": 0.968743506852323,
+        "accuracy": 0.8677685950413223,
+        "precision": 0.8810810810810811,
+        "recall": 0.9421965317919075,
+        "f1": 0.9106145251396648,
+        "brier": 0.09626357346765942,
+        "log_loss": 0.3067515460053122,
+        "confusion_matrix_tn_fp_fn_tp": [
+          47,
+          22,
+          10,
+          163
+        ]
+      },
+      "catboost_minus_v2": {
+        "roc_auc": -0.01122560107229631,
+        "average_precision": -0.010169898586531834,
+        "accuracy": 0.004132231404958664,
+        "precision": 0.009028809028808982,
+        "recall": -0.005780346820809301,
+        "f1": 0.0020615311983633866,
+        "brier": 0.002698552608188104,
+        "log_loss": 0.019090764537721627
+      },
+      "paired_correctness_counts": {
+        "both_correct": 202,
+        "v2_correct_catboost_wrong": 8,
+        "v2_wrong_catboost_correct": 9,
+        "both_wrong": 23
+      },
+      "comparison_warning": "Descriptive paired development results after previous development experiments; no significance, final-test or clinical superiority claim"
+    },
+    "LAD": {
+      "status": "complete",
+      "outer_folds": [
+        {
+          "fold": 0,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5303154214801132,
+              "operating_threshold": 0.46,
+              "inner_threshold_f1_training_diagnostic": 0.808
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5315391054542673,
+              "operating_threshold": 0.36,
+              "inner_threshold_f1_training_diagnostic": 0.7953667953667953
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5256822722944762,
+              "operating_threshold": 0.61,
+              "inner_threshold_f1_training_diagnostic": 0.8018433179723502
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth6-280-l2-30",
+              "depth": 6,
+              "iterations": 280,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 30.0
+            },
+            "inner_log_loss": 0.5256822722944762,
+            "operating_threshold": 0.61,
+            "inner_threshold_f1_training_diagnostic": 0.8018433179723502
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 280,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 30,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 6,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 64,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.8482758620689655,
+            "average_precision": 0.8869607187245497,
+            "accuracy": 0.7755102040816326,
+            "precision": 0.8461538461538461,
+            "recall": 0.7586206896551724,
+            "f1": 0.8,
+            "brier": 0.15638219977730777,
+            "log_loss": 0.48052567617563063,
+            "confusion_matrix_tn_fp_fn_tp": [
+              16,
+              4,
+              7,
+              22
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.8482758620689655,
+            "average_precision": 0.8869607187245497,
+            "accuracy": 0.8163265306122449,
+            "precision": 0.7941176470588235,
+            "recall": 0.9310344827586207,
+            "f1": 0.8571428571428571,
+            "brier": 0.15638219977730777,
+            "log_loss": 0.48052567617563063,
+            "confusion_matrix_tn_fp_fn_tp": [
+              13,
+              7,
+              2,
+              27
+            ]
+          }
+        },
+        {
+          "fold": 1,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.549354117076089,
+              "operating_threshold": 0.37,
+              "inner_threshold_f1_training_diagnostic": 0.8222222222222222
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5541748851625118,
+              "operating_threshold": 0.38,
+              "inner_threshold_f1_training_diagnostic": 0.8212927756653993
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5604850907939953,
+              "operating_threshold": 0.36,
+              "inner_threshold_f1_training_diagnostic": 0.8270676691729323
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth4-160-l2-10",
+              "depth": 4,
+              "iterations": 160,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 10.0
+            },
+            "inner_log_loss": 0.549354117076089,
+            "operating_threshold": 0.37,
+            "inner_threshold_f1_training_diagnostic": 0.8222222222222222
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 160,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 10,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 4,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 16,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.8963210702341138,
+            "average_precision": 0.8795786669044227,
+            "accuracy": 0.7346938775510204,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "brier": 0.15406335145847186,
+            "log_loss": 0.48230655410111783,
+            "confusion_matrix_tn_fp_fn_tp": [
+              10,
+              13,
+              0,
+              26
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.8963210702341138,
+            "average_precision": 0.8795786669044227,
+            "accuracy": 0.7755102040816326,
+            "precision": 0.7142857142857143,
+            "recall": 0.9615384615384616,
+            "f1": 0.819672131147541,
+            "brier": 0.15406335145847186,
+            "log_loss": 0.48230655410111783,
+            "confusion_matrix_tn_fp_fn_tp": [
+              13,
+              10,
+              1,
+              25
+            ]
+          }
+        },
+        {
+          "fold": 2,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5303401889816771,
+              "operating_threshold": 0.33,
+              "inner_threshold_f1_training_diagnostic": 0.7925925925925926
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5349629047877048,
+              "operating_threshold": 0.37,
+              "inner_threshold_f1_training_diagnostic": 0.8062015503875969
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5253039629884475,
+              "operating_threshold": 0.44,
+              "inner_threshold_f1_training_diagnostic": 0.8047808764940239
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth6-280-l2-30",
+              "depth": 6,
+              "iterations": 280,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 30.0
+            },
+            "inner_log_loss": 0.5253039629884475,
+            "operating_threshold": 0.44,
+            "inner_threshold_f1_training_diagnostic": 0.8047808764940239
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 280,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 30,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 6,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 64,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.8148820326678766,
+            "average_precision": 0.8486939783120596,
+            "accuracy": 0.8125,
+            "precision": 0.8333333333333334,
+            "recall": 0.8620689655172413,
+            "f1": 0.847457627118644,
+            "brier": 0.16754007676515847,
+            "log_loss": 0.520473930437339,
+            "confusion_matrix_tn_fp_fn_tp": [
+              14,
+              5,
+              4,
+              25
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.8148820326678766,
+            "average_precision": 0.8486939783120596,
+            "accuracy": 0.7916666666666666,
+            "precision": 0.8275862068965517,
+            "recall": 0.8275862068965517,
+            "f1": 0.8275862068965517,
+            "brier": 0.16754007676515847,
+            "log_loss": 0.520473930437339,
+            "confusion_matrix_tn_fp_fn_tp": [
+              14,
+              5,
+              5,
+              24
+            ]
+          }
+        },
+        {
+          "fold": 3,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.52762801444617,
+              "operating_threshold": 0.34,
+              "inner_threshold_f1_training_diagnostic": 0.8164794007490637
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5149620555390335,
+              "operating_threshold": 0.41,
+              "inner_threshold_f1_training_diagnostic": 0.8340080971659919
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5063642162429676,
+              "operating_threshold": 0.37,
+              "inner_threshold_f1_training_diagnostic": 0.8313725490196079
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth6-280-l2-30",
+              "depth": 6,
+              "iterations": 280,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 30.0
+            },
+            "inner_log_loss": 0.5063642162429676,
+            "operating_threshold": 0.37,
+            "inner_threshold_f1_training_diagnostic": 0.8313725490196079
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 280,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 30,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 6,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 64,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.8312159709618874,
+            "average_precision": 0.8840957803175082,
+            "accuracy": 0.75,
+            "precision": 0.7741935483870968,
+            "recall": 0.8275862068965517,
+            "f1": 0.8,
+            "brier": 0.16670973259167385,
+            "log_loss": 0.502944060859294,
+            "confusion_matrix_tn_fp_fn_tp": [
+              12,
+              7,
+              5,
+              24
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.8312159709618874,
+            "average_precision": 0.8840957803175082,
+            "accuracy": 0.7916666666666666,
+            "precision": 0.8275862068965517,
+            "recall": 0.8275862068965517,
+            "f1": 0.8275862068965517,
+            "brier": 0.16670973259167385,
+            "log_loss": 0.502944060859294,
+            "confusion_matrix_tn_fp_fn_tp": [
+              14,
+              5,
+              5,
+              24
+            ]
+          }
+        },
+        {
+          "fold": 4,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5252653141884907,
+              "operating_threshold": 0.48,
+              "inner_threshold_f1_training_diagnostic": 0.8215767634854771
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5159562025872982,
+              "operating_threshold": 0.47,
+              "inner_threshold_f1_training_diagnostic": 0.8264462809917356
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5274844336037132,
+              "operating_threshold": 0.52,
+              "inner_threshold_f1_training_diagnostic": 0.811965811965812
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.5159562025872982,
+            "operating_threshold": 0.47,
+            "inner_threshold_f1_training_diagnostic": 0.8264462809917356
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.8250000000000001,
+            "average_precision": 0.8723248553592946,
+            "accuracy": 0.7708333333333334,
+            "precision": 0.7741935483870968,
+            "recall": 0.8571428571428571,
+            "f1": 0.8135593220338984,
+            "brier": 0.16367592954149993,
+            "log_loss": 0.4950223859724027,
+            "confusion_matrix_tn_fp_fn_tp": [
+              13,
+              7,
+              4,
+              24
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.8250000000000001,
+            "average_precision": 0.8723248553592946,
+            "accuracy": 0.7708333333333334,
+            "precision": 0.7741935483870968,
+            "recall": 0.8571428571428571,
+            "f1": 0.8135593220338984,
+            "brier": 0.16367592954149993,
+            "log_loss": 0.4950223859724027,
+            "confusion_matrix_tn_fp_fn_tp": [
+              13,
+              7,
+              4,
+              24
+            ]
+          }
+        }
+      ],
+      "oof": {
+        "roc_auc": 0.8287339372235095,
+        "average_precision": 0.8570436408239109,
+        "accuracy": 0.768595041322314,
+        "precision": 0.7707006369426752,
+        "recall": 0.8581560283687943,
+        "f1": 0.8120805369127517,
+        "brier": 0.1616209399903849,
+        "log_loss": 0.49613189005154706,
+        "confusion_matrix_tn_fp_fn_tp": [
+          65,
+          36,
+          20,
+          121
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.8287339372235095,
+        "average_precision": 0.8570436408239109,
+        "accuracy": 0.7892561983471075,
+        "precision": 0.7848101265822784,
+        "recall": 0.8794326241134752,
+        "f1": 0.8294314381270903,
+        "brier": 0.1616209399903849,
+        "log_loss": 0.49613189005154706,
+        "confusion_matrix_tn_fp_fn_tp": [
+          67,
+          34,
+          17,
+          124
+        ]
+      },
+      "v2_paired_same_rows": {
+        "roc_auc": 0.8138473421810266,
+        "average_precision": 0.8646075860763573,
+        "accuracy": 0.731404958677686,
+        "precision": 0.7183908045977011,
+        "recall": 0.8865248226950354,
+        "f1": 0.7936507936507936,
+        "brier": 0.17443234777133312,
+        "log_loss": 0.5174168555941124,
+        "confusion_matrix_tn_fp_fn_tp": [
+          52,
+          49,
+          16,
+          125
+        ]
+      },
+      "catboost_minus_v2": {
+        "roc_auc": 0.014886595042482909,
+        "average_precision": -0.0075639452524464135,
+        "accuracy": 0.037190082644628086,
+        "precision": 0.052309832344974105,
+        "recall": -0.028368794326241065,
+        "f1": 0.01842974326195812,
+        "brier": -0.01281140778094822,
+        "log_loss": -0.02128496554256537
+      },
+      "paired_correctness_counts": {
+        "both_correct": 161,
+        "v2_correct_catboost_wrong": 16,
+        "v2_wrong_catboost_correct": 25,
+        "both_wrong": 40
+      },
+      "comparison_warning": "Descriptive paired development results after previous development experiments; no significance, final-test or clinical superiority claim"
+    },
+    "LCX": {
+      "status": "complete",
+      "outer_folds": [
+        {
+          "fold": 0,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.6003061355834539,
+              "operating_threshold": 0.21,
+              "inner_threshold_f1_training_diagnostic": 0.6082949308755761
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.6024184433722515,
+              "operating_threshold": 0.35,
+              "inner_threshold_f1_training_diagnostic": 0.6125
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.593283565526912,
+              "operating_threshold": 0.18,
+              "inner_threshold_f1_training_diagnostic": 0.6063348416289592
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth6-280-l2-30",
+              "depth": 6,
+              "iterations": 280,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 30.0
+            },
+            "inner_log_loss": 0.593283565526912,
+            "operating_threshold": 0.18,
+            "inner_threshold_f1_training_diagnostic": 0.6063348416289592
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 280,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 30,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 6,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 64,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.6293103448275862,
+            "average_precision": 0.5123617820069398,
+            "accuracy": 0.5306122448979592,
+            "precision": 0.46511627906976744,
+            "recall": 1.0,
+            "f1": 0.6349206349206349,
+            "brier": 0.22883601919777005,
+            "log_loss": 0.6423207767891291,
+            "confusion_matrix_tn_fp_fn_tp": [
+              6,
+              23,
+              0,
+              20
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.6293103448275862,
+            "average_precision": 0.5123617820069398,
+            "accuracy": 0.6122448979591837,
+            "precision": 0.5263157894736842,
+            "recall": 0.5,
+            "f1": 0.5128205128205128,
+            "brier": 0.22883601919777005,
+            "log_loss": 0.6423207767891291,
+            "confusion_matrix_tn_fp_fn_tp": [
+              20,
+              9,
+              10,
+              10
+            ]
+          }
+        },
+        {
+          "fold": 1,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5982411976807028,
+              "operating_threshold": 0.28,
+              "inner_threshold_f1_training_diagnostic": 0.6407766990291263
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.6122627358344395,
+              "operating_threshold": 0.28,
+              "inner_threshold_f1_training_diagnostic": 0.6470588235294118
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5974469995299748,
+              "operating_threshold": 0.25,
+              "inner_threshold_f1_training_diagnostic": 0.6476190476190476
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth6-280-l2-30",
+              "depth": 6,
+              "iterations": 280,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 30.0
+            },
+            "inner_log_loss": 0.5974469995299748,
+            "operating_threshold": 0.25,
+            "inner_threshold_f1_training_diagnostic": 0.6476190476190476
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 280,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 30,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 6,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 64,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.6799242424242423,
+            "average_precision": 0.5913514448333128,
+            "accuracy": 0.5714285714285714,
+            "precision": 0.41379310344827586,
+            "recall": 0.75,
+            "f1": 0.5333333333333333,
+            "brier": 0.20942558718361315,
+            "log_loss": 0.6072901212546159,
+            "confusion_matrix_tn_fp_fn_tp": [
+              16,
+              17,
+              4,
+              12
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.6799242424242423,
+            "average_precision": 0.5913514448333128,
+            "accuracy": 0.6530612244897959,
+            "precision": 0.4666666666666667,
+            "recall": 0.4375,
+            "f1": 0.45161290322580644,
+            "brier": 0.20942558718361315,
+            "log_loss": 0.6072901212546159,
+            "confusion_matrix_tn_fp_fn_tp": [
+              25,
+              8,
+              9,
+              7
+            ]
+          }
+        },
+        {
+          "fold": 2,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.6582682042804717,
+              "operating_threshold": 0.31,
+              "inner_threshold_f1_training_diagnostic": 0.5714285714285714
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.6833277635510677,
+              "operating_threshold": 0.19,
+              "inner_threshold_f1_training_diagnostic": 0.5550239234449761
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.6939885713751924,
+              "operating_threshold": 0.2,
+              "inner_threshold_f1_training_diagnostic": 0.5392156862745098
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth4-160-l2-10",
+              "depth": 4,
+              "iterations": 160,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 10.0
+            },
+            "inner_log_loss": 0.6582682042804717,
+            "operating_threshold": 0.31,
+            "inner_threshold_f1_training_diagnostic": 0.5714285714285714
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 160,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 10,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 4,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 16,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.7832167832167832,
+            "average_precision": 0.7808246426167174,
+            "accuracy": 0.7083333333333334,
+            "precision": 0.6428571428571429,
+            "recall": 0.8181818181818182,
+            "f1": 0.72,
+            "brier": 0.2113589880681687,
+            "log_loss": 0.6082669104884072,
+            "confusion_matrix_tn_fp_fn_tp": [
+              16,
+              10,
+              4,
+              18
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.7832167832167832,
+            "average_precision": 0.7808246426167174,
+            "accuracy": 0.6666666666666666,
+            "precision": 1.0,
+            "recall": 0.2727272727272727,
+            "f1": 0.42857142857142855,
+            "brier": 0.2113589880681687,
+            "log_loss": 0.6082669104884072,
+            "confusion_matrix_tn_fp_fn_tp": [
+              26,
+              0,
+              16,
+              6
+            ]
+          }
+        },
+        {
+          "fold": 3,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.6160010923209391,
+              "operating_threshold": 0.4,
+              "inner_threshold_f1_training_diagnostic": 0.6153846153846154
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.6265377813463652,
+              "operating_threshold": 0.44,
+              "inner_threshold_f1_training_diagnostic": 0.632258064516129
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.6307248011544595,
+              "operating_threshold": 0.38,
+              "inner_threshold_f1_training_diagnostic": 0.6206896551724138
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth4-160-l2-10",
+              "depth": 4,
+              "iterations": 160,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 10.0
+            },
+            "inner_log_loss": 0.6160010923209391,
+            "operating_threshold": 0.4,
+            "inner_threshold_f1_training_diagnostic": 0.6153846153846154
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 160,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 10,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 4,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 16,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.6648148148148147,
+            "average_precision": 0.5190181738244866,
+            "accuracy": 0.6875,
+            "precision": 0.5789473684210527,
+            "recall": 0.6111111111111112,
+            "f1": 0.5945945945945946,
+            "brier": 0.21965554910009874,
+            "log_loss": 0.6298306698802567,
+            "confusion_matrix_tn_fp_fn_tp": [
+              22,
+              8,
+              7,
+              11
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.6648148148148147,
+            "average_precision": 0.5190181738244866,
+            "accuracy": 0.625,
+            "precision": 0.5,
+            "recall": 0.3333333333333333,
+            "f1": 0.4,
+            "brier": 0.21965554910009874,
+            "log_loss": 0.6298306698802567,
+            "confusion_matrix_tn_fp_fn_tp": [
+              24,
+              6,
+              12,
+              6
+            ]
+          }
+        },
+        {
+          "fold": 4,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.6239270832831325,
+              "operating_threshold": 0.24,
+              "inner_threshold_f1_training_diagnostic": 0.6111111111111112
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.6586016048177193,
+              "operating_threshold": 0.18,
+              "inner_threshold_f1_training_diagnostic": 0.591304347826087
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.6535202960983378,
+              "operating_threshold": 0.2,
+              "inner_threshold_f1_training_diagnostic": 0.6017699115044248
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth4-160-l2-10",
+              "depth": 4,
+              "iterations": 160,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 10.0
+            },
+            "inner_log_loss": 0.6239270832831325,
+            "operating_threshold": 0.24,
+            "inner_threshold_f1_training_diagnostic": 0.6111111111111112
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 160,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 10,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 4,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 16,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.7734375,
+            "average_precision": 0.6428330783799534,
+            "accuracy": 0.4583333333333333,
+            "precision": 0.3684210526315789,
+            "recall": 0.875,
+            "f1": 0.5185185185185185,
+            "brier": 0.1794885675566107,
+            "log_loss": 0.5417502078106978,
+            "confusion_matrix_tn_fp_fn_tp": [
+              8,
+              24,
+              2,
+              14
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.7734375,
+            "average_precision": 0.6428330783799534,
+            "accuracy": 0.7916666666666666,
+            "precision": 0.75,
+            "recall": 0.5625,
+            "f1": 0.6428571428571429,
+            "brier": 0.1794885675566107,
+            "log_loss": 0.5417502078106978,
+            "confusion_matrix_tn_fp_fn_tp": [
+              29,
+              3,
+              7,
+              9
+            ]
+          }
+        }
+      ],
+      "oof": {
+        "roc_auc": 0.6993478260869564,
+        "average_precision": 0.5534244227657572,
+        "accuracy": 0.5909090909090909,
+        "precision": 0.47770700636942676,
+        "recall": 0.8152173913043478,
+        "f1": 0.6024096385542169,
+        "brier": 0.20983044520447078,
+        "log_loss": 0.606048048912202,
+        "confusion_matrix_tn_fp_fn_tp": [
+          68,
+          82,
+          17,
+          75
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.6993478260869564,
+        "average_precision": 0.5534244227657572,
+        "accuracy": 0.6694214876033058,
+        "precision": 0.59375,
+        "recall": 0.41304347826086957,
+        "f1": 0.48717948717948717,
+        "brier": 0.20983044520447078,
+        "log_loss": 0.606048048912202,
+        "confusion_matrix_tn_fp_fn_tp": [
+          124,
+          26,
+          54,
+          38
+        ]
+      },
+      "v2_paired_same_rows": {
+        "roc_auc": 0.7010869565217391,
+        "average_precision": 0.5642992701548203,
+        "accuracy": 0.5909090909090909,
+        "precision": 0.47770700636942676,
+        "recall": 0.8152173913043478,
+        "f1": 0.6024096385542169,
+        "brier": 0.21059603580426933,
+        "log_loss": 0.6085924279472172,
+        "confusion_matrix_tn_fp_fn_tp": [
+          68,
+          82,
+          17,
+          75
+        ]
+      },
+      "catboost_minus_v2": {
+        "roc_auc": -0.0017391304347826875,
+        "average_precision": -0.01087484738906308,
+        "accuracy": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "brier": -0.0007655905997985546,
+        "log_loss": -0.002544379035015254
+      },
+      "paired_correctness_counts": {
+        "both_correct": 126,
+        "v2_correct_catboost_wrong": 17,
+        "v2_wrong_catboost_correct": 17,
+        "both_wrong": 82
+      },
+      "comparison_warning": "Descriptive paired development results after previous development experiments; no significance, final-test or clinical superiority claim"
+    },
+    "RCA": {
+      "status": "complete",
+      "outer_folds": [
+        {
+          "fold": 0,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.6094833789851892,
+              "operating_threshold": 0.25,
+              "inner_threshold_f1_training_diagnostic": 0.6226415094339622
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.6058517648413542,
+              "operating_threshold": 0.3,
+              "inner_threshold_f1_training_diagnostic": 0.6413043478260869
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.6099776138896192,
+              "operating_threshold": 0.32,
+              "inner_threshold_f1_training_diagnostic": 0.6333333333333333
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.6058517648413542,
+            "operating_threshold": 0.3,
+            "inner_threshold_f1_training_diagnostic": 0.6413043478260869
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.7575757575757576,
+            "average_precision": 0.6238752051918388,
+            "accuracy": 0.5306122448979592,
+            "precision": 0.4,
+            "recall": 0.875,
+            "f1": 0.5490196078431373,
+            "brier": 0.18980229185106184,
+            "log_loss": 0.5645160551029331,
+            "confusion_matrix_tn_fp_fn_tp": [
+              12,
+              21,
+              2,
+              14
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.7575757575757576,
+            "average_precision": 0.6238752051918388,
+            "accuracy": 0.7755102040816326,
+            "precision": 0.631578947368421,
+            "recall": 0.75,
+            "f1": 0.6857142857142857,
+            "brier": 0.18980229185106184,
+            "log_loss": 0.5645160551029331,
+            "confusion_matrix_tn_fp_fn_tp": [
+              26,
+              7,
+              4,
+              12
+            ]
+          }
+        },
+        {
+          "fold": 1,
+          "train_n": 193,
+          "validation_n": 49,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5724439748076848,
+              "operating_threshold": 0.32,
+              "inner_threshold_f1_training_diagnostic": 0.6368715083798883
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5751006508315777,
+              "operating_threshold": 0.35,
+              "inner_threshold_f1_training_diagnostic": 0.6265060240963856
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5783498027079705,
+              "operating_threshold": 0.33,
+              "inner_threshold_f1_training_diagnostic": 0.6352941176470588
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth4-160-l2-10",
+              "depth": 4,
+              "iterations": 160,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 10.0
+            },
+            "inner_log_loss": 0.5724439748076848,
+            "operating_threshold": 0.32,
+            "inner_threshold_f1_training_diagnostic": 0.6368715083798883
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 160,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 10,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 4,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 16,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.8280701754385965,
+            "average_precision": 0.772456689712613,
+            "accuracy": 0.7551020408163265,
+            "precision": 0.64,
+            "recall": 0.8421052631578947,
+            "f1": 0.7272727272727273,
+            "brier": 0.18092009310976792,
+            "log_loss": 0.5377734124301792,
+            "confusion_matrix_tn_fp_fn_tp": [
+              21,
+              9,
+              3,
+              16
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.8280701754385965,
+            "average_precision": 0.772456689712613,
+            "accuracy": 0.7142857142857143,
+            "precision": 0.8571428571428571,
+            "recall": 0.3157894736842105,
+            "f1": 0.46153846153846156,
+            "brier": 0.18092009310976792,
+            "log_loss": 0.5377734124301792,
+            "confusion_matrix_tn_fp_fn_tp": [
+              29,
+              1,
+              13,
+              6
+            ]
+          }
+        },
+        {
+          "fold": 2,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5533769712712195,
+              "operating_threshold": 0.26,
+              "inner_threshold_f1_training_diagnostic": 0.6598984771573604
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5679492347206928,
+              "operating_threshold": 0.38,
+              "inner_threshold_f1_training_diagnostic": 0.6540880503144654
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5772237102254113,
+              "operating_threshold": 0.33,
+              "inner_threshold_f1_training_diagnostic": 0.6477272727272727
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth4-160-l2-10",
+              "depth": 4,
+              "iterations": 160,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 10.0
+            },
+            "inner_log_loss": 0.5533769712712195,
+            "operating_threshold": 0.26,
+            "inner_threshold_f1_training_diagnostic": 0.6598984771573604
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 160,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 10,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 4,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 16,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.6129629629629629,
+            "average_precision": 0.558051673462083,
+            "accuracy": 0.5833333333333334,
+            "precision": 0.47058823529411764,
+            "recall": 0.8888888888888888,
+            "f1": 0.6153846153846154,
+            "brier": 0.22546397673967608,
+            "log_loss": 0.6385876635894326,
+            "confusion_matrix_tn_fp_fn_tp": [
+              12,
+              18,
+              2,
+              16
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.6129629629629629,
+            "average_precision": 0.558051673462083,
+            "accuracy": 0.6041666666666666,
+            "precision": 0.46153846153846156,
+            "recall": 0.3333333333333333,
+            "f1": 0.3870967741935484,
+            "brier": 0.22546397673967608,
+            "log_loss": 0.6385876635894326,
+            "confusion_matrix_tn_fp_fn_tp": [
+              23,
+              7,
+              12,
+              6
+            ]
+          }
+        },
+        {
+          "fold": 3,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5757314550811217,
+              "operating_threshold": 0.29,
+              "inner_threshold_f1_training_diagnostic": 0.6368159203980099
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.563731575756868,
+              "operating_threshold": 0.33,
+              "inner_threshold_f1_training_diagnostic": 0.6850828729281768
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5689805374109986,
+              "operating_threshold": 0.34,
+              "inner_threshold_f1_training_diagnostic": 0.6666666666666666
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth5-220-l2-20",
+              "depth": 5,
+              "iterations": 220,
+              "learning_rate": 0.035,
+              "l2_leaf_reg": 20.0
+            },
+            "inner_log_loss": 0.563731575756868,
+            "operating_threshold": 0.33,
+            "inner_threshold_f1_training_diagnostic": 0.6850828729281768
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 220,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 20,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 5,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.03500000014901161,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 32,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.686868686868687,
+            "average_precision": 0.4949508811684071,
+            "accuracy": 0.625,
+            "precision": 0.43478260869565216,
+            "recall": 0.6666666666666666,
+            "f1": 0.5263157894736842,
+            "brier": 0.20069582808274145,
+            "log_loss": 0.581126839339022,
+            "confusion_matrix_tn_fp_fn_tp": [
+              20,
+              13,
+              5,
+              10
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.686868686868687,
+            "average_precision": 0.4949508811684071,
+            "accuracy": 0.7083333333333334,
+            "precision": 0.5555555555555556,
+            "recall": 0.3333333333333333,
+            "f1": 0.4166666666666667,
+            "brier": 0.20069582808274145,
+            "log_loss": 0.581126839339022,
+            "confusion_matrix_tn_fp_fn_tp": [
+              29,
+              4,
+              10,
+              5
+            ]
+          }
+        },
+        {
+          "fold": 4,
+          "train_n": 194,
+          "validation_n": 48,
+          "inner_candidates": [
+            {
+              "configuration": {
+                "id": "depth4-160-l2-10",
+                "depth": 4,
+                "iterations": 160,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 10.0
+              },
+              "inner_log_loss": 0.5761036894349987,
+              "operating_threshold": 0.19,
+              "inner_threshold_f1_training_diagnostic": 0.5915492957746479
+            },
+            {
+              "configuration": {
+                "id": "depth5-220-l2-20",
+                "depth": 5,
+                "iterations": 220,
+                "learning_rate": 0.035,
+                "l2_leaf_reg": 20.0
+              },
+              "inner_log_loss": 0.5930338079828122,
+              "operating_threshold": 0.36,
+              "inner_threshold_f1_training_diagnostic": 0.5827814569536424
+            },
+            {
+              "configuration": {
+                "id": "depth6-280-l2-30",
+                "depth": 6,
+                "iterations": 280,
+                "learning_rate": 0.03,
+                "l2_leaf_reg": 30.0
+              },
+              "inner_log_loss": 0.5838727086822972,
+              "operating_threshold": 0.34,
+              "inner_threshold_f1_training_diagnostic": 0.5987261146496815
+            }
+          ],
+          "selected": {
+            "configuration": {
+              "id": "depth4-160-l2-10",
+              "depth": 4,
+              "iterations": 160,
+              "learning_rate": 0.03,
+              "l2_leaf_reg": 10.0
+            },
+            "inner_log_loss": 0.5761036894349987,
+            "operating_threshold": 0.19,
+            "inner_threshold_f1_training_diagnostic": 0.5915492957746479
+          },
+          "fitted_native_parameters": {
+            "nan_mode": "Min",
+            "eval_metric": "Logloss",
+            "combinations_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "iterations": 160,
+            "sampling_frequency": "PerTree",
+            "fold_permutation_block": 0,
+            "leaf_estimation_method": "Newton",
+            "random_score_type": "NormalWithModelSizeDecrease",
+            "counter_calc_method": "SkipTest",
+            "grow_policy": "SymmetricTree",
+            "penalties_coefficient": 1,
+            "boosting_type": "Ordered",
+            "model_shrink_mode": "Constant",
+            "feature_border_type": "GreedyLogSum",
+            "ctr_leaf_count_limit": 18446744073709551615,
+            "bayesian_matrix_reg": 0.10000000149011612,
+            "one_hot_max_size": 2,
+            "eval_fraction": 0,
+            "force_unit_auto_pair_weights": false,
+            "l2_leaf_reg": 10,
+            "random_strength": 1,
+            "rsm": 1,
+            "boost_from_average": false,
+            "max_ctr_complexity": 1,
+            "model_size_reg": 0.5,
+            "approx_on_full_history": false,
+            "simple_ctr": [
+              "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+              "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+            ],
+            "pool_metainfo_options": {
+              "tags": {}
+            },
+            "use_best_model": false,
+            "class_names": [
+              0,
+              1
+            ],
+            "random_seed": 2026,
+            "depth": 4,
+            "ctr_target_border_count": 1,
+            "posterior_sampling": false,
+            "has_time": false,
+            "store_all_simple_ctr": false,
+            "fold_len_multiplier": 2,
+            "border_count": 64,
+            "bagging_temperature": 1,
+            "classes_count": 0,
+            "auto_class_weights": "None",
+            "sparse_features_conflict_fraction": 0,
+            "leaf_estimation_backtracking": "AnyImprovement",
+            "best_model_min_trees": 1,
+            "model_shrink_rate": 0,
+            "min_data_in_leaf": 1,
+            "loss_function": "Logloss",
+            "learning_rate": 0.029999999329447743,
+            "score_function": "Cosine",
+            "task_type": "CPU",
+            "leaf_estimation_iterations": 10,
+            "bootstrap_type": "Bayesian",
+            "max_leaves": 16,
+            "permutation_count": 4
+          },
+          "metrics": {
+            "roc_auc": 0.6578483245149912,
+            "average_precision": 0.5962084899981447,
+            "accuracy": 0.5416666666666666,
+            "precision": 0.4878048780487805,
+            "recall": 0.9523809523809523,
+            "f1": 0.6451612903225806,
+            "brier": 0.23715338780383122,
+            "log_loss": 0.6623447238216102,
+            "confusion_matrix_tn_fp_fn_tp": [
+              6,
+              21,
+              1,
+              20
+            ]
+          },
+          "metrics_at_0_5": {
+            "roc_auc": 0.6578483245149912,
+            "average_precision": 0.5962084899981447,
+            "accuracy": 0.6041666666666666,
+            "precision": 0.75,
+            "recall": 0.14285714285714285,
+            "f1": 0.24,
+            "brier": 0.23715338780383122,
+            "log_loss": 0.6623447238216102,
+            "confusion_matrix_tn_fp_fn_tp": [
+              26,
+              1,
+              18,
+              3
+            ]
+          }
+        }
+      ],
+      "oof": {
+        "roc_auc": 0.6967760887126387,
+        "average_precision": 0.5560496483943934,
+        "accuracy": 0.6074380165289256,
+        "precision": 0.4810126582278481,
+        "recall": 0.8539325842696629,
+        "f1": 0.6153846153846154,
+        "brier": 0.20662987648405207,
+        "log_loss": 0.5964918462525853,
+        "confusion_matrix_tn_fp_fn_tp": [
+          71,
+          82,
+          13,
+          76
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.6967760887126387,
+        "average_precision": 0.5560496483943934,
+        "accuracy": 0.6818181818181818,
+        "precision": 0.6153846153846154,
+        "recall": 0.3595505617977528,
+        "f1": 0.45390070921985815,
+        "brier": 0.20662987648405207,
+        "log_loss": 0.5964918462525853,
+        "confusion_matrix_tn_fp_fn_tp": [
+          133,
+          20,
+          57,
+          32
+        ]
+      },
+      "v2_paired_same_rows": {
+        "roc_auc": 0.7218183153411177,
+        "average_precision": 0.5791445162855365,
+        "accuracy": 0.6115702479338843,
+        "precision": 0.48322147651006714,
+        "recall": 0.8089887640449438,
+        "f1": 0.6050420168067226,
+        "brier": 0.20225457694547097,
+        "log_loss": 0.5871047204848403,
+        "confusion_matrix_tn_fp_fn_tp": [
+          76,
+          77,
+          17,
+          72
+        ]
+      },
+      "catboost_minus_v2": {
+        "roc_auc": -0.025042226628478992,
+        "average_precision": -0.023094867891143123,
+        "accuracy": -0.004132231404958664,
+        "precision": -0.002208818282219027,
+        "recall": 0.0449438202247191,
+        "f1": 0.01034259857789277,
+        "brier": 0.0043752995385810955,
+        "log_loss": 0.00938712576774503
+      },
+      "paired_correctness_counts": {
+        "both_correct": 130,
+        "v2_correct_catboost_wrong": 18,
+        "v2_wrong_catboost_correct": 17,
+        "both_wrong": 77
+      },
+      "comparison_warning": "Descriptive paired development results after previous development experiments; no significance, final-test or clinical superiority claim"
+    }
+  },
+  "elapsed_wall_seconds": 190.32648570799938,
+  "fit_count": 200,
+  "process_peak_rss_bytes": 422789120,
+  "project_read_paths": [
+    "training/__pycache__/benchmark.cpython-312.pyc",
+    "training/__pycache__/experiment_v2.cpython-312.pyc",
+    "training/__pycache__/predict.cpython-312.pyc",
+    "training/extention of Z-Alizadeh sani dataset.xlsx",
+    "training/results-v2/development_oof.csv",
+    "training/results/split.json"
+  ],
+  "blocked_artifact_reads": [],
+  "completed_utc": "2026-10-09T20:07:08.596177+00:00",
+  "cpu_user_seconds": 356.493585,
+  "cpu_system_seconds": 4.864614
+}

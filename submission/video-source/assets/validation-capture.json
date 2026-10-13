@@ -1,0 +1,18 @@
+{
+  "name": "validation",
+  "duration": 12.055,
+  "actions": [
+    {
+      "at": 1.498,
+      "description": "Open measured development evidence"
+    },
+    {
+      "at": 4.929,
+      "description": "Expand training and limitations"
+    },
+    {
+      "at": 7.558,
+      "description": "Inspect frozen 61-record held-out evaluation"
+    }
+  ]
+}

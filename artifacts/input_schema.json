@@ -1,0 +1,458 @@
+{
+  "schema_version": 1,
+  "feature_order": [
+    "Age",
+    "Weight",
+    "Length",
+    "Sex",
+    "BMI",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "BP",
+    "PR",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "VHD"
+  ],
+  "excluded_features": [
+    "Cath",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "numeric": [
+    {
+      "feature": "Age",
+      "min_development": 30.0,
+      "max_development": 86.0,
+      "median_development": 57.5,
+      "integer_observed": true
+    },
+    {
+      "feature": "Weight",
+      "min_development": 48.0,
+      "max_development": 120.0,
+      "median_development": 73.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Length",
+      "min_development": 140.0,
+      "max_development": 187.0,
+      "median_development": 165.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "BMI",
+      "min_development": 18.115412710007302,
+      "max_development": 38.28124999999999,
+      "median_development": 26.724136751179664,
+      "integer_observed": false
+    },
+    {
+      "feature": "DM",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "HTN",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 1.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Current Smoker",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "EX-Smoker",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "FH",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "BP",
+      "min_development": 90.0,
+      "max_development": 190.0,
+      "median_development": 130.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "PR",
+      "min_development": 50.0,
+      "max_development": 110.0,
+      "median_development": 70.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Edema",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Typical Chest Pain",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 1.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Function Class",
+      "min_development": 0.0,
+      "max_development": 3.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Q Wave",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "St Elevation",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "St Depression",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Tinversion",
+      "min_development": 0.0,
+      "max_development": 1.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "FBS",
+      "min_development": 65.0,
+      "max_development": 400.0,
+      "median_development": 98.5,
+      "integer_observed": true
+    },
+    {
+      "feature": "CR",
+      "min_development": 0.5,
+      "max_development": 2.2,
+      "median_development": 1.0,
+      "integer_observed": false
+    },
+    {
+      "feature": "TG",
+      "min_development": 37.0,
+      "max_development": 1050.0,
+      "median_development": 119.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "LDL",
+      "min_development": 18.0,
+      "max_development": 232.0,
+      "median_development": 99.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "HDL",
+      "min_development": 15.9,
+      "max_development": 111.0,
+      "median_development": 39.0,
+      "integer_observed": false
+    },
+    {
+      "feature": "BUN",
+      "min_development": 6.0,
+      "max_development": 52.0,
+      "median_development": 16.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "ESR",
+      "min_development": 1.0,
+      "max_development": 80.0,
+      "median_development": 15.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "HB",
+      "min_development": 8.9,
+      "max_development": 17.6,
+      "median_development": 13.2,
+      "integer_observed": false
+    },
+    {
+      "feature": "K",
+      "min_development": 3.1,
+      "max_development": 6.6,
+      "median_development": 4.3,
+      "integer_observed": false
+    },
+    {
+      "feature": "Na",
+      "min_development": 130.0,
+      "max_development": 156.0,
+      "median_development": 141.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "WBC",
+      "min_development": 3700.0,
+      "max_development": 18000.0,
+      "median_development": 7100.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Lymph",
+      "min_development": 7.0,
+      "max_development": 60.0,
+      "median_development": 32.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Neut",
+      "min_development": 32.0,
+      "max_development": 86.0,
+      "median_development": 60.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "PLT",
+      "min_development": 25.0,
+      "max_development": 742.0,
+      "median_development": 210.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "EF-TTE",
+      "min_development": 15.0,
+      "max_development": 60.0,
+      "median_development": 50.0,
+      "integer_observed": true
+    },
+    {
+      "feature": "Region RWMA",
+      "min_development": 0.0,
+      "max_development": 4.0,
+      "median_development": 0.0,
+      "integer_observed": true
+    }
+  ],
+  "categorical": [
+    {
+      "feature": "Sex",
+      "categories_development": [
+        "Fmale",
+        "Male"
+      ]
+    },
+    {
+      "feature": "Obesity",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "CRF",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "CVA",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Airway disease",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Thyroid Disease",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "CHF",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "DLP",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Weak Peripheral Pulse",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Lung rales",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Systolic Murmur",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Diastolic Murmur",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Dyspnea",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Atypical",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Nonanginal",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Exertional CP",
+      "categories_development": [
+        "N"
+      ]
+    },
+    {
+      "feature": "LowTH Ang",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "LVH",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "Poor R Progression",
+      "categories_development": [
+        "N",
+        "Y"
+      ]
+    },
+    {
+      "feature": "BBB",
+      "categories_development": [
+        "LBBB",
+        "N",
+        "RBBB"
+      ]
+    },
+    {
+      "feature": "VHD",
+      "categories_development": [
+        "Moderate",
+        "N",
+        "Severe",
+        "mild"
+      ]
+    }
+  ],
+  "units": "Dataset column names retained; clinical unit labels have not been independently verified."
+}

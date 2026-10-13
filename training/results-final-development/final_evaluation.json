@@ -1,0 +1,719 @@
+{
+  "schema_version": 1,
+  "evaluation_status": "complete",
+  "evaluated_at_utc": "2026-10-05T19:42:48.834689+00:00",
+  "n_holdout": 61,
+  "n_development": 242,
+  "n_input_features": 55,
+  "primary_profile": "full",
+  "holdout_scored": true,
+  "protocol": {
+    "schema_version": 1,
+    "frozen_at_utc": "2026-10-05T19:35:01.194619+00:00",
+    "primary_profile": "full",
+    "n_features": 55,
+    "excluded_features": [
+      "Cath",
+      "LAD",
+      "LCX",
+      "RCA"
+    ],
+    "primary_method": "V2 regularized logistic procedure selected solely inside development training folds",
+    "model_selection": "Three target-stratified inner folds; pooled inner OOF log loss selects C and unweighted/balanced/optional cross-fitted sigmoid calibration",
+    "c_grid": [
+      0.01,
+      0.1,
+      1,
+      10
+    ],
+    "threshold_selection": "F1 maximized on selected candidate inner OOF scores over 0.05..0.95 in 0.01 increments; ties closest to 0.5 then higher",
+    "final_training": "242 frozen development records; no final holdout fitting, calibration, threshold selection or feature-profile selection",
+    "evaluation": "61 frozen final holdout records scored once after this freeze; ROC-AUC, accuracy, precision, recall, F1, Brier, confusion counts and conditional patient-bootstrap intervals",
+    "availability_profiles": "Exploratory development comparisons; reduced profiles do not replace the primary full-input procedure",
+    "post_evaluation_policy": "Do not retune models or thresholds using final outcomes. UI, reproducibility and presentation fixes may continue with scores retained.",
+    "source_sha256": {
+      "benchmark.py": "674ce592908ddc54bfd5e0cd33045bb39667917f1d5283bb75ec6a94df5b2c0e",
+      "experiment_v2.py": "e7fe46df843c46dbf52ad7da3886681e01d2a641bd004eda973a9f70e9d888fd",
+      "fit_final_development.py": "09f19698eb764fe4b928bd02eee7f9a1b4d91179302dc5098fc9ffcd8b9d6a8e",
+      "predict.py": "3a081e8fc2eef1d53263765c00a91a17d2f85c184cde0ae67f429e006e8367b7",
+      "results/split.json": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b"
+    }
+  },
+  "targets": {
+    "CAD": {
+      "model_id": "CAD-final-development",
+      "recorded_target_column": "Cath",
+      "n_positive": 43,
+      "n_negative": 18,
+      "operating_threshold": 0.21,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "model_family": "balanced_sigmoid",
+      "C": 0.01,
+      "calibration_method": "sigmoid",
+      "metrics": {
+        "roc_auc": 0.9082687338501292,
+        "average_precision": 0.9595553630321776,
+        "accuracy": 0.8360655737704918,
+        "precision": 0.851063829787234,
+        "recall": 0.9302325581395349,
+        "f1": 0.8888888888888888,
+        "brier": 0.11023772428468445,
+        "log_loss": 0.3713989315582649,
+        "specificity": 0.6111111111111112,
+        "classification_threshold": 0.21,
+        "confusion_matrix_tn_fp_fn_tp": [
+          11,
+          7,
+          3,
+          40
+        ],
+        "confusion_counts": {
+          "tn": 11,
+          "fp": 7,
+          "fn": 3,
+          "tp": 40
+        },
+        "roc_auc_95_ci_conditional": [
+          0.814665404040404,
+          0.9719640332272887
+        ],
+        "f1_95_ci_conditional": [
+          0.8088939150736904,
+          0.9487373737373737
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.9082687338501292,
+        "average_precision": 0.9595553630321776,
+        "accuracy": 0.8852459016393442,
+        "precision": 0.9285714285714286,
+        "recall": 0.9069767441860465,
+        "f1": 0.9176470588235294,
+        "brier": 0.11023772428468445,
+        "log_loss": 0.3713989315582649,
+        "specificity": 0.8333333333333334,
+        "classification_threshold": 0.5,
+        "confusion_matrix_tn_fp_fn_tp": [
+          15,
+          3,
+          4,
+          39
+        ],
+        "confusion_counts": {
+          "tn": 15,
+          "fp": 3,
+          "fn": 4,
+          "tp": 39
+        },
+        "roc_auc_95_ci_conditional": [
+          0.814665404040404,
+          0.9719640332272887
+        ],
+        "f1_95_ci_conditional": [
+          0.8461538461538461,
+          0.967032967032967
+        ]
+      },
+      "conditional_intervals": {
+        "roc_auc_95_ci_conditional": [
+          0.814665404040404,
+          0.9719640332272887
+        ],
+        "f1_95_ci_conditional": [
+          0.8088939150736904,
+          0.9487373737373737
+        ],
+        "f1_at_0_5_95_ci_conditional": [
+          0.8461538461538461,
+          0.967032967032967
+        ],
+        "auc_valid_resamples": 1000,
+        "f1_resamples": 1000,
+        "resamples_requested": 1000
+      },
+      "calibration_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.2,
+          "n": 13,
+          "mean_probability": 0.07029812345737046,
+          "observed_fraction": 0.23076923076923078
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 4,
+          "mean_probability": 0.26411602209490176,
+          "observed_fraction": 0.25
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6000000000000001,
+          "n": 5,
+          "mean_probability": 0.5169861571969199,
+          "observed_fraction": 0.6
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.8,
+          "n": 3,
+          "mean_probability": 0.7015000022432359,
+          "observed_fraction": 0.6666666666666666
+        },
+        {
+          "lo": 0.8,
+          "hi": 1.0,
+          "n": 36,
+          "mean_probability": 0.9591253893484729,
+          "observed_fraction": 0.9444444444444444
+        }
+      ],
+      "inference_diagnostics": {
+        "rows_with_imputed_features": 0,
+        "rows_with_unknown_categories": 0
+      }
+    },
+    "LAD": {
+      "model_id": "LAD-final-development",
+      "recorded_target_column": "LAD",
+      "n_positive": 36,
+      "n_negative": 25,
+      "operating_threshold": 0.36,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "model_family": "balanced_sigmoid",
+      "C": 0.01,
+      "calibration_method": "sigmoid",
+      "metrics": {
+        "roc_auc": 0.8933333333333333,
+        "average_precision": 0.9212243727159936,
+        "accuracy": 0.8524590163934426,
+        "precision": 0.813953488372093,
+        "recall": 0.9722222222222222,
+        "f1": 0.8860759493670886,
+        "brier": 0.12578632169367562,
+        "log_loss": 0.3907049579829295,
+        "specificity": 0.68,
+        "classification_threshold": 0.36,
+        "confusion_matrix_tn_fp_fn_tp": [
+          17,
+          8,
+          1,
+          35
+        ],
+        "confusion_counts": {
+          "tn": 17,
+          "fp": 8,
+          "fn": 1,
+          "tp": 35
+        },
+        "roc_auc_95_ci_conditional": [
+          0.804242249685798,
+          0.9656815324263837
+        ],
+        "f1_95_ci_conditional": [
+          0.8,
+          0.9512195121951219
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.8933333333333333,
+        "average_precision": 0.9212243727159936,
+        "accuracy": 0.8360655737704918,
+        "precision": 0.8611111111111112,
+        "recall": 0.8611111111111112,
+        "f1": 0.8611111111111112,
+        "brier": 0.12578632169367562,
+        "log_loss": 0.3907049579829295,
+        "specificity": 0.8,
+        "classification_threshold": 0.5,
+        "confusion_matrix_tn_fp_fn_tp": [
+          20,
+          5,
+          5,
+          31
+        ],
+        "confusion_counts": {
+          "tn": 20,
+          "fp": 5,
+          "fn": 5,
+          "tp": 31
+        },
+        "roc_auc_95_ci_conditional": [
+          0.804242249685798,
+          0.9656815324263837
+        ],
+        "f1_95_ci_conditional": [
+          0.7691780821917809,
+          0.935106033207299
+        ]
+      },
+      "conditional_intervals": {
+        "roc_auc_95_ci_conditional": [
+          0.804242249685798,
+          0.9656815324263837
+        ],
+        "f1_95_ci_conditional": [
+          0.8,
+          0.9512195121951219
+        ],
+        "f1_at_0_5_95_ci_conditional": [
+          0.7691780821917809,
+          0.935106033207299
+        ],
+        "auc_valid_resamples": 1000,
+        "f1_resamples": 1000,
+        "resamples_requested": 1000
+      },
+      "calibration_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.2,
+          "n": 13,
+          "mean_probability": 0.11289171081730318,
+          "observed_fraction": 0.07692307692307693
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 7,
+          "mean_probability": 0.28704791422477677,
+          "observed_fraction": 0.0
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6000000000000001,
+          "n": 10,
+          "mean_probability": 0.500172910221272,
+          "observed_fraction": 0.8
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.8,
+          "n": 10,
+          "mean_probability": 0.733038806936994,
+          "observed_fraction": 0.9
+        },
+        {
+          "lo": 0.8,
+          "hi": 1.0,
+          "n": 21,
+          "mean_probability": 0.9327936231697261,
+          "observed_fraction": 0.8571428571428571
+        }
+      ],
+      "inference_diagnostics": {
+        "rows_with_imputed_features": 0,
+        "rows_with_unknown_categories": 0
+      }
+    },
+    "LCX": {
+      "model_id": "LCX-final-development",
+      "recorded_target_column": "LCX",
+      "n_positive": 27,
+      "n_negative": 34,
+      "operating_threshold": 0.3,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "model_family": "unweighted",
+      "C": 0.01,
+      "calibration_method": "none",
+      "metrics": {
+        "roc_auc": 0.7483660130718953,
+        "average_precision": 0.6439529191719902,
+        "accuracy": 0.6065573770491803,
+        "precision": 0.5348837209302325,
+        "recall": 0.8518518518518519,
+        "f1": 0.6571428571428571,
+        "brier": 0.21601721250627165,
+        "log_loss": 0.6178371846763528,
+        "specificity": 0.4117647058823529,
+        "classification_threshold": 0.3,
+        "confusion_matrix_tn_fp_fn_tp": [
+          14,
+          20,
+          4,
+          23
+        ],
+        "confusion_counts": {
+          "tn": 14,
+          "fp": 20,
+          "fn": 4,
+          "tp": 23
+        },
+        "roc_auc_95_ci_conditional": [
+          0.6211016260162601,
+          0.8591612903225806
+        ],
+        "f1_95_ci_conditional": [
+          0.5172135706340378,
+          0.7792207792207793
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.7483660130718953,
+        "average_precision": 0.6439529191719902,
+        "accuracy": 0.6065573770491803,
+        "precision": 0.6363636363636364,
+        "recall": 0.25925925925925924,
+        "f1": 0.3684210526315789,
+        "brier": 0.21601721250627165,
+        "log_loss": 0.6178371846763528,
+        "specificity": 0.8823529411764706,
+        "classification_threshold": 0.5,
+        "confusion_matrix_tn_fp_fn_tp": [
+          30,
+          4,
+          20,
+          7
+        ],
+        "confusion_counts": {
+          "tn": 30,
+          "fp": 4,
+          "fn": 20,
+          "tp": 7
+        },
+        "roc_auc_95_ci_conditional": [
+          0.6211016260162601,
+          0.8591612903225806
+        ],
+        "f1_95_ci_conditional": [
+          0.16216216216216217,
+          0.5385135135135134
+        ]
+      },
+      "conditional_intervals": {
+        "roc_auc_95_ci_conditional": [
+          0.6211016260162601,
+          0.8591612903225806
+        ],
+        "f1_95_ci_conditional": [
+          0.5172135706340378,
+          0.7792207792207793
+        ],
+        "f1_at_0_5_95_ci_conditional": [
+          0.16216216216216217,
+          0.5385135135135134
+        ],
+        "auc_valid_resamples": 1000,
+        "f1_resamples": 1000,
+        "resamples_requested": 1000
+      },
+      "calibration_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.2,
+          "n": 5,
+          "mean_probability": 0.16119925607643953,
+          "observed_fraction": 0.0
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 30,
+          "mean_probability": 0.3038609122769393,
+          "observed_fraction": 0.3333333333333333
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6000000000000001,
+          "n": 24,
+          "mean_probability": 0.48880493750218973,
+          "observed_fraction": 0.6666666666666666
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.8,
+          "n": 2,
+          "mean_probability": 0.6768038869970247,
+          "observed_fraction": 0.5
+        },
+        {
+          "lo": 0.8,
+          "hi": 1.0,
+          "n": 0,
+          "mean_probability": null,
+          "observed_fraction": null
+        }
+      ],
+      "inference_diagnostics": {
+        "rows_with_imputed_features": 0,
+        "rows_with_unknown_categories": 0
+      }
+    },
+    "RCA": {
+      "model_id": "RCA-final-development",
+      "recorded_target_column": "RCA",
+      "n_positive": 25,
+      "n_negative": 36,
+      "operating_threshold": 0.25,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "model_family": "balanced_sigmoid",
+      "C": 0.01,
+      "calibration_method": "sigmoid",
+      "metrics": {
+        "roc_auc": 0.7244444444444444,
+        "average_precision": 0.6457090849612677,
+        "accuracy": 0.5901639344262295,
+        "precision": 0.5,
+        "recall": 0.76,
+        "f1": 0.6031746031746031,
+        "brier": 0.20886920816367313,
+        "log_loss": 0.6033607128900392,
+        "specificity": 0.4722222222222222,
+        "classification_threshold": 0.25,
+        "confusion_matrix_tn_fp_fn_tp": [
+          17,
+          19,
+          6,
+          19
+        ],
+        "confusion_counts": {
+          "tn": 17,
+          "fp": 19,
+          "fn": 6,
+          "tp": 19
+        },
+        "roc_auc_95_ci_conditional": [
+          0.5789402790381124,
+          0.8444583218259291
+        ],
+        "f1_95_ci_conditional": [
+          0.4443502824858757,
+          0.7384615384615385
+        ]
+      },
+      "metrics_at_0_5": {
+        "roc_auc": 0.7244444444444444,
+        "average_precision": 0.6457090849612677,
+        "accuracy": 0.6885245901639344,
+        "precision": 0.6875,
+        "recall": 0.44,
+        "f1": 0.5365853658536586,
+        "brier": 0.20886920816367313,
+        "log_loss": 0.6033607128900392,
+        "specificity": 0.8611111111111112,
+        "classification_threshold": 0.5,
+        "confusion_matrix_tn_fp_fn_tp": [
+          31,
+          5,
+          14,
+          11
+        ],
+        "confusion_counts": {
+          "tn": 31,
+          "fp": 5,
+          "fn": 14,
+          "tp": 11
+        },
+        "roc_auc_95_ci_conditional": [
+          0.5789402790381124,
+          0.8444583218259291
+        ],
+        "f1_95_ci_conditional": [
+          0.3157072368421053,
+          0.7058823529411765
+        ]
+      },
+      "conditional_intervals": {
+        "roc_auc_95_ci_conditional": [
+          0.5789402790381124,
+          0.8444583218259291
+        ],
+        "f1_95_ci_conditional": [
+          0.4443502824858757,
+          0.7384615384615385
+        ],
+        "f1_at_0_5_95_ci_conditional": [
+          0.3157072368421053,
+          0.7058823529411765
+        ],
+        "auc_valid_resamples": 1000,
+        "f1_resamples": 1000,
+        "resamples_requested": 1000
+      },
+      "calibration_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.2,
+          "n": 19,
+          "mean_probability": 0.1222196490165901,
+          "observed_fraction": 0.21052631578947367
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 18,
+          "mean_probability": 0.31044647194769426,
+          "observed_fraction": 0.3888888888888889
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6000000000000001,
+          "n": 11,
+          "mean_probability": 0.4821592235688667,
+          "observed_fraction": 0.45454545454545453
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.8,
+          "n": 12,
+          "mean_probability": 0.6847839951321898,
+          "observed_fraction": 0.6666666666666666
+        },
+        {
+          "lo": 0.8,
+          "hi": 1.0,
+          "n": 1,
+          "mean_probability": 0.8299159079032793,
+          "observed_fraction": 1.0
+        }
+      ],
+      "inference_diagnostics": {
+        "rows_with_imputed_features": 0,
+        "rows_with_unknown_categories": 0
+      }
+    }
+  },
+  "holdout_row_indices": [
+    0,
+    4,
+    8,
+    11,
+    13,
+    18,
+    19,
+    21,
+    25,
+    27,
+    28,
+    35,
+    39,
+    40,
+    41,
+    44,
+    47,
+    71,
+    80,
+    85,
+    89,
+    103,
+    105,
+    108,
+    110,
+    114,
+    117,
+    119,
+    120,
+    125,
+    132,
+    137,
+    140,
+    143,
+    150,
+    151,
+    152,
+    155,
+    158,
+    163,
+    178,
+    182,
+    213,
+    215,
+    217,
+    219,
+    221,
+    227,
+    232,
+    233,
+    235,
+    240,
+    259,
+    262,
+    272,
+    280,
+    283,
+    289,
+    290,
+    292,
+    296
+  ],
+  "conditional_bootstrap": {
+    "seed": 2026,
+    "n_resamples": 1000,
+    "sampling": "Patients sampled with replacement; same 61-row resamples reused across targets",
+    "interval": "2.5th and 97.5th percentiles of fixed-model resampled metrics",
+    "auc_policy": "Exclude one-class resamples for ROC-AUC; record valid count per target",
+    "f1_policy": "Use fixed research threshold; zero_division=0, with conventional 0.5 comparison",
+    "limitations": [
+      "Conditional on the fitted development models and thresholds; no retraining or retuning in bootstrap.",
+      "Intervals exclude training, hyperparameter, calibration, threshold and protocol-selection uncertainty.",
+      "A 61-record single-dataset holdout provides limited precision, especially for vessel-specific outcomes.",
+      "No external or prospective validation, clinical operating-point validation or medical-utility claim.",
+      "Reliability bins have small sample counts; calibration fitting and Brier alone do not establish calibrated patient probabilities."
+    ]
+  },
+  "provenance": {
+    "protocol_freeze_sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305",
+    "dataset_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+    "split_sha256": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b",
+    "models_sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+    "verified_training_source_sha256": {
+      "benchmark.py": "674ce592908ddc54bfd5e0cd33045bb39667917f1d5283bb75ec6a94df5b2c0e",
+      "experiment_v2.py": "e7fe46df843c46dbf52ad7da3886681e01d2a641bd004eda973a9f70e9d888fd",
+      "fit_final_development.py": "09f19698eb764fe4b928bd02eee7f9a1b4d91179302dc5098fc9ffcd8b9d6a8e",
+      "predict.py": "3a081e8fc2eef1d53263765c00a91a17d2f85c184cde0ae67f429e006e8367b7",
+      "results/split.json": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b"
+    },
+    "evaluation_script_sha256": "419efbaae942814a593220d17f2831fc5ce6fedeb6c83ee4385cd9d8f5965969",
+    "training_identity_policy": "Each target model uses exactly the same 242 frozen development identities; disjoint from all 61 holdout identities",
+    "no_post_evaluation_retuning": true,
+    "versions": {
+      "python": "3.12.13",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "openpyxl": "3.1.5",
+      "scikit-learn": "1.9.1"
+    },
+    "holdout_predictions_sha256": "e55517b62d65888bff334393c76ea3a15162911feac90030cad7a0e1d450a046"
+  },
+  "runtime_seconds": 4.534
+}

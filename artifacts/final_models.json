@@ -1,0 +1,4743 @@
+{
+  "schema_version": 1,
+  "experiment_version": 2,
+  "use": "New-input inference; never use fitted development rows as unseen examples",
+  "models": {
+    "CAD-final-development": {
+      "model_id": "CAD-final-development",
+      "target": "CAD",
+      "model_type": "sigmoid_calibrated_logistic",
+      "positive_class": 1,
+      "intercept": 1.8847881509999167,
+      "C": 0.01,
+      "baseline_log_odds": 2.2042195036164784,
+      "explanation": "Exact additive log-odds contributions centered on the outer training fold's encoded input means; sigmoid calibration slope is composed into all coefficients and offset into the intercept where present. Associations, not causal effects or patient uncertainty.",
+      "training_row_indices": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        20,
+        22,
+        23,
+        24,
+        26,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        42,
+        43,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        106,
+        107,
+        109,
+        111,
+        112,
+        113,
+        115,
+        116,
+        118,
+        121,
+        122,
+        123,
+        124,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        133,
+        134,
+        135,
+        136,
+        138,
+        139,
+        141,
+        142,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        153,
+        154,
+        156,
+        157,
+        159,
+        160,
+        161,
+        162,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        179,
+        180,
+        181,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        214,
+        216,
+        218,
+        220,
+        222,
+        223,
+        224,
+        225,
+        226,
+        228,
+        229,
+        230,
+        231,
+        234,
+        236,
+        237,
+        238,
+        239,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        260,
+        261,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        281,
+        282,
+        284,
+        285,
+        286,
+        287,
+        288,
+        291,
+        293,
+        294,
+        295,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302
+      ],
+      "numeric": [
+        {
+          "feature": "Age",
+          "impute": 57.5,
+          "mean": 58.929752066115704,
+          "scale": 10.537968695913337,
+          "coefficient": 0.846277923526754,
+          "reference_encoded_mean": -9.267150866705852e-17
+        },
+        {
+          "feature": "Weight",
+          "impute": 73.0,
+          "mean": 73.43388429752066,
+          "scale": 12.160674008879989,
+          "coefficient": -0.08882146418063744,
+          "reference_encoded_mean": -1.3625464393126921e-16
+        },
+        {
+          "feature": "Length",
+          "impute": 165.0,
+          "mean": 164.38842975206612,
+          "scale": 9.250304351326646,
+          "coefficient": -0.006805136354330053,
+          "reference_encoded_mean": -7.799087363069281e-17
+        },
+        {
+          "feature": "BMI",
+          "impute": 26.724136751179664,
+          "mean": 27.18262419073885,
+          "scale": 3.966514705735684,
+          "coefficient": -0.1450812041273954,
+          "reference_encoded_mean": -5.849315522301961e-16
+        },
+        {
+          "feature": "DM",
+          "impute": 0.0,
+          "mean": 0.30165289256198347,
+          "scale": 0.45897540780631363,
+          "coefficient": 0.5540413916042134,
+          "reference_encoded_mean": 5.413484169659854e-17
+        },
+        {
+          "feature": "HTN",
+          "impute": 1.0,
+          "mean": 0.5950413223140496,
+          "scale": 0.4908840464435537,
+          "coefficient": 0.5444916762388486,
+          "reference_encoded_mean": 1.2845555656819992e-16
+        },
+        {
+          "feature": "Current Smoker",
+          "impute": 0.0,
+          "mean": 0.2066115702479339,
+          "scale": 0.40487433765011216,
+          "coefficient": 0.21889921446080907,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "EX-Smoker",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": 0.09932040064243677,
+          "reference_encoded_mean": -1.9520656899917525e-16
+        },
+        {
+          "feature": "FH",
+          "impute": 0.0,
+          "mean": 0.16115702479338842,
+          "scale": 0.3676757241825079,
+          "coefficient": 0.369791205967212,
+          "reference_encoded_mean": 3.7160357435800694e-17
+        },
+        {
+          "feature": "BP",
+          "impute": 130.0,
+          "mean": 130.28925619834712,
+          "scale": 18.952719779758915,
+          "coefficient": 0.43013256185119514,
+          "reference_encoded_mean": -8.101875460694324e-16
+        },
+        {
+          "feature": "PR",
+          "impute": 70.0,
+          "mean": 75.09504132231405,
+          "scale": 8.810871864623921,
+          "coefficient": 0.2562097120011861,
+          "reference_encoded_mean": 4.899661943387054e-16
+        },
+        {
+          "feature": "Edema",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.1787876665519334,
+          "coefficient": 0.10715988831341844,
+          "reference_encoded_mean": -1.23179703352006e-16
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "impute": 1.0,
+          "mean": 0.5495867768595041,
+          "scale": 0.497535075708925,
+          "coefficient": 1.2492869659805304,
+          "reference_encoded_mean": -7.065055611250996e-17
+        },
+        {
+          "feature": "Function Class",
+          "impute": 0.0,
+          "mean": 0.6611570247933884,
+          "scale": 1.0329586729251627,
+          "coefficient": 0.17321728409830026,
+          "reference_encoded_mean": -4.064700825693755e-16
+        },
+        {
+          "feature": "Q Wave",
+          "impute": 0.0,
+          "mean": 0.045454545454545456,
+          "scale": 0.20829889522526548,
+          "coefficient": 0.26397493785359916,
+          "reference_encoded_mean": 2.3856031934094273e-17
+        },
+        {
+          "feature": "St Elevation",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": 0.24574153550798106,
+          "reference_encoded_mean": -1.8052593396280954e-16
+        },
+        {
+          "feature": "St Depression",
+          "impute": 0.0,
+          "mean": 0.2396694214876033,
+          "scale": 0.42688170479818044,
+          "coefficient": 0.3372300300954038,
+          "reference_encoded_mean": 6.331023859432711e-17
+        },
+        {
+          "feature": "Tinversion",
+          "impute": 0.0,
+          "mean": 0.30578512396694213,
+          "scale": 0.46073916908318524,
+          "coefficient": 0.48575200872510976,
+          "reference_encoded_mean": 6.14751592147814e-17
+        },
+        {
+          "feature": "FBS",
+          "impute": 98.5,
+          "mean": 120.14049586776859,
+          "scale": 53.710473575038804,
+          "coefficient": 0.457632071140291,
+          "reference_encoded_mean": 4.2206825729551407e-17
+        },
+        {
+          "feature": "CR",
+          "impute": 1.0,
+          "mean": 1.056404958677686,
+          "scale": 0.2664626895722724,
+          "coefficient": 0.14064753045379105,
+          "reference_encoded_mean": -1.3487833439660992e-16
+        },
+        {
+          "feature": "TG",
+          "impute": 119.0,
+          "mean": 147.96280991735537,
+          "scale": 100.64680625153136,
+          "coefficient": 0.34105373714980564,
+          "reference_encoded_mean": -3.2687351448158017e-18
+        },
+        {
+          "feature": "LDL",
+          "impute": 99.0,
+          "mean": 102.7107438016529,
+          "scale": 35.341179599439194,
+          "coefficient": -0.14966043813481256,
+          "reference_encoded_mean": -1.651571441591142e-16
+        },
+        {
+          "feature": "HDL",
+          "impute": 39.0,
+          "mean": 40.35082644628099,
+          "scale": 10.707613888479317,
+          "coefficient": 0.08668434182480698,
+          "reference_encoded_mean": 1.0643460401365137e-16
+        },
+        {
+          "feature": "BUN",
+          "impute": 16.0,
+          "mean": 17.60330578512397,
+          "scale": 7.065782216285969,
+          "coefficient": 0.057939639848421355,
+          "reference_encoded_mean": -1.9818857299093704e-16
+        },
+        {
+          "feature": "ESR",
+          "impute": 15.0,
+          "mean": 19.301652892561982,
+          "scale": 15.364574922763154,
+          "coefficient": 0.20784460296926816,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "HB",
+          "impute": 13.2,
+          "mean": 13.127272727272729,
+          "scale": 1.6568415636210208,
+          "coefficient": -0.023381752598852532,
+          "reference_encoded_mean": -8.877196498552388e-16
+        },
+        {
+          "feature": "K",
+          "impute": 4.3,
+          "mean": 4.247107438016529,
+          "scale": 0.45908179651897457,
+          "coefficient": 0.17101401491071264,
+          "reference_encoded_mean": 8.092700063796596e-16
+        },
+        {
+          "feature": "Na",
+          "impute": 141.0,
+          "mean": 140.86776859504133,
+          "scale": 3.67466678932491,
+          "coefficient": -0.2466804750846639,
+          "reference_encoded_mean": -1.1212335009024309e-15
+        },
+        {
+          "feature": "WBC",
+          "impute": 7100.0,
+          "mean": 7471.900826446281,
+          "scale": 2342.324307972388,
+          "coefficient": 0.16823279446635706,
+          "reference_encoded_mean": -3.2113889142049983e-18
+        },
+        {
+          "feature": "Lymph",
+          "impute": 32.0,
+          "mean": 32.14049586776859,
+          "scale": 9.860435831921299,
+          "coefficient": -0.10194202657973948,
+          "reference_encoded_mean": 2.433272247604658e-16
+        },
+        {
+          "feature": "Neut",
+          "impute": 60.0,
+          "mean": 60.47107438016529,
+          "scale": 10.018226678801794,
+          "coefficient": 0.10287272225349933,
+          "reference_encoded_mean": -1.8396670779945775e-16
+        },
+        {
+          "feature": "PLT",
+          "impute": 210.0,
+          "mean": 221.4214876033058,
+          "scale": 62.52652357082674,
+          "coefficient": -0.27488761032747466,
+          "reference_encoded_mean": -5.964007983523568e-17
+        },
+        {
+          "feature": "EF-TTE",
+          "impute": 50.0,
+          "mean": 47.02892561983471,
+          "scale": 8.803360909818316,
+          "coefficient": -0.25473543022084727,
+          "reference_encoded_mean": 1.9084825547275419e-16
+        },
+        {
+          "feature": "Region RWMA",
+          "impute": 0.0,
+          "mean": 0.5743801652892562,
+          "scale": 1.0817057944387127,
+          "coefficient": 0.6248370207152122,
+          "reference_encoded_mean": 2.257147636841227e-16
+        }
+      ],
+      "categorical": [
+        {
+          "feature": "Sex",
+          "impute": "Male",
+          "categories": [
+            "Fmale",
+            "Male"
+          ],
+          "coefficients": [
+            -0.12870761183851553,
+            0.12870432415908228
+          ],
+          "reference_encoded_means": [
+            0.4256198347107438,
+            0.5743801652892562
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Obesity",
+          "impute": "Y",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.008904318416559419,
+            0.008901030737126173
+          ],
+          "reference_encoded_means": [
+            0.30578512396694213,
+            0.6942148760330579
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CRF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.02153195816512918,
+            0.02152867048569593
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CVA",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.00546191719728961,
+            0.005458629517856357
+          ],
+          "reference_encoded_means": [
+            0.9793388429752066,
+            0.02066115702479339
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Airway disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.054855760717526604,
+            0.05485247303809336
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Thyroid Disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.008292909375202448,
+            -0.008296197054635709
+          ],
+          "reference_encoded_means": [
+            0.9710743801652892,
+            0.028925619834710745
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CHF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.006337769482379941,
+            0.006334481802946701
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "DLP",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.07870027950682637,
+            -0.07870356718625961
+          ],
+          "reference_encoded_means": [
+            0.6363636363636364,
+            0.36363636363636365
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.025060632990098166,
+            0.02505734531066495
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Lung rales",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.01562926474367257,
+            0.01562597706423932
+          ],
+          "reference_encoded_means": [
+            0.9586776859504132,
+            0.04132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Systolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.01446160437851393,
+            0.01445831669908071
+          ],
+          "reference_encoded_means": [
+            0.8553719008264463,
+            0.1446280991735537
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.09125530187894162,
+            -0.09125858955837485
+          ],
+          "reference_encoded_means": [
+            0.9628099173553719,
+            0.0371900826446281
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Dyspnea",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.1788395613287976,
+            -0.17884284900823091
+          ],
+          "reference_encoded_means": [
+            0.5578512396694215,
+            0.44214876033057854
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Atypical",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.3809136499685777,
+            -0.38091693764801093
+          ],
+          "reference_encoded_means": [
+            0.6859504132231405,
+            0.3140495867768595
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Nonanginal",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.2146492672789885,
+            -0.21465255495842173
+          ],
+          "reference_encoded_means": [
+            0.9380165289256198,
+            0.06198347107438017
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Exertional CP",
+          "impute": "N",
+          "categories": [
+            "N"
+          ],
+          "coefficients": [
+            -3.2876794333040163e-06
+          ],
+          "reference_encoded_means": [
+            1.0
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LowTH Ang",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.013484468318763059,
+            0.013481180639329739
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LVH",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.0934111136672545,
+            0.09340782598782123
+          ],
+          "reference_encoded_means": [
+            0.9297520661157025,
+            0.07024793388429752
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Poor R Progression",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.05275681784053743,
+            0.05275353016110416
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "BBB",
+          "impute": "N",
+          "categories": [
+            "LBBB",
+            "N",
+            "RBBB"
+          ],
+          "coefficients": [
+            -0.043437105045650175,
+            0.062032217606473344,
+            -0.018598400240256482
+          ],
+          "reference_encoded_means": [
+            0.04132231404958678,
+            0.9256198347107438,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "VHD",
+          "impute": "mild",
+          "categories": [
+            "Moderate",
+            "N",
+            "Severe",
+            "mild"
+          ],
+          "coefficients": [
+            -0.006323334542613514,
+            -0.017868566395389005,
+            -0.10672885433089137,
+            0.13091746758946057
+          ],
+          "reference_encoded_means": [
+            0.09090909090909091,
+            0.38016528925619836,
+            0.0371900826446281,
+            0.49173553719008267
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        }
+      ],
+      "base_intercept": 0.28356098553891296,
+      "family": "balanced_sigmoid",
+      "class_weight": "balanced",
+      "calibration": {
+        "method": "sigmoid",
+        "ensemble": false,
+        "slope": 3.536163724014355,
+        "offset": 0.8820700803914536,
+        "mapping": "sigmoid(slope * base_log_odds + offset)",
+        "source": "Three target-stratified cross-fitted training-fold decision scores; no outer validation labels",
+        "base_coefficients_composed": true,
+        "training_row_indices": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          17,
+          20,
+          22,
+          23,
+          24,
+          26,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          36,
+          37,
+          38,
+          42,
+          43,
+          45,
+          46,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          81,
+          82,
+          83,
+          84,
+          86,
+          87,
+          88,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107,
+          109,
+          111,
+          112,
+          113,
+          115,
+          116,
+          118,
+          121,
+          122,
+          123,
+          124,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          133,
+          134,
+          135,
+          136,
+          138,
+          139,
+          141,
+          142,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          153,
+          154,
+          156,
+          157,
+          159,
+          160,
+          161,
+          162,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          179,
+          180,
+          181,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          214,
+          216,
+          218,
+          220,
+          222,
+          223,
+          224,
+          225,
+          226,
+          228,
+          229,
+          230,
+          231,
+          234,
+          236,
+          237,
+          238,
+          239,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          260,
+          261,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          281,
+          282,
+          284,
+          285,
+          286,
+          287,
+          288,
+          291,
+          293,
+          294,
+          295,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302
+        ]
+      },
+      "operating_threshold": 0.21,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "inner_selection": {
+        "family": "balanced_sigmoid",
+        "C": 0.01,
+        "inner_log_loss": 0.3360256900870193,
+        "inner_roc_auc": 0.9130434782608695,
+        "operating_threshold": 0.21,
+        "inner_threshold_f1_training_diagnostic": 0.9105691056910569
+      }
+    },
+    "LAD-final-development": {
+      "model_id": "LAD-final-development",
+      "target": "LAD",
+      "model_type": "sigmoid_calibrated_logistic",
+      "positive_class": 1,
+      "intercept": 0.3826443727766799,
+      "C": 0.01,
+      "baseline_log_odds": 0.606109253754223,
+      "explanation": "Exact additive log-odds contributions centered on the outer training fold's encoded input means; sigmoid calibration slope is composed into all coefficients and offset into the intercept where present. Associations, not causal effects or patient uncertainty.",
+      "training_row_indices": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        20,
+        22,
+        23,
+        24,
+        26,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        42,
+        43,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        106,
+        107,
+        109,
+        111,
+        112,
+        113,
+        115,
+        116,
+        118,
+        121,
+        122,
+        123,
+        124,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        133,
+        134,
+        135,
+        136,
+        138,
+        139,
+        141,
+        142,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        153,
+        154,
+        156,
+        157,
+        159,
+        160,
+        161,
+        162,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        179,
+        180,
+        181,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        214,
+        216,
+        218,
+        220,
+        222,
+        223,
+        224,
+        225,
+        226,
+        228,
+        229,
+        230,
+        231,
+        234,
+        236,
+        237,
+        238,
+        239,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        260,
+        261,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        281,
+        282,
+        284,
+        285,
+        286,
+        287,
+        288,
+        291,
+        293,
+        294,
+        295,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302
+      ],
+      "numeric": [
+        {
+          "feature": "Age",
+          "impute": 57.5,
+          "mean": 58.929752066115704,
+          "scale": 10.537968695913337,
+          "coefficient": 0.4463510802434368,
+          "reference_encoded_mean": -9.267150866705852e-17
+        },
+        {
+          "feature": "Weight",
+          "impute": 73.0,
+          "mean": 73.43388429752066,
+          "scale": 12.160674008879989,
+          "coefficient": -0.08174806840895284,
+          "reference_encoded_mean": -1.3625464393126921e-16
+        },
+        {
+          "feature": "Length",
+          "impute": 165.0,
+          "mean": 164.38842975206612,
+          "scale": 9.250304351326646,
+          "coefficient": 0.014366892463426248,
+          "reference_encoded_mean": -7.799087363069281e-17
+        },
+        {
+          "feature": "BMI",
+          "impute": 26.724136751179664,
+          "mean": 27.18262419073885,
+          "scale": 3.966514705735684,
+          "coefficient": -0.14111724253883565,
+          "reference_encoded_mean": -5.849315522301961e-16
+        },
+        {
+          "feature": "DM",
+          "impute": 0.0,
+          "mean": 0.30165289256198347,
+          "scale": 0.45897540780631363,
+          "coefficient": 0.11416739016889699,
+          "reference_encoded_mean": 5.413484169659854e-17
+        },
+        {
+          "feature": "HTN",
+          "impute": 1.0,
+          "mean": 0.5950413223140496,
+          "scale": 0.4908840464435537,
+          "coefficient": 0.1799670111090916,
+          "reference_encoded_mean": 1.2845555656819992e-16
+        },
+        {
+          "feature": "Current Smoker",
+          "impute": 0.0,
+          "mean": 0.2066115702479339,
+          "scale": 0.40487433765011216,
+          "coefficient": 0.12200300934586202,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "EX-Smoker",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": 0.1617648516895425,
+          "reference_encoded_mean": -1.9520656899917525e-16
+        },
+        {
+          "feature": "FH",
+          "impute": 0.0,
+          "mean": 0.16115702479338842,
+          "scale": 0.3676757241825079,
+          "coefficient": 0.15242166785600417,
+          "reference_encoded_mean": 3.7160357435800694e-17
+        },
+        {
+          "feature": "BP",
+          "impute": 130.0,
+          "mean": 130.28925619834712,
+          "scale": 18.952719779758915,
+          "coefficient": 0.1219305496529634,
+          "reference_encoded_mean": -8.101875460694324e-16
+        },
+        {
+          "feature": "PR",
+          "impute": 70.0,
+          "mean": 75.09504132231405,
+          "scale": 8.810871864623921,
+          "coefficient": 0.15408223738618898,
+          "reference_encoded_mean": 4.899661943387054e-16
+        },
+        {
+          "feature": "Edema",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.1787876665519334,
+          "coefficient": 0.1484662375390746,
+          "reference_encoded_mean": -1.23179703352006e-16
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "impute": 1.0,
+          "mean": 0.5495867768595041,
+          "scale": 0.497535075708925,
+          "coefficient": 0.5916798111255719,
+          "reference_encoded_mean": -7.065055611250996e-17
+        },
+        {
+          "feature": "Function Class",
+          "impute": 0.0,
+          "mean": 0.6611570247933884,
+          "scale": 1.0329586729251627,
+          "coefficient": 0.0764962347869705,
+          "reference_encoded_mean": -4.064700825693755e-16
+        },
+        {
+          "feature": "Q Wave",
+          "impute": 0.0,
+          "mean": 0.045454545454545456,
+          "scale": 0.20829889522526548,
+          "coefficient": 0.13070718495298286,
+          "reference_encoded_mean": 2.3856031934094273e-17
+        },
+        {
+          "feature": "St Elevation",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": 0.20558570312683655,
+          "reference_encoded_mean": -1.8052593396280954e-16
+        },
+        {
+          "feature": "St Depression",
+          "impute": 0.0,
+          "mean": 0.2396694214876033,
+          "scale": 0.42688170479818044,
+          "coefficient": 0.1755315626871465,
+          "reference_encoded_mean": 6.331023859432711e-17
+        },
+        {
+          "feature": "Tinversion",
+          "impute": 0.0,
+          "mean": 0.30578512396694213,
+          "scale": 0.46073916908318524,
+          "coefficient": 0.2982876155093077,
+          "reference_encoded_mean": 6.14751592147814e-17
+        },
+        {
+          "feature": "FBS",
+          "impute": 98.5,
+          "mean": 120.14049586776859,
+          "scale": 53.710473575038804,
+          "coefficient": 0.14951956213678905,
+          "reference_encoded_mean": 4.2206825729551407e-17
+        },
+        {
+          "feature": "CR",
+          "impute": 1.0,
+          "mean": 1.056404958677686,
+          "scale": 0.2664626895722724,
+          "coefficient": 0.020306912596229666,
+          "reference_encoded_mean": -1.3487833439660992e-16
+        },
+        {
+          "feature": "TG",
+          "impute": 119.0,
+          "mean": 147.96280991735537,
+          "scale": 100.64680625153136,
+          "coefficient": 0.16073923650377317,
+          "reference_encoded_mean": -3.2687351448158017e-18
+        },
+        {
+          "feature": "LDL",
+          "impute": 99.0,
+          "mean": 102.7107438016529,
+          "scale": 35.341179599439194,
+          "coefficient": 0.16010470079488037,
+          "reference_encoded_mean": -1.651571441591142e-16
+        },
+        {
+          "feature": "HDL",
+          "impute": 39.0,
+          "mean": 40.35082644628099,
+          "scale": 10.707613888479317,
+          "coefficient": 0.04350190100096549,
+          "reference_encoded_mean": 1.0643460401365137e-16
+        },
+        {
+          "feature": "BUN",
+          "impute": 16.0,
+          "mean": 17.60330578512397,
+          "scale": 7.065782216285969,
+          "coefficient": 0.05091379707127961,
+          "reference_encoded_mean": -1.9818857299093704e-16
+        },
+        {
+          "feature": "ESR",
+          "impute": 15.0,
+          "mean": 19.301652892561982,
+          "scale": 15.364574922763154,
+          "coefficient": 0.23007016284996384,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "HB",
+          "impute": 13.2,
+          "mean": 13.127272727272729,
+          "scale": 1.6568415636210208,
+          "coefficient": -0.06388958368108032,
+          "reference_encoded_mean": -8.877196498552388e-16
+        },
+        {
+          "feature": "K",
+          "impute": 4.3,
+          "mean": 4.247107438016529,
+          "scale": 0.45908179651897457,
+          "coefficient": 0.02589833122939309,
+          "reference_encoded_mean": 8.092700063796596e-16
+        },
+        {
+          "feature": "Na",
+          "impute": 141.0,
+          "mean": 140.86776859504133,
+          "scale": 3.67466678932491,
+          "coefficient": -0.12949639817102018,
+          "reference_encoded_mean": -1.1212335009024309e-15
+        },
+        {
+          "feature": "WBC",
+          "impute": 7100.0,
+          "mean": 7471.900826446281,
+          "scale": 2342.324307972388,
+          "coefficient": 0.16493792486228334,
+          "reference_encoded_mean": -3.2113889142049983e-18
+        },
+        {
+          "feature": "Lymph",
+          "impute": 32.0,
+          "mean": 32.14049586776859,
+          "scale": 9.860435831921299,
+          "coefficient": -0.15502655910954927,
+          "reference_encoded_mean": 2.433272247604658e-16
+        },
+        {
+          "feature": "Neut",
+          "impute": 60.0,
+          "mean": 60.47107438016529,
+          "scale": 10.018226678801794,
+          "coefficient": 0.10769326911534914,
+          "reference_encoded_mean": -1.8396670779945775e-16
+        },
+        {
+          "feature": "PLT",
+          "impute": 210.0,
+          "mean": 221.4214876033058,
+          "scale": 62.52652357082674,
+          "coefficient": -0.13065888596257927,
+          "reference_encoded_mean": -5.964007983523568e-17
+        },
+        {
+          "feature": "EF-TTE",
+          "impute": 50.0,
+          "mean": 47.02892561983471,
+          "scale": 8.803360909818316,
+          "coefficient": -0.3424651783903642,
+          "reference_encoded_mean": 1.9084825547275419e-16
+        },
+        {
+          "feature": "Region RWMA",
+          "impute": 0.0,
+          "mean": 0.5743801652892562,
+          "scale": 1.0817057944387127,
+          "coefficient": 0.46039986002751027,
+          "reference_encoded_mean": 2.257147636841227e-16
+        }
+      ],
+      "categorical": [
+        {
+          "feature": "Sex",
+          "impute": "Male",
+          "categories": [
+            "Fmale",
+            "Male"
+          ],
+          "coefficients": [
+            -0.10224431257823975,
+            0.10268267585541554
+          ],
+          "reference_encoded_means": [
+            0.4256198347107438,
+            0.5743801652892562
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Obesity",
+          "impute": "Y",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.01998015191276332,
+            -0.019541788635587292
+          ],
+          "reference_encoded_means": [
+            0.30578512396694213,
+            0.6942148760330579
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CRF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.024867221500407724,
+            0.02530558477758355
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CVA",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.028475108506658263,
+            -0.028036745229482452
+          ],
+          "reference_encoded_means": [
+            0.9793388429752066,
+            0.02066115702479339
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Airway disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.01366204752459923,
+            -0.01322368424742329
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Thyroid Disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.027979005888773598,
+            -0.02754064261159795
+          ],
+          "reference_encoded_means": [
+            0.9710743801652892,
+            0.028925619834710745
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CHF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.0044791210471646584,
+            0.00491748432434044
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "DLP",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0340385036706548,
+            -0.03360014039347903
+          ],
+          "reference_encoded_means": [
+            0.6363636363636364,
+            0.36363636363636365
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.0030643162352466317,
+            0.003502679512422437
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Lung rales",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.022016415714451384,
+            0.022454778991627334
+          ],
+          "reference_encoded_means": [
+            0.9586776859504132,
+            0.04132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Systolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.00288496334487722,
+            -0.0024466000677013794
+          ],
+          "reference_encoded_means": [
+            0.8553719008264463,
+            0.1446280991735537
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.060617918762229314,
+            -0.060179555485053736
+          ],
+          "reference_encoded_means": [
+            0.9628099173553719,
+            0.0371900826446281
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Dyspnea",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.05369000416556808,
+            -0.053251640888392106
+          ],
+          "reference_encoded_means": [
+            0.5578512396694215,
+            0.44214876033057854
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Atypical",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.1679851644919116,
+            -0.16754680121473567
+          ],
+          "reference_encoded_means": [
+            0.6859504132231405,
+            0.3140495867768595
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Nonanginal",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.10787271437446118,
+            -0.10743435109728566
+          ],
+          "reference_encoded_means": [
+            0.9380165289256198,
+            0.06198347107438017
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Exertional CP",
+          "impute": "N",
+          "categories": [
+            "N"
+          ],
+          "coefficients": [
+            0.0004383632771758631
+          ],
+          "reference_encoded_means": [
+            1.0
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LowTH Ang",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.011645186571167724,
+            0.012083549848343592
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LVH",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.02408777660042021,
+            0.024526139877596075
+          ],
+          "reference_encoded_means": [
+            0.9297520661157025,
+            0.07024793388429752
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Poor R Progression",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.03370105305239885,
+            0.034139416329574714
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "BBB",
+          "impute": "N",
+          "categories": [
+            "LBBB",
+            "N",
+            "RBBB"
+          ],
+          "coefficients": [
+            -0.020112052766406267,
+            0.01088704488576128,
+            0.009663371157820871
+          ],
+          "reference_encoded_means": [
+            0.04132231404958678,
+            0.9256198347107438,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "VHD",
+          "impute": "mild",
+          "categories": [
+            "Moderate",
+            "N",
+            "Severe",
+            "mild"
+          ],
+          "coefficients": [
+            0.027642996011659315,
+            0.006029517368116633,
+            -0.07612787500447764,
+            0.042893724901877615
+          ],
+          "reference_encoded_means": [
+            0.09090909090909091,
+            0.38016528925619836,
+            0.0371900826446281,
+            0.49173553719008267
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        }
+      ],
+      "base_intercept": 0.00623584189008018,
+      "family": "balanced_sigmoid",
+      "class_weight": "balanced",
+      "calibration": {
+        "method": "sigmoid",
+        "ensemble": false,
+        "slope": 2.3739381300029954,
+        "offset": 0.3678408699411486,
+        "mapping": "sigmoid(slope * base_log_odds + offset)",
+        "source": "Three target-stratified cross-fitted training-fold decision scores; no outer validation labels",
+        "base_coefficients_composed": true,
+        "training_row_indices": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          17,
+          20,
+          22,
+          23,
+          24,
+          26,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          36,
+          37,
+          38,
+          42,
+          43,
+          45,
+          46,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          81,
+          82,
+          83,
+          84,
+          86,
+          87,
+          88,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107,
+          109,
+          111,
+          112,
+          113,
+          115,
+          116,
+          118,
+          121,
+          122,
+          123,
+          124,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          133,
+          134,
+          135,
+          136,
+          138,
+          139,
+          141,
+          142,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          153,
+          154,
+          156,
+          157,
+          159,
+          160,
+          161,
+          162,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          179,
+          180,
+          181,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          214,
+          216,
+          218,
+          220,
+          222,
+          223,
+          224,
+          225,
+          226,
+          228,
+          229,
+          230,
+          231,
+          234,
+          236,
+          237,
+          238,
+          239,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          260,
+          261,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          281,
+          282,
+          284,
+          285,
+          286,
+          287,
+          288,
+          291,
+          293,
+          294,
+          295,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302
+        ]
+      },
+      "operating_threshold": 0.36,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "inner_selection": {
+        "family": "balanced_sigmoid",
+        "C": 0.01,
+        "inner_log_loss": 0.5205321757157849,
+        "inner_roc_auc": 0.8146899796362614,
+        "operating_threshold": 0.36,
+        "inner_threshold_f1_training_diagnostic": 0.810126582278481
+      }
+    },
+    "LCX-final-development": {
+      "model_id": "LCX-final-development",
+      "target": "LCX",
+      "model_type": "logistic_regression",
+      "positive_class": 1,
+      "intercept": -0.5929641315044721,
+      "C": 0.01,
+      "baseline_log_odds": -0.5229607645148574,
+      "explanation": "Exact additive log-odds contributions centered on the outer training fold's encoded input means; sigmoid calibration slope is composed into all coefficients and offset into the intercept where present. Associations, not causal effects or patient uncertainty.",
+      "training_row_indices": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        20,
+        22,
+        23,
+        24,
+        26,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        42,
+        43,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        106,
+        107,
+        109,
+        111,
+        112,
+        113,
+        115,
+        116,
+        118,
+        121,
+        122,
+        123,
+        124,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        133,
+        134,
+        135,
+        136,
+        138,
+        139,
+        141,
+        142,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        153,
+        154,
+        156,
+        157,
+        159,
+        160,
+        161,
+        162,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        179,
+        180,
+        181,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        214,
+        216,
+        218,
+        220,
+        222,
+        223,
+        224,
+        225,
+        226,
+        228,
+        229,
+        230,
+        231,
+        234,
+        236,
+        237,
+        238,
+        239,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        260,
+        261,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        281,
+        282,
+        284,
+        285,
+        286,
+        287,
+        288,
+        291,
+        293,
+        294,
+        295,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302
+      ],
+      "numeric": [
+        {
+          "feature": "Age",
+          "impute": 57.5,
+          "mean": 58.929752066115704,
+          "scale": 10.537968695913337,
+          "coefficient": 0.21045184405145215,
+          "reference_encoded_mean": -9.267150866705852e-17
+        },
+        {
+          "feature": "Weight",
+          "impute": 73.0,
+          "mean": 73.43388429752066,
+          "scale": 12.160674008879989,
+          "coefficient": 0.0017177183302594778,
+          "reference_encoded_mean": -1.3625464393126921e-16
+        },
+        {
+          "feature": "Length",
+          "impute": 165.0,
+          "mean": 164.38842975206612,
+          "scale": 9.250304351326646,
+          "coefficient": 0.046729631955805616,
+          "reference_encoded_mean": -7.799087363069281e-17
+        },
+        {
+          "feature": "BMI",
+          "impute": 26.724136751179664,
+          "mean": 27.18262419073885,
+          "scale": 3.966514705735684,
+          "coefficient": -0.03458199962679555,
+          "reference_encoded_mean": -5.849315522301961e-16
+        },
+        {
+          "feature": "DM",
+          "impute": 0.0,
+          "mean": 0.30165289256198347,
+          "scale": 0.45897540780631363,
+          "coefficient": 0.10957365782947416,
+          "reference_encoded_mean": 5.413484169659854e-17
+        },
+        {
+          "feature": "HTN",
+          "impute": 1.0,
+          "mean": 0.5950413223140496,
+          "scale": 0.4908840464435537,
+          "coefficient": 0.0878258968484468,
+          "reference_encoded_mean": 1.2845555656819992e-16
+        },
+        {
+          "feature": "Current Smoker",
+          "impute": 0.0,
+          "mean": 0.2066115702479339,
+          "scale": 0.40487433765011216,
+          "coefficient": 0.04365609340649798,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "EX-Smoker",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": 0.0874803326346907,
+          "reference_encoded_mean": -1.9520656899917525e-16
+        },
+        {
+          "feature": "FH",
+          "impute": 0.0,
+          "mean": 0.16115702479338842,
+          "scale": 0.3676757241825079,
+          "coefficient": 0.02497083555180345,
+          "reference_encoded_mean": 3.7160357435800694e-17
+        },
+        {
+          "feature": "BP",
+          "impute": 130.0,
+          "mean": 130.28925619834712,
+          "scale": 18.952719779758915,
+          "coefficient": 0.08011796091124415,
+          "reference_encoded_mean": -8.101875460694324e-16
+        },
+        {
+          "feature": "PR",
+          "impute": 70.0,
+          "mean": 75.09504132231405,
+          "scale": 8.810871864623921,
+          "coefficient": -0.01442640410963484,
+          "reference_encoded_mean": 4.899661943387054e-16
+        },
+        {
+          "feature": "Edema",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.1787876665519334,
+          "coefficient": 0.05088896374538197,
+          "reference_encoded_mean": -1.23179703352006e-16
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "impute": 1.0,
+          "mean": 0.5495867768595041,
+          "scale": 0.497535075708925,
+          "coefficient": 0.1539378600201645,
+          "reference_encoded_mean": -7.065055611250996e-17
+        },
+        {
+          "feature": "Function Class",
+          "impute": 0.0,
+          "mean": 0.6611570247933884,
+          "scale": 1.0329586729251627,
+          "coefficient": 0.05351135777068997,
+          "reference_encoded_mean": -4.064700825693755e-16
+        },
+        {
+          "feature": "Q Wave",
+          "impute": 0.0,
+          "mean": 0.045454545454545456,
+          "scale": 0.20829889522526548,
+          "coefficient": 0.007512676045340506,
+          "reference_encoded_mean": 2.3856031934094273e-17
+        },
+        {
+          "feature": "St Elevation",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": -0.014516388222239609,
+          "reference_encoded_mean": -1.8052593396280954e-16
+        },
+        {
+          "feature": "St Depression",
+          "impute": 0.0,
+          "mean": 0.2396694214876033,
+          "scale": 0.42688170479818044,
+          "coefficient": 0.03065977169689975,
+          "reference_encoded_mean": 6.331023859432711e-17
+        },
+        {
+          "feature": "Tinversion",
+          "impute": 0.0,
+          "mean": 0.30578512396694213,
+          "scale": 0.46073916908318524,
+          "coefficient": 0.03732764800921446,
+          "reference_encoded_mean": 6.14751592147814e-17
+        },
+        {
+          "feature": "FBS",
+          "impute": 98.5,
+          "mean": 120.14049586776859,
+          "scale": 53.710473575038804,
+          "coefficient": 0.07875859331701932,
+          "reference_encoded_mean": 4.2206825729551407e-17
+        },
+        {
+          "feature": "CR",
+          "impute": 1.0,
+          "mean": 1.056404958677686,
+          "scale": 0.2664626895722724,
+          "coefficient": 0.07479120184529545,
+          "reference_encoded_mean": -1.3487833439660992e-16
+        },
+        {
+          "feature": "TG",
+          "impute": 119.0,
+          "mean": 147.96280991735537,
+          "scale": 100.64680625153136,
+          "coefficient": 0.07978784674118171,
+          "reference_encoded_mean": -3.2687351448158017e-18
+        },
+        {
+          "feature": "LDL",
+          "impute": 99.0,
+          "mean": 102.7107438016529,
+          "scale": 35.341179599439194,
+          "coefficient": 0.0380358644283859,
+          "reference_encoded_mean": -1.651571441591142e-16
+        },
+        {
+          "feature": "HDL",
+          "impute": 39.0,
+          "mean": 40.35082644628099,
+          "scale": 10.707613888479317,
+          "coefficient": -0.010710496277813349,
+          "reference_encoded_mean": 1.0643460401365137e-16
+        },
+        {
+          "feature": "BUN",
+          "impute": 16.0,
+          "mean": 17.60330578512397,
+          "scale": 7.065782216285969,
+          "coefficient": 0.06730958608282808,
+          "reference_encoded_mean": -1.9818857299093704e-16
+        },
+        {
+          "feature": "ESR",
+          "impute": 15.0,
+          "mean": 19.301652892561982,
+          "scale": 15.364574922763154,
+          "coefficient": 0.01733180358112921,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "HB",
+          "impute": 13.2,
+          "mean": 13.127272727272729,
+          "scale": 1.6568415636210208,
+          "coefficient": 0.054886404794903663,
+          "reference_encoded_mean": -8.877196498552388e-16
+        },
+        {
+          "feature": "K",
+          "impute": 4.3,
+          "mean": 4.247107438016529,
+          "scale": 0.45908179651897457,
+          "coefficient": 0.06278959857526636,
+          "reference_encoded_mean": 8.092700063796596e-16
+        },
+        {
+          "feature": "Na",
+          "impute": 141.0,
+          "mean": 140.86776859504133,
+          "scale": 3.67466678932491,
+          "coefficient": 0.06381340862089183,
+          "reference_encoded_mean": -1.1212335009024309e-15
+        },
+        {
+          "feature": "WBC",
+          "impute": 7100.0,
+          "mean": 7471.900826446281,
+          "scale": 2342.324307972388,
+          "coefficient": 0.015197680590891268,
+          "reference_encoded_mean": -3.2113889142049983e-18
+        },
+        {
+          "feature": "Lymph",
+          "impute": 32.0,
+          "mean": 32.14049586776859,
+          "scale": 9.860435831921299,
+          "coefficient": -0.03198395325518038,
+          "reference_encoded_mean": 2.433272247604658e-16
+        },
+        {
+          "feature": "Neut",
+          "impute": 60.0,
+          "mean": 60.47107438016529,
+          "scale": 10.018226678801794,
+          "coefficient": 0.04327251325842983,
+          "reference_encoded_mean": -1.8396670779945775e-16
+        },
+        {
+          "feature": "PLT",
+          "impute": 210.0,
+          "mean": 221.4214876033058,
+          "scale": 62.52652357082674,
+          "coefficient": -0.08274552168155618,
+          "reference_encoded_mean": -5.964007983523568e-17
+        },
+        {
+          "feature": "EF-TTE",
+          "impute": 50.0,
+          "mean": 47.02892561983471,
+          "scale": 8.803360909818316,
+          "coefficient": -0.014950870399415443,
+          "reference_encoded_mean": 1.9084825547275419e-16
+        },
+        {
+          "feature": "Region RWMA",
+          "impute": 0.0,
+          "mean": 0.5743801652892562,
+          "scale": 1.0817057944387127,
+          "coefficient": 0.014710625543132573,
+          "reference_encoded_mean": 2.257147636841227e-16
+        }
+      ],
+      "categorical": [
+        {
+          "feature": "Sex",
+          "impute": "Male",
+          "categories": [
+            "Fmale",
+            "Male"
+          ],
+          "coefficients": [
+            -0.04608472477545973,
+            0.04607821540108337
+          ],
+          "reference_encoded_means": [
+            0.4256198347107438,
+            0.5743801652892562
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Obesity",
+          "impute": "Y",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.006495072962804998,
+            0.006488563588428652
+          ],
+          "reference_encoded_means": [
+            0.30578512396694213,
+            0.6942148760330579
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CRF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0026750240473716867,
+            -0.002681533421748045
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CVA",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.010741195613985514,
+            -0.01074770498836188
+          ],
+          "reference_encoded_means": [
+            0.9793388429752066,
+            0.02066115702479339
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Airway disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.021085395825351277,
+            0.02107888645097492
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Thyroid Disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.010022759661522985,
+            -0.010029269035899341
+          ],
+          "reference_encoded_means": [
+            0.9710743801652892,
+            0.028925619834710745
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CHF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0032593200865302964,
+            -0.003265829460906653
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "DLP",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.01575672563607988,
+            -0.015763235010456227
+          ],
+          "reference_encoded_means": [
+            0.6363636363636364,
+            0.36363636363636365
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0005974730221682809,
+            -0.0006039823965446417
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Lung rales",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.00030826840662652704,
+            0.0003017590322501748
+          ],
+          "reference_encoded_means": [
+            0.9586776859504132,
+            0.04132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Systolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0247489895453336,
+            -0.02475549891970996
+          ],
+          "reference_encoded_means": [
+            0.8553719008264463,
+            0.1446280991735537
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.00863299210296256,
+            -0.008639501477338926
+          ],
+          "reference_encoded_means": [
+            0.9628099173553719,
+            0.0371900826446281
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Dyspnea",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.022225419619503983,
+            -0.022231928993880337
+          ],
+          "reference_encoded_means": [
+            0.5578512396694215,
+            0.44214876033057854
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Atypical",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.028649410224581815,
+            -0.028655919598958194
+          ],
+          "reference_encoded_means": [
+            0.6859504132231405,
+            0.3140495867768595
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Nonanginal",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.01132109510454266,
+            -0.011327604478919017
+          ],
+          "reference_encoded_means": [
+            0.9380165289256198,
+            0.06198347107438017
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Exertional CP",
+          "impute": "N",
+          "categories": [
+            "N"
+          ],
+          "coefficients": [
+            -6.509374376369933e-06
+          ],
+          "reference_encoded_means": [
+            1.0
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LowTH Ang",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0031910661330557376,
+            -0.003197575507432112
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LVH",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0017159622483751366,
+            -0.001722471622751486
+          ],
+          "reference_encoded_means": [
+            0.9297520661157025,
+            0.07024793388429752
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Poor R Progression",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.011947868270808059,
+            0.011941358896431697
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "BBB",
+          "impute": "N",
+          "categories": [
+            "LBBB",
+            "N",
+            "RBBB"
+          ],
+          "coefficients": [
+            0.005080619057525629,
+            0.002101450993598929,
+            -0.007188579425500933
+          ],
+          "reference_encoded_means": [
+            0.04132231404958678,
+            0.9256198347107438,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "VHD",
+          "impute": "mild",
+          "categories": [
+            "Moderate",
+            "N",
+            "Severe",
+            "mild"
+          ],
+          "coefficients": [
+            0.0011639932679978358,
+            0.0035620049616217645,
+            -0.015253132770756659,
+            0.010520625166760708
+          ],
+          "reference_encoded_means": [
+            0.09090909090909091,
+            0.38016528925619836,
+            0.0371900826446281,
+            0.49173553719008267
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        }
+      ],
+      "base_intercept": -0.5929641315044721,
+      "family": "unweighted",
+      "class_weight": null,
+      "calibration": {
+        "method": "none",
+        "slope": 1.0,
+        "offset": 0.0
+      },
+      "operating_threshold": 0.3,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "inner_selection": {
+        "family": "unweighted",
+        "C": 0.01,
+        "inner_log_loss": 0.6220712345579512,
+        "inner_roc_auc": 0.675,
+        "operating_threshold": 0.3,
+        "inner_threshold_f1_training_diagnostic": 0.6264150943396226
+      }
+    },
+    "RCA-final-development": {
+      "model_id": "RCA-final-development",
+      "target": "RCA",
+      "model_type": "sigmoid_calibrated_logistic",
+      "positive_class": 1,
+      "intercept": -0.7366023778585398,
+      "C": 0.01,
+      "baseline_log_odds": -0.6610957525071484,
+      "explanation": "Exact additive log-odds contributions centered on the outer training fold's encoded input means; sigmoid calibration slope is composed into all coefficients and offset into the intercept where present. Associations, not causal effects or patient uncertainty.",
+      "training_row_indices": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        20,
+        22,
+        23,
+        24,
+        26,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        42,
+        43,
+        45,
+        46,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        81,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        104,
+        106,
+        107,
+        109,
+        111,
+        112,
+        113,
+        115,
+        116,
+        118,
+        121,
+        122,
+        123,
+        124,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        133,
+        134,
+        135,
+        136,
+        138,
+        139,
+        141,
+        142,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        153,
+        154,
+        156,
+        157,
+        159,
+        160,
+        161,
+        162,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        179,
+        180,
+        181,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        214,
+        216,
+        218,
+        220,
+        222,
+        223,
+        224,
+        225,
+        226,
+        228,
+        229,
+        230,
+        231,
+        234,
+        236,
+        237,
+        238,
+        239,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        260,
+        261,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        281,
+        282,
+        284,
+        285,
+        286,
+        287,
+        288,
+        291,
+        293,
+        294,
+        295,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302
+      ],
+      "numeric": [
+        {
+          "feature": "Age",
+          "impute": 57.5,
+          "mean": 58.929752066115704,
+          "scale": 10.537968695913337,
+          "coefficient": 0.3163719826731453,
+          "reference_encoded_mean": -9.267150866705852e-17
+        },
+        {
+          "feature": "Weight",
+          "impute": 73.0,
+          "mean": 73.43388429752066,
+          "scale": 12.160674008879989,
+          "coefficient": 0.11278738252878748,
+          "reference_encoded_mean": -1.3625464393126921e-16
+        },
+        {
+          "feature": "Length",
+          "impute": 165.0,
+          "mean": 164.38842975206612,
+          "scale": 9.250304351326646,
+          "coefficient": 0.06447217439575607,
+          "reference_encoded_mean": -7.799087363069281e-17
+        },
+        {
+          "feature": "BMI",
+          "impute": 26.724136751179664,
+          "mean": 27.18262419073885,
+          "scale": 3.966514705735684,
+          "coefficient": 0.04366668397910507,
+          "reference_encoded_mean": -5.849315522301961e-16
+        },
+        {
+          "feature": "DM",
+          "impute": 0.0,
+          "mean": 0.30165289256198347,
+          "scale": 0.45897540780631363,
+          "coefficient": 0.2960818945515213,
+          "reference_encoded_mean": 5.413484169659854e-17
+        },
+        {
+          "feature": "HTN",
+          "impute": 1.0,
+          "mean": 0.5950413223140496,
+          "scale": 0.4908840464435537,
+          "coefficient": 0.10693204734031996,
+          "reference_encoded_mean": 1.2845555656819992e-16
+        },
+        {
+          "feature": "Current Smoker",
+          "impute": 0.0,
+          "mean": 0.2066115702479339,
+          "scale": 0.40487433765011216,
+          "coefficient": 0.09927290446833505,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "EX-Smoker",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": 0.03944793704398917,
+          "reference_encoded_mean": -1.9520656899917525e-16
+        },
+        {
+          "feature": "FH",
+          "impute": 0.0,
+          "mean": 0.16115702479338842,
+          "scale": 0.3676757241825079,
+          "coefficient": 0.10506296160892716,
+          "reference_encoded_mean": 3.7160357435800694e-17
+        },
+        {
+          "feature": "BP",
+          "impute": 130.0,
+          "mean": 130.28925619834712,
+          "scale": 18.952719779758915,
+          "coefficient": 0.09843753594784194,
+          "reference_encoded_mean": -8.101875460694324e-16
+        },
+        {
+          "feature": "PR",
+          "impute": 70.0,
+          "mean": 75.09504132231405,
+          "scale": 8.810871864623921,
+          "coefficient": -0.02753602242320256,
+          "reference_encoded_mean": 4.899661943387054e-16
+        },
+        {
+          "feature": "Edema",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.1787876665519334,
+          "coefficient": -0.008957735986237439,
+          "reference_encoded_mean": -1.23179703352006e-16
+        },
+        {
+          "feature": "Typical Chest Pain",
+          "impute": 1.0,
+          "mean": 0.5495867768595041,
+          "scale": 0.497535075708925,
+          "coefficient": 0.37488066044525176,
+          "reference_encoded_mean": -7.065055611250996e-17
+        },
+        {
+          "feature": "Function Class",
+          "impute": 0.0,
+          "mean": 0.6611570247933884,
+          "scale": 1.0329586729251627,
+          "coefficient": 0.18919782030913831,
+          "reference_encoded_mean": -4.064700825693755e-16
+        },
+        {
+          "feature": "Q Wave",
+          "impute": 0.0,
+          "mean": 0.045454545454545456,
+          "scale": 0.20829889522526548,
+          "coefficient": 0.20027063427692013,
+          "reference_encoded_mean": 2.3856031934094273e-17
+        },
+        {
+          "feature": "St Elevation",
+          "impute": 0.0,
+          "mean": 0.03305785123966942,
+          "scale": 0.17878766655193337,
+          "coefficient": -0.0633554027678681,
+          "reference_encoded_mean": -1.8052593396280954e-16
+        },
+        {
+          "feature": "St Depression",
+          "impute": 0.0,
+          "mean": 0.2396694214876033,
+          "scale": 0.42688170479818044,
+          "coefficient": 0.007002588024954254,
+          "reference_encoded_mean": 6.331023859432711e-17
+        },
+        {
+          "feature": "Tinversion",
+          "impute": 0.0,
+          "mean": 0.30578512396694213,
+          "scale": 0.46073916908318524,
+          "coefficient": -0.024420527317966373,
+          "reference_encoded_mean": 6.14751592147814e-17
+        },
+        {
+          "feature": "FBS",
+          "impute": 98.5,
+          "mean": 120.14049586776859,
+          "scale": 53.710473575038804,
+          "coefficient": 0.12016441717206557,
+          "reference_encoded_mean": 4.2206825729551407e-17
+        },
+        {
+          "feature": "CR",
+          "impute": 1.0,
+          "mean": 1.056404958677686,
+          "scale": 0.2664626895722724,
+          "coefficient": 0.11443645195763409,
+          "reference_encoded_mean": -1.3487833439660992e-16
+        },
+        {
+          "feature": "TG",
+          "impute": 119.0,
+          "mean": 147.96280991735537,
+          "scale": 100.64680625153136,
+          "coefficient": 0.14859719725297996,
+          "reference_encoded_mean": -3.2687351448158017e-18
+        },
+        {
+          "feature": "LDL",
+          "impute": 99.0,
+          "mean": 102.7107438016529,
+          "scale": 35.341179599439194,
+          "coefficient": -0.0006282237170869519,
+          "reference_encoded_mean": -1.651571441591142e-16
+        },
+        {
+          "feature": "HDL",
+          "impute": 39.0,
+          "mean": 40.35082644628099,
+          "scale": 10.707613888479317,
+          "coefficient": 0.05018843022336463,
+          "reference_encoded_mean": 1.0643460401365137e-16
+        },
+        {
+          "feature": "BUN",
+          "impute": 16.0,
+          "mean": 17.60330578512397,
+          "scale": 7.065782216285969,
+          "coefficient": -0.014919484329436319,
+          "reference_encoded_mean": -1.9818857299093704e-16
+        },
+        {
+          "feature": "ESR",
+          "impute": 15.0,
+          "mean": 19.301652892561982,
+          "scale": 15.364574922763154,
+          "coefficient": 0.175856742582728,
+          "reference_encoded_mean": 6.973301642273711e-17
+        },
+        {
+          "feature": "HB",
+          "impute": 13.2,
+          "mean": 13.127272727272729,
+          "scale": 1.6568415636210208,
+          "coefficient": 0.06411279573769309,
+          "reference_encoded_mean": -8.877196498552388e-16
+        },
+        {
+          "feature": "K",
+          "impute": 4.3,
+          "mean": 4.247107438016529,
+          "scale": 0.45908179651897457,
+          "coefficient": 0.10359555130296885,
+          "reference_encoded_mean": 8.092700063796596e-16
+        },
+        {
+          "feature": "Na",
+          "impute": 141.0,
+          "mean": 140.86776859504133,
+          "scale": 3.67466678932491,
+          "coefficient": -0.055193974661888724,
+          "reference_encoded_mean": -1.1212335009024309e-15
+        },
+        {
+          "feature": "WBC",
+          "impute": 7100.0,
+          "mean": 7471.900826446281,
+          "scale": 2342.324307972388,
+          "coefficient": 0.0979910785417897,
+          "reference_encoded_mean": -3.2113889142049983e-18
+        },
+        {
+          "feature": "Lymph",
+          "impute": 32.0,
+          "mean": 32.14049586776859,
+          "scale": 9.860435831921299,
+          "coefficient": -0.1552414085774002,
+          "reference_encoded_mean": 2.433272247604658e-16
+        },
+        {
+          "feature": "Neut",
+          "impute": 60.0,
+          "mean": 60.47107438016529,
+          "scale": 10.018226678801794,
+          "coefficient": 0.1940304702615694,
+          "reference_encoded_mean": -1.8396670779945775e-16
+        },
+        {
+          "feature": "PLT",
+          "impute": 210.0,
+          "mean": 221.4214876033058,
+          "scale": 62.52652357082674,
+          "coefficient": -0.10320809816279877,
+          "reference_encoded_mean": -5.964007983523568e-17
+        },
+        {
+          "feature": "EF-TTE",
+          "impute": 50.0,
+          "mean": 47.02892561983471,
+          "scale": 8.803360909818316,
+          "coefficient": -0.0035920255156454773,
+          "reference_encoded_mean": 1.9084825547275419e-16
+        },
+        {
+          "feature": "Region RWMA",
+          "impute": 0.0,
+          "mean": 0.5743801652892562,
+          "scale": 1.0817057944387127,
+          "coefficient": -0.03038665671162514,
+          "reference_encoded_mean": 2.257147636841227e-16
+        }
+      ],
+      "categorical": [
+        {
+          "feature": "Sex",
+          "impute": "Male",
+          "categories": [
+            "Fmale",
+            "Male"
+          ],
+          "coefficients": [
+            -0.08167634370495894,
+            0.0816966369006759
+          ],
+          "reference_encoded_means": [
+            0.4256198347107438,
+            0.5743801652892562
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Obesity",
+          "impute": "Y",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.013941733272067068,
+            0.013962026467784078
+          ],
+          "reference_encoded_means": [
+            0.30578512396694213,
+            0.6942148760330579
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CRF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.018952045034560154,
+            -0.018931751838843148
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CVA",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.018655260204753422,
+            0.018675553400470456
+          ],
+          "reference_encoded_means": [
+            0.9793388429752066,
+            0.02066115702479339
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Airway disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.02876028373728588,
+            0.02878057693300291
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Thyroid Disease",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.001304970061724356,
+            -0.001284676866007341
+          ],
+          "reference_encoded_means": [
+            0.9710743801652892,
+            0.028925619834710745
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "CHF",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.00956841737493748,
+            0.009588710570654501
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "DLP",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.01678044511161405,
+            -0.016760151915897085
+          ],
+          "reference_encoded_means": [
+            0.6363636363636364,
+            0.36363636363636365
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Weak Peripheral Pulse",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0014547967278095,
+            -0.0014345035320924887
+          ],
+          "reference_encoded_means": [
+            0.9834710743801653,
+            0.01652892561983471
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Lung rales",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.012268179893061198,
+            -0.0122478866973442
+          ],
+          "reference_encoded_means": [
+            0.9586776859504132,
+            0.04132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Systolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.0019886084798545643,
+            0.0020089016755715345
+          ],
+          "reference_encoded_means": [
+            0.8553719008264463,
+            0.1446280991735537
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Diastolic Murmur",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.03771333894076588,
+            -0.03769304574504889
+          ],
+          "reference_encoded_means": [
+            0.9628099173553719,
+            0.0371900826446281
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Dyspnea",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.0993744355345246,
+            -0.09935414233880768
+          ],
+          "reference_encoded_means": [
+            0.5578512396694215,
+            0.44214876033057854
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Atypical",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.14233507935119963,
+            -0.14231478615548265
+          ],
+          "reference_encoded_means": [
+            0.6859504132231405,
+            0.3140495867768595
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Nonanginal",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.054554585685074354,
+            -0.05453429248935738
+          ],
+          "reference_encoded_means": [
+            0.9380165289256198,
+            0.06198347107438017
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Exertional CP",
+          "impute": "N",
+          "categories": [
+            "N"
+          ],
+          "coefficients": [
+            2.029319571697097e-05
+          ],
+          "reference_encoded_means": [
+            1.0
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LowTH Ang",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            0.003767524272059043,
+            -0.0037472310763420687
+          ],
+          "reference_encoded_means": [
+            0.9958677685950413,
+            0.004132231404958678
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "LVH",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.0075366732698633155,
+            0.007556966465580281
+          ],
+          "reference_encoded_means": [
+            0.9297520661157025,
+            0.07024793388429752
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "Poor R Progression",
+          "impute": "N",
+          "categories": [
+            "N",
+            "Y"
+          ],
+          "coefficients": [
+            -0.07803654013801388,
+            0.07805683333373085
+          ],
+          "reference_encoded_means": [
+            0.9669421487603306,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "BBB",
+          "impute": "N",
+          "categories": [
+            "LBBB",
+            "N",
+            "RBBB"
+          ],
+          "coefficients": [
+            0.009841201303745134,
+            0.003915561822360941,
+            -0.013736469930389099
+          ],
+          "reference_encoded_means": [
+            0.04132231404958678,
+            0.9256198347107438,
+            0.03305785123966942
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        },
+        {
+          "feature": "VHD",
+          "impute": "mild",
+          "categories": [
+            "Moderate",
+            "N",
+            "Severe",
+            "mild"
+          ],
+          "coefficients": [
+            0.008239961097407713,
+            0.0018376356434306744,
+            -0.011269557964517903,
+            0.001212254419396519
+          ],
+          "reference_encoded_means": [
+            0.09090909090909091,
+            0.38016528925619836,
+            0.0371900826446281,
+            0.49173553719008267
+          ],
+          "unknown_category": "all-zero encoding; UI should flag unknown category"
+        }
+      ],
+      "base_intercept": -0.13409993664843237,
+      "family": "balanced_sigmoid",
+      "class_weight": "balanced",
+      "calibration": {
+        "method": "sigmoid",
+        "ensemble": false,
+        "slope": 1.8718155225693842,
+        "offset": -0.48559203486443303,
+        "mapping": "sigmoid(slope * base_log_odds + offset)",
+        "source": "Three target-stratified cross-fitted training-fold decision scores; no outer validation labels",
+        "base_coefficients_composed": true,
+        "training_row_indices": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          9,
+          10,
+          12,
+          14,
+          15,
+          16,
+          17,
+          20,
+          22,
+          23,
+          24,
+          26,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          36,
+          37,
+          38,
+          42,
+          43,
+          45,
+          46,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          81,
+          82,
+          83,
+          84,
+          86,
+          87,
+          88,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          104,
+          106,
+          107,
+          109,
+          111,
+          112,
+          113,
+          115,
+          116,
+          118,
+          121,
+          122,
+          123,
+          124,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          133,
+          134,
+          135,
+          136,
+          138,
+          139,
+          141,
+          142,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          153,
+          154,
+          156,
+          157,
+          159,
+          160,
+          161,
+          162,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          179,
+          180,
+          181,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          214,
+          216,
+          218,
+          220,
+          222,
+          223,
+          224,
+          225,
+          226,
+          228,
+          229,
+          230,
+          231,
+          234,
+          236,
+          237,
+          238,
+          239,
+          241,
+          242,
+          243,
+          244,
+          245,
+          246,
+          247,
+          248,
+          249,
+          250,
+          251,
+          252,
+          253,
+          254,
+          255,
+          256,
+          257,
+          258,
+          260,
+          261,
+          263,
+          264,
+          265,
+          266,
+          267,
+          268,
+          269,
+          270,
+          271,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279,
+          281,
+          282,
+          284,
+          285,
+          286,
+          287,
+          288,
+          291,
+          293,
+          294,
+          295,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302
+        ]
+      },
+      "operating_threshold": 0.25,
+      "threshold_selection": {
+        "metric": "F1",
+        "candidate_range": [
+          0.05,
+          0.95
+        ],
+        "step": 0.01,
+        "source": "Three inner validation folds pooled within this outer training partition",
+        "ties": "Closest to 0.5; higher threshold if still tied",
+        "clinical_operating_point": false
+      },
+      "inner_selection": {
+        "family": "balanced_sigmoid",
+        "C": 0.01,
+        "inner_log_loss": 0.5814766235259221,
+        "inner_roc_auc": 0.7323198942498348,
+        "operating_threshold": 0.25,
+        "inner_threshold_f1_training_diagnostic": 0.623574144486692
+      }
+    }
+  },
+  "feature_order": [
+    "Age",
+    "Weight",
+    "Length",
+    "Sex",
+    "BMI",
+    "DM",
+    "HTN",
+    "Current Smoker",
+    "EX-Smoker",
+    "FH",
+    "Obesity",
+    "CRF",
+    "CVA",
+    "Airway disease",
+    "Thyroid Disease",
+    "CHF",
+    "DLP",
+    "BP",
+    "PR",
+    "Edema",
+    "Weak Peripheral Pulse",
+    "Lung rales",
+    "Systolic Murmur",
+    "Diastolic Murmur",
+    "Typical Chest Pain",
+    "Dyspnea",
+    "Function Class",
+    "Atypical",
+    "Nonanginal",
+    "Exertional CP",
+    "LowTH Ang",
+    "Q Wave",
+    "St Elevation",
+    "St Depression",
+    "Tinversion",
+    "LVH",
+    "Poor R Progression",
+    "BBB",
+    "FBS",
+    "CR",
+    "TG",
+    "LDL",
+    "HDL",
+    "BUN",
+    "ESR",
+    "HB",
+    "K",
+    "Na",
+    "WBC",
+    "Lymph",
+    "Neut",
+    "PLT",
+    "EF-TTE",
+    "Region RWMA",
+    "VHD"
+  ],
+  "targets": [
+    "CAD",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "training_row_indices": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    12,
+    14,
+    15,
+    16,
+    17,
+    20,
+    22,
+    23,
+    24,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    36,
+    37,
+    38,
+    42,
+    43,
+    45,
+    46,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    81,
+    82,
+    83,
+    84,
+    86,
+    87,
+    88,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    104,
+    106,
+    107,
+    109,
+    111,
+    112,
+    113,
+    115,
+    116,
+    118,
+    121,
+    122,
+    123,
+    124,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    133,
+    134,
+    135,
+    136,
+    138,
+    139,
+    141,
+    142,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    153,
+    154,
+    156,
+    157,
+    159,
+    160,
+    161,
+    162,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    179,
+    180,
+    181,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    214,
+    216,
+    218,
+    220,
+    222,
+    223,
+    224,
+    225,
+    226,
+    228,
+    229,
+    230,
+    231,
+    234,
+    236,
+    237,
+    238,
+    239,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    260,
+    261,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    281,
+    282,
+    284,
+    285,
+    286,
+    287,
+    288,
+    291,
+    293,
+    294,
+    295,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302
+  ],
+  "holdout_scored": false
+}

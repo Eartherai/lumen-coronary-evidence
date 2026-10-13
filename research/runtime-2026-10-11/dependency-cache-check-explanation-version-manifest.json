@@ -1,0 +1,22 @@
+{
+  "python": "3.12.13",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "packages": {
+    "shap": "0.52.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "numba": "0.68.0",
+    "llvmlite": "0.50.0",
+    "slicer": "0.0.8"
+  },
+  "runtime_seconds": 0.461,
+  "script_sha256": "6d0355948b94ce99dafb6503cca78cb4a99264fc54973506b11091e34876a4b1",
+  "dataset_sha256": "739343245c2ba578b541370217531750d8e936022f928b83e0d91756caa3ff0b",
+  "models_sha256": "6797ad90aaf52573e12b0629f97ae0aad850b6e06c0ac9b74a9ea969d084cbd5",
+  "cases_sha256": "9764fe9ceeb06ad8d94160a4277a11a94ccc7f94972d408ee8e5f7e09586f8c6"
+}

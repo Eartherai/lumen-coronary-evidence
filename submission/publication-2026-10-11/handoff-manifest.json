@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "scope": "Oct11 publication handoff; source CI installed, public account actions pending",
+  "files": {
+    "README.md": {
+      "bytes": 11256,
+      "sha256": "9150214954077f78e4157c972917431c33e66986e89d72661cabee0bbdf460c8"
+    },
+    "audit_git_metadata.py": {
+      "bytes": 3834,
+      "sha256": "41a6b130c02eeb4c50e0c557add3871268c05b51a146b3e87d59a719dcbc26c9"
+    },
+    "git-secret-scan.json": {
+      "bytes": 433,
+      "sha256": "9f62eaa53c8956d39793eaf540742b37bb57c5caff393095caa675a0f0e9a7d4"
+    },
+    "publication-fields.json": {
+      "bytes": 979,
+      "sha256": "9a7f35deb390b0e4fc891544666f3106627834fb4e2d01b83ea1b5e16334ec81"
+    },
+    "publication-readiness.json": {
+      "bytes": 2664,
+      "sha256": "0c0d15f603633e34bf7fee3534951b865aa8d9f93958b2d9f2bce0f3a7365520"
+    },
+    "source-ci.yml": {
+      "bytes": 1230,
+      "sha256": "0831ecbee1843e89e885c0f0ff2cf4d308ddab48f899d9907a5e9ff9aeee3bd3"
+    }
+  }
+}

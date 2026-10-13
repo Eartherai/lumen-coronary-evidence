@@ -1,0 +1,80 @@
+{
+  "pages": 6,
+  "report_sha256": "4d8d1a74e58130099c064bff006ab2659c32b72d73c6a0d522caedb754456177",
+  "report_bytes": 25380,
+  "n_audit_development_records": 242,
+  "n_introductory_cases": 8,
+  "n_final_holdout_records": 61,
+  "final_holdout_rescored": false,
+  "models_refitted": false,
+  "ai_software_review_included": true,
+  "human_usability_measured": false,
+  "runtime_captures_included": 2,
+  "runtime_scope": "dated pre-watchdog software samples",
+  "external_full_model_validation_included": false,
+  "second_physical_device_tested": false,
+  "sources": {
+    "v1": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results/benchmark.json",
+      "sha256": "07a5a373d9f405fc02d049245a88c7566591185e6517c2f6eaf6b28adae064fb"
+    },
+    "v2": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-v2/benchmark.json",
+      "sha256": "b5834e5a88fca39b5fb46367c5ea0e43a9f0517bb48d6a04c0904c9c05c23ba6"
+    },
+    "v3": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-v3/benchmark.json",
+      "sha256": "96d2a5847c894009f0e77a6356878d6fcc32b0f2bcb0b083bc03321e48bda93f"
+    },
+    "availability": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-availability/benchmark.json",
+      "sha256": "f5d4d69d30f0960e628a4600deadab742aedbe955efb3e8549e04e095b6d8dde"
+    },
+    "final": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_evaluation.json",
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "shap": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-availability/shap-verification.json",
+      "sha256": "faf88489a2696f375a6250c54b303d15a4f8d4a774d143f6852254cbe7e51eff"
+    },
+    "cohort": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/cohort-audit.json",
+      "sha256": "1f2f388bdb071523d79164962a1c562813810dd28768cd8de8062d7bd1155432"
+    },
+    "cohort_shap": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/public/assets/cohort-audit-verification.json",
+      "sha256": "bab7424b4f9debfa3e80a57931666de60997e6a559b50f635522b4cf7109c196"
+    },
+    "report_source": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/build_report.py",
+      "sha256": "3ca4ee79f6cc2340e4059344bb0d9f5ee3d3b4debc3ebe36f98bb2086c0f5687"
+    },
+    "later_catboost_development_probe": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/catboost-probe-2026-10-10/benchmark.json",
+      "sha256": "d3a96ab4fe9066e8c6824146f4a3c69b0e57c4923e45230a0e91449153c47e7a"
+    },
+    "ai_review": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/independent-ai-review-2026-10-11/ai-review.json",
+      "sha256": "1dea33e6a7bc84c336a0ca2100707982ee387d991bd01c7d76988b0959ab72d5"
+    },
+    "external_compatibility": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/lumen-external-cohort-2026-10-11/angiocad-compatibility-audit.json",
+      "sha256": "d181848c6e024a413f45e081f43969bed244e61bb39e9f9ddf9673fa72306705"
+    },
+    "post_fix_check": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-2026-10-11/review-fix-ui-receipt.json",
+      "sha256": "7f5d3cd947ac4921c8fbf741dfd98c1b487c372066e142878a730d2e1e1ef4bf"
+    },
+    "runtime_capture_1": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-2026-10-11/chromium-idle.json",
+      "sha256": "f568446fee111b00676522c5ad77193bd0124427759a5d8d3243dfd28389f194"
+    },
+    "runtime_capture_2": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-2026-10-11/chromium-actions.json",
+      "sha256": "8581fc51fe4151307be8247306c937d6d0cdfc688cc133ceaf6ef1e0810104e1"
+    }
+  },
+  "visual_review": "passed_all_six_pages",
+  "visual_review_record": "output/pdf/qa-2026-10-11/qa-manifest.json"
+}

@@ -1,0 +1,312 @@
+{
+  "method": "1000 paired patient bootstrap resamples of fixed development OOF predictions",
+  "seed": 2026,
+  "holdout_scored": false,
+  "limits": [
+    "Conditional on already fitted OOF models and research operating thresholds.",
+    "Excludes retraining, model selection and protocol-development uncertainty.",
+    "No multiplicity correction; exploratory evidence, not a claim of superiority or medical utility."
+  ],
+  "comparisons": [
+    {
+      "before_profile": "history",
+      "after_profile": "history_exam",
+      "target": "CAD",
+      "roc_auc_delta_after_minus_before": 0.09298818798693131,
+      "roc_auc_delta_95_ci_conditional": [
+        0.04599076462876737,
+        0.14186460777871657
+      ],
+      "f1_delta_after_minus_before": 0.057010067344957505,
+      "f1_delta_95_ci_conditional": [
+        0.023341667474593188,
+        0.09236872317060997
+      ]
+    },
+    {
+      "before_profile": "history",
+      "after_profile": "history_exam",
+      "target": "LAD",
+      "roc_auc_delta_after_minus_before": 0.06368934765817014,
+      "roc_auc_delta_95_ci_conditional": [
+        0.016572494563863196,
+        0.11894747624960773
+      ],
+      "f1_delta_after_minus_before": 0.06584769445738237,
+      "f1_delta_95_ci_conditional": [
+        0.024561920190422026,
+        0.1111268733536739
+      ]
+    },
+    {
+      "before_profile": "history",
+      "after_profile": "history_exam",
+      "target": "LCX",
+      "roc_auc_delta_after_minus_before": -0.004565217391304333,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.04403744372078285,
+        0.03633004949230967
+      ],
+      "f1_delta_after_minus_before": 0.0047995337595776455,
+      "f1_delta_95_ci_conditional": [
+        -0.03457775590542529,
+        0.05278110416959183
+      ]
+    },
+    {
+      "before_profile": "history",
+      "after_profile": "history_exam",
+      "target": "RCA",
+      "roc_auc_delta_after_minus_before": 0.025923478005434486,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.03270557791834372,
+        0.08311733213245054
+      ],
+      "f1_delta_after_minus_before": 0.03837370184533828,
+      "f1_delta_95_ci_conditional": [
+        -0.015055115046272688,
+        0.09401848127339756
+      ]
+    },
+    {
+      "before_profile": "history_exam",
+      "after_profile": "history_exam_ecg",
+      "target": "CAD",
+      "roc_auc_delta_after_minus_before": 0.016000670185138732,
+      "roc_auc_delta_95_ci_conditional": [
+        0.00017011204419572224,
+        0.030489864864864772
+      ],
+      "f1_delta_after_minus_before": -0.010982386893801155,
+      "f1_delta_95_ci_conditional": [
+        -0.03380861607462236,
+        0.008338522528299062
+      ]
+    },
+    {
+      "before_profile": "history_exam",
+      "after_profile": "history_exam_ecg",
+      "target": "LAD",
+      "roc_auc_delta_after_minus_before": 0.021136156168808373,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.009098795226512565,
+        0.04755788200000468
+      ],
+      "f1_delta_after_minus_before": 0.0022910711282999596,
+      "f1_delta_95_ci_conditional": [
+        -0.027339904264794955,
+        0.03168610603272615
+      ]
+    },
+    {
+      "before_profile": "history_exam",
+      "after_profile": "history_exam_ecg",
+      "target": "LCX",
+      "roc_auc_delta_after_minus_before": -0.017536231884058062,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.0387905508766436,
+        0.0019587300755691916
+      ],
+      "f1_delta_after_minus_before": -0.02235019455252918,
+      "f1_delta_95_ci_conditional": [
+        -0.05648218509193563,
+        0.010009554962335736
+      ]
+    },
+    {
+      "before_profile": "history_exam",
+      "after_profile": "history_exam_ecg",
+      "target": "RCA",
+      "roc_auc_delta_after_minus_before": 0.01828596607182187,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.007735078954044216,
+        0.04457373753979047
+      ],
+      "f1_delta_after_minus_before": -0.01673640167364021,
+      "f1_delta_95_ci_conditional": [
+        -0.05354337744099887,
+        0.02247093878459715
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg",
+      "after_profile": "history_exam_ecg_lab",
+      "target": "CAD",
+      "roc_auc_delta_after_minus_before": -0.015246711904163601,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.03361044470207124,
+        0.000964815371372217
+      ],
+      "f1_delta_after_minus_before": 0.010286211004153167,
+      "f1_delta_95_ci_conditional": [
+        -0.010377404392174364,
+        0.03276845793195204
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg",
+      "after_profile": "history_exam_ecg_lab",
+      "target": "LAD",
+      "roc_auc_delta_after_minus_before": -0.006319780914261552,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.03880543625315875,
+        0.024678600547083308
+      ],
+      "f1_delta_after_minus_before": -0.011501597444089406,
+      "f1_delta_95_ci_conditional": [
+        -0.037703743713787256,
+        0.01230954513055917
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg",
+      "after_profile": "history_exam_ecg_lab",
+      "target": "LCX",
+      "roc_auc_delta_after_minus_before": -0.008188405797101339,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.040604616023055914,
+        0.02585415169976143
+      ],
+      "f1_delta_after_minus_before": -0.008000000000000007,
+      "f1_delta_95_ci_conditional": [
+        -0.052418179688674,
+        0.03569034339804086
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg",
+      "after_profile": "history_exam_ecg_lab",
+      "target": "RCA",
+      "roc_auc_delta_after_minus_before": -0.0018359403686568632,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.03984945434581897,
+        0.03774274899508687
+      ],
+      "f1_delta_after_minus_before": -0.009077370399262374,
+      "f1_delta_95_ci_conditional": [
+        -0.05419529054679647,
+        0.03377441662220338
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg_lab",
+      "after_profile": "full",
+      "target": "CAD",
+      "roc_auc_delta_after_minus_before": 0.003937337689536857,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.004300324804718527,
+        0.01351585485079408
+      ],
+      "f1_delta_after_minus_before": -0.005115811938986914,
+      "f1_delta_95_ci_conditional": [
+        -0.02197912609536585,
+        0.01204304034217272
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg_lab",
+      "after_profile": "full",
+      "target": "LAD",
+      "roc_auc_delta_after_minus_before": 0.022540551927533015,
+      "roc_auc_delta_95_ci_conditional": [
+        0.0009545553250011647,
+        0.044787892505324556
+      ],
+      "f1_delta_after_minus_before": -0.006349206349206438,
+      "f1_delta_95_ci_conditional": [
+        -0.03374084307027868,
+        0.022107960831206978
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg_lab",
+      "after_profile": "full",
+      "target": "LCX",
+      "roc_auc_delta_after_minus_before": -0.0050000000000000044,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.012139935120729393,
+        0.0017720829812464106
+      ],
+      "f1_delta_after_minus_before": 0.002409638554216942,
+      "f1_delta_95_ci_conditional": [
+        -0.0234116380990617,
+        0.034609743085564436
+      ]
+    },
+    {
+      "before_profile": "history_exam_ecg_lab",
+      "after_profile": "full",
+      "target": "RCA",
+      "roc_auc_delta_after_minus_before": -0.0026437541308657053,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.006584548913905272,
+        0.0009213199168557533
+      ],
+      "f1_delta_after_minus_before": -0.005127474718701119,
+      "f1_delta_95_ci_conditional": [
+        -0.029588667381349083,
+        0.019301761995120573
+      ]
+    },
+    {
+      "before_profile": "full",
+      "after_profile": "history_exam_ecg",
+      "target": "CAD",
+      "roc_auc_delta_after_minus_before": 0.011309374214626744,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.005190846108335842,
+        0.02848058447360572
+      ],
+      "f1_delta_after_minus_before": -0.0051703990651662535,
+      "f1_delta_95_ci_conditional": [
+        -0.026719083313376624,
+        0.015447937171765562
+      ]
+    },
+    {
+      "before_profile": "full",
+      "after_profile": "history_exam_ecg",
+      "target": "LAD",
+      "roc_auc_delta_after_minus_before": -0.016220771013271462,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.04933047200645577,
+        0.018668036106229007
+      ],
+      "f1_delta_after_minus_before": 0.017850803793295844,
+      "f1_delta_95_ci_conditional": [
+        -0.012640466938253858,
+        0.052134505174293896
+      ]
+    },
+    {
+      "before_profile": "full",
+      "after_profile": "history_exam_ecg",
+      "target": "LCX",
+      "roc_auc_delta_after_minus_before": 0.013188405797101344,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.021546391752577398,
+        0.04590322469274378
+      ],
+      "f1_delta_after_minus_before": 0.005590361445783065,
+      "f1_delta_95_ci_conditional": [
+        -0.0290388259891426,
+        0.0393739690641437
+      ]
+    },
+    {
+      "before_profile": "full",
+      "after_profile": "history_exam_ecg",
+      "target": "RCA",
+      "roc_auc_delta_after_minus_before": 0.0044796944995225685,
+      "roc_auc_delta_95_ci_conditional": [
+        -0.035675318433068884,
+        0.04211166311535508
+      ],
+      "f1_delta_after_minus_before": 0.014204845117963494,
+      "f1_delta_95_ci_conditional": [
+        -0.02890339704054021,
+        0.05845492901319249
+      ]
+    }
+  ]
+}

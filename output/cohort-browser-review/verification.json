@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "scope": "Live CUA browser review of the complete development audit, static local build, default1280x720viewport",
+  "n_records": 242,
+  "n_models": 100,
+  "n_profile_target_predictions": 4840,
+  "routes_verified": [
+    "uncurated UCI411-020 opens full LCX22.2% cutoff33% truthpositive",
+    "history profile retains audit case14.0% cutoff31%",
+    "edited Age60 disables recordedoutcomecomparison; restore retainsauditcase",
+    "fold0 alloutcomes returns49records",
+    "fixed rule synchronizes both selectors and changes LCX FN63 FP18 and stable miss matches41",
+    "learned rule restores LCX FN17 FP82 and stable miss matches9",
+    "cached uncuratedinference andFocusartery work while all subsequentnetwork blocked"
+  ],
+  "postload_blocked_network_events": 0,
+  "warnings_errors_observed": [],
+  "network_block_restored": true,
+  "model_fitting": false,
+  "final_holdout_rescored": false,
+  "sources": {
+    "public/app.js": {
+      "sha256": "3eb4da5f2bfc2c2ec595f9320b1667b6abb35075b46c313b14ec513997483ec0",
+      "bytes": 32008
+    },
+    "public/index.html": {
+      "sha256": "5b12b4c62909efb7affe6bb89463212ec46031814583e4db76ac0a26647d6619",
+      "bytes": 9489
+    },
+    "public/style.css": {
+      "sha256": "4da7237e0425133672fc0636ff3a1e3b646931f2564e2bd3dcd856e85c942e2c",
+      "bytes": 23176
+    },
+    "public/cohort-audit.js": {
+      "sha256": "836c5cb2510f0f2f2a3545323d5785f7455fdbe603f544d1816cdec9529f7a6e",
+      "bytes": 12559
+    },
+    "public/static-client.js": {
+      "sha256": "98c55f2ce160614f40dd307aa82a0f4d1dfb2014c3eda795490ea54cc858ec07",
+      "bytes": 14606
+    },
+    "artifacts/cohort-audit.json": {
+      "sha256": "1f2f388bdb071523d79164962a1c562813810dd28768cd8de8062d7bd1155432",
+      "bytes": 841853
+    },
+    "public/assets/cohort-audit-verification.json": {
+      "sha256": "bab7424b4f9debfa3e80a57931666de60997e6a559b50f635522b4cf7109c196",
+      "bytes": 3692
+    },
+    "scripts/build_static_demo.py": {
+      "sha256": "322a658747522573a379b4cce99ddb6578804ee89982056741be433e7a3258c5",
+      "bytes": 8945
+    }
+  },
+  "screenshots": {
+    "arbitrary-case-anatomy.png": "921875c549fb670cf1868a864f2464b699cb7baef253ed98e8ed53b05803d19b",
+    "cohort-stable-lcx-miss.png": "3ebaadfec7d76d86cf13c2ea6bb50b2e55d36dfc2ca043e85b21b4b3a7b9a80e"
+  }
+}

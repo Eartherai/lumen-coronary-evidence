@@ -1,0 +1,21 @@
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+screenshots/
+dist/
+tmp/
+training/results/*.joblib
+training/results-v2/*.joblib
+
+*.joblib
+submission/video-source/node_modules/
+submission/video-source/.venv/
+submission/video-source/tmp/
+submission/video-source/renders/
+submission/video-source/snapshots/
+
+# Generated video editor caches
+.hyperframes/
+.thumbnails/
+.waveform-cache/

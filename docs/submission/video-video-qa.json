@@ -1,0 +1,353 @@
+{
+  "schema": 2,
+  "status": "passed_bounded_encoded_delivery",
+  "video": {
+    "file": "lumen-track-a-redesigned-demo-2026-10-11.mp4",
+    "bytes": 15240434,
+    "sha256": "aa5fb2909ceb018c94326f0ec18b7e565b1cc5e4d5bff0deaef40bb7b1b95dae"
+  },
+  "encoded_verification": {
+    "file": "encoded-verification.json",
+    "bytes": 5615,
+    "sha256": "edc1baefb9588228ad8e8b4c01feeb5ff98e62e8fecfb34e50029913832a01b6"
+  },
+  "metadata": {
+    "duration_seconds": 232.75,
+    "video": {
+      "codec": "h264",
+      "width": 1920,
+      "height": 1080,
+      "frame_rate": "24/1",
+      "frames": 5586
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 2
+    }
+  },
+  "full_decode": {
+    "exit_code": 0,
+    "error_log_bytes": 0
+  },
+  "actual_AAC": {
+    "integrated_lufs": -20.4,
+    "true_peak_dbtp": -2.0,
+    "delivery_peak_gate_dbtp": -1,
+    "source_attenuation_receipt": "audio-levels.json",
+    "audio_listening_review": false
+  },
+  "project_check": {
+    "ok": true,
+    "browserSkipped": false,
+    "lint": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 4,
+      "infoCount": 0,
+      "findings": [
+        {
+          "code": "timeline_track_too_dense",
+          "severity": "warning",
+          "message": "Track 1 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+          "selector": "[data-composition-id]",
+          "dataAttributes": {},
+          "sourceFile": "/Users/earther/Desktop/IIT mandi/videos/lumen-redesigned-demo-2026-10-11/compositions/scene-03.html",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "time": 0,
+          "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+        },
+        {
+          "code": "timeline_track_too_dense",
+          "severity": "warning",
+          "message": "Track 3 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+          "selector": "[data-composition-id]",
+          "dataAttributes": {},
+          "sourceFile": "/Users/earther/Desktop/IIT mandi/videos/lumen-redesigned-demo-2026-10-11/compositions/scene-03.html",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "time": 0,
+          "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+        },
+        {
+          "code": "timeline_track_too_dense",
+          "severity": "warning",
+          "message": "Track 1 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+          "selector": "[data-composition-id]",
+          "dataAttributes": {},
+          "sourceFile": "/Users/earther/Desktop/IIT mandi/videos/lumen-redesigned-demo-2026-10-11/compositions/scene-04.html",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "time": 0,
+          "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+        },
+        {
+          "code": "timeline_track_too_dense",
+          "severity": "warning",
+          "message": "Track 3 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+          "selector": "[data-composition-id]",
+          "dataAttributes": {},
+          "sourceFile": "/Users/earther/Desktop/IIT mandi/videos/lumen-redesigned-demo-2026-10-11/compositions/scene-04.html",
+          "bbox": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "time": 0,
+          "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+        }
+      ],
+      "filesScanned": 8
+    },
+    "runtime": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": []
+    },
+    "layout": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "duration": 232.742001,
+      "samples": [
+        12,
+        40,
+        60,
+        68,
+        73,
+        82,
+        98,
+        110,
+        117,
+        122,
+        143,
+        183,
+        219,
+        225.76
+      ],
+      "transitionSamples": [],
+      "transitionSamplesDropped": 0,
+      "tolerance": 2,
+      "totalIssueCount": 0,
+      "truncated": false
+    },
+    "motion": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": false,
+      "samples": 0
+    },
+    "contrast": {
+      "ok": true,
+      "errorCount": 0,
+      "warningCount": 0,
+      "infoCount": 0,
+      "findings": [],
+      "enabled": true,
+      "samples": [
+        12,
+        68,
+        98,
+        122,
+        225.76
+      ],
+      "checked": 41,
+      "passed": 41
+    }
+  },
+  "actual_preview_opened_before_render": {
+    "captured_utc": "2026-10-11T18:46:23.750Z",
+    "url": "http://localhost:8824/#project/lumen-redesigned-demo-2026-10-11?v=1&t=60&tab=design&rc=0",
+    "project": "lumen-redesigned-demo-2026-10-11",
+    "preview_opened": true,
+    "scene_status": "ready",
+    "observed_playhead_seconds": 60,
+    "studio_display_duration": 232.76666666666668,
+    "authored_duration": 232.742001,
+    "render_not_yet_started": true,
+    "ai_browser_review": true,
+    "human_review": false,
+    "opened_before_render": true,
+    "source_receipt": {
+      "path": "/Users/earther/Desktop/IIT mandi/research/lumen-redesigned-demo-captures-2026-10-11/studio-preview-opened.json",
+      "bytes": 458,
+      "sha256": "cdf937e8553369da19d2b6682f7eb3accfbab6bee695a973253760e5ab15e503"
+    },
+    "actual_screenshot": {
+      "path": "/Users/earther/Desktop/IIT mandi/research/lumen-redesigned-demo-captures-2026-10-11/studio-preview-opened.jpg",
+      "bytes": 110980,
+      "sha256": "fbf4bdac42991638d9ce9d222251034570bfd1298d451ef71c62bde3a6507bd6"
+    }
+  },
+  "encoded_frame_samples": [
+    {
+      "file": "frame-00-at-12s.png",
+      "bytes": 666809,
+      "sha256": "f279495eb8522876d1a9ec0714025197934bf5e747327645212294d068a235b9",
+      "time_seconds": 12,
+      "approximate_frame_index": 288
+    },
+    {
+      "file": "frame-01-at-40s.png",
+      "bytes": 800081,
+      "sha256": "0aa32422a30858b678b9650cce80a2aa56043ec24ec0004ce71ac3764b166ce0",
+      "time_seconds": 40,
+      "approximate_frame_index": 960
+    },
+    {
+      "file": "frame-02-at-60s.png",
+      "bytes": 605555,
+      "sha256": "7b19606f54ba2b08a60fc768420887484a296f296bac9bd715fa39445eb2bdb4",
+      "time_seconds": 60,
+      "approximate_frame_index": 1440
+    },
+    {
+      "file": "frame-03-at-68s.png",
+      "bytes": 527248,
+      "sha256": "274137fb8690b32822e0c3f86ca9074bba36e22fd662bf8735bcda4dad4e0b94",
+      "time_seconds": 68,
+      "approximate_frame_index": 1632
+    },
+    {
+      "file": "frame-04-at-71.9013s.png",
+      "bytes": 585221,
+      "sha256": "936dbf62a36cfe96dbd2a38126fc22cc215b223a86d6aabd549016fd31cc0a03",
+      "time_seconds": 71.90133300000001,
+      "approximate_frame_index": 1726
+    },
+    {
+      "file": "frame-05-at-72.7613s.png",
+      "bytes": 736937,
+      "sha256": "22bebdeaf74fba232c15515d7191f302bf76deb0789b237c6b1ebc3658ba4238",
+      "time_seconds": 72.76133300000001,
+      "approximate_frame_index": 1747
+    },
+    {
+      "file": "frame-06-at-76.0078s.png",
+      "bytes": 795582,
+      "sha256": "227e0ba376c06d169de212f7a07e1521ab5ea8f58b01e6748dfd53f7bd9f8a68",
+      "time_seconds": 76.007812,
+      "approximate_frame_index": 1825
+    },
+    {
+      "file": "frame-07-at-76.1778s.png",
+      "bytes": 803898,
+      "sha256": "8e761b2dca9f9c54d7492c39d271676e4ecfc86cc37f0da1db2a5c3ded9ac1db",
+      "time_seconds": 76.177812,
+      "approximate_frame_index": 1829
+    },
+    {
+      "file": "frame-08-at-82s.png",
+      "bytes": 788803,
+      "sha256": "f721fda56c59fae0303a5099c85f594d5a078f8ebc142440e242c640ad611387",
+      "time_seconds": 82,
+      "approximate_frame_index": 1968
+    },
+    {
+      "file": "frame-09-at-98s.png",
+      "bytes": 563750,
+      "sha256": "8de72759fd94218d90d3873d1dc704003ba109c393d02969ac7268e4d91717c0",
+      "time_seconds": 98,
+      "approximate_frame_index": 2352
+    },
+    {
+      "file": "frame-10-at-110s.png",
+      "bytes": 558311,
+      "sha256": "4518b7ef5a8f7ee7e0de3b9e639cb81abc8da45e42a77fc6d899367f55de6d43",
+      "time_seconds": 110,
+      "approximate_frame_index": 2640
+    },
+    {
+      "file": "frame-11-at-117s.png",
+      "bytes": 560576,
+      "sha256": "29866c12776b2111bb33e9eb36143c3e15381e201fdeee607398eb3d5eea20f2",
+      "time_seconds": 117,
+      "approximate_frame_index": 2808
+    },
+    {
+      "file": "frame-12-at-122s.png",
+      "bytes": 517513,
+      "sha256": "ea2f11aceeca7cd015becb91c215db888d3ef92231d83e7f64a6e73b3833cdda",
+      "time_seconds": 122,
+      "approximate_frame_index": 2928
+    },
+    {
+      "file": "frame-13-at-143s.png",
+      "bytes": 478547,
+      "sha256": "96849b8ae0ae2379d073c61586e48bdc48fc34c038af4258c261a93cc57574cb",
+      "time_seconds": 143,
+      "approximate_frame_index": 3432
+    },
+    {
+      "file": "frame-14-at-183s.png",
+      "bytes": 621951,
+      "sha256": "0736e7011e77be35c6e939fd70ae8c94f35f2247e6d064b4e59606bb85154822",
+      "time_seconds": 183,
+      "approximate_frame_index": 4392
+    },
+    {
+      "file": "frame-15-at-219s.png",
+      "bytes": 777783,
+      "sha256": "bbcc796442dd832c89527808ca23abd68cefb24c7dbfd20a3825e874d2e11632",
+      "time_seconds": 219,
+      "approximate_frame_index": 5256
+    },
+    {
+      "file": "frame-16-at-225.76s.png",
+      "bytes": 784311,
+      "sha256": "5b30c589b9afc38e248f9824bd5f674f9a09e9528495895a9dd96f4f385a68b7",
+      "time_seconds": 225.76,
+      "approximate_frame_index": 5419
+    }
+  ],
+  "contact_sheet": {
+    "file": "encoded-contact-sheet.jpg",
+    "bytes": 931772,
+    "sha256": "1eda41ef8c7be032bd4ff9c59e8e07abc91d9dca523e5b3d8579fc75bee929d3"
+  },
+  "cover": {
+    "file": "project-cover.png",
+    "bytes": 666809,
+    "sha256": "f279495eb8522876d1a9ec0714025197934bf5e747327645212294d068a235b9"
+  },
+  "visual_review": {
+    "reviewer": "AI authoring agent",
+    "inspected": "Source scene contact sheet plus final encoded contact sheet and focused evidence frames.",
+    "audio_listening_review": false,
+    "human_review": false,
+    "limitations": "Sampled images; no human frame-by-frame or second physical device."
+  },
+  "render_log": {
+    "file": "render.log",
+    "bytes": 42249,
+    "sha256": "ad49f54073d04cf87585185521dbb01943441aa5baec0f32dd064c1084854ad8"
+  },
+  "models_changed": false,
+  "holdout_rescored": false,
+  "limits": [
+    "Decoded sample frames do not constitute a frame-by-frame human review.",
+    "English captions are authored summaries, not a verbatim transcript or word-timing validation.",
+    "No clinical, external-cohort or second-device validation was performed in this video task."
+  ]
+}

@@ -1,0 +1,6 @@
+HyperFrames catalog component
+Copyright 2026 HeyGen, Inc.
+Licensed under the Apache License, Version 2.0. See HYPERFRAMES-LICENSE.txt.
+Upstream: https://github.com/heygen-com/hyperframes
+
+The archived animated-bar-chart component is retained as reference source. Its bar-growth recipe was adapted to five input profiles, actual CAD scores and Lumen styling in index.html and chapter-04.html. The rest of the custom film composition is original project source.

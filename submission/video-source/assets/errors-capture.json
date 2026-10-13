@@ -1,0 +1,26 @@
+{
+  "name": "errors",
+  "duration": 12.065,
+  "actions": [
+    {
+      "at": 1.313,
+      "description": "Choose recorded failure case UCI411-288"
+    },
+    {
+      "at": 4.489,
+      "description": "Reveal actual recorded outcomes and misses"
+    },
+    {
+      "at": 6.543,
+      "description": "Inspect exact score reconstruction"
+    },
+    {
+      "at": 8.335,
+      "description": "Compare prespecified 50 percent decision rule"
+    },
+    {
+      "at": 10.27,
+      "description": "Restore training-selected research thresholds"
+    }
+  ]
+}

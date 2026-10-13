@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-06",
+  "url": "http://localhost:8768/site/",
+  "checks": [
+    "actual WebGL coronary meshes load",
+    "orbit drag changes viewpoint",
+    "vessel selection changes probability explanation",
+    "case UCI411-288 reveals CAD/LCX/RCA prediction failures",
+    "Age edit changes live Python predictions",
+    "edited measurements heading and current values update",
+    "recorded-label comparison disabled after edits",
+    "restore recovers original Age and predictions",
+    "model-evidence methods expand",
+    "1280px laptop layout",
+    "390px phone layout: no horizontal page overflow; prediction cards use two columns",
+    "Five-profile selector switches independently fitted predictions and required inputs",
+    "Unlabelled input mode disables recorded outcomes and offers restore example defaults",
+    "Frozen final evaluation displays real held-out aggregate results",
+    "Same-case comparison shows 20 model probabilities and per-model thresholds",
+    "Comparison cell synchronizes exact profile, target, probability and explanation",
+    "Decision rule switches all comparison thresholds and flags",
+    "Original-record comparison is disabled after edits and restored with original values",
+    "Artery focus and isolation hide other meshes and their labels",
+    "Complete log-odds waterfall includes baseline, top six terms, all remaining terms and sigmoid endpoint",
+    "Three evidence-loop entry points open tracing, profile changes and an actual missed positive",
+    "Browser-only new-input inference runs without a Python prediction request",
+    "390px emulated layout has no horizontal page overflow; comparison containers scroll internally",
+    "Comparison JSON viewed in-app with five original snapshots and no recorded truth"
+  ],
+  "integration_tests_passed": 12,
+  "final_holdout_scored": true,
+  "final_holdout_repeated_during_packaging": false,
+  "proof": "screenshots/lumen-comparison-preview.png, public/assets/demo-comparison.png, and prior submission/video-source/assets/*-capture.json",
+  "frontend_comparison_paths_checked": 64,
+  "static_runtime_tests_passed": 5,
+  "static_predictor_parity": {
+    "original_outputs": 160,
+    "edited_or_synthetic_outputs": 60,
+    "frozen_model_public_development_inputs": 32,
+    "holdout_rescored": false
+  },
+  "download_verification": "Receipt payload and connected download link verified; the download event was not exposed by the Codex in-app browser. The on-page JSON fallback was verified."
+}

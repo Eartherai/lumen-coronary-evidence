@@ -1,0 +1,34 @@
+{
+  "preserved_files": {
+    "submission/build_report.py": {
+      "bytes": 43529,
+      "sha256": "3ca4ee79f6cc2340e4059344bb0d9f5ee3d3b4debc3ebe36f98bb2086c0f5687"
+    },
+    "submission/build_report_hardening_20261011.py": {
+      "bytes": 4997,
+      "sha256": "044f596ca7ffff953a717ddf4080f9e8f00c95dc39e3fe97181a11621c80c2c1"
+    },
+    "output/pdf/lumen-report.pdf": {
+      "bytes": 25380,
+      "sha256": "4d8d1a74e58130099c064bff006ab2659c32b72d73c6a0d522caedb754456177"
+    },
+    "output/pdf/lumen-report-hardening-2026-10-11.pdf": {
+      "bytes": 25455,
+      "sha256": "85fbfe9ca6efcdae9b84bb2a269539a29603e14e635f4caf6c68b7e2a4679802"
+    },
+    "artifacts/final_evaluation.json": {
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "artifacts/final_models.json": {
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6"
+    },
+    "submission/final-protocol-freeze.json": {
+      "bytes": 1792,
+      "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305"
+    }
+  },
+  "authoring_models_not_refitted": true,
+  "final_holdout_not_rescored": true
+}

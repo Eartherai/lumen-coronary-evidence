@@ -1,0 +1,34 @@
+{
+  "schema": "lumen-publication-source-origin-v1",
+  "source_export_sha256": "7040bf2093f5e278aaa4bc16acd6da5e8e0efc3100f4d0a78c2681b5ada07e66",
+  "source_export_payloads": 375,
+  "original_manifest": "imported-source-manifest-2026-10-13.json",
+  "publication_changes": "README/current media links; current rendering test added to workflows; public report/media copy in Pages output; scoped current notices and dated field guide; no scientific changes",
+  "science_unchanged": {
+    "artifacts/final_models.json": {
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6"
+    },
+    "artifacts/final_evaluation.json": {
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "submission/final-protocol-freeze.json": {
+      "bytes": 1792,
+      "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305"
+    },
+    "training/results-final-development/models.json": {
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6"
+    },
+    "training/results-final-development/final_evaluation.json": {
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    }
+  },
+  "codex_collaborator_added": false,
+  "codex_coauthor_added": false,
+  "AI_assistance_disclosed_in_README": true,
+  "devpost_submitted": false,
+  "youtube_url": null
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "lumen-sixpage-report-qa-v1",
+  "reviewed_utc": "2026-10-10T20:02:42.690100+00:00",
+  "operator_kind": "ai",
+  "report": "output/pdf/lumen-report.pdf",
+  "report_sha256": "4d8d1a74e58130099c064bff006ab2659c32b72d73c6a0d522caedb754456177",
+  "report_bytes": 25380,
+  "pages": 6,
+  "source": "submission/build_report.py",
+  "source_sha256": "3ca4ee79f6cc2340e4059344bb0d9f5ee3d3b4debc3ebe36f98bb2086c0f5687",
+  "baseline_preserved": {
+    "pdf": "output/pdf/qa-2026-10-11/baseline-2026-10-10-lumen-report.pdf",
+    "sha256": "ac19b47b551e6710024be5d71628844c132e86b3b4282acaab8a46bd90f2ce17"
+  },
+  "render_command": "pdftoppm -r 120 -png output/pdf/lumen-report.pdf output/pdf/qa-2026-10-11/page",
+  "render_exit_code": 0,
+  "render_stderr_note": "Non-fatal Fontconfig configuration warning; all six rendered images exist and were inspected.",
+  "rendered_pages": [
+    {
+      "page": 1,
+      "png": "output/pdf/qa-2026-10-11/page-1.png",
+      "sha256": "52614bc68b5f1fe39f39b64e01efd9c31076296a98ff47aa275e93ebcbf7908d",
+      "bytes": 175060,
+      "visual_review": "passed",
+      "notes": "Inspected latest raster: no clipping, overlap, broken glyphs, or illegible table/chart text."
+    },
+    {
+      "page": 2,
+      "png": "output/pdf/qa-2026-10-11/page-2.png",
+      "sha256": "23eccec8077de61b68d230fef08c2e8c02170e7b9fd9798186b40577537b38d9",
+      "bytes": 232686,
+      "visual_review": "passed",
+      "notes": "Inspected latest raster: no clipping, overlap, broken glyphs, or illegible table/chart text."
+    },
+    {
+      "page": 3,
+      "png": "output/pdf/qa-2026-10-11/page-3.png",
+      "sha256": "7caf943dcde08e1935dbace11e239113b43cbcfb074e9f2e91a98016bc1e54cf",
+      "bytes": 173539,
+      "visual_review": "passed",
+      "notes": "Inspected latest raster: no clipping, overlap, broken glyphs, or illegible table/chart text."
+    },
+    {
+      "page": 4,
+      "png": "output/pdf/qa-2026-10-11/page-4.png",
+      "sha256": "35963a7d5a7f561df7f48cec81206c8b7fee7fc2590eb56cef566ba6e5bb0dd3",
+      "bytes": 197469,
+      "visual_review": "passed",
+      "notes": "Inspected latest raster: no clipping, overlap, broken glyphs, or illegible table/chart text."
+    },
+    {
+      "page": 5,
+      "png": "output/pdf/qa-2026-10-11/page-5.png",
+      "sha256": "6dcc8752c3232a19f81f04b2827ae0b16eafe8500326cf8583bdee612f87abe1",
+      "bytes": 303686,
+      "visual_review": "passed",
+      "notes": "Inspected latest raster: no clipping, overlap, broken glyphs, or illegible table/chart text."
+    },
+    {
+      "page": 6,
+      "png": "output/pdf/qa-2026-10-11/page-6.png",
+      "sha256": "6c2a87756eab1bc37ce6cb322e43b393f140dc678a2ed1005842e785665a7d43",
+      "bytes": 289882,
+      "visual_review": "passed",
+      "notes": "Inspected latest raster: no clipping, overlap, broken glyphs, or illegible table/chart text."
+    }
+  ],
+  "checks": {
+    "page_count": "passed",
+    "page_headers_footers": "passed",
+    "no_replacement_glyphs": "passed",
+    "all_character_bounds_on_page": "passed",
+    "saved_primary_metrics_unchanged": "passed",
+    "source_hashes_match": "passed",
+    "human_review_claimed": false,
+    "external_validation_claimed": false,
+    "second_physical_device_claimed": false,
+    "safari_pass_claimed": false,
+    "model_fitting_performed": false,
+    "holdout_rescored": false
+  },
+  "capture_build_binding": {
+    "path": "research/runtime-2026-10-11/capture-baseline-static-manifest.json",
+    "sha256": "e76690e859a57ba692b02fa117d0f9fd3317a7ea9d83837ac657996d81baa7e7",
+    "phase": "retrospective source binding of saved pre-watchdog captures"
+  },
+  "measurement_limits": "Local dated Chromium software callback/DOM timing only, narrow viewport, same M5. No physical display/GPU completion, hosted speed, human timing, or second-device evidence."
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-10T19:37:36.558678+00:00",
+  "purpose": "Metadata-first admission protocol for independent external validation of frozen Lumen. Not an evaluation or new external-validation claim.",
+  "freeze_stage": "Before acquiring or opening any independent participant-level outcomes. Published aggregate descriptions may be read only for dataset eligibility.",
+  "frozen_local_contract_sha256": {
+    "artifacts/input_schema.json": "cd55a04d557691c3f2e9107235374def18f934ba7a17752f557a264ba630fd1f",
+    "submission/clinical-groups.json": "abaa2c77d7b4b1b48e3c78422ee50c5561761f34a61421f95f107372a6ca8d19",
+    "training/download.json": "5382b61c520d5983f54e302e0360e7c668ca4091faa8bf20f418afa2ad85f2a7",
+    "artifacts/final_models.json": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+    "artifacts/availability-models.json": "6797ad90aaf52573e12b0629f97ae0aad850b6e06c0ac9b74a9ea969d084cbd5"
+  },
+  "admission_criteria": [
+    "Original independently collected patients with source institution, dates and sampling documented; no Z-Alizadeh 303/UCI411/UCI412/mirror/synthetic/resampled overlap.",
+    "Public authorized patient-level data with explicit reusable license or data-use authority, bounded acquisition under 20 MB, no private credentials or paid services.",
+    "All 55 Lumen clinical inputs must be available with verified source semantics, units, category definitions, measurement timing and outcome-independent harmonization. Missingness in measured inputs can be handled by the frozen imputer only under a documented missingness policy; an absent entire group cannot be manufactured or imputed to claim validation.",
+    "Patient-level invasive angiography Cath CAD and separate LAD/LCX/RCA stenosis labels must match the original >=50% diameter-narrowing endpoint; different modalities, outcomes or aggregate vessel counts cannot silently substitute. Original target cutoff/boundary definitions must be verified.",
+    "Provenance must rule out overlap with original source cohort; overlap check may use public development feature fingerprints only under a separately reviewed policy and must not open existing 61-record holdout.",
+    "No model, calibration, threshold, profile selection, fit or hyperparameter change. No rescoring existing 61-record holdout.",
+    "Freeze a source-specific codebook and harmonization mapping, cohort inclusion/exclusion rules, outcome-blinding mechanism, and exact evaluation plan before reading participant-level labels. Obtain parent authorization before scoring."
+  ],
+  "evaluation_if_admitted": {
+    "primary_models": "artifacts/final_models.json full 55 inputs, all four targets",
+    "secondary_profiles": "None unless a distinct source-specific protocol is frozen before labels; reduced-profile models cannot substitute for a missing full-input external validation.",
+    "metrics": "Per-target n and prevalence, AUROC, AUPRC with prevalence baseline, Brier, log loss, calibration intercept/slope and reliability table; frozen threshold confusion counts, accuracy, precision, recall, specificity and F1; fixed-0.5 comparison clearly secondary.",
+    "uncertainty": "Patient-level bootstrap using one shared resample across all targets, 1000 resamples; conditional on fixed models and thresholds; undefined metrics reported transparently.",
+    "no_tuning": "No threshold, calibration or model adaptation. Report all four outcomes and dataset exclusions, including disappointing results.",
+    "interpretation": "External retrospective validation only if admission criteria are met; no clinical-use or prospective claim."
+  },
+  "current_status": "Metadata research in progress; no qualifying independent participant-level data acquired; no predictions made."
+}

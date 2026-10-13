@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-10-05T19:42:44.305976+00:00",
+  "protocol_freeze_sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305",
+  "models_sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+  "pid": 31105,
+  "completed_at_utc": "2026-10-05T19:42:48.839450+00:00",
+  "final_evaluation_sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+}

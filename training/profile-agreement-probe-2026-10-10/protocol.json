@@ -1,0 +1,72 @@
+{
+  "protocol_id": "lumen-profile-agreement-development-probe-2026-10-10-v1",
+  "written_utc": "2026-10-09T19:30:54.055312+00:00",
+  "status_at_write": "Fixed before agreement-result calculation; source schemas, provenance and the first source row inspected only.",
+  "scope": "Exploratory development-only analysis of existing out-of-fold predictions; not an independent test.",
+  "n_expected": 242,
+  "profiles": [
+    "history",
+    "history_exam",
+    "history_exam_ecg",
+    "history_exam_ecg_lab",
+    "full"
+  ],
+  "feature_counts": [
+    17,
+    31,
+    38,
+    52,
+    55
+  ],
+  "targets": [
+    "CAD",
+    "LAD",
+    "LCX",
+    "RCA"
+  ],
+  "rule": {
+    "retain": "For a target and a development row, retain only if all five profile decisions are equal. Each decision is probability >= that row/profile/target already frozen training-selected threshold. The retained prediction is that common binary flag. Otherwise withhold.",
+    "new_rules_or_tuning_allowed": false,
+    "probability_aggregation": null,
+    "decision_comparator": ">="
+  },
+  "primary_reporting": [
+    "coverage overall and separately among true positives and true negatives",
+    "retained TP/TN/FP/FN and conditional accuracy/precision/recall/F1",
+    "withheld positive and negative counts",
+    "retained stable wrong count",
+    "full-55 original decisions for exactly the same retained rows",
+    "full-55 all-242 original baseline"
+  ],
+  "secondary_reporting": "Five shared outer-fold coverage and stable wrong counts, descriptively; no independent-fold inference.",
+  "checks": [
+    "Both OOF row identity sets exactly equal split development_row_indices; no heldout CSV is opened.",
+    "Unique row identities, aligned outer folds and target labels.",
+    "All probabilities and thresholds finite and in [0,1]; recorded decisions match probability >= threshold.",
+    "Threshold fixed within each profile/target/outer fold.",
+    "Full profile matches v2 selected probabilities within 1e-12 and decisions/thresholds exactly.",
+    "All 100 profile/target/outer models use only development IDs excluding the entire evaluated outer fold; model feature count and threshold match.",
+    "Input source hashes unchanged before/after computation."
+  ],
+  "restrictions": [
+    "No fitting, calibration, model selection, threshold search, tuning or network/ML libraries.",
+    "No heldout row data or labels opened or rescored; no final evaluator called.",
+    "No changes to primary models, frozen final-61 results, app, report or video.",
+    "No CIs, calibrated-uncertainty claim, clinical confidence claim, causal benefit claim or winning/novelty claim. Retained errors must be stated."
+  ],
+  "undefined_metric_policy": "JSON null when the mathematical denominator is zero; no zero-divison substitution.",
+  "denominator_policy": "Retained recall is TP/(TP+FN) among retained true positives, not whole-cohort sensitivity. Whole-cohort retained-true-positive yield is separately reported as TP/all-development-positive-count.",
+  "interpretation": "Shared feature subsets and training partitions make profile agreement dependent. Low retained error may reflect withheld case mix. This is a post-development exploratory probe. All negative findings are retained.",
+  "source_sha256": {
+    "training/results-availability/development_oof.csv": "f3039eee3e78a283265b77b18c5e574310a7cb242fe2af8f2c20374f3137f44b",
+    "training/results-v2/development_oof.csv": "89495f838f0441e9e1493a33c2f0e6ced9223346784aee0e3d44283379aa080c",
+    "training/results-availability/profiles.json": "d6d7dfeb4f757362012c4905e16e0c70466b50e8ea0cfb9e1ccfb48f5ab786ef",
+    "training/results-availability/verification.json": "dbd273bf5021d28cbaa708379a4a9665c8e6e3317c78a39ab9f186094c0df318",
+    "training/results-v2/verification.json": "fc94a41a5dc75f429224efa654fcff913a8722b396aca83caf04b9129f521e4d",
+    "training/results-availability/models.json": "6797ad90aaf52573e12b0629f97ae0aad850b6e06c0ac9b74a9ea969d084cbd5",
+    "training/results/split.json": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b",
+    "training/experiment_availability.py": "cb902cd374313d958cd10d0cbe61112062845237fa1462d0989bfb80eff3f7b2",
+    "training/experiment_v2.py": "e7fe46df843c46dbf52ad7da3886681e01d2a641bd004eda973a9f70e9d888fd",
+    "submission/clinical-groups.json": "abaa2c77d7b4b1b48e3c78422ee50c5561761f34a61421f95f107372a6ca8d19"
+  }
+}

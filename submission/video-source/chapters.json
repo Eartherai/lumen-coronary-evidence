@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "title": "Make every estimate inspectable",
+    "text": "A risk number becomes more useful when you can examine which artery it belongs to, which measurements drove it, and where the model made a mistake. Lumen connects these pieces in one working research application. It predicts overall coronary artery disease and three recorded vessel labels from clinical measurements, then maps the vessel estimates onto named reference anatomy. The geometry comes from BodyParts3D. It is a generic heart, not patient imaging, and its colors do not locate plaque or a lesion. This demonstration uses public development records and keeps educational limitations visible."
+  },
+  {
+    "id": "02",
+    "title": "Train, select, then evaluate",
+    "text": "The source dataset contains 303 records. All four outcome columns are removed from every input set. A fixed split reserves 61 records for the final evaluation. On the remaining 242 records, five outer folds evaluate a complete training procedure. Three inner folds select regularization, class weighting and optional sigmoid calibration by log loss. Research thresholds are selected using inner predictions, before each outer validation fold is scored. The final full-input procedure was frozen before the held-out evaluation. Training runs on the CPU, and the live predictor uses portable coefficients, scalers, imputers and encoders."
+  },
+  {
+    "id": "03",
+    "title": "Trace a real excluded case",
+    "text": "Here is a recorded development case. The four models predicting it excluded this record from fitting, calibration and threshold selection. Selecting the left anterior descending, left circumflex or right coronary artery changes the evidence panel while the correct reference vessel remains highlighted. Each explanation is a grouped interventional linear Shapley decomposition in log odds. It uses the training fold as its reference and sums one-hot terms back to their raw feature. The baseline plus every contribution reconstructs the model score. These values were checked against the actual SHAP library. They describe model associations and do not establish causal effects."
+  },
+  {
+    "id": "04",
+    "title": "What evidence survives with fewer inputs?",
+    "text": "Lumen also asks what predictive evidence survives when fewer input groups are available. This selector switches among history, examination, ECG, laboratory and echo profiles. Each reduced profile was independently refitted inside the same validation folds; the application is not just filling an entire missing group with defaults. Predictions, required inputs, artery colors, explanations and measured metrics update together. More recorded inputs did not uniformly improve development scores. All five comparisons remain visible. These are exploratory availability experiments. They do not establish the benefit, cost, or clinical order of obtaining a test."
+  },
+  {
+    "id": "05",
+    "title": "Keep the errors and tradeoffs visible",
+    "text": "Revealing recorded outcomes makes model mistakes visible. This case includes missed positive labels. Switching between the training-selected research threshold and the fixed fifty percent comparison also shows the precision and recall tradeoff. The frozen final evaluation used 61 held-out records. Area under the ROC curve was about zero point nine one for overall disease, zero point eight nine for the left anterior descending artery, zero point seven five for the left circumflex, and zero point seven two for the right coronary artery. Vessel errors remain substantial. The report includes false positives, false negatives and wide conditional intervals. These results do not establish clinical readiness."
+  },
+  {
+    "id": "06",
+    "title": "A reproducible working submission",
+    "text": "The unlabelled input form uses four separately frozen development models and has no recorded outcome to reveal. Editing an existing case also disables comparisons with its original outcome. The source package includes training code, portable weights, the unchanged split, verified anatomy provenance, model evidence and a six-page report. The application runs locally with npm install and Python, without a cloud model API or a training GPU. OpenAI Codex assistance and local generated narration are disclosed. Lumen's contribution is a working chain from measurements, through validated predictions, to inspectable anatomy, explanations and honest limitations."
+  }
+]

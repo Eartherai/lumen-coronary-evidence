@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-10",
+  "claim_policy": "Saved results remain exact; no novelty, clinical validity, winning, submitted status or unmeasured performance claims.",
+  "source_manifest": "source-manifest.json",
+  "external_rule_source": "https://multimodal-ai-hackathon-2026-7.devpost.com/rules",
+  "external_rule_checked_by_root_on": "2026-10-10",
+  "final_metrics_snapshot": {
+    "CAD": {
+      "roc_auc": 0.9082687338501292,
+      "accuracy": 0.8360655737704918,
+      "precision": 0.851063829787234,
+      "recall": 0.9302325581395349,
+      "f1": 0.8888888888888888,
+      "brier": 0.11023772428468445,
+      "threshold": 0.21,
+      "confusion_counts": {
+        "tn": 11,
+        "fp": 7,
+        "fn": 3,
+        "tp": 40
+      },
+      "roc_auc_95_ci_conditional": [
+        0.814665404040404,
+        0.9719640332272887
+      ]
+    },
+    "LAD": {
+      "roc_auc": 0.8933333333333333,
+      "accuracy": 0.8524590163934426,
+      "precision": 0.813953488372093,
+      "recall": 0.9722222222222222,
+      "f1": 0.8860759493670886,
+      "brier": 0.12578632169367562,
+      "threshold": 0.36,
+      "confusion_counts": {
+        "tn": 17,
+        "fp": 8,
+        "fn": 1,
+        "tp": 35
+      },
+      "roc_auc_95_ci_conditional": [
+        0.804242249685798,
+        0.9656815324263837
+      ]
+    },
+    "LCX": {
+      "roc_auc": 0.7483660130718953,
+      "accuracy": 0.6065573770491803,
+      "precision": 0.5348837209302325,
+      "recall": 0.8518518518518519,
+      "f1": 0.6571428571428571,
+      "brier": 0.21601721250627165,
+      "threshold": 0.3,
+      "confusion_counts": {
+        "tn": 14,
+        "fp": 20,
+        "fn": 4,
+        "tp": 23
+      },
+      "roc_auc_95_ci_conditional": [
+        0.6211016260162601,
+        0.8591612903225806
+      ]
+    },
+    "RCA": {
+      "roc_auc": 0.7244444444444444,
+      "accuracy": 0.5901639344262295,
+      "precision": 0.5,
+      "recall": 0.76,
+      "f1": 0.6031746031746031,
+      "brier": 0.20886920816367313,
+      "threshold": 0.25,
+      "confusion_counts": {
+        "tn": 17,
+        "fp": 19,
+        "fn": 6,
+        "tp": 19
+      },
+      "roc_auc_95_ci_conditional": [
+        0.5789402790381124,
+        0.8444583218259291
+      ]
+    }
+  },
+  "claims": [
+    {
+      "id": "A01",
+      "recommended_claim": "Lumen predicts overall CAD and separate LAD, LCX and RCA labels; Cath/LAD/LCX/RCA are excluded from every predictor set.",
+      "scope": "Implemented pipeline",
+      "sources": [
+        {
+          "path": "submission/final-protocol-freeze.json",
+          "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305"
+        },
+        {
+          "path": "artifacts/availability-profiles.json",
+          "sha256": "d6d7dfeb4f757362012c4905e16e0c70466b50e8ea0cfb9e1ccfb48f5ab786ef"
+        },
+        {
+          "path": "README.md",
+          "sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+        }
+      ],
+      "locator": "final protocol excluded_features; profile feature_order",
+      "limits": "Independent target models do not define a coherent joint distribution."
+    },
+    {
+      "id": "A02",
+      "recommended_claim": "The source has 303 records; 242 are development and 61 form the final holdout; the primary input profile has 55 predictors.",
+      "scope": "Frozen dataset/split",
+      "sources": [
+        {
+          "path": "training/results/split.json",
+          "sha256": "9f7d16b087155205a77227d812786f0d651b589f5633e9705210c03c4e62871b"
+        },
+        {
+          "path": "artifacts/final_evaluation.json",
+          "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+        }
+      ],
+      "locator": "n_development/n_holdout/n_input_features",
+      "limits": "Single-dataset evidence; no external/patient-specific imaging cohort."
+    },
+    {
+      "id": "A03",
+      "recommended_claim": "Five cumulative input profiles use 17, 31, 38, 52 and 55 features. Reduced profiles are separately refitted; full reuses V2.",
+      "scope": "Exploratory development availability",
+      "sources": [
+        {
+          "path": "artifacts/availability-profiles.json",
+          "sha256": "d6d7dfeb4f757362012c4905e16e0c70466b50e8ea0cfb9e1ccfb48f5ab786ef"
+        },
+        {
+          "path": "artifacts/availability-benchmark.json",
+          "sha256": "f5d4d69d30f0960e628a4600deadab742aedbe955efb3e8549e04e095b6d8dde"
+        },
+        {
+          "path": "README.md",
+          "sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+        }
+      ],
+      "locator": "profiles[].n_features; README availability section",
+      "limits": "Profiles are not clinical acquisition order or causal test utility; reduced profiles have no final-holdout evaluation."
+    },
+    {
+      "id": "A04",
+      "recommended_claim": "The same-case matrix shows all 20 target/profile probabilities and each model's actual research threshold, with synchronized anatomy and explanation.",
+      "scope": "Implemented UI/source",
+      "sources": [
+        {
+          "path": "public/evidence-journey.js",
+          "sha256": "c69a7f14481195e7f832b3b6571471428b945f1a3fac5a9e83a544895856fd07"
+        },
+        {
+          "path": "public/app.js",
+          "sha256": "91a905cadb3def08931da292e57355131a9e2952c0143bfda17cdd318d574f42"
+        },
+        {
+          "path": "public/index.html",
+          "sha256": "10cac65b623d739f8872af55d0de71d19e2d8c844bd0a41645a6f6f4d4e7b434"
+        }
+      ],
+      "locator": "renderJourney; onProfile; runTour",
+      "limits": "Fresh UI execution and named-browser performance are being handled by the root reviewer."
+    },
+    {
+      "id": "A05",
+      "recommended_claim": "Each displayed development case was excluded from fitting, calibration and threshold selection of its applicable model.",
+      "scope": "Eight public development examples",
+      "sources": [
+        {
+          "path": "artifacts/availability-cases.json",
+          "sha256": "9764fe9ceeb06ad8d94160a4277a11a94ccc7f94972d408ee8e5f7e09586f8c6"
+        },
+        {
+          "path": "artifacts/availability-models.json",
+          "sha256": "6797ad90aaf52573e12b0629f97ae0aad850b6e06c0ac9b74a9ea969d084cbd5"
+        },
+        {
+          "path": "submission/release-verification.json",
+          "sha256": "c02596afbe03d073747d2824baab10488f3e6e1124ddab03e5d9de847b62bebf"
+        }
+      ],
+      "locator": "case row_index/fold; model training_row_indices; recorded portable_models checks",
+      "limits": "These examples are development records; do not call them the final holdout or independent external cases."
+    },
+    {
+      "id": "A06",
+      "recommended_claim": "Actual shap.LinearExplainer with an Independent masker verified all 160 displayed outputs; maximum grouped-term error 6.94e-18 at tolerance 1e-12.",
+      "scope": "Software attribution consistency",
+      "sources": [
+        {
+          "path": "training/results-availability/shap-verification.json",
+          "sha256": "faf88489a2696f375a6250c54b303d15a4f8d4a774d143f6852254cbe7e51eff"
+        },
+        {
+          "path": "training/README-explanations.md",
+          "sha256": "bfe11d5ddfd04d81e0a901782e4d720678e77c23dfc794b95f763ac952b19ca0"
+        }
+      ],
+      "locator": "n_case_profile_target_predictions; maximum_grouped_contribution_error; atol",
+      "limits": "Independence breaks correlations and may form invalid intermediate one-hot states; not causal, conditional or clinical validation."
+    },
+    {
+      "id": "A07",
+      "recommended_claim": "Baseline plus every grouped contribution reconstructs model log-odds; sigmoid produces its probability.",
+      "scope": "Exact composed linear score",
+      "sources": [
+        {
+          "path": "training/README-explanations.md",
+          "sha256": "bfe11d5ddfd04d81e0a901782e4d720678e77c23dfc794b95f763ac952b19ca0"
+        },
+        {
+          "path": "training/results-availability/shap-verification.json",
+          "sha256": "faf88489a2696f375a6250c54b303d15a4f8d4a774d143f6852254cbe7e51eff"
+        },
+        {
+          "path": "public/app.js",
+          "sha256": "91a905cadb3def08931da292e57355131a9e2952c0143bfda17cdd318d574f42"
+        }
+      ],
+      "locator": "maximum_reconstruction_error; score-waterfall renderer",
+      "limits": "Terms are log-odds, not percentage-point probability changes; sigmoid(expected log-odds) is not mean background probability."
+    },
+    {
+      "id": "A08",
+      "recommended_claim": "Source FMA memberships identify heart 7088, LAD 3862, LCX 3895 and RCA 50039; whole named vessels are colored by probability.",
+      "scope": "Reference anatomy mapping",
+      "sources": [
+        {
+          "path": "public/assets/anatomy-provenance.json",
+          "sha256": "fcf1d507c05fcddcb1564490b4b4031177b52126684c51155bc89627dc363f91"
+        },
+        {
+          "path": "public/app.js",
+          "sha256": "91a905cadb3def08931da292e57355131a9e2952c0143bfda17cdd318d574f42"
+        }
+      ],
+      "locator": "concepts; groups; paintAnatomy",
+      "limits": "Generic geometry, no patient mesh, plaque position, lesion map or stenosis percentage."
+    },
+    {
+      "id": "A09",
+      "recommended_claim": "The full-input V2 procedure was frozen on 2026-10-05 at 19:35:01 UTC and the 61-record final test was scored once at 19:42:48 UTC.",
+      "scope": "Recorded final evaluation",
+      "sources": [
+        {
+          "path": "submission/final-protocol-freeze.json",
+          "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305"
+        },
+        {
+          "path": "artifacts/final_evaluation.json",
+          "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+        }
+      ],
+      "locator": "frozen_at_utc; evaluated_at_utc; protocol.evaluation",
+      "limits": "No claim of post-test retuning, reduced-profile test evaluation or new scoring; preserve exact hashes."
+    },
+    {
+      "id": "A10",
+      "recommended_claim": "Final CAD/LAD/LCX/RCA AUC is 0.908/0.893/0.748/0.724; F1 is 0.889/0.886/0.657/0.603 at development-selected thresholds.",
+      "scope": "Once-opened final test, n=61",
+      "sources": [
+        {
+          "path": "artifacts/final_evaluation.json",
+          "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+        }
+      ],
+      "locator": "targets[target].metrics; operating_threshold",
+      "limits": "AUC intervals condition on fixed fitted models; sample is small and same-source."
+    },
+    {
+      "id": "A11",
+      "recommended_claim": "Final LCX has 20 false positives and 4 false negatives; RCA has 19 false positives and 6 false negatives.",
+      "scope": "Once-opened final test, n=61",
+      "sources": [
+        {
+          "path": "artifacts/final_evaluation.json",
+          "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+        }
+      ],
+      "locator": "targets.LCX/RCA.metrics.confusion_counts",
+      "limits": "Research operating points, not validated medical thresholds; report sensitivity and false-positive cost together."
+    },
+    {
+      "id": "A12",
+      "recommended_claim": "CAD development AUC across the five profiles is 0.828/0.921/0.937/0.922/0.926; more inputs did not uniformly improve scores.",
+      "scope": "Exploratory development OOF comparison",
+      "sources": [
+        {
+          "path": "artifacts/availability-benchmark.json",
+          "sha256": "f5d4d69d30f0960e628a4600deadab742aedbe955efb3e8549e04e095b6d8dde"
+        },
+        {
+          "path": "README.md",
+          "sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+        }
+      ],
+      "locator": "README availability table; benchmark profile target OOF metrics",
+      "limits": "Not a final test result or causal value/cost of obtaining a test."
+    },
+    {
+      "id": "A13",
+      "recommended_claim": "UCI411-128 LAD flags positive/below/below/below/positive across the five profiles, using each fitted threshold.",
+      "scope": "Saved public development example",
+      "sources": [
+        {
+          "path": "artifacts/availability-cases.json",
+          "sha256": "9764fe9ceeb06ad8d94160a4277a11a94ccc7f94972d408ee8e5f7e09586f8c6"
+        },
+        {
+          "path": "public/app.js",
+          "sha256": "91a905cadb3def08931da292e57355131a9e2952c0143bfda17cdd318d574f42"
+        }
+      ],
+      "locator": "case UCI411-128 profile_predictions[profile].LAD",
+      "limits": "One seeded displayed example, not population effect; final-model thresholds are different."
+    },
+    {
+      "id": "A14",
+      "recommended_claim": "UCI411-288 full-profile LCX probability is 0.2528614553081358 at threshold 0.31, while its recorded LCX label is positive; CAD and RCA are missed too.",
+      "scope": "Saved public development failure",
+      "sources": [
+        {
+          "path": "artifacts/availability-cases.json",
+          "sha256": "9764fe9ceeb06ad8d94160a4277a11a94ccc7f94972d408ee8e5f7e09586f8c6"
+        },
+        {
+          "path": "public/app.js",
+          "sha256": "91a905cadb3def08931da292e57355131a9e2952c0143bfda17cdd318d574f42"
+        }
+      ],
+      "locator": "case UCI411-288; runTour miss",
+      "limits": "Not a holdout row or edited-patient outcome; uses fold-specific models."
+    },
+    {
+      "id": "A15",
+      "recommended_claim": "Editing a development case disables recorded-outcome reveal and pauses its original-record comparison; the unlabelled form has no known outcome.",
+      "scope": "Implemented input/outcome contract",
+      "sources": [
+        {
+          "path": "public/app.js",
+          "sha256": "91a905cadb3def08931da292e57355131a9e2952c0143bfda17cdd318d574f42"
+        },
+        {
+          "path": "public/evidence-journey.js",
+          "sha256": "c69a7f14481195e7f832b3b6571471428b945f1a3fac5a9e83a544895856fd07"
+        },
+        {
+          "path": "submission/release-verification.json",
+          "sha256": "c02596afbe03d073747d2824baab10488f3e6e1124ddab03e5d9de847b62bebf"
+        }
+      ],
+      "locator": "recalculate; reveal; renderJourney edited/kind gating",
+      "limits": "Input editing is sensitivity analysis, not intervention or treatment simulation."
+    },
+    {
+      "id": "A16",
+      "recommended_claim": "Python reference inference uses standard-library code and shipped JSON weights; the optional static client computes predictions in browser memory.",
+      "scope": "Portable application runtime",
+      "sources": [
+        {
+          "path": "README.md",
+          "sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+        },
+        {
+          "path": "REPRODUCIBILITY.md",
+          "sha256": "fd91024e2eb26cb45089f49bab849cc7077d9254a99894cb81a42bcacd14317f"
+        },
+        {
+          "path": "public/static-client.js",
+          "sha256": "74e007d9055eb98aff39706d9c375ba2cf051a0def4ea2f6bc229e3012561247"
+        },
+        {
+          "path": "package.json",
+          "sha256": "0211d628f009a45c781531877f77cd910c6bd4fcb66561a7cf44c57d1a1ecbf9"
+        }
+      ],
+      "locator": "quickstart and static runtime sections",
+      "limits": "Three.js uses browser graphics; no new ordinary-device performance result asserted. Initial dependency installation needs access; optional fonts have fallbacks."
+    },
+    {
+      "id": "A17",
+      "recommended_claim": "Recorded static parity checks cover 160 original outputs, 60 edited/missing/unknown/synthetic comparisons and 32 frozen-model predictions on public development inputs.",
+      "scope": "Existing software parity record",
+      "sources": [
+        {
+          "path": "submission/release-verification.json",
+          "sha256": "c02596afbe03d073747d2824baab10488f3e6e1124ddab03e5d9de847b62bebf"
+        },
+        {
+          "path": "REPRODUCIBILITY.md",
+          "sha256": "fd91024e2eb26cb45089f49bab849cc7077d9254a99894cb81a42bcacd14317f"
+        }
+      ],
+      "locator": "checks.static_runtime; reproducibility static runtime section",
+      "limits": "These are implementation comparisons, not 252 additional clinical samples or holdout scoring."
+    },
+    {
+      "id": "A18",
+      "recommended_claim": "The supplied local report is six pages and the narrated demo is 280.458333 seconds, 1920×1080, H.264/AAC, with English audio and recorded QA passed.",
+      "scope": "Existing report/media release evidence",
+      "sources": [
+        {
+          "path": "README.md",
+          "sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+        },
+        {
+          "path": "output/pdf/lumen-report.pdf",
+          "sha256": "258cb1539a7e2149901c2a91c7ea71e69f8733bb1191932f2e6eebe69ce9b3b6"
+        },
+        {
+          "path": "output/video/lumen-demo.mp4",
+          "sha256": "5d3463f369b2177955ccf6c3eb2787f879513e512b0ad79ebb61fcbec457a99a"
+        },
+        {
+          "path": "output/video/video-qa.json",
+          "sha256": "a31f3d954fb0176d9b8c610aa63befcfb02299ccf6d9a56f045b45bfb6c8ae41"
+        }
+      ],
+      "locator": "README report statement; video QA duration/status/codecs",
+      "limits": "This kit rehashes existing assets; it does not rerender or claim current human approval or public video visibility."
+    },
+    {
+      "id": "A19",
+      "recommended_claim": "The existing source archive passed recorded clean-extraction verification with no retraining or final-holdout rescoring.",
+      "scope": "Exact existing source ZIP",
+      "sources": [
+        {
+          "path": "dist/lumen-submission-source.zip",
+          "sha256": "9dc17d5ea64e0eb3f5c84eb1811d7612e2a578fa8e951d2d8074065d21953cdc"
+        },
+        {
+          "path": "dist/release-verification.json",
+          "sha256": "368ae617f71d42cf82e3e8445d20c571da92e848ac4d91f702cfd52db3cd4792"
+        }
+      ],
+      "locator": "archive_sha256; status; final_holdout_rescored; models_retrained",
+      "limits": "The record certifies its matching payload only; any later source release requires its own verification."
+    },
+    {
+      "id": "A20",
+      "recommended_claim": "OpenAI Codex assisted with development and presentation; Kokoro locally generated the English narration.",
+      "scope": "AI assistance disclosure",
+      "sources": [
+        {
+          "path": "README.md",
+          "sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+        },
+        {
+          "path": "submission/video-source/README.md",
+          "sha256": "02854eff634aee36863de59c93433366f149a1bf6427c93c165af6a1731ef41f"
+        }
+      ],
+      "locator": "README AI disclosure; video source narration description",
+      "limits": "Human review and judging understanding remain required; add other AI tools only if actually used. AI tools are not teammates."
+    },
+    {
+      "id": "A21",
+      "recommended_claim": "The submission requires description, public GitHub with README, 3–10-minute public/unlisted YouTube with English audio/subtitles and real human names/accounts; Track A report max is six pages.",
+      "scope": "Supplied competition requirements",
+      "sources": [
+        {
+          "path": "../research/source-extracts/Track A.txt",
+          "sha256": "a2dce86153c826f94bb377d20d7fbb362e730b91b333e03700c4a6d282feb8cf"
+        },
+        {
+          "path": "../research/source-extracts/Multimodal AI Hackathon 2026 - Submission Guidelines.txt",
+          "sha256": "44289818a7be0a8f9e1580a2a778235b81e2ed78b22fa2b7ad126d0e9dc5fbc4"
+        }
+      ],
+      "locator": "Track A page 3; Submission Guidelines page 1",
+      "limits": "Public URLs and real fields are still unresolved; local preparation is not submission."
+    },
+    {
+      "id": "A22",
+      "recommended_claim": "Current official rules permit one track per team and one submitting team per individual, and require AI-tools disclosure in Built With and README.",
+      "scope": "Competition rule handoff",
+      "sources": [
+        {
+          "path": "../research/project-choice-2026-10-10.md",
+          "sha256": "757e86043cf371d249780b001bb318a446f8f302b06c4bd74ef4f164b1ccd5e2"
+        },
+        {
+          "path": "../research/submission-audit.md",
+          "sha256": "81eb62e1167bd891908100d9f1b831877aee5af2763641e07a89ea37136f5907"
+        }
+      ],
+      "locator": "https://multimodal-ai-hackathon-2026-7.devpost.com/rules",
+      "limits": "Root reviewer checked the official rules on 10 October; verify current declarations/deadline at submission. No second overlapping-team entry."
+    }
+  ],
+  "unresolved_fields": "handoff-fields.json"
+}

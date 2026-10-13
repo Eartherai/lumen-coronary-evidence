@@ -1,0 +1,202 @@
+{
+  "schema": "lumen-six-page-hardening-r2-pdf-qa-v1",
+  "created_utc": "2026-10-11T09:14:09.332808+00:00",
+  "status": "passed",
+  "report": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/lumen-report-hardening-r2-2026-10-11.pdf",
+    "bytes": 25533,
+    "sha256": "e2ddf023ec79fe71c9de1697794e6e9193917fc38d3f17e54121c64c8dd5903b"
+  },
+  "pages": 6,
+  "render_method": "Poppler pdftoppm, 130 dpi, PNG",
+  "render_exit_code": 0,
+  "render_warning": "Fontconfig configuration warning appeared; all six PNG pages rendered and were readable",
+  "reviewer": "Codex AI, individual visual inspection of all six rendered pages",
+  "visual_findings": "Headers, footers, tables, charts, equation, updated software-check paragraph and references readable; no clipping, overlap or layout defects observed",
+  "page_renders": [
+    {
+      "page": 1,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-r2-2026-10-11/page-1.png",
+      "bytes": 196830,
+      "sha256": "ef61b4deff509cf3f52e39715582febfddb35204dd0abb14353683ae611cc550",
+      "dimensions": [
+        1075,
+        1521
+      ],
+      "individual_visual_inspection": "passed",
+      "observed_defects": []
+    },
+    {
+      "page": 2,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-r2-2026-10-11/page-2.png",
+      "bytes": 257360,
+      "sha256": "5c75511ec45e8ef51c16bd453155d85fb9322776cd1386e6d0fadc51154913e0",
+      "dimensions": [
+        1075,
+        1521
+      ],
+      "individual_visual_inspection": "passed",
+      "observed_defects": []
+    },
+    {
+      "page": 3,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-r2-2026-10-11/page-3.png",
+      "bytes": 195717,
+      "sha256": "16eac792c19867f603a2a194276562c896975fa8f62c1ece59980eb2357215d6",
+      "dimensions": [
+        1075,
+        1521
+      ],
+      "individual_visual_inspection": "passed",
+      "observed_defects": []
+    },
+    {
+      "page": 4,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-r2-2026-10-11/page-4.png",
+      "bytes": 212024,
+      "sha256": "32ef789273ef00a341884d7de266ef2262baf652f424e060458794540e5d29fc",
+      "dimensions": [
+        1075,
+        1521
+      ],
+      "individual_visual_inspection": "passed",
+      "observed_defects": []
+    },
+    {
+      "page": 5,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-r2-2026-10-11/page-5.png",
+      "bytes": 348354,
+      "sha256": "1aca3cdf1cc0519c9876e6fad28165618575ce5ff3aadd5416e7f74b8995dc41",
+      "dimensions": [
+        1075,
+        1521
+      ],
+      "individual_visual_inspection": "passed",
+      "observed_defects": []
+    },
+    {
+      "page": 6,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-r2-2026-10-11/page-6.png",
+      "bytes": 313372,
+      "sha256": "dbf18fd953007c3b0da73f8a98a3a595d286fdf67e0eef577d2555f251150fbe",
+      "dimensions": [
+        1075,
+        1521
+      ],
+      "individual_visual_inspection": "passed",
+      "observed_defects": []
+    }
+  ],
+  "extracted_text": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-r2-2026-10-11/extracted-text.txt",
+    "bytes": 14921,
+    "sha256": "90f3856bac0df28517b45ba970eb73cd8a39a00de4e0fba08cef1a7a5e2dcb3c"
+  },
+  "required_r2_software_check_text": "passed",
+  "replacement_glyph_check": "passed",
+  "current_browser_receipt": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-hardening-r2-2026-10-11/browser-verification.json",
+    "bytes": 3749,
+    "sha256": "4aee681c710e38e35ae7b069f3e8b426033f75869ab1d07c63b6ed99333fbe1a"
+  },
+  "earlier_browser_receipt": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-hardening-2026-10-11/browser-verification.json",
+    "bytes": 2692,
+    "sha256": "b42eec1eeebd582255bb21c4ac41649f8b3880202ecabca5bfdea15bbf314dc5"
+  },
+  "current_browser_checks": [
+    "stale_prediction_failure_after_new_case_commit",
+    "stale_prediction_failure_during_newer_case_load"
+  ],
+  "earlier_checks": {
+    "count": 5,
+    "scope": "Dated historical R1 case/profile failure, retry and keyboard checks; prior source hashes are not asserted to match the current R2 app"
+  },
+  "current_source_bindings": {
+    "public/app.js": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/public/app.js",
+      "bytes": 37307,
+      "sha256": "bc7837cd5fee21e96b0be5a880c313ac889c4f66e6dd3c91814aa4285a55fd2a"
+    },
+    "public/evidence-journey.js": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/public/evidence-journey.js",
+      "bytes": 8036,
+      "sha256": "6ce3c8df5efd68119c2c70cc3a0964afb417ecfeec37c1fc11f41df9d1492254"
+    },
+    "public/index.html": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/public/index.html",
+      "bytes": 9753,
+      "sha256": "5171107ee73fa38fa4936bfa8120a4611d6b293ac5b83cf180f6b0bc5d68453a"
+    },
+    "tests/test_case_transition.mjs": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/tests/test_case_transition.mjs",
+      "bytes": 15523,
+      "sha256": "bca3b15c7aeb1bdfa1125349a83dec9e2f57f2980f765c844bec14e908c9229e"
+    },
+    "research/runtime-hardening-r2-2026-10-11/failure_server.py": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-hardening-r2-2026-10-11/failure_server.py",
+      "bytes": 1864,
+      "sha256": "71a4091b7d65aed88f051cac03263a5473702a814b122d8cc88330284b229104"
+    }
+  },
+  "actual_browser_proof_images": {
+    "stale-error-after-new-case.png": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-hardening-r2-2026-10-11/stale-error-after-new-case.png",
+      "bytes": 72237,
+      "sha256": "4a27c35e1f45ffc2e9d148cf5a0b50ab9aa2e433350d811c9e33a8f02c834793"
+    },
+    "stale-error-during-case-load.png": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-hardening-r2-2026-10-11/stale-error-during-case-load.png",
+      "bytes": 50095,
+      "sha256": "3c558aac4465b8344724f2e8f61c0c21f845f54002f5c083b05f507a250d259a"
+    }
+  },
+  "preserved_earlier_files": {
+    "submission/build_report.py": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/build_report.py",
+      "bytes": 43529,
+      "sha256": "3ca4ee79f6cc2340e4059344bb0d9f5ee3d3b4debc3ebe36f98bb2086c0f5687"
+    },
+    "submission/build_report_hardening_20261011.py": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/build_report_hardening_20261011.py",
+      "bytes": 4997,
+      "sha256": "044f596ca7ffff953a717ddf4080f9e8f00c95dc39e3fe97181a11621c80c2c1"
+    },
+    "output/pdf/lumen-report.pdf": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/lumen-report.pdf",
+      "bytes": 25380,
+      "sha256": "4d8d1a74e58130099c064bff006ab2659c32b72d73c6a0d522caedb754456177"
+    },
+    "output/pdf/lumen-report-hardening-2026-10-11.pdf": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/lumen-report-hardening-2026-10-11.pdf",
+      "bytes": 25455,
+      "sha256": "85fbfe9ca6efcdae9b84bb2a269539a29603e14e635f4caf6c68b7e2a4679802"
+    },
+    "artifacts/final_evaluation.json": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_evaluation.json",
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "artifacts/final_models.json": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_models.json",
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6"
+    },
+    "submission/final-protocol-freeze.json": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/final-protocol-freeze.json",
+      "bytes": 1792,
+      "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305"
+    }
+  },
+  "frozen_models_and_final_protocol_unchanged": true,
+  "models_refitted": false,
+  "final_holdout_rescored": false,
+  "human_usability_measured": false,
+  "second_physical_device_tested": false,
+  "new_scientific_claims": false,
+  "report_generator": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/build_report_hardening_r2_20261011.py",
+    "bytes": 7379,
+    "sha256": "9f42729abb84d3823c549f0e6f7547a3ca4d906d2b55753b2702107186eaef17"
+  }
+}

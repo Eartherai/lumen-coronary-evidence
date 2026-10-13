@@ -1,0 +1,86 @@
+{
+  "schema": "lumen-stale-prediction-fix-verification-v1",
+  "date": "2026-10-11",
+  "review_type": "AI source review and synthetic software regression checks; not a human or field usability study",
+  "status": "passed",
+  "original_finding": {
+    "severity": "P2",
+    "record": "/Users/earther/Desktop/IIT mandi/research/final-hardening-review-2026-10-11/review.json",
+    "scope": "A rejected superseded input prediction could display an error over a newer case, and its finally block could enable the newer loading case control.",
+    "source_resolution": "Request ownership is checked for resolved and rejected predictions; error display and control release require the originating case version to remain current and no pending case load."
+  },
+  "source_bindings": [
+    {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/public/app.js",
+      "bytes": 37307,
+      "sha256": "bc7837cd5fee21e96b0be5a880c313ac889c4f66e6dd3c91814aa4285a55fd2a"
+    },
+    {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/tests/test_case_transition.mjs",
+      "bytes": 15523,
+      "sha256": "bca3b15c7aeb1bdfa1125349a83dec9e2f57f2980f765c844bec14e908c9229e"
+    }
+  ],
+  "validation": {
+    "transition_tests": {
+      "passed": 17,
+      "new_tests": 4,
+      "new_test_names": [
+        "A rejected old input prediction cannot display its error over a newer loaded case",
+        "An old prediction finally cannot release the button owned by a newer pending case load",
+        "A current input prediction rejection remains visible and releases its own button",
+        "A successful old input prediction cannot overwrite a newer loaded case"
+      ]
+    },
+    "node_suite": {
+      "command": "node --test tests/test_case_transition.mjs tests/test_static_client.mjs tests/test_outcome_description.mjs tests/test_runtime_probe.mjs tests/test_cohort_filters.mjs tests/test_cohort_static.mjs",
+      "passed": 52,
+      "failed": 0,
+      "duration_ms": 743.929375
+    },
+    "journey_checks": {
+      "command": "node tests/test_journey.mjs",
+      "passed_case_target_rule_paths": 64,
+      "also_checked": [
+        "thresholds",
+        "receipt routing",
+        "nonmonotonic LAD example"
+      ]
+    },
+    "syntax_check": {
+      "command": "node --check public/app.js",
+      "status": "passed"
+    }
+  },
+  "frozen_artifacts": [
+    {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_evaluation.json",
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944",
+      "expected_preserved_sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_models.json",
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+      "expected_preserved_sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+      "unchanged": true
+    },
+    {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/final-protocol-freeze.json",
+      "bytes": 1792,
+      "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305",
+      "expected_preserved_sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305",
+      "unchanged": true
+    }
+  ],
+  "bounds": {
+    "new_browser_replay": false,
+    "new_human_or_external_validation": false,
+    "model_refit_or_rescore": false,
+    "root_browser_receipt_preserved": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-hardening-2026-10-11/browser-verification.json",
+    "root_browser_receipt_source_scope": "The existing actual browser receipt binds the earlier pre-fix app.js SHA256 e96b69e1d4b3642a59486dcf0f806a7a8fd1784b411d1edc219d4113ecb9f737. It is preserved and is not represented as an actual browser replay of this new source hash.",
+    "release_packaging": "Root owns final source commit and R2 packaging. The earlier kit remains an interim artifact."
+  }
+}

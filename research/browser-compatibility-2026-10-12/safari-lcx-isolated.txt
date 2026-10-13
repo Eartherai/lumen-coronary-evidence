@@ -1,0 +1,581 @@
+Window: "Lumen | Coronary Evidence Explorer", App: Safari.
+0 standard window Lumen | Coronary Evidence Explorer, ID: SafariWindow?IsSecure=false&UUID=2305AF4C-561F-4FA4-8E38-78BAEF3EC59D, Secondary Actions: Raise
+	1 split group
+		2 splitter (disabled, settable, float) -1
+		3 tab group
+			4 scroll area
+				5 HTML content Description: Lumen | Coronary Evidence Explorer, URL: 127.0.0.1:8827/
+					6 link Skip to case explorer, Value: 127.0.0.1:8827/#explorer
+					7 container
+						8 link Lumen, coronary evidence explorer, Value: 127.0.0.1:8827/
+						9 container Evidence workspace
+							10 button Case explorer
+							11 button Compare inputs
+							12 button Cohort audit
+							13 button Model evidence
+						14 text Research  prototype
+					15 text Educational research only
+					16 text Not validated for clinical use or a substitute for diagnostic imaging.
+					17 container
+						18 heading Make every prediction inspectable., Value: 1
+							19 text Make every prediction inspectable.
+						20 text Explore coronary predictions, their inputs and the errors they leave behind.
+						21 button Open cohort audit
+						22 text 242 development records 61 records in the separate frozen test
+						23 container Coronary case explorer
+							24 heading Case & inputs, Value: 2
+								25 text Case & inputs
+							26 text Development case
+							27 pop up button (collapsed) Development case, Value: UCI411-171, Secondary Actions: Expand
+							28 text Available input groups
+							29 pop up button (collapsed) Available input groups, Value: All recorded inputs (+ echo) · 55 inputs, Secondary Actions: Expand
+							30 text All recorded inputs (+ echo) · 55 model inputs. Separately fitted and validated.
+							31 summary Prediction provenance, Value: off
+								32 text Prediction provenance
+							33 text 50
+							34 text Age in years
+							35 text F
+							36 text Recorded sex
+							37 summary Recorded measurements, Value: off
+								38 text Recorded measurements
+							39 button Edit inputs
+							40 text All four angiography labels are excluded from the model inputs.
+							41 heading Reference anatomy, Value: 2
+								42 text Reference anatomy
+							43 button Compare inputs
+							44 button Reset view
+							45 container Interactive generic heart: drag to rotate, scroll to zoom
+								46 container
+									47 text BodyParts3D Generic reference anatomy
+								48 button Select Left circumflex artery
+								49 text Drag to rotate. Scroll to zoom.
+								50 container
+									51 checkbox Heart surface, Value: 1
+									52 text Heart surface
+							53 container Reference anatomy views
+								54 button Overview, Help: Restore the full reference-heart overview
+								55 button Opposite view, Help: Turn the viewpoint halfway around its current target
+								56 button Focus artery, Help: Center and fit the selected reference artery using its mesh bounds
+								57 container
+									58 checkbox Isolate artery, Value: 1
+									59 text Isolate artery
+								60 text Only the LCX reference vessel is visible.
+							61 text Lower model probability
+							62 text Higher
+							63 text Research decision rule
+							64 pop up button (collapsed) Research decision rule, Value: Training-selected F1 threshold, Secondary Actions: Expand
+							65 toggle button Overall CAD 99.7% Positive research flag, Value: off
+							66 toggle button LAD 94.4% Positive research flag, Value: off
+							67 toggle button LCX 43.8% Positive research flag, Value: on
+							68 toggle button RCA 46.1% Positive research flag, Value: off
+							69 text Generic reference anatomy. No patient-specific geometry or predicted plaque location.
+							70 heading Prediction evidence, Value: 2
+								71 text Prediction evidence
+							72 text LCX
+							73 text Left circumflex artery
+							74 text 43.8%
+							75 container
+								76 text Model probability Validation fold 3
+							77 text Positive research flag at 31.0%. Threshold selected from training-fold predictions. This is a research operating point.
+							78 heading Model contributions, Value: 3
+								79 text Model contributions
+							80 text Grouped linear SHAP in log-odds
+							81 text Relative to this model's training reference. Positive raises the model score; negative lowers it.
+							82 text LDL
+							83 text 213
+							84 text Increases model estimate
+							85 text +0.24
+							86 text Blood pressure
+							87 text 180
+							88 text Increases model estimate
+							89 text +0.19
+							90 text TG
+							91 text 300
+							92 text Increases model estimate
+							93 text +0.14
+							94 text Typical Chest Pain
+							95 text 1
+							96 text Increases model estimate
+							97 text +0.13
+							98 text Age
+							99 text 50
+							100 text Decreases model estimate
+							101 text -0.13
+							102 text Hypertension
+							103 text 1
+							104 text Increases model estimate
+							105 text +0.09
+							106 summary Check the complete score, Value: off
+								107 text Check the complete score
+							108 text Compare with the recorded outcome
+							109 button Reveal recorded labels
+							110 text Compare all four estimates with this case’s recorded angiography labels.
+						111 container Three things to try
+							112 text Explore the evidence
+							113 button Trace a vessel From anatomy to the exact score
+							114 button Compare available inputs The same record, different models
+							115 button Inspect a missed positive Reveal the recorded outcome
+						116 container Same-case input comparison
+							117 text Compare available evidence
+							118 heading One record. Five input profiles., Value: 2
+								119 text One record. Five input profiles.
+							120 text UCI411-171 · fold 3 · this record was excluded from every model below.
+							121 link Download comparison, Value: blob:http://127.0.0.1:8827/ab099a90-2549-4cfc-876a-0bfbb74b161d
+							122 text Scroll the comparison horizontally on smaller screens to inspect every profile.
+							123 text LCX
+							124 text 26.2%–44.9% across profiles Research flag changes
+							125 image LCX profile comparison. History, 17 inputs: 26.2%, threshold 31.0%, below threshold; + examination, 31 inputs: 41.8%, threshold 23.0%, positive flag; + ECG, 38 inputs: 42.6%, threshold 28.0%, positive flag; + laboratory, 52 inputs: 44.9%, threshold 36.0%, positive flag; + echo, 55 inputs: 43.8%, threshold 31.0%, positive flag
+							126 text Model probability Each model’s fitted threshold
+							127 container All target and profile comparisons
+								128 table Compare all four targets. Select a cell to update anatomy and explanation.
+									129 text Compare all four targets. Select a cell to update anatomy and explanation.
+									130 row (selectable) Target
+History
+17 inputs
++ examination
+31 inputs
++ ECG
+38 inputs
++ laboratory
+52 inputs
++ echo
+55 inputs
+									131 row (selectable)
+										132 cell (selectable) CAD Same flag
+											133 toggle button CAD Same flag, Value: off
+										134 cell (selectable) CAD, 17 inputs, probability 75.5%, threshold 33.0%, positive research flag
+										135 cell (selectable) CAD, 31 inputs, probability 99.1%, threshold 48.0%, positive research flag
+										136 cell (selectable) CAD, 38 inputs, probability 99.8%, threshold 41.0%, positive research flag
+										137 cell (selectable) CAD, 52 inputs, probability 99.8%, threshold 40.0%, positive research flag
+										138 cell (selectable) CAD, 55 inputs, probability 99.7%, threshold 34.0%, positive research flag
+									139 row (selectable)
+										140 cell (selectable) LAD Same flag
+											141 toggle button LAD Same flag, Value: off
+										142 cell (selectable) LAD, 17 inputs, probability 58.9%, threshold 21.0%, positive research flag
+										143 cell (selectable) LAD, 31 inputs, probability 82.9%, threshold 40.0%, positive research flag
+										144 cell (selectable) LAD, 38 inputs, probability 93.2%, threshold 34.0%, positive research flag
+										145 cell (selectable) LAD, 52 inputs, probability 93.5%, threshold 33.0%, positive research flag
+										146 cell (selectable) LAD, 55 inputs, probability 94.4%, threshold 39.0%, positive research flag
+									147 row (selectable)
+										148 cell (selectable) LCX Flag changes
+											149 toggle button LCX Flag changes, Value: on
+										150 cell (selectable) LCX, 17 inputs, probability 26.2%, threshold 31.0%, below research threshold
+										151 cell (selectable) LCX, 31 inputs, probability 41.8%, threshold 23.0%, positive research flag
+										152 cell (selectable) LCX, 38 inputs, probability 42.6%, threshold 28.0%, positive research flag
+										153 cell (selectable) LCX, 52 inputs, probability 44.9%, threshold 36.0%, positive research flag
+										154 cell (selectable) LCX, 55 inputs, probability 43.8%, threshold 31.0%, positive research flag
+									155 row (selectable)
+										156 cell (selectable) RCA Flag changes
+											157 toggle button RCA Flag changes, Value: off
+										158 cell (selectable) RCA, 17 inputs, probability 26.5%, threshold 30.0%, below research threshold
+										159 cell (selectable) RCA, 31 inputs, probability 55.6%, threshold 28.0%, positive research flag
+										160 cell (selectable) RCA, 38 inputs, probability 50.9%, threshold 31.0%, positive research flag
+										161 cell (selectable) RCA, 52 inputs, probability 46.0%, threshold 25.0%, positive research flag
+										162 cell (selectable) RCA, 55 inputs, probability 46.1%, threshold 23.0%, positive research flag
+							163 text The same recorded values are projected into each input set. Differences include refitting and calibration; they do not isolate the effect of a test. The displayed range is not a confidence interval, and this ordering is not a recommended care sequence.
+							164 summary View exact comparison JSON, Value: off
+								165 text View exact comparison JSON
+						166 container Complete development cohort audit
+							167 text Complete development audit
+							168 heading Inspect every error. Not just the examples., Value: 2
+								169 text Inspect every error. Not just the examples.
+							170 text 242 records · all 5 folds
+							171 text Find a false alarm, a missed positive, or a record whose flags change across input profiles. Open it in the anatomy and trace its exact score.
+							172 text Outcomes are visible here and used by the filters. These are development records with existing out-of-fold predictions. This exploratory audit is not a new final test. Agreement between profiles is not confidence.
+							173 text Try a challenge
+							174 button Find an LCX miss all five profiles share
+							175 button Find a changing LAD flag
+							176 button Browse every record
+							177 container
+								178 text Target
+								179 pop up button (collapsed) Target, Value: LCX, Secondary Actions: Expand
+							180 container
+								181 text Full-input outcome
+								182 pop up button (collapsed) Full-input outcome, Value: All errors, Secondary Actions: Expand
+							183 container
+								184 text Across five profiles
+								185 pop up button (collapsed) Across five profiles, Value: Any behavior, Secondary Actions: Expand
+							186 container
+								187 text Outer fold
+								188 pop up button (collapsed) Outer fold, Value: All five folds, Secondary Actions: Expand
+							189 container
+								190 text Shared decision rule
+								191 pop up button (collapsed) Shared decision rule, Value: Training-selected F1 threshold, Secondary Actions: Expand
+							192 container
+								193 text Record ID
+								194 search text field (settable) Search audit record ID, Placeholder: e.g. UCI411-288
+									195 text e.g. UCI411-288
+							196 container
+								197 text 17 missed positives 82 false alarms 143/242 correct full-input flags 60/172 errors among records with all five flags agreeing All 242 records · LCX · each model’s training-selected threshold. Counts describe development predictions; they are not a new score or uncertainty guarantee.
+							198 heading Matching records 99 / 242, Value: 3
+								199 text Matching records 99 / 242
+							200 button Export this selection
+							201 text Scroll horizontally to compare estimates, labels and profile flags.
+							202 container Matching development audit records
+								203 table
+									204 row (selectable) Record / fold
+Full estimate
+Recorded label
+Full flag
+Five profiles
+Open
+									205 row (selectable)
+										206 cell (selectable) UCI411-006, Value: Fold 2 · Excel row 8
+										207 cell (selectable) 41.5%
+Cutoff 33.0%
+										208 cell (selectable) Negative
+										209 cell (selectable) False alarm
+										210 cell (selectable) All agree
+										211 cell (selectable) Inspect
+									212 row (selectable)
+										213 cell (selectable) UCI411-012, Value: Fold 3 · Excel row 14
+										214 cell (selectable) 50.5%
+Cutoff 31.0%
+										215 cell (selectable) Negative
+										216 cell (selectable) False alarm
+										217 cell (selectable) All agree
+										218 cell (selectable) Inspect
+									219 row (selectable)
+										220 cell (selectable) UCI411-014, Value: Fold 5 · Excel row 16
+										221 cell (selectable) 38.9%
+Cutoff 30.0%
+										222 cell (selectable) Negative
+										223 cell (selectable) False alarm
+										224 cell (selectable) All agree
+										225 cell (selectable) Inspect
+									226 row (selectable)
+										227 cell (selectable) UCI411-020, Value: Fold 2 · Excel row 22
+										228 cell (selectable) 22.2%
+Cutoff 33.0%
+										229 cell (selectable) Positive
+										230 cell (selectable) Missed positive
+										231 cell (selectable) All agree
+										232 cell (selectable) Inspect
+									233 row (selectable)
+										234 cell (selectable) UCI411-023, Value: Fold 4 · Excel row 25
+										235 cell (selectable) 67.1%
+Cutoff 35.0%
+										236 cell (selectable) Negative
+										237 cell (selectable) False alarm
+										238 cell (selectable) All agree
+										239 cell (selectable) Inspect
+									240 row (selectable)
+										241 cell (selectable) UCI411-024, Value: Fold 1 · Excel row 26
+										242 cell (selectable) 46.5%
+Cutoff 28.0%
+										243 cell (selectable) Negative
+										244 cell (selectable) False alarm
+										245 cell (selectable) All agree
+										246 cell (selectable) Inspect
+									247 row (selectable)
+										248 cell (selectable) UCI411-030, Value: Fold 5 · Excel row 32
+										249 cell (selectable) 35.9%
+Cutoff 30.0%
+										250 cell (selectable) Negative
+										251 cell (selectable) False alarm
+										252 cell (selectable) Flags change
+										253 cell (selectable) Inspect
+									254 row (selectable)
+										255 cell (selectable) UCI411-034, Value: Fold 5 · Excel row 36
+										256 cell (selectable) 32.4%
+Cutoff 30.0%
+										257 cell (selectable) Negative
+										258 cell (selectable) False alarm
+										259 cell (selectable) Flags change
+										260 cell (selectable) Inspect
+									261 row (selectable)
+										262 cell (selectable) UCI411-038, Value: Fold 4 · Excel row 40
+										263 cell (selectable) 68.0%
+Cutoff 35.0%
+										264 cell (selectable) Negative
+										265 cell (selectable) False alarm
+										266 cell (selectable) All agree
+										267 cell (selectable) Inspect
+									268 row (selectable)
+										269 cell (selectable) UCI411-043, Value: Fold 5 · Excel row 45
+										270 cell (selectable) 35.3%
+Cutoff 30.0%
+										271 cell (selectable) Negative
+										272 cell (selectable) False alarm
+										273 cell (selectable) All agree
+										274 cell (selectable) Inspect
+							275 button (disabled) Previous
+							276 text 1–10 of 99
+							277 button Next
+							278 container
+								279 text An error you can trace
+								280 heading UCI411-006 · LCX, Value: 3
+									281 text UCI411-006 · LCX
+								282 text 41.5% Full-input estimate Research cutoff 33.0% Recorded outcome Negative Full-input flag Positive The full-input model flags a recorded negative. All five profiles share this flag. Agreement does not make it reliable. History 75.0% Positive · cutoff 31.0% History + examination 75.9% Positive · cutoff 29.0% History + examination + ECG 56.0% Positive · cutoff 35.0% History + examination + ECG + laboratory 41.8% Positive · cutoff 33.0% All recorded inputs (+ echo) 41.5% Positive · cutoff 33.0%
+								283 button Inspect LCX in the 3D explorer
+								284 text Fold 2 was excluded from fitting, calibration and threshold selection. Model: LCX-full-outer-1.
+							285 container
+								286 text Actual SHAP independently checked 4840 explanations across 100 models. All 61 final-test records are excluded from this browser audit. 
+								287 link Verification receipt, Value: 127.0.0.1:8827/assets/cohort-audit-verification.json
+						288 text Development evidence
+						289 heading Performance, with the errors included., Value: 2
+							290 text Performance, with the errors included.
+						291 text CPU model training 242 development records · 5 outer validation folds · 3 inner tuning folds · 55 available inputs. Decisions use thresholds selected inside training folds. Scroll the table horizontally on smaller screens to inspect every metric.
+						292 container Development evaluation metrics
+							293 table
+								294 row (selectable) Prediction
+ROC-AUC
+F1
+Recall
+Precision
+Accuracy
+Brier score
+FP / FN
+								295 row (selectable)
+									296 cell (selectable) CAD
+173 positive / 69 negative
+									297 cell (selectable) 0.926
+0.89–0.96
+									298 cell (selectable) 0.911
+									299 cell (selectable) 0.942
+									300 cell (selectable) 0.881
+									301 cell (selectable) 0.868
+									302 cell (selectable) 0.096
+									303 cell (selectable) 22 / 10
+								304 row (selectable)
+									305 cell (selectable) LAD
+141 positive / 101 negative
+									306 cell (selectable) 0.814
+0.76–0.86
+									307 cell (selectable) 0.794
+									308 cell (selectable) 0.887
+									309 cell (selectable) 0.718
+									310 cell (selectable) 0.731
+									311 cell (selectable) 0.174
+									312 cell (selectable) 49 / 16
+								313 row (selectable)
+									314 cell (selectable) LCX
+92 positive / 150 negative
+									315 cell (selectable) 0.701
+0.63–0.77
+									316 cell (selectable) 0.602
+									317 cell (selectable) 0.815
+									318 cell (selectable) 0.478
+									319 cell (selectable) 0.591
+									320 cell (selectable) 0.211
+									321 cell (selectable) 82 / 17
+								322 row (selectable)
+									323 cell (selectable) RCA
+89 positive / 153 negative
+									324 cell (selectable) 0.722
+0.65–0.78
+									325 cell (selectable) 0.605
+									326 cell (selectable) 0.809
+									327 cell (selectable) 0.483
+									328 cell (selectable) 0.612
+									329 cell (selectable) 0.202
+									330 cell (selectable) 77 / 17
+						331 heading Probability reliability, Value: 3
+							332 text Probability reliability
+						333 text Observed positive fraction versus mean model probability for the selected target. Bin counts are small.
+						334 image LCX development probability reliability: 26 records, mean estimate 15.0%, observed 7.7%; 114 records, mean estimate 31.4%, observed 30.7%; 84 records, mean estimate 48.0%, observed 51.2%; 16 records, mean estimate 67.5%, observed 68.8%; 2 records, mean estimate 87.0%, observed 50.0%
+						335 heading Evidence with fewer inputs, Value: 3
+							336 text Evidence with fewer inputs
+						337 text Same development records and validation folds; each reduced profile was refitted. More inputs do not uniformly improve these scores.
+						338 table
+							339 row (selectable) LCX profile
+AUC
+F1
+							340 row (selectable)
+								341 cell (selectable) History · 17
+								342 cell (selectable) 0.736
+								343 cell (selectable) 0.626
+							344 row (selectable)
+								345 cell (selectable) History + examination · 31
+								346 cell (selectable) 0.732
+								347 cell (selectable) 0.630
+							348 row (selectable)
+								349 cell (selectable) History + examination + ECG · 38
+								350 cell (selectable) 0.714
+								351 cell (selectable) 0.608
+							352 row (selectable)
+								353 cell (selectable) History + examination + ECG + laboratory · 52
+								354 cell (selectable) 0.706
+								355 cell (selectable) 0.600
+							356 row (selectable)
+								357 cell (selectable) All recorded inputs (+ echo) · 55
+								358 cell (selectable) 0.701
+								359 cell (selectable) 0.602
+						360 text Displayed case predictions use logistic models fitted without those records. Development results guide model selection; they are not a final test result or evidence of clinical readiness.
+						361 summary Data, methods and limitations, Value: off
+							362 text Data, methods and limitations
+						363 text Frozen model, separate test
+						364 heading Held-out evaluation, Value: 2
+							365 text Held-out evaluation
+						366 text 61 held-out records · frozen full 55-input procedure. Displayed operating rule: training-selected research thresholds. Intervals condition on fixed models and omit training uncertainty. Scroll horizontally to inspect every metric.
+						367 container Frozen final-test metrics
+							368 table
+								369 row (selectable) Target
+ROC-AUC
+F1
+Recall
+Precision
+Accuracy
+Brier
+FP / FN
+Threshold
+								370 row (selectable)
+									371 cell (selectable) CAD
+43 positive / 18 negative
+									372 cell (selectable) 0.908
+0.81–0.97
+									373 cell (selectable) 0.889
+									374 cell (selectable) 0.930
+									375 cell (selectable) 0.851
+									376 cell (selectable) 0.836
+									377 cell (selectable) 0.110
+									378 cell (selectable) 7 / 3
+									379 cell (selectable) 21.0%
+								380 row (selectable)
+									381 cell (selectable) LAD
+36 positive / 25 negative
+									382 cell (selectable) 0.893
+0.80–0.97
+									383 cell (selectable) 0.886
+									384 cell (selectable) 0.972
+									385 cell (selectable) 0.814
+									386 cell (selectable) 0.852
+									387 cell (selectable) 0.126
+									388 cell (selectable) 8 / 1
+									389 cell (selectable) 36.0%
+								390 row (selectable)
+									391 cell (selectable) LCX
+27 positive / 34 negative
+									392 cell (selectable) 0.748
+0.62–0.86
+									393 cell (selectable) 0.657
+									394 cell (selectable) 0.852
+									395 cell (selectable) 0.535
+									396 cell (selectable) 0.607
+									397 cell (selectable) 0.216
+									398 cell (selectable) 20 / 4
+									399 cell (selectable) 30.0%
+								400 row (selectable)
+									401 cell (selectable) RCA
+25 positive / 36 negative
+									402 cell (selectable) 0.724
+0.58–0.84
+									403 cell (selectable) 0.603
+									404 cell (selectable) 0.760
+									405 cell (selectable) 0.500
+									406 cell (selectable) 0.590
+									407 cell (selectable) 0.209
+									408 cell (selectable) 19 / 6
+									409 cell (selectable) 25.0%
+						410 text This small test set was evaluated after the full-input procedure was frozen. It does not establish clinical or external validity.
+						411 summary Measure this browser’s runtime, Value: off
+							412 text Measure this browser’s runtime
+						413 text BodyParts3D, © The Database Center for Life Science · CC Attribution 4.0 International
+						414 link Anatomy provenance, Value: 127.0.0.1:8827/assets/anatomy-provenance.json
+						415 link Dataset source, Value: archive.ics.uci.edu/dataset/411/extention+of+z+alizadeh+sani+dataset
+						416 link Evaluation data, Value: 127.0.0.1:8827/data/evidence.json
+				417 scroll bar (settable, float) 0
+	418 container
+		419 tab group Description: Tab bar, 38 tabs, ID: TabBar?isSeparate=false
+			420 tab My Dashboard - IIT Madras BS Degree Programme, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				421 image FaviconImageView
+			422 tab Write group intro message, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				423 image FaviconImageView
+			424 tab Manage access, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				425 image FaviconImageView
+			426 tab Start Page, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				427 image Description: favorite, ID: FaviconImageView
+			428 tab Customize - Claude, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				429 image FaviconImageView
+			430 tab Customize - Claude, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				431 image FaviconImageView
+			432 tab Customize - Claude, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				433 image FaviconImageView
+			434 tab ChatGPT, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				435 image FaviconImageView
+			436 tab Eartherai/zerodrop, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				437 image FaviconImageView
+			438 tab OpenResearch — AI research agents and autoresearch, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				439 image FaviconImageView
+			440 tab AI research tools comparison, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				441 image FaviconImageView
+			442 tab Download OpenResearch for macOS, Windows and Linux, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				443 image FaviconImageView
+			444 tab HyperFrames Studio, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				445 image FaviconImageView
+			446 tab HyperFrames Studio, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				447 image FaviconImageView
+			448 tab HyperFrames Studio, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				449 image FaviconImageView
+			450 tab General, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				451 image FaviconImageView
+			452 tab Claude, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				453 image FaviconImageView
+			454 tab Customize - Claude, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				455 image FaviconImageView
+			456 tab Installed GitHub App - Claude, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				457 image FaviconImageView
+			458 tab Sign in to us.auth.entire.io — Entire CLI, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				459 image FaviconImageView
+			460 tab ZERODROP_ANTHROPIC_KEY - Google Search, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				461 image FaviconImageView
+			462 tab Start Page, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				463 image Description: favorite, ID: FaviconImageView
+			464 tab Open ChatGPT Desktop, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				465 image FaviconImageView
+			466 tab Welcome back - OpenAI, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				467 image FaviconImageView
+			468 tab HyperFrames Studio, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				469 image FaviconImageView
+			470 tab Welcome back - OpenAI, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				471 image FaviconImageView
+			472 tab HyperFrames Studio, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				473 image FaviconImageView
+			474 tab best claude ui skill repo - Google Search, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				475 image FaviconImageView
+			476 tab Value: off, Secondary Actions: close tab, travisvn/awesome-claude-skills: A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				477 image FaviconImageView
+			478 tab Claude Code UI Skills, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				479 image FaviconImageView
+			480 tab Open ChatGPT Desktop, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				481 image FaviconImageView
+			482 tab Welcome back - OpenAI, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				483 image FaviconImageView
+			484 tab Open ChatGPT Desktop, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				485 image FaviconImageView
+			486 tab HyperFrames Studio, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				487 image FaviconImageView
+			488 tab Open ChatGPT Desktop, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				489 image FaviconImageView
+			490 tab Welcome back - OpenAI, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				491 image FaviconImageView
+			492 tab Lumen | Coronary Evidence Explorer, Value: off, Secondary Actions: close tab, ID: TabBarTab?isNarrow=true&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=false
+				493 image FaviconImageView
+			494 tab Lumen | Coronary Evidence Explorer, Help: To interact with the items in this button, press Control-Option-Shift-Down Arrow., Value: on, Secondary Actions: close tab, ID: TabBarTab?isNarrow=false&isExpanded=false&tabCount=&isPinned=false&isCluster=false&clusterID=&isActive=true
+				495 image FaviconImageView
+				496 text Value: Lumen | Coronary Evidence Explorer, ID: UnifiedTabBarButton._titleTextField
+				497 button Description: go down, ID: BrowserTabViewItem._clusteringAccessoryButton
+		498 toolbar
+			499 container Secondary Actions: Move previous, Move next, Remove from toolbar
+				500 button Description: show sidebar, Help: Show sidebar, ID: SidebarButton
+				501 menu button Description: Tab Group picker, ID: TabGroupPickerButton?TabGroup=
+			502 container BackForwardSegmentedControl
+				503 button Description: Go back, Help: Show the previous page, ID: BackButton
+				504 button (disabled) Description: Go forward, Help: Show the next page, ID: ForwardButton
+			505 container Secondary Actions: Move previous, Move next, Remove from toolbar
+				506 button Page Menu, ID: AssistantButton
+				507 button Add page to Reading List, ID: OneStepBookmarkingButton
+				508 text field (settable) Description: smart search field, Value: 127.0.0.1:8827, ID: WEB_BROWSER_ADDRESS_AND_SEARCH_FIELD
+				509 button Reload this page, ID: ReloadButton
+			510 button Description: Share, ID: ShareButton, Secondary Actions: Move previous, Move next, Remove from toolbar
+			511 button Description: New Tab, ID: NewTabButton, Secondary Actions: Move previous, Move next, Remove from toolbar
+			512 button Description: Tab Overview, ID: TabOverviewButton, Secondary Actions: Move previous, Remove from toolbar
+513 menu bar
+	514 Safari
+	515 File
+	516 Edit
+	517 View, ID: SafariViewMenu
+	518 History
+	519 Bookmarks, ID: SafariBookmarksMenu
+	520 Window, ID: SafariWindowMenu
+	521 Help, ID: SafariHelpMenu

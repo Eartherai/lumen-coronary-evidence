@@ -1,0 +1,38 @@
+{
+  "reviewer_kind": "ai_code_audit",
+  "baseline_commit": "c8868fc37f58c8e2ca9c6ab41ba12a68c6791c84",
+  "findings": [
+    {
+      "priority": "P2",
+      "name": "failed_selection_identity_and_stale_errors",
+      "status": "code_fixed_regression_passed_browser_check_owned_by_parent"
+    },
+    {
+      "priority": "P2",
+      "name": "prediction_card_keyboard_focus_loss",
+      "status": "code_fixed_regression_passed_browser_check_owned_by_parent"
+    }
+  ],
+  "validation": {
+    "command": "node --test tests/test_case_transition.mjs",
+    "passed": 13,
+    "failed": 0,
+    "syntax_check": "passed",
+    "evidence_kind": "actual_source_functions_with_synthetic_async_api_and_minimal_DOM"
+  },
+  "files": {
+    "public/app.js": {
+      "sha256": "e96b69e1d4b3642a59486dcf0f806a7a8fd1784b411d1edc219d4113ecb9f737",
+      "bytes": 37065
+    },
+    "tests/test_case_transition.mjs": {
+      "sha256": "71015b6348afd97d3549613da1bc61f651c351a52d5136ce0c83f771341a2ef1",
+      "bytes": 12306
+    }
+  },
+  "limitations": [
+    "No browser actions by this reviewer",
+    "No human usability study",
+    "No model or final-holdout data read"
+  ]
+}

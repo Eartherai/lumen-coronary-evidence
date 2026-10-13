@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-10T19:48:10.855800+00:00",
+  "purpose": "Feasibility assessment only for a separately fitted demographics-only exploratory transport study; not an admission of full Lumen55 or vessel models. No training/evaluation protocol has been activated.",
+  "angiocad_reduced_feasibility": {
+    "status": "NOT_READY",
+    "reason": "Header names do not verify clinical units, coding or measurement timing. No comments/codebook/customXML parts exist in the released workbook; accessible primary paper and dataset descriptions do not provide a codebook. No source field is approved. Dataset segment categories/boundaries and patient completeness need source clarification.",
+    "full_paper_access": "Public browser paper page displayed CAPTCHA; not solved. Automated article API returned HTTP 429. No paywall bypass, private credential or request to authors used."
+  },
+  "historical_uci45_demographics_option": {
+    "status": "TECHNICALLY_FEASIBLE_ONLY_AS_A_SEPARATE_EXPLORATORY_ENDPOINT_SHIFT_STUDY",
+    "source": "https://archive.ics.uci.edu/dataset/45",
+    "codebook_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/heart-disease.names",
+    "codebook_sha256": "ec7ed5aa4ed8321097808f47b836301c2a0c36f3bb09c40b8b43b622363e6b61",
+    "license": "CC BY 4.0 per current official dataset page",
+    "source_provenance": "Official names file dated July 1988: Hungarian Institute of Cardiology, University Hospitals Zurich/Basel, VA Long Beach. 1989 primary paper separately reports those hospital angiography groups. They are not UCI411/UCI412 Z-Alizadeh mirrors. Cleveland 303 is excluded from this option to avoid ambiguity with the original scope.",
+    "potential_external_sites": [
+      {
+        "site": "Hungarian",
+        "codebook_n": 294
+      },
+      {
+        "site": "Switzerland",
+        "codebook_n": 123
+      },
+      {
+        "site": "Long Beach VA",
+        "codebook_n": 200
+      }
+    ],
+    "field_mapping": [
+      {
+        "development": "Age",
+        "external": "age",
+        "unit": "years",
+        "mapping": "numeric identity",
+        "development_evidence": "Original authors paper PMC4253773 Table 1 explicitly Age,year",
+        "external_evidence": "Official names file attribute 3 age:age in years"
+      },
+      {
+        "development": "Sex",
+        "external": "sex",
+        "unit": "categorical",
+        "mapping": "Male->1; Fmale->0; any missing/other value unavailable rather than guessed",
+        "development_evidence": "Original authors paper PMC4253773 Table 1 Male/Female; frozenLumen encoding Male/Fmale",
+        "external_evidence": "Official names file attribute 4 sex:1=male,0=female"
+      }
+    ],
+    "endpoint_mapping": {
+      "development": "Recorded Cath CAD/Normal, original source defines >=50% diameter narrowing in at least one LAD/LCX/RCA.",
+      "external": "Recorded num:0 absent,1/2/3/4 present. Official angiographic disease description specifies <50% versus >50% in any major vessel.",
+      "critical_difference": "The strict >50% external rule and >=50% development rule have a 50% boundary mismatch; left-main/branch inclusion also differs or lacks a matching source rule. Retain original labels and disclose endpoint shift; do not call exactly harmonized same-target validation.",
+      "excluded_features": "Do not use ca, vessel labels, Cath, num, imaging, exercise test summaries, or any other predictors in a two-input model."
+    },
+    "model_scope": "Parent would need to freeze a new development-242-only CAD demographic model and complete endpoint-shift protocol before acquiring/reading external patient rows. Frozen full55/all-four models stay unchanged.",
+    "row_policy_required": "Choose sites/files/inclusion and missingness rules before rows, one release file per hospital; do not count identical Age/Sex pairs as duplicate patients. Source-count differences from primary publication must be documented.",
+    "modern_relevance": "Historical transport stress test only. Does not establish contemporary prospective or clinical performance.",
+    "data_acquired": false,
+    "patient_rows_read": false,
+    "patient_outcomes_read": false,
+    "trained": false,
+    "scored": false,
+    "parent_authorization_required_before_next_stage": true
+  }
+}

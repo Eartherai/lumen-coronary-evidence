@@ -1,0 +1,8 @@
+{
+  "url": "https://archive.ics.uci.edu/static/public/411/extention+of+z+alizadeh+sani+dataset.zip",
+  "sha256": "e97af1a18733d64fa88caa0628e5fe7ce6b2e26ec4c7ee03baade92a6f1470e8",
+  "bytes": 131317,
+  "zip_members": [
+    "extention of Z-Alizadeh sani dataset.xlsx"
+  ]
+}

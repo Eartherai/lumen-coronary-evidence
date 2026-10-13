@@ -1,0 +1,169 @@
+{
+  "schema": 2,
+  "status": "bound-redesigned-encoded-demo",
+  "source_state": "Reviewed working-tree export; no Git commit parity inferred.",
+  "video": {
+    "file": "lumen-track-a-redesigned-demo-2026-10-11.mp4",
+    "bytes": 15240434,
+    "sha256": "aa5fb2909ceb018c94326f0ec18b7e565b1cc5e4d5bff0deaef40bb7b1b95dae"
+  },
+  "encoded_duration_seconds": 232.75,
+  "cover": {
+    "file": "project-cover.png",
+    "bytes": 666809,
+    "sha256": "f279495eb8522876d1a9ec0714025197934bf5e747327645212294d068a235b9"
+  },
+  "cover_origin": "Byte-identical encoded 12s frame; no generative image or pixel editing.",
+  "capture_receipt": {
+    "file": "evidence/capture-verification.json",
+    "sha256": "71f572a2cb7ab309c2e66672c66e1cb9d808cb0179c7a311207e05fcb787dac7",
+    "observed_stage_count": 13
+  },
+  "current_application": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/dist/ui-redesign-2026-10-11/site/app.js",
+    "bytes": 39118,
+    "sha256": "d55b417ac10539e649431b1887809c7c31e99de85de4d4e674a1c93748264fd3"
+  },
+  "site_manifest": null,
+  "frozen_artifacts": [
+    {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_models.json",
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6"
+    },
+    {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_evaluation.json",
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    }
+  ],
+  "redesigned_application_source_archive": {
+    "archive": "/Users/earther/Desktop/IIT mandi/coronary-evidence/dist/release-ui-redesign-2026-10-11/lumen-submission-source.zip",
+    "archive_sha256": "f12fd1e42154f1d6e8694bb4386a03bfc3e04140c5befddd246f5fcb6856abcd",
+    "archive_bytes": 60923356,
+    "verified_content_sha256": "c7dcc370d2c0e640a153f9372dd409e7288f3cdab12ba2b3b1c6af5a4761c2eb",
+    "verified_content_files": 353,
+    "status": "passed"
+  },
+  "source_archive_payload_files": 354,
+  "static_archive": {
+    "file": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/lumen-browser-ui-redesign-2026-10-11.zip",
+    "bytes": 2132623,
+    "sha256": "a5b667a63396402d6590cf9359779694eacf4f7deca8655cdc5bb38a6727e970",
+    "payloads_verified": 28,
+    "members_verified": 29,
+    "crc_passed": true
+  },
+  "ui_freeze": {
+    "file": "ui-freeze.json",
+    "bytes": 1968,
+    "sha256": "82e66fbf396878418f7a6bee7ea33ad682335eb730368665b67a1a3df263d4d7"
+  },
+  "media_bindings": {
+    "file": "media-provenance.json",
+    "bytes": 14311,
+    "sha256": "01bce70b75ccb7e0d841690c3c3ccf3672e95686e75ad3c0df6379f76cd4a82d"
+  },
+  "narration_reuse": {
+    "file": "narration-reuse.json",
+    "bytes": 4693,
+    "sha256": "98f9a79c8cfe3b393b0ee45288ec01352fc9b34ffea58daeacd226d8b06e4174"
+  },
+  "narration": [
+    {
+      "id": "01",
+      "voice": "assets/voice-01.wav",
+      "sha256": "8bf72868eb699e83b20a6208b88e4840ce0d8782f1f60abd9930b13336b87e95",
+      "bytes": 1201196,
+      "source_integrated_lufs": -22.1,
+      "source_true_peak_dbtp": -1.1,
+      "applied_volume_gain": 0.9015711376059569
+    },
+    {
+      "id": "02",
+      "voice": "assets/voice-02.wav",
+      "sha256": "39649e89e9af0307b2a1ab36167113af901f1c484d9b39c1f1e25de7a0e0a8b3",
+      "bytes": 1288236,
+      "source_integrated_lufs": -22.3,
+      "source_true_peak_dbtp": 0.0,
+      "applied_volume_gain": 0.7943282347242815
+    },
+    {
+      "id": "03",
+      "voice": "assets/voice-03.wav",
+      "sha256": "0d13b0ed1ca8e962aaaf8a972a71f189643bc929e9acdbf155e95730efe3cc01",
+      "bytes": 1605388,
+      "source_integrated_lufs": -22.0,
+      "source_true_peak_dbtp": -1.9,
+      "applied_volume_gain": 0.9885530946569389
+    },
+    {
+      "id": "04",
+      "voice": "assets/voice-04-final.wav",
+      "sha256": "3980d804847fb869d7f964b84ce92fe828eccf43700e3e600cfde94e4c4df716",
+      "bytes": 1606412,
+      "source_integrated_lufs": -22.0,
+      "source_true_peak_dbtp": 0.1,
+      "applied_volume_gain": 0.7852356346100717
+    },
+    {
+      "id": "05",
+      "voice": "assets/voice-05.wav",
+      "sha256": "b340fc18e7d4cb932731e3f79d7f0bce7b58bce7e3b4ac98538784767b534b48",
+      "bytes": 1722124,
+      "source_integrated_lufs": -22.3,
+      "source_true_peak_dbtp": -1.0,
+      "applied_volume_gain": 0.8912509381337456
+    },
+    {
+      "id": "06",
+      "voice": "assets/voice-06.wav",
+      "sha256": "b40d547d0c27227f998a93f5781641c5e5c250e6a838518d92bb7f0e16c2103a",
+      "bytes": 1709836,
+      "source_integrated_lufs": -22.0,
+      "source_true_peak_dbtp": 0.2,
+      "applied_volume_gain": 0.7762471166286917
+    },
+    {
+      "id": "07",
+      "voice": "assets/voice-07-final.wav",
+      "sha256": "fc707f29eb156defdd5e9d773dfcfcdda5289dd6277f3584ec5a7b99142e05c9",
+      "bytes": 1534732,
+      "source_integrated_lufs": -22.1,
+      "source_true_peak_dbtp": -1.3,
+      "applied_volume_gain": 0.9225714271547631
+    }
+  ],
+  "authoring": {
+    "tool": "HyperFrames",
+    "version": "0.8.148",
+    "prior_pin": "0.8.147",
+    "workflow": "general-video",
+    "synthetic_narration": "Existing local Kokoro-82M af_heart speed 0.97; no new generation.",
+    "AI_assistance": "OpenAI Codex",
+    "paid_generation_api_used": false,
+    "ML_GPU_used": false,
+    "renderer_graphics": "Ordinary local browser graphics",
+    "fonts": "Local Figtree; IBM Plex Mono compiler/cache; cold offline render not claimed."
+  },
+  "captions": {
+    "file": "subtitles.srt",
+    "bytes": 2569,
+    "sha256": "97e8cc6ebccc26bec0e1625612e7dc520f0d79066733bf9fbbe3a3b5e2e1e2f9",
+    "cue_count": 26,
+    "type": "authored summaries; not verbatim"
+  },
+  "historical_checks": {
+    "two_delayed_failure_browser_checks": "Earlier R2 receipt; not repeated against redesign in video refresh.",
+    "receipt": {
+      "file": "historical-r2-browser-verification.json",
+      "bytes": 3749,
+      "sha256": "4aee681c710e38e35ae7b069f3e8b426033f75869ab1d07c63b6ed99333fbe1a"
+    }
+  },
+  "models_retrained": false,
+  "holdout_rescored": false,
+  "human_review": false,
+  "audio_listening_review": false,
+  "public_video_url_verified": false
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "field": "Devpost Built With",
+  "values": [
+    "Python",
+    "scikit-learn",
+    "pandas",
+    "NumPy",
+    "SHAP",
+    "Three.js",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "ReportLab",
+    "HyperFrames",
+    "GSAP",
+    "Kokoro",
+    "OpenAI Codex"
+  ],
+  "paste_line": "Python; scikit-learn; pandas; NumPy; SHAP; Three.js; JavaScript; HTML; CSS; ReportLab; HyperFrames; GSAP; Kokoro; OpenAI Codex",
+  "entries": [
+    {
+      "value": "Python",
+      "role": "Reference inference and server; CPU training",
+      "evidence_path": "README.md",
+      "evidence_sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+    },
+    {
+      "value": "scikit-learn",
+      "role": "Regularized logistic fitting and nested selection",
+      "evidence_path": "training/requirements-training.txt",
+      "evidence_sha256": "25aac5c649171d55ad44c752969a684029f267e7bc54c9c6eccb1627b8f531ea"
+    },
+    {
+      "value": "pandas",
+      "role": "Clinical workbook processing",
+      "evidence_path": "training/requirements-training.txt",
+      "evidence_sha256": "25aac5c649171d55ad44c752969a684029f267e7bc54c9c6eccb1627b8f531ea"
+    },
+    {
+      "value": "NumPy",
+      "role": "Model experiments and verification",
+      "evidence_path": "training/requirements-training.txt",
+      "evidence_sha256": "25aac5c649171d55ad44c752969a684029f267e7bc54c9c6eccb1627b8f531ea"
+    },
+    {
+      "value": "SHAP",
+      "role": "Actual LinearExplainer verification",
+      "evidence_path": "training/requirements-explanation.txt",
+      "evidence_sha256": "682cc5392beb887ea23bdce273857a3cb5e29d4c536de83f152962c6d745c435"
+    },
+    {
+      "value": "Three.js",
+      "role": "WebGL reference anatomy viewer",
+      "evidence_path": "package.json",
+      "evidence_sha256": "0211d628f009a45c781531877f77cd910c6bd4fcb66561a7cf44c57d1a1ecbf9"
+    },
+    {
+      "value": "JavaScript",
+      "role": "Browser controls and static inference",
+      "evidence_path": "public/app.js",
+      "evidence_sha256": "91a905cadb3def08931da292e57355131a9e2952c0143bfda17cdd318d574f42"
+    },
+    {
+      "value": "HTML",
+      "role": "Application and video composition markup",
+      "evidence_path": "public/index.html",
+      "evidence_sha256": "10cac65b623d739f8872af55d0de71d19e2d8c844bd0a41645a6f6f4d4e7b434"
+    },
+    {
+      "value": "CSS",
+      "role": "Application presentation",
+      "evidence_path": "README.md",
+      "evidence_sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+    },
+    {
+      "value": "ReportLab",
+      "role": "Six-page technical report",
+      "evidence_path": "submission/build_report.py",
+      "evidence_sha256": "29b920c5472520a10fc5e60ed5339f34d92528f625fd51976eef7cffcdb72e63"
+    },
+    {
+      "value": "HyperFrames",
+      "role": "Local demonstration composition/rendering",
+      "evidence_path": "submission/video-source/README.md",
+      "evidence_sha256": "02854eff634aee36863de59c93433366f149a1bf6427c93c165af6a1731ef41f"
+    },
+    {
+      "value": "GSAP",
+      "role": "Video animation timeline",
+      "evidence_path": "submission/video-source/package.json",
+      "evidence_sha256": "a41b0a567b9fefb32d6e41ac89cdaa2822159d880193faa4a0fe2b7ed6fcd681"
+    },
+    {
+      "value": "Kokoro",
+      "role": "Locally generated English narration",
+      "evidence_path": "submission/video-source/README.md",
+      "evidence_sha256": "02854eff634aee36863de59c93433366f149a1bf6427c93c165af6a1731ef41f"
+    },
+    {
+      "value": "OpenAI Codex",
+      "role": "AI-assisted research, implementation, experiments, verification and presentation",
+      "evidence_path": "README.md",
+      "evidence_sha256": "ebcfc05eb7b76efafb1387f8a54322dc398b781a942e96fca5766b5897564f2a"
+    }
+  ],
+  "mandatory_ai_values": [
+    "OpenAI Codex",
+    "Kokoro"
+  ],
+  "additional_ai_tools": "Add only tools actually used; include ChatGPT only if separately used. Human confirmation pending.",
+  "source_resources": [
+    {
+      "value": "UCI Machine Learning Repository",
+      "role": "UCI dataset 411; CC BY 4.0",
+      "source": "https://doi.org/10.24432/C5461K"
+    },
+    {
+      "value": "BodyParts3D",
+      "role": "Reference heart and coronary geometry; CC BY 4.0",
+      "source": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html"
+    }
+  ],
+  "source_resource_note": "Credit these in project text regardless of whether Devpost accepts them as Built With tags.",
+  "rule_source": "https://multimodal-ai-hackathon-2026-7.devpost.com/rules",
+  "rule_checked_by_root_on": "2026-10-10",
+  "human_review_complete": false
+}

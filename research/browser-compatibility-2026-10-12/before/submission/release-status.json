@@ -1,0 +1,33 @@
+{
+  "complete": false,
+  "local_demo": true,
+  "self_contained_training": true,
+  "frozen_final_evaluation": true,
+  "report_verified": true,
+  "demo_video_verified": true,
+  "static_demo_verified_locally": true,
+  "public_demo_url": null,
+  "public_github_url": null,
+  "youtube_url": null,
+  "team_information_confirmed": false,
+  "devpost_submitted": false,
+  "local_artifacts_complete": true,
+  "publication_pending": [
+    "Public GitHub repository",
+    "Public or unlisted YouTube URL",
+    "Real human information and eligibility",
+    "Reviewed Devpost submission"
+  ],
+  "cohort_audit_verified": true,
+  "n_audit_development_cases": 242,
+  "n_explanations_verified": 4840,
+  "cohort_outcome_aware_selection": true,
+  "final_holdout_rescored_during_upgrade": false,
+  "independent_review_kind": "AI",
+  "independent_ai_review_completed": true,
+  "human_usability_measured": false,
+  "second_physical_device_tested": false,
+  "safari_rendering_check_passed": false,
+  "runtime_evidence_scope": "Local software callbacks and action endpoints on one Apple M5; not display/GPU completion or external model validation",
+  "external_model_validation": false
+}

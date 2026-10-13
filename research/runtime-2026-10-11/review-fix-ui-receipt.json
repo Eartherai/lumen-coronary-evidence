@@ -1,0 +1,35 @@
+{
+  "schema": "lumen-review-fix-ui-receipt-v1",
+  "browser": "Codex in-app Chromium",
+  "baseline_static_manifest": "capture-baseline-static-manifest.json",
+  "scope": "Actual CUA actions on 8776, same Mac. AI operator; no human completion time.",
+  "checks": [
+    {
+      "finding": "stale-audit-provenance",
+      "sequence": [
+        "Browse every record",
+        "Search UCI411-057",
+        "Inspect LCX in the 3D explorer",
+        "Select curated UCI411-128"
+      ],
+      "before_notice_case": "UCI411-057",
+      "after_notice_visible": false,
+      "after_notice_text": "",
+      "result": "passed"
+    },
+    {
+      "finding": "false-alarm-labelled-missed",
+      "case": "UCI411-128",
+      "target": "LCX",
+      "decision_rule": "training-selected",
+      "probability_display": "42.2%",
+      "cutoff_display": "35.0%",
+      "recorded_label": "negative",
+      "visible_text": "Negative label \u00b7 false alarm",
+      "result": "passed"
+    }
+  ],
+  "screenshot": "corrected-case.png",
+  "checked_date_IST": "2026-10-11",
+  "final_visible_screenshot": "final-false-alarm.png"
+}

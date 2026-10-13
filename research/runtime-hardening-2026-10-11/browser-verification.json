@@ -1,0 +1,80 @@
+{
+  "schema": "lumen-browser-robustness-check-v1",
+  "operator": "AI via CUA",
+  "checked_utc": "2026-10-11T07:17:00.447192+00:00",
+  "origin": "http://127.0.0.1:8778/",
+  "runtime": "local Python API app",
+  "source_bindings_recorded_after_checks": {
+    "public/app.js": {
+      "bytes": 37065,
+      "sha256": "e96b69e1d4b3642a59486dcf0f806a7a8fd1784b411d1edc219d4113ecb9f737"
+    },
+    "public/evidence-journey.js": {
+      "bytes": 8036,
+      "sha256": "6ce3c8df5efd68119c2c70cc3a0964afb417ecfeec37c1fc11f41df9d1492254"
+    },
+    "public/index.html": {
+      "bytes": 9753,
+      "sha256": "5171107ee73fa38fa4936bfa8120a4611d6b293ac5b83cf180f6b0bc5d68453a"
+    },
+    "tests/test_case_transition.mjs": {
+      "bytes": 12306,
+      "sha256": "71015b6348afd97d3549613da1bc61f651c351a52d5136ce0c83f771341a2ef1"
+    }
+  },
+  "clinical_models_changed": false,
+  "final_evaluation_rescored": false,
+  "human_usability_study": false,
+  "physical_devices": 1,
+  "temporary_network_blocking_cleared": true,
+  "checks": [
+    {
+      "name": "failed_history_profile_restores_full",
+      "blocked_url": "http://127.0.0.1:8778/api/schema?profile=history",
+      "requested": "history",
+      "observed_case": "UCI411-171",
+      "observed_profile": "full",
+      "visible_inputs": 55,
+      "error": "Failed to fetch",
+      "result": "passed"
+    },
+    {
+      "name": "failed_case_restores_loaded_case",
+      "blocked_url": "http://127.0.0.1:8778/api/cases/UCI411-128?profile=full",
+      "requested": "UCI411-128",
+      "observed_case": "UCI411-171",
+      "observed_profile": "full",
+      "observed_LAD": "94.4%",
+      "healthy_retry": "UCI411-128",
+      "result": "passed"
+    },
+    {
+      "name": "prediction_keyboard_focus",
+      "action": "Enter on LAD prediction button",
+      "focused_tag": "BUTTON",
+      "focused_target": "LAD",
+      "aria_pressed": "true",
+      "result": "passed"
+    },
+    {
+      "name": "profile_matrix_keyboard_focus",
+      "action": "Enter on LAD/history_exam matrix cell",
+      "focused_tag": "BUTTON",
+      "focused_target": "LAD",
+      "focused_profile": "history_exam",
+      "selected_profile": "history_exam",
+      "observed_probability": "36.1%",
+      "result": "passed"
+    },
+    {
+      "name": "second_case_failure_and_retry",
+      "requested": "UCI411-050",
+      "failure_restored": "UCI411-128",
+      "healthy_retry": "UCI411-050",
+      "retry_error_visible": false,
+      "result": "passed"
+    }
+  ],
+  "screenshot": "failed-load-restored-case.png",
+  "limits": "Actual fault/keyboard checks; delayed races and stale-label cases additionally use synthetic async tests, not human timing or physical-device validation."
+}

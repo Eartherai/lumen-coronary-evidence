@@ -1,0 +1,103 @@
+1
+00:00:00,400 --> 00:00:09,008
+Five profiles share an LCX miss on 9 of 242 development records.
+
+2
+00:00:09,008 --> 00:00:17,616
+Agreement between models does not establish correctness.
+
+3
+00:00:17,616 --> 00:00:26,224
+Follow the error through the working evidence loop.
+
+4
+00:00:26,924 --> 00:00:36,136
+UCI411-020 was selected from an outcome-aware development audit.
+
+5
+00:00:36,136 --> 00:00:45,349
+Fold 2 excluded: fitting, calibration and threshold selection.
+
+6
+00:00:45,349 --> 00:00:54,561
+Case, target, profile and provenance stay connected.
+
+7
+00:00:55,261 --> 00:01:03,822
+LCX: 22.2% estimate; 33.0% fitted research threshold.
+
+8
+00:01:03,822 --> 00:01:12,384
+Recorded LCX positive: the prediction misses it.
+
+9
+00:01:12,384 --> 00:01:20,945
+Generic anatomy identifies the vessel; it does not locate a lesion.
+
+10
+00:01:20,945 --> 00:01:29,506
+Grouped SHAP reconstructs model log odds; associations are not causes.
+
+11
+00:01:30,206 --> 00:01:38,773
+Five profiles: separately fitted; training-fold calibration where selected.
+
+12
+00:01:38,773 --> 00:01:47,339
+All five miss UCI411-020’s recorded LCX positive.
+
+13
+00:01:47,339 --> 00:01:55,906
+Different record UCI411-128: Age 62 → 63; LAD 44.4% → 45.4%.
+
+14
+00:01:55,906 --> 00:02:04,472
+The original outcome comparison is disabled for edited input.
+
+15
+00:02:05,172 --> 00:02:14,341
+61-record frozen final test; development audit is a separate scope.
+
+16
+00:02:14,341 --> 00:02:23,510
+CAD 0.908 · LAD 0.893 · LCX 0.748 · RCA 0.724 ROC-AUC.
+
+17
+00:02:23,510 --> 00:02:32,680
+Frozen thresholds retain false positives and false negatives.
+
+18
+00:02:32,680 --> 00:02:41,849
+Small single cohort; external and clinical validity remain unestablished.
+
+19
+00:02:42,549 --> 00:02:51,654
+Portable source + model weights + split + report + third-party attributions.
+
+20
+00:02:51,654 --> 00:03:00,759
+20 Python tests · 52 Node tests · 17 case transitions · 64 journey paths.
+
+21
+00:03:00,759 --> 00:03:09,864
+Two actual delayed-failure browser checks protect current case ownership.
+
+22
+00:03:09,864 --> 00:03:18,969
+Local CPU inference; software verification is not clinical validation.
+
+23
+00:03:19,669 --> 00:03:27,863
+Audit → excluded case → named artery → explanation → recorded error.
+
+24
+00:03:27,863 --> 00:03:36,056
+Python · scikit-learn · SHAP · Three.js · BodyParts3D.
+
+25
+00:03:36,056 --> 00:03:44,249
+AI assistance: OpenAI Codex. Narration: local Kokoro af_heart.
+
+26
+00:03:44,249 --> 00:03:52,442
+Educational research only; source evidence and reproduction instructions included.

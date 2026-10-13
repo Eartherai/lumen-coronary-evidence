@@ -1,0 +1,16 @@
+{
+  "case_profile_predictions_checked": 160,
+  "max_case_probability_error": 0.0,
+  "all_case_training_exclusions_passed": true,
+  "all_model_holdout_training_exclusions_passed": true,
+  "exact_profile_feature_contracts_passed": true,
+  "default_predictions_are_full_profile": true,
+  "full_profile_matches_v2_metrics": true,
+  "holdout_scored": false,
+  "oof_portable_validation": {
+    "n_oof_predictions_checked": 4840,
+    "atol": 1e-12,
+    "maximum_absolute_error": 3.885780586188048e-16,
+    "all_passed": true
+  }
+}

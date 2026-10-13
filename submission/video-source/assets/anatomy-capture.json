@@ -1,0 +1,22 @@
+{
+  "name": "anatomy",
+  "duration": 12.061,
+  "actions": [
+    {
+      "at": 2.599,
+      "description": "Rotate actual heart geometry"
+    },
+    {
+      "at": 5.568,
+      "description": "Select right coronary artery"
+    },
+    {
+      "at": 8.62,
+      "description": "Select left circumflex artery"
+    },
+    {
+      "at": 10.555,
+      "description": "Reset anatomical view"
+    }
+  ]
+}

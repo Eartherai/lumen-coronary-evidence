@@ -1,0 +1,164 @@
+{
+  "pages": 6,
+  "report_sha256": "db9e60b31dbe1567095f0aa1d38fe31ba0659b423eab5a7e36fea797317727b9",
+  "report_bytes": 143197,
+  "n_audit_development_records": 242,
+  "n_introductory_cases": 8,
+  "n_final_holdout_records": 61,
+  "final_holdout_rescored": false,
+  "models_refitted": false,
+  "ai_software_review_included": true,
+  "human_usability_measured": false,
+  "runtime_captures_included": 2,
+  "runtime_scope": "dated pre-watchdog software samples",
+  "external_full_model_validation_included": false,
+  "second_physical_device_tested": false,
+  "sources": {
+    "v1": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results/benchmark.json",
+      "sha256": "07a5a373d9f405fc02d049245a88c7566591185e6517c2f6eaf6b28adae064fb"
+    },
+    "v2": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-v2/benchmark.json",
+      "sha256": "b5834e5a88fca39b5fb46367c5ea0e43a9f0517bb48d6a04c0904c9c05c23ba6"
+    },
+    "v3": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-v3/benchmark.json",
+      "sha256": "96d2a5847c894009f0e77a6356878d6fcc32b0f2bcb0b083bc03321e48bda93f"
+    },
+    "availability": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-availability/benchmark.json",
+      "sha256": "f5d4d69d30f0960e628a4600deadab742aedbe955efb3e8549e04e095b6d8dde"
+    },
+    "final": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_evaluation.json",
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "shap": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/results-availability/shap-verification.json",
+      "sha256": "faf88489a2696f375a6250c54b303d15a4f8d4a774d143f6852254cbe7e51eff"
+    },
+    "cohort": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/cohort-audit.json",
+      "sha256": "1f2f388bdb071523d79164962a1c562813810dd28768cd8de8062d7bd1155432"
+    },
+    "cohort_shap": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/public/assets/cohort-audit-verification.json",
+      "sha256": "bab7424b4f9debfa3e80a57931666de60997e6a559b50f635522b4cf7109c196"
+    },
+    "report_source": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/build_report.py",
+      "sha256": "3ca4ee79f6cc2340e4059344bb0d9f5ee3d3b4debc3ebe36f98bb2086c0f5687"
+    },
+    "later_catboost_development_probe": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/training/catboost-probe-2026-10-10/benchmark.json",
+      "sha256": "d3a96ab4fe9066e8c6824146f4a3c69b0e57c4923e45230a0e91449153c47e7a"
+    },
+    "ai_review": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/independent-ai-review-2026-10-11/ai-review.json",
+      "sha256": "1dea33e6a7bc84c336a0ca2100707982ee387d991bd01c7d76988b0959ab72d5"
+    },
+    "external_compatibility": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/lumen-external-cohort-2026-10-11/angiocad-compatibility-audit.json",
+      "sha256": "d181848c6e024a413f45e081f43969bed244e61bb39e9f9ddf9673fa72306705"
+    },
+    "post_fix_check": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-2026-10-11/review-fix-ui-receipt.json",
+      "sha256": "76e9c30038f93d000fdf39b15ae56b29cbf63c9a14eb1fdb4f1b38a289fcbbdc"
+    },
+    "runtime_capture_1": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-2026-10-11/chromium-idle.json",
+      "sha256": "f568446fee111b00676522c5ad77193bd0124427759a5d8d3243dfd28389f194"
+    },
+    "runtime_capture_2": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/runtime-2026-10-11/chromium-actions.json",
+      "sha256": "8581fc51fe4151307be8247306c937d6d0cdfc688cc133ceaf6ef1e0810104e1"
+    }
+  },
+  "visual_review": {
+    "status": "passed",
+    "reviewer": "Root AI visual review",
+    "method": "All six rendered pages visually inspected in contact sheet; text and footer checks",
+    "rendered_pages": [
+      {
+        "path": "/Users/earther/Desktop/IIT mandi/research/lumen-current-report-2026-10-12/page-1.png",
+        "sha256": "942c31e2c0d29752de8a0649ff904415910324bdc86fa8732b1ac776eb04c504"
+      },
+      {
+        "path": "/Users/earther/Desktop/IIT mandi/research/lumen-current-report-2026-10-12/page-2.png",
+        "sha256": "0556270a0917125af9a85bea7694ab18863d321cbec570ca5795f2649853154d"
+      },
+      {
+        "path": "/Users/earther/Desktop/IIT mandi/research/lumen-current-report-2026-10-12/page-3.png",
+        "sha256": "668533e8ad349f8907913e7962a7c6bd2e86a0d607d9f2dab0b83e495b2479a1"
+      },
+      {
+        "path": "/Users/earther/Desktop/IIT mandi/research/lumen-current-report-2026-10-12/page-4.png",
+        "sha256": "4265d2a763d2965551034882c3384314ab5379c6b43ebf114a23db5045da5762"
+      },
+      {
+        "path": "/Users/earther/Desktop/IIT mandi/research/lumen-current-report-2026-10-12/page-5.png",
+        "sha256": "30a131244658d7ddc1fecae927e5d0ae8650314e9a0bf61a6bde0ba04211d1ca"
+      },
+      {
+        "path": "/Users/earther/Desktop/IIT mandi/research/lumen-current-report-2026-10-12/page-6.png",
+        "sha256": "b7f7e2722ccb6a5e39540c51ef011cfa837cea4eec5901177a784c89f66112c0"
+      }
+    ],
+    "findings": []
+  },
+  "schema": "lumen-redesigned-six-page-report-v1",
+  "created_utc": "2026-10-11T18:43:26.494399+00:00",
+  "local_date": "2026-10-12",
+  "sources_frozen_unchanged": {
+    "models": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_models.json",
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6"
+    },
+    "evaluation": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/artifacts/final_evaluation.json",
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944"
+    },
+    "protocol": {
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/submission/final-protocol-freeze.json",
+      "bytes": 1792,
+      "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305"
+    }
+  },
+  "source_archive": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/dist/release-ui-redesign-2026-10-11/lumen-submission-source.zip",
+    "bytes": 60923356,
+    "sha256": "f12fd1e42154f1d6e8694bb4386a03bfc3e04140c5befddd246f5fcb6856abcd"
+  },
+  "browser_archive": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/lumen-browser-ui-redesign-2026-10-11.zip",
+    "bytes": 2132623,
+    "sha256": "a5b667a63396402d6590cf9359779694eacf4f7deca8655cdc5bb38a6727e970"
+  },
+  "clean_source_verification": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/ui-redesign-2026-10-11/clean-extracted-source-verification.json",
+    "bytes": 17171,
+    "sha256": "fe86964bb5f7e2fc284922bf4cb710f00a967b0db992a2465f118ed47d8a9df8"
+  },
+  "screenshot": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/research/ui-redesign-2026-10-11/final-desktop-1280.jpg",
+    "bytes": 94646,
+    "sha256": "baef01b1d32cae09f560370d69995f757212c7063c33e9a3494496f246d6de19"
+  },
+  "presentation_wrapper": {
+    "path": "/Users/earther/Desktop/IIT mandi/research/lumen-current-report-2026-10-12/build_current_report.py",
+    "bytes": 6252,
+    "sha256": "790cbc9a62011c6db06e79e3376190de93e7a78f2abae2af46ad90bb8b821987"
+  },
+  "new_scientific_claims": false,
+  "source_state": "Reviewed working-tree export; historical Git base is not current archive parity",
+  "historical_runtime_scope": "Old samples are parsed for source integrity but no current performance claim is made",
+  "current_software_counts": {
+    "python_tests": 20,
+    "node_subtests": 52,
+    "journey_assertions": 64,
+    "scope": "Fresh clean-extracted exact354-file source; UI capture scope separate"
+  }
+}

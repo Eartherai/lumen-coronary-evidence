@@ -1,0 +1,151 @@
+{
+  "schema": "lumen-browser-compatibility-review-v1",
+  "captured_utc": "2026-10-13T00:22:55.709671+00:00",
+  "local_date": "2026-10-13",
+  "reviewer": "Codex AI through actual native Safari and Chromium CUA",
+  "status": "passed",
+  "physical_devices": 1,
+  "human_review": false,
+  "second_physical_device": false,
+  "new_accuracy_or_holdout_scoring": false,
+  "rendering_scope": "Actual browser controls/visible mesh, not frame-rate or clinical validation",
+  "checks": {
+    "native_safari": {
+      "origin": "http://127.0.0.1:8828/",
+      "actual_browser": true,
+      "initial_real_mesh": true,
+      "vessel_selection": true,
+      "label_projection": true,
+      "isolation_real_mesh": true,
+      "focus_and_opposite_real_mesh": true,
+      "recorded_missed_positive": "UCI411-020 LCX 22.2% cutoff33.0%",
+      "screenshot_files": [
+        "safari-release-isolated.png",
+        "safari-release-focused.png",
+        "safari-release-missed-positive.png"
+      ],
+      "preliminary_cached_modules_not_release_evidence": true,
+      "frame_rate_measured": false
+    },
+    "chromium": {
+      "origin": "http://127.0.0.1:8828/",
+      "viewport": [
+        1280,
+        720
+      ],
+      "scroll_width": 1280,
+      "case_id": "UCI411-171",
+      "loading_hidden": true,
+      "anatomy_status_hidden": true,
+      "canvas_pixels": [
+        1324,
+        720
+      ],
+      "label_projection_verified": true
+    }
+  },
+  "source_files": {
+    "public/app.js": {
+      "bytes": 39849,
+      "sha256": "bdf80bc3b7a784235b45d5ded57ce5f08895b4933dc0c345098fa8d931d9c3ae"
+    },
+    "public/anatomy-controls.js": {
+      "bytes": 6212,
+      "sha256": "554eb4bf31c84afa3b23b687dc27a723a510650a0c71195cf0a6d37f079cfa21"
+    },
+    "public/anatomy-frame.js": {
+      "bytes": 514,
+      "sha256": "2c1c2c22a6f606881d69b838d8f9936becd355fee201288adb4e0fdbd88d9d19"
+    },
+    "tests/test_anatomy_frame.mjs": {
+      "bytes": 5032,
+      "sha256": "39e7c0c34e096cf2c56d76a7a04ad59dd790091b03c546182af2e7f3d5550914"
+    }
+  },
+  "science": {
+    "artifacts/final_models.json": {
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+      "unchanged_from_previous_export": true
+    },
+    "artifacts/final_evaluation.json": {
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944",
+      "unchanged_from_previous_export": true
+    },
+    "submission/final-protocol-freeze.json": {
+      "bytes": 1792,
+      "sha256": "47749cd2a5aa944eb531a6eeb54386cad5e5b29bad9ffa11b048d6715ccc1305",
+      "unchanged_from_previous_export": true
+    },
+    "training/results-final-development/models.json": {
+      "bytes": 107896,
+      "sha256": "04bb3286e0dc593ad2b1f611fef7655bb6457beb421fe231f068e482c4dc52e6",
+      "unchanged_from_previous_export": true
+    },
+    "training/results-final-development/final_evaluation.json": {
+      "bytes": 20766,
+      "sha256": "80833dc966a78226edb378b810e9e4efcca71b56c12071632d7f4ae21c3f2944",
+      "unchanged_from_previous_export": true
+    }
+  },
+  "static_manifest": {
+    "bytes": 4087,
+    "sha256": "24d0e0c79e5feaebf203f81581b6f4eec636d699d79d63d5d7844887bd05bddb"
+  },
+  "static_payloads": 29,
+  "captured_files": {
+    "safari-release-isolated.png": {
+      "bytes": 468886,
+      "sha256": "a6d06499189fed903132dc0e2cff8995b411ac56e73e311a6fb831150cdc9946"
+    },
+    "safari-release-focused.png": {
+      "bytes": 475307,
+      "sha256": "82ca100f6f9fc13902e33d3d637f8efdaece20a0cebb277d25a36e428943d188"
+    },
+    "safari-lcx-isolated.txt": {
+      "bytes": 33972,
+      "sha256": "829fe4e3e46da69f7304272ad0a97a94266138db66d02dfd4bc085ce2a82f445"
+    },
+    "safari-release-focused.txt": {
+      "bytes": 314,
+      "sha256": "16e46009983f0f04403fe65d78d88beed6c2ef4eb5f8a9afb0a92140b9e1a890"
+    },
+    "safari-lcx-isolated.png": {
+      "bytes": 547614,
+      "sha256": "7ce6301753a4f06a1a8a3781fa43b097beb7405a84a54bda89fcc57aa6ca002e"
+    },
+    "safari-opposite.png": {
+      "bytes": 514299,
+      "sha256": "f144b96025099ca87929af5b6c35d291efe336bc1cd8893a3d5902e6649d384e"
+    },
+    "safari-before.txt": {
+      "bytes": 20531,
+      "sha256": "fa39c21bfa2979999cf9729f4eef905128766400635fb35f1d2e6f4d47a8542e"
+    },
+    "safari-final-isolated.png": {
+      "bytes": 525100,
+      "sha256": "2cd4ec2981f3be96ae3a06e5147377432ecebb7c370fa67641e0919bcecc5b47"
+    },
+    "safari-lcx-isolated-raised.png": {
+      "bytes": 547614,
+      "sha256": "7ce6301753a4f06a1a8a3781fa43b097beb7405a84a54bda89fcc57aa6ca002e"
+    },
+    "chromium-release-desktop.png": {
+      "bytes": 94087,
+      "sha256": "d5c234b4671a56f3849b3b836a2953e74b1db2c6507187c0baeccfcc649d4905"
+    },
+    "safari-release-missed-positive.png": {
+      "bytes": 547356,
+      "sha256": "5bf13d2a375a0a8a9cf610e749ee29d2c240586df3bad4223c18253d811b6c8e"
+    },
+    "safari-before.png": {
+      "bytes": 491521,
+      "sha256": "c22918a12a13e6370e98219e18c06bf42111fa581d8efe443581c67cf8efec40"
+    },
+    "safari-release-missed-positive.txt": {
+      "bytes": 9866,
+      "sha256": "7f830efedf98d67ee1d0d430f69a97667b17e14ba4679df8113fa3c83152eda0"
+    }
+  }
+}

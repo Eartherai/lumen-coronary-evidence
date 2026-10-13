@@ -1,0 +1,22 @@
+{
+  "name": "new-input-final",
+  "duration": 12.021,
+  "actions": [
+    {
+      "at": 1.197,
+      "description": "Open clearly labelled unlabelled input form"
+    },
+    {
+      "at": 4.217,
+      "description": "Edit age input"
+    },
+    {
+      "at": 6.463,
+      "description": "Run frozen four-model Python inference"
+    },
+    {
+      "at": 9.58,
+      "description": "Restore illustrative example defaults"
+    }
+  ]
+}

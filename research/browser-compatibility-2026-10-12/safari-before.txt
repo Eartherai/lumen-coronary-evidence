@@ -1,0 +1,390 @@
+The following is a diff from the previous accessibility tree for Window: "Lumen | Coronary Evidence Explorer" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 524-581, 583, 586, 591-593, 597-598, 600-603, 628-638, 688-855, 857-859, 882-939, 945-954, 978-1049, 1076, 1080, 1102-1105, 1114, 1121, 1123, 1146-1382
+~							1073 pop up button (collapsed) Development case, Value: UCI411-171, Secondary Actions: Expand
+~							1075 pop up button (collapsed) Available input groups, Value: All recorded inputs (+ echo) · 55 inputs, Secondary Actions: Expand
++							1146 text All recorded inputs (+ echo) · 55 model inputs. Separately fitted and validated.
++							1147 text 50
++							1148 text Age in years
++							1149 text F
++							1150 text Recorded sex
++								1151 text Recorded measurements
++							1152 text No anatomy frame has completed. Keep the browser window visible; if the message persists, this browser has not passed the rendering check.
++								1153 button Select Left anterior descending artery
++								1154 button Select Left circumflex artery
++								1155 button Select Right coronary artery
++							1156 container Reference anatomy views
++								1157 button Overview, Help: Restore the full reference-heart overview
++								1158 button Opposite view, Help: Turn the viewpoint halfway around its current target
++								1159 button Focus artery, Help: Center and fit the selected reference artery using its mesh bounds
++								1160 container
++									1161 checkbox Isolate artery, Value: 0
++									1162 text Isolate artery
++								1163 text LAD reference vessel selected.
++							1164 toggle button Overall CAD 99.7% Positive research flag, Value: off
++							1165 toggle button LAD 94.4% Positive research flag, Value: on
++							1166 toggle button LCX 43.8% Positive research flag, Value: off
++							1167 toggle button RCA 46.1% Positive research flag, Value: off
++							1168 text LAD
++							1169 text Left anterior descending artery
++							1170 text 94.4%
++							1171 container
++								1172 text Model probability Validation fold 3
++							1173 text Positive research flag at 39.0%. Threshold selected from training-fold predictions. This is a research operating point.
++							1174 text LDL
++							1175 text 213
++							1176 text Increases model estimate
++							1177 text +0.68
++							1178 text Family history
++							1179 text 1
++							1180 text Increases model estimate
++							1181 text +0.64
++							1182 text Typical Chest Pain
++							1183 text 1
++							1184 text Increases model estimate
++							1185 text +0.59
++							1186 text Pulse rate
++							1187 text 100
++							1188 text Increases model estimate
++							1189 text +0.46
++							1190 text T-wave inversion
++							1191 text 1
++							1192 text Increases model estimate
++							1193 text +0.44
++							1194 text Ejection fraction
++							1195 text 55
++							1196 text Decreases model estimate
++							1197 text -0.43
+~							1113 button Reveal recorded labels
++							1198 text Compare all four estimates with this case’s recorded angiography labels.
++							1199 text Compare available evidence
++							1200 heading One record. Five input profiles., Value: 2
++								1201 text One record. Five input profiles.
++							1202 text UCI411-171 · fold 3 · this record was excluded from every model below.
++							1203 link Download comparison, Value: blob:http://127.0.0.1:8821/c34617b7-0ff4-43ff-b51b-f697a7677ba0
++							1204 text Scroll the comparison horizontally on smaller screens to inspect every profile.
++							1205 text LAD
++							1206 text 58.9%–94.4% across profiles Same research flag
++							1207 image LAD profile comparison. History, 17 inputs: 58.9%, threshold 21.0%, positive flag; + examination, 31 inputs: 82.9%, threshold 40.0%, positive flag; + ECG, 38 inputs: 93.2%, threshold 34.0%, positive flag; + laboratory, 52 inputs: 93.5%, threshold 33.0%, positive flag; + echo, 55 inputs: 94.4%, threshold 39.0%, positive flag
++							1208 text Model probability Each model’s fitted threshold
++							1209 container All target and profile comparisons
++								1210 table Compare all four targets. Select a cell to update anatomy and explanation.
++									1211 text Compare all four targets. Select a cell to update anatomy and explanation.
++									1212 row (selectable) Target
+History
+17 inputs
++ examination
+31 inputs
++ ECG
+38 inputs
++ laboratory
+52 inputs
++ echo
+55 inputs
++									1213 row (selectable)
++										1214 cell (selectable) CAD Same flag
++											1215 toggle button CAD Same flag, Value: off
++										1216 cell (selectable) CAD, 17 inputs, probability 75.5%, threshold 33.0%, positive research flag
++										1217 cell (selectable) CAD, 31 inputs, probability 99.1%, threshold 48.0%, positive research flag
++										1218 cell (selectable) CAD, 38 inputs, probability 99.8%, threshold 41.0%, positive research flag
++										1219 cell (selectable) CAD, 52 inputs, probability 99.8%, threshold 40.0%, positive research flag
++										1220 cell (selectable) CAD, 55 inputs, probability 99.7%, threshold 34.0%, positive research flag
++									1221 row (selectable)
++										1222 cell (selectable) LAD Same flag
++											1223 toggle button LAD Same flag, Value: on
++										1224 cell (selectable) LAD, 17 inputs, probability 58.9%, threshold 21.0%, positive research flag
++										1225 cell (selectable) LAD, 31 inputs, probability 82.9%, threshold 40.0%, positive research flag
++										1226 cell (selectable) LAD, 38 inputs, probability 93.2%, threshold 34.0%, positive research flag
++										1227 cell (selectable) LAD, 52 inputs, probability 93.5%, threshold 33.0%, positive research flag
++										1228 cell (selectable) LAD, 55 inputs, probability 94.4%, threshold 39.0%, positive research flag
++									1229 row (selectable)
++										1230 cell (selectable) LCX Flag changes
++											1231 toggle button LCX Flag changes, Value: off
++										1232 cell (selectable) LCX, 17 inputs, probability 26.2%, threshold 31.0%, below research threshold
++										1233 cell (selectable) LCX, 31 inputs, probability 41.8%, threshold 23.0%, positive research flag
++										1234 cell (selectable) LCX, 38 inputs, probability 42.6%, threshold 28.0%, positive research flag
++										1235 cell (selectable) LCX, 52 inputs, probability 44.9%, threshold 36.0%, positive research flag
++										1236 cell (selectable) LCX, 55 inputs, probability 43.8%, threshold 31.0%, positive research flag
++									1237 row (selectable)
++										1238 cell (selectable) RCA Flag changes
++											1239 toggle button RCA Flag changes, Value: off
++										1240 cell (selectable) RCA, 17 inputs, probability 26.5%, threshold 30.0%, below research threshold
++										1241 cell (selectable) RCA, 31 inputs, probability 55.6%, threshold 28.0%, positive research flag
++										1242 cell (selectable) RCA, 38 inputs, probability 50.9%, threshold 31.0%, positive research flag
++										1243 cell (selectable) RCA, 52 inputs, probability 46.0%, threshold 25.0%, positive research flag
++										1244 cell (selectable) RCA, 55 inputs, probability 46.1%, threshold 23.0%, positive research flag
++							1245 text The same recorded values are projected into each input set. Differences include refitting and calibration; they do not isolate the effect of a test. The displayed range is not a confidence interval, and this ordering is not a recommended care sequence.
++							1246 summary View exact comparison JSON, Value: off
++								1247 text View exact comparison JSON
++							1248 text Complete development audit
++							1249 heading Inspect every error. Not just the examples., Value: 2
++								1250 text Inspect every error. Not just the examples.
++							1251 text 242 records · all 5 folds
++							1252 text Find a false alarm, a missed positive, or a record whose flags change across input profiles. Open it in the anatomy and trace its exact score.
++							1253 text Outcomes are visible here and used by the filters. These are development records with existing out-of-fold predictions. This exploratory audit is not a new final test. Agreement between profiles is not confidence.
++							1254 text Try a challenge
++							1255 button Find an LCX miss all five profiles share
++							1256 button Find a changing LAD flag
++							1257 button Browse every record
++							1258 container
++								1259 text Target
++								1260 pop up button (collapsed) Target, Value: LCX, Secondary Actions: Expand
++							1261 container
++								1262 text Full-input outcome
++								1263 pop up button (collapsed) Full-input outcome, Value: All errors, Secondary Actions: Expand
++							1264 container
++								1265 text Across five profiles
++								1266 pop up button (collapsed) Across five profiles, Value: Any behavior, Secondary Actions: Expand
++							1267 container
++								1268 text Outer fold
++								1269 pop up button (collapsed) Outer fold, Value: All five folds, Secondary Actions: Expand
++							1270 container
++								1271 text Shared decision rule
++								1272 pop up button (collapsed) Shared decision rule, Value: Training-selected F1 threshold, Secondary Actions: Expand
++							1273 container
++								1274 text Record ID
++								1275 search text field (settable) Search audit record ID, Placeholder: e.g. UCI411-288
++									1276 text e.g. UCI411-288
++							1277 container
++								1278 text 17 missed positives 82 false alarms 143/242 correct full-input flags 60/172 errors among records with all five flags agreeing All 242 records · LCX · each model’s training-selected threshold. Counts describe development predictions; they are not a new score or uncertainty guarantee.
++							1279 heading Matching records 99 / 242, Value: 3
++								1280 text Matching records 99 / 242
++							1281 button Export this selection
++							1282 text Scroll horizontally to compare estimates, labels and profile flags.
++							1283 container Matching development audit records
++								1284 table
++									1285 row (selectable) Record / fold
+Full estimate
+Recorded label
+Full flag
+Five profiles
+Open
++									1286 row (selectable)
++										1287 cell (selectable) UCI411-006, Value: Fold 2 · Excel row 8
++										1288 cell (selectable) 41.5%
+Cutoff 33.0%
++										1289 cell (selectable) Negative
++										1290 cell (selectable) False alarm
++										1291 cell (selectable) All agree
++										1292 cell (selectable) Inspect
++									1293 row (selectable)
++										1294 cell (selectable) UCI411-012, Value: Fold 3 · Excel row 14
++										1295 cell (selectable) 50.5%
+Cutoff 31.0%
++										1296 cell (selectable) Negative
++										1297 cell (selectable) False alarm
++										1298 cell (selectable) All agree
++										1299 cell (selectable) Inspect
++									1300 row (selectable)
++										1301 cell (selectable) UCI411-014, Value: Fold 5 · Excel row 16
++										1302 cell (selectable) 38.9%
+Cutoff 30.0%
++										1303 cell (selectable) Negative
++										1304 cell (selectable) False alarm
++										1305 cell (selectable) All agree
++										1306 cell (selectable) Inspect
++									1307 row (selectable)
++										1308 cell (selectable) UCI411-020, Value: Fold 2 · Excel row 22
++										1309 cell (selectable) 22.2%
+Cutoff 33.0%
++										1310 cell (selectable) Positive
++										1311 cell (selectable) Missed positive
++										1312 cell (selectable) All agree
++										1313 cell (selectable) Inspect
++									1314 row (selectable)
++										1315 cell (selectable) UCI411-023, Value: Fold 4 · Excel row 25
++										1316 cell (selectable) 67.1%
+Cutoff 35.0%
++										1317 cell (selectable) Negative
++										1318 cell (selectable) False alarm
++										1319 cell (selectable) All agree
++										1320 cell (selectable) Inspect
++									1321 row (selectable)
++										1322 cell (selectable) UCI411-024, Value: Fold 1 · Excel row 26
++										1323 cell (selectable) 46.5%
+Cutoff 28.0%
++										1324 cell (selectable) Negative
++										1325 cell (selectable) False alarm
++										1326 cell (selectable) All agree
++										1327 cell (selectable) Inspect
++									1328 row (selectable)
++										1329 cell (selectable) UCI411-030, Value: Fold 5 · Excel row 32
++										1330 cell (selectable) 35.9%
+Cutoff 30.0%
++										1331 cell (selectable) Negative
++										1332 cell (selectable) False alarm
++										1333 cell (selectable) Flags change
++										1334 cell (selectable) Inspect
++									1335 row (selectable)
++										1336 cell (selectable) UCI411-034, Value: Fold 5 · Excel row 36
++										1337 cell (selectable) 32.4%
+Cutoff 30.0%
++										1338 cell (selectable) Negative
++										1339 cell (selectable) False alarm
++										1340 cell (selectable) Flags change
++										1341 cell (selectable) Inspect
++									1342 row (selectable)
++										1343 cell (selectable) UCI411-038, Value: Fold 4 · Excel row 40
++										1344 cell (selectable) 68.0%
+Cutoff 35.0%
++										1345 cell (selectable) Negative
++										1346 cell (selectable) False alarm
++										1347 cell (selectable) All agree
++										1348 cell (selectable) Inspect
++									1349 row (selectable)
++										1350 cell (selectable) UCI411-043, Value: Fold 5 · Excel row 45
++										1351 cell (selectable) 35.3%
+Cutoff 30.0%
++										1352 cell (selectable) Negative
++										1353 cell (selectable) False alarm
++										1354 cell (selectable) All agree
++										1355 cell (selectable) Inspect
++							1356 button (disabled) Previous
++							1357 text 1–10 of 99
++							1358 button Next
++							1359 container
++								1360 text An error you can trace
++								1361 heading UCI411-006 · LCX, Value: 3
++									1362 text UCI411-006 · LCX
++								1363 text 41.5% Full-input estimate Research cutoff 33.0% Recorded outcome Negative Full-input flag Positive The full-input model flags a recorded negative. All five profiles share this flag. Agreement does not make it reliable. History 75.0% Positive · cutoff 31.0% History + examination 75.9% Positive · cutoff 29.0% History + examination + ECG 56.0% Positive · cutoff 35.0% History + examination + ECG + laboratory 41.8% Positive · cutoff 33.0% All recorded inputs (+ echo) 41.5% Positive · cutoff 33.0%
++								1364 button Inspect LCX in the 3D explorer
++								1365 text Fold 2 was excluded from fitting, calibration and threshold selection. Model: LCX-full-outer-1.
++							1366 container
++								1367 text Actual SHAP independently checked 4840 explanations across 100 models. All 61 final-test records are excluded from this browser audit. 
++								1368 link Verification receipt, Value: 127.0.0.1:8821/assets/cohort-audit-verification.json
+~						1127 text CPU model training 242 development records · 5 outer validation folds · 3 inner tuning folds · 55 available inputs. Decisions use thresholds selected inside training folds. Scroll the table horizontally on smaller screens to inspect every metric.
++								1369 row (selectable)
++									1370 cell (selectable) CAD
+173 positive / 69 negative
++									1371 cell (selectable) 0.926
+0.89–0.96
++									1372 cell (selectable) 0.911
++									1373 cell (selectable) 0.942
++									1374 cell (selectable) 0.881
++									1375 cell (selectable) 0.868
++									1376 cell (selectable) 0.096
++									1377 cell (selectable) 22 / 10
++								1378 row (selectable)
++									1379 cell (selectable) LAD
+141 positive / 101 negative
++									1380 cell (selectable) 0.814
+0.76–0.86
++									1381 cell (selectable) 0.794
++									1382 cell (selectable) 0.887
++									1383 cell (selectable) 0.718
++									1384 cell (selectable) 0.731
++									1385 cell (selectable) 0.174
++									1386 cell (selectable) 49 / 16
++								1387 row (selectable)
++									1388 cell (selectable) LCX
+92 positive / 150 negative
++									1389 cell (selectable) 0.701
+0.63–0.77
++									1390 cell (selectable) 0.602
++									1391 cell (selectable) 0.815
++									1392 cell (selectable) 0.478
++									1393 cell (selectable) 0.591
++									1394 cell (selectable) 0.211
++									1395 cell (selectable) 82 / 17
++								1396 row (selectable)
++									1397 cell (selectable) RCA
+89 positive / 153 negative
++									1398 cell (selectable) 0.722
+0.65–0.78
++									1399 cell (selectable) 0.605
++									1400 cell (selectable) 0.809
++									1401 cell (selectable) 0.483
++									1402 cell (selectable) 0.612
++									1403 cell (selectable) 0.202
++									1404 cell (selectable) 77 / 17
++						1405 image LAD development probability reliability: 35 records, mean estimate 11.6%, observed 14.3%; 39 records, mean estimate 27.9%, observed 33.3%; 38 records, mean estimate 50.1%, observed 60.5%; 61 records, mean estimate 71.1%, observed 62.3%; 69 records, mean estimate 91.3%, observed 89.9%
+~						1136 text Same development records and validation folds; each reduced profile was refitted. More inputs do not uniformly improve these scores.
++						1406 table
++							1407 row (selectable) LAD profile
+AUC
+F1
++							1408 row (selectable)
++								1409 cell (selectable) History · 17
++								1410 cell (selectable) 0.713
++								1411 cell (selectable) 0.743
++							1412 row (selectable)
++								1413 cell (selectable) History + examination · 31
++								1414 cell (selectable) 0.776
++								1415 cell (selectable) 0.809
++							1416 row (selectable)
++								1417 cell (selectable) History + examination + ECG · 38
++								1418 cell (selectable) 0.798
++								1419 cell (selectable) 0.812
++							1420 row (selectable)
++								1421 cell (selectable) History + examination + ECG + laboratory · 52
++								1422 cell (selectable) 0.791
++								1423 cell (selectable) 0.800
++							1424 row (selectable)
++								1425 cell (selectable) All recorded inputs (+ echo) · 55
++								1426 cell (selectable) 0.814
++								1427 cell (selectable) 0.794
++						1428 text Displayed case predictions use logistic models fitted without those records. Development results guide model selection; they are not a final test result or evidence of clinical readiness.
++						1429 text Frozen model, separate test
++						1430 heading Held-out evaluation, Value: 2
++							1431 text Held-out evaluation
++						1432 text 61 held-out records · frozen full 55-input procedure. Displayed operating rule: training-selected research thresholds. Intervals condition on fixed models and omit training uncertainty. Scroll horizontally to inspect every metric.
++						1433 container Frozen final-test metrics
++							1434 table
++								1435 row (selectable) Target
+ROC-AUC
+F1
+Recall
+Precision
+Accuracy
+Brier
+FP / FN
+Threshold
++								1436 row (selectable)
++									1437 cell (selectable) CAD
+43 positive / 18 negative
++									1438 cell (selectable) 0.908
+0.81–0.97
++									1439 cell (selectable) 0.889
++									1440 cell (selectable) 0.930
++									1441 cell (selectable) 0.851
++									1442 cell (selectable) 0.836
++									1443 cell (selectable) 0.110
++									1444 cell (selectable) 7 / 3
++									1445 cell (selectable) 21.0%
++								1446 row (selectable)
++									1447 cell (selectable) LAD
+36 positive / 25 negative
++									1448 cell (selectable) 0.893
+0.80–0.97
++									1449 cell (selectable) 0.886
++									1450 cell (selectable) 0.972
++									1451 cell (selectable) 0.814
++									1452 cell (selectable) 0.852
++									1453 cell (selectable) 0.126
++									1454 cell (selectable) 8 / 1
++									1455 cell (selectable) 36.0%
++								1456 row (selectable)
++									1457 cell (selectable) LCX
+27 positive / 34 negative
++									1458 cell (selectable) 0.748
+0.62–0.86
++									1459 cell (selectable) 0.657
++									1460 cell (selectable) 0.852
++									1461 cell (selectable) 0.535
++									1462 cell (selectable) 0.607
++									1463 cell (selectable) 0.216
++									1464 cell (selectable) 20 / 4
++									1465 cell (selectable) 30.0%
++								1466 row (selectable)
++									1467 cell (selectable) RCA
+25 positive / 36 negative
++									1468 cell (selectable) 0.724
+0.58–0.84
++									1469 cell (selectable) 0.603
++									1470 cell (selectable) 0.760
++									1471 cell (selectable) 0.500
++									1472 cell (selectable) 0.590
++									1473 cell (selectable) 0.209
++									1474 cell (selectable) 19 / 6
++									1475 cell (selectable) 25.0%
++						1476 text This small test set was evaluated after the full-input procedure was frozen. It does not establish clinical or external validity.
+~				92 button Reload this page, ID: ReloadButton

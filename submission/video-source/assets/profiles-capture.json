@@ -1,0 +1,26 @@
+{
+  "name": "profiles",
+  "duration": 12.063,
+  "actions": [
+    {
+      "at": 1.207,
+      "description": "History-only refitted model: 17 inputs"
+    },
+    {
+      "at": 3.208,
+      "description": "Add examination: 31 inputs"
+    },
+    {
+      "at": 5.322,
+      "description": "Add ECG: 38 inputs"
+    },
+    {
+      "at": 7.253,
+      "description": "Add laboratory: 52 inputs"
+    },
+    {
+      "at": 9.164,
+      "description": "All groups including echo: 55 inputs"
+    }
+  ]
+}

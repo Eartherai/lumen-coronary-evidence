@@ -1,0 +1,103 @@
+{
+  "schema": "dated-pdf-render-qa-v1",
+  "reviewer_kind": "ai",
+  "review_method": "Poppler PNGs at 140 dpi individually visually inspected; saved text and word-boundary checks",
+  "checked_at": "2026-10-11T07:25:16.354775+00:00",
+  "output": {
+    "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/lumen-report-hardening-2026-10-11.pdf",
+    "bytes": 25455,
+    "sha256": "85fbfe9ca6efcdae9b84bb2a269539a29603e14e635f4caf6c68b7e2a4679802"
+  },
+  "page_count": 6,
+  "all_rendered_pages_inspected": true,
+  "visible_defects": [],
+  "text_checks_passed": [
+    "0.908",
+    "0.893",
+    "0.748",
+    "0.724",
+    "injected case/profile load failures",
+    "keyboard prediction/matrix selection",
+    "human review/signoff remain pending"
+  ],
+  "geometry_checks": [
+    {
+      "page": 1,
+      "word_count": 252,
+      "all_words_inside_media_box": true
+    },
+    {
+      "page": 2,
+      "word_count": 339,
+      "all_words_inside_media_box": true
+    },
+    {
+      "page": 3,
+      "word_count": 267,
+      "all_words_inside_media_box": true
+    },
+    {
+      "page": 4,
+      "word_count": 343,
+      "all_words_inside_media_box": true
+    },
+    {
+      "page": 5,
+      "word_count": 461,
+      "all_words_inside_media_box": true
+    },
+    {
+      "page": 6,
+      "word_count": 436,
+      "all_words_inside_media_box": true
+    }
+  ],
+  "rendered_pages": [
+    {
+      "page": 1,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-2026-10-11/page-1.png",
+      "bytes": 212097,
+      "sha256": "6bb234f6178184b74af717a038bda49cd3c6b19021189d912ed13bf96203466f",
+      "visual_inspection": "passed"
+    },
+    {
+      "page": 2,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-2026-10-11/page-2.png",
+      "bytes": 277642,
+      "sha256": "4799bee3978e0fc9152db9be440203d3cbd872d4acff2bd42074642f26950a06",
+      "visual_inspection": "passed"
+    },
+    {
+      "page": 3,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-2026-10-11/page-3.png",
+      "bytes": 208436,
+      "sha256": "7181d3978129e67aac849b9a0d2ac79305b18b0f7324f556c8fe3b9f206ece29",
+      "visual_inspection": "passed"
+    },
+    {
+      "page": 4,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-2026-10-11/page-4.png",
+      "bytes": 235497,
+      "sha256": "d9bd42a4b18b7677ed75fefb2b33ac11f2c82289e57dab33edbc6c1f8312ce54",
+      "visual_inspection": "passed"
+    },
+    {
+      "page": 5,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-2026-10-11/page-5.png",
+      "bytes": 372672,
+      "sha256": "b02d31bae5233dc8712a3646424d41f062a46564ad501e5276e78a74bb7da0e9",
+      "visual_inspection": "passed"
+    },
+    {
+      "page": 6,
+      "path": "/Users/earther/Desktop/IIT mandi/coronary-evidence/output/pdf/qa-hardening-2026-10-11/page-6.png",
+      "bytes": 342699,
+      "sha256": "5931fc51c9069d8e01f54fe5927a8d15e2904e0f4a6097101231521a5e868661",
+      "visual_inspection": "passed"
+    }
+  ],
+  "result": "passed",
+  "human_review_completed": false,
+  "model_or_detector_validation": false,
+  "fontconfig_renderer_warning": "Default Fontconfig file absent; Poppler exited 0, every rendered page inspected with readable glyphs."
+}

@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "reviewer_kind": "human",
+  "record_state": "template_not_a_session",
+  "protocol_id": "lumen-independent-review-2026-10-11-v1",
+  "protocol_sha256": "8ba0a8b84661e5a2a43157fff47272a227a2cd7c2329eba372597693e5fa1d39",
+  "session_id": null,
+  "reviewed_build_manifest_sha256": null,
+  "session_started_at_utc": null,
+  "session_finished_at_utc": null,
+  "consent": {
+    "interface_review": null,
+    "screen_recording": null,
+    "audio_recording": null
+  },
+  "participant": {
+    "pseudonymous_id": null,
+    "self_described_role": null,
+    "ml_familiarity": null,
+    "prior_project_or_answer_exposure": null,
+    "built_or_rehearsed_project": null,
+    "independent_gate_eligible": null,
+    "eligibility_reason": null
+  },
+  "environment": {
+    "app_route": null,
+    "app_mode_python_or_static": null,
+    "device": null,
+    "os": null,
+    "browser": null,
+    "browser_version": null,
+    "viewport_css_px": null,
+    "zoom_percent": null,
+    "input_method": null,
+    "graphics_if_known": null
+  },
+  "orientation": {
+    "planned_seconds": 45,
+    "actual_seconds": null,
+    "extra_explanation_or_deviation": null
+  },
+  "tasks": [
+    {
+      "task_id": "T1",
+      "starting_state_confirmed": null,
+      "setup_deviations": [],
+      "cap_seconds": 120,
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "wall_seconds": null,
+      "pause_seconds": null,
+      "active_seconds": null,
+      "pause_reasons": [],
+      "stop_reason": null,
+      "first_final_answer_verbatim": null,
+      "earlier_critical_utterances": [],
+      "spontaneous_self_correction": null,
+      "assistance_events": [],
+      "functional_criteria": [
+        {
+          "criterion": "Locate UCI411-276 in complete audit by record ID after handling nonmatching filters.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Select LAD and open record in explorer.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Report full probability/cutoff, recorded label and matching flag.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "conceptual_criteria": [
+        {
+          "criterion": "Identify complete development cohort; distinguish it from final holdout.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "functional_complete": null,
+      "conceptual_correct": null,
+      "unassisted": null,
+      "final_critical_misunderstanding_codes": [],
+      "technical_failures": [],
+      "evidence_refs": []
+    },
+    {
+      "task_id": "T2",
+      "starting_state_confirmed": null,
+      "setup_deviations": [],
+      "cap_seconds": 180,
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "wall_seconds": null,
+      "pause_seconds": null,
+      "active_seconds": null,
+      "pause_reasons": [],
+      "stop_reason": null,
+      "first_final_answer_verbatim": null,
+      "earlier_critical_utterances": [],
+      "spontaneous_self_correction": null,
+      "assistance_events": [],
+      "functional_criteria": [
+        {
+          "criterion": "Set LCX, missed positive, all five agree, all folds, empty ID query.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Report nine matching records and select one of them.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Report positive truth and five negative flags for selected record.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Report 60 errors among 172 agreeing records, distinguishing cohort summary from nine-record filtered roster.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "conceptual_criteria": [
+        {
+          "criterion": "Agreement among separately fitted profiles does not establish confidence or correctness.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Outcome-aware development audit is not a new final or blinded test.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "functional_complete": null,
+      "conceptual_correct": null,
+      "unassisted": null,
+      "final_critical_misunderstanding_codes": [],
+      "technical_failures": [],
+      "evidence_refs": []
+    },
+    {
+      "task_id": "T3",
+      "starting_state_confirmed": null,
+      "setup_deviations": [],
+      "cap_seconds": 150,
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "wall_seconds": null,
+      "pause_seconds": null,
+      "active_seconds": null,
+      "pause_reasons": [],
+      "stop_reason": null,
+      "first_final_answer_verbatim": null,
+      "earlier_critical_utterances": [],
+      "spontaneous_self_correction": null,
+      "assistance_events": [],
+      "functional_criteria": [
+        {
+          "criterion": "Read learned probability/cutoff/positive flag.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Switch shared rule to fixed 50% and read unchanged probability/new cutoff/negative flag.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Verify whole-cohort LCX missed positives and false alarms are 17/82 before and 63/18 after.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "conceptual_criteria": [
+        {
+          "criterion": "Only decision rule/flags/filter results/counts change; probability, score/contributions and probability-based colors do not.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "No claim that threshold choice improves probability ranking or is medically validated.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "functional_complete": null,
+      "conceptual_correct": null,
+      "unassisted": null,
+      "final_critical_misunderstanding_codes": [],
+      "technical_failures": [],
+      "evidence_refs": []
+    },
+    {
+      "task_id": "T4",
+      "starting_state_confirmed": null,
+      "setup_deviations": [],
+      "cap_seconds": 150,
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "wall_seconds": null,
+      "pause_seconds": null,
+      "active_seconds": null,
+      "pause_reasons": [],
+      "stop_reason": null,
+      "first_final_answer_verbatim": null,
+      "earlier_critical_utterances": [],
+      "spontaneous_self_correction": null,
+      "assistance_events": [],
+      "functional_criteria": [
+        {
+          "criterion": "Report profile-order flags positive/negative/negative/negative/positive.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Select History + examination then full; correctly report their probabilities and cutoffs.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Observe current explorer inputs/explanation and selected profile following each chosen cell.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "conceptual_criteria": [
+        {
+          "criterion": "Profiles are independently fitted with 17/31/38/52/55 cumulative predictors, not hidden inputs in one model.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Profile differences do not establish causal test utility or clinical acquisition order.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "functional_complete": null,
+      "conceptual_correct": null,
+      "unassisted": null,
+      "final_critical_misunderstanding_codes": [],
+      "technical_failures": [],
+      "evidence_refs": []
+    },
+    {
+      "task_id": "T5",
+      "starting_state_confirmed": null,
+      "setup_deviations": [],
+      "cap_seconds": 180,
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "wall_seconds": null,
+      "pause_seconds": null,
+      "active_seconds": null,
+      "pause_reasons": [],
+      "stop_reason": null,
+      "first_final_answer_verbatim": null,
+      "earlier_critical_utterances": [],
+      "spontaneous_self_correction": null,
+      "assistance_events": [],
+      "functional_criteria": [
+        {
+          "criterion": "Change only Age 62 to 63 and recalculate.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Observe edited values/updated score with original truth hidden, reveal disabled and original profile comparison paused.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Restore recorded values; verify original profile comparison and recorded-label reveal available again.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "conceptual_criteria": [
+        {
+          "criterion": "No observed edited-patient outcome exists; original truth cannot evaluate edited predictions.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Changes are model sensitivity, not treatment effects.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Edited record retains its excluding-fold model.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "functional_complete": null,
+      "conceptual_correct": null,
+      "unassisted": null,
+      "final_critical_misunderstanding_codes": [],
+      "technical_failures": [],
+      "evidence_refs": []
+    },
+    {
+      "task_id": "T6",
+      "starting_state_confirmed": null,
+      "setup_deviations": [],
+      "cap_seconds": 180,
+      "started_at_utc": null,
+      "ended_at_utc": null,
+      "wall_seconds": null,
+      "pause_seconds": null,
+      "active_seconds": null,
+      "pause_reasons": [],
+      "stop_reason": null,
+      "first_final_answer_verbatim": null,
+      "earlier_critical_utterances": [],
+      "spontaneous_self_correction": null,
+      "assistance_events": [],
+      "functional_criteria": [
+        {
+          "criterion": "Select LAD using the named anatomy label or actual vessel mesh; record which.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Rotate and zoom, focus or isolate LAD, then restore overview.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Open complete score; read baseline 0.569, all-term sum 2.248, log-odds 2.817 and probability 94.4%.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "conceptual_criteria": [
+        {
+          "criterion": "Generic named reference geometry/whole-vessel color cannot localize plaque or give patient-specific anatomy.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Probability is predicted status probability, not percentage arterial narrowing.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Baseline plus all terms is in log-odds; sigmoid converts final score to probability; six displayed terms are not the complete sum.",
+          "met": null,
+          "evidence": null
+        },
+        {
+          "criterion": "Contributions are model associations, not percentage-point effects or causes.",
+          "met": null,
+          "evidence": null
+        }
+      ],
+      "functional_complete": null,
+      "conceptual_correct": null,
+      "unassisted": null,
+      "final_critical_misunderstanding_codes": [],
+      "technical_failures": [],
+      "evidence_refs": []
+    }
+  ],
+  "debrief": {
+    "confusing_parts_verbatim": null,
+    "what_to_check_before_reliance_verbatim": null,
+    "later_coached_corrections": [],
+    "suggested_fixes": []
+  },
+  "moderator_id": null,
+  "human_gate_assessment": null,
+  "notes": "Null fields are pending. Fill only from a real consenting person; AI review belongs in ai-review-template.json. No result is claimed."
+}

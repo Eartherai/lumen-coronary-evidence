@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "reviewer_kind": "ai",
+  "record_state": "template_not_an_executed_review",
+  "protocol_id": "lumen-independent-review-2026-10-11-v1",
+  "protocol_sha256": "8ba0a8b84661e5a2a43157fff47272a227a2cd7c2329eba372597693e5fa1d39",
+  "agent_or_model_reference": null,
+  "reviewed_build_manifest_sha256": null,
+  "review_started_at_utc": null,
+  "review_finished_at_utc": null,
+  "tool_and_environment_scope": null,
+  "human_usability_status": "unmeasured_pending",
+  "human_signoff_completed": false,
+  "pool_with_human_sessions": false,
+  "human_task_timing_recorded": false,
+  "task_assessments": [
+    {
+      "task_id": "T1",
+      "status": "not_tested",
+      "evidence_mode": null,
+      "actual_behavior": null,
+      "evidence_refs": [],
+      "limitations": null
+    },
+    {
+      "task_id": "T2",
+      "status": "not_tested",
+      "evidence_mode": null,
+      "actual_behavior": null,
+      "evidence_refs": [],
+      "limitations": null
+    },
+    {
+      "task_id": "T3",
+      "status": "not_tested",
+      "evidence_mode": null,
+      "actual_behavior": null,
+      "evidence_refs": [],
+      "limitations": null
+    },
+    {
+      "task_id": "T4",
+      "status": "not_tested",
+      "evidence_mode": null,
+      "actual_behavior": null,
+      "evidence_refs": [],
+      "limitations": null
+    },
+    {
+      "task_id": "T5",
+      "status": "not_tested",
+      "evidence_mode": null,
+      "actual_behavior": null,
+      "evidence_refs": [],
+      "limitations": null
+    },
+    {
+      "task_id": "T6",
+      "status": "not_tested",
+      "evidence_mode": null,
+      "actual_behavior": null,
+      "evidence_refs": [],
+      "limitations": null
+    }
+  ],
+  "code_review_scope": [],
+  "findings": [],
+  "remaining_limitations": [],
+  "conclusion": null,
+  "notes": "AI task checks assess behavior/source truth. They do not represent human comprehension, human usability metrics or clinical validation."
+}

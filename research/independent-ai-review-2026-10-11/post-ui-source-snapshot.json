@@ -1,0 +1,15 @@
+{
+  "captured_at_utc": "2026-10-10T19:48:34.257792+00:00",
+  "capture_phase": "after_browser_task_run",
+  "starting_build_manifest_not_captured": true,
+  "files": {
+    "coronary-evidence/public/app.js": "93e3add2257673ffda584799e39a2b2eb2dce3f13da8fbcdee9c2faaffc86ea1",
+    "coronary-evidence/public/index.html": "8d35cb771696b0345b3f85d87ee08a3f9c605fdec3b01b49f3d9bb182cb091da",
+    "coronary-evidence/public/cohort-audit.js": "836c5cb2510f0f2f2a3545323d5785f7455fdbe603f544d1816cdec9529f7a6e",
+    "coronary-evidence/public/evidence-journey.js": "c69a7f14481195e7f832b3b6571471428b945f1a3fac5a9e83a544895856fd07",
+    "coronary-evidence/public/static-client.js": "98c55f2ce160614f40dd307aa82a0f4d1dfb2014c3eda795490ea54cc858ec07",
+    "coronary-evidence/public/anatomy-controls.js": "f1ea5b0a3ac6a8eb85dd2e987fa6bfb1f05a5e30f9660d9fdf54dd2a5dc74aac",
+    "coronary-evidence/server.py": "b6758a7960d0bf02abb3c3c37eb9649f109ea8ba3b7109c300b10f7919e9f12d",
+    "coronary-evidence/inference.py": "3a081e8fc2eef1d53263765c00a91a17d2f85c184cde0ae67f429e006e8367b7"
+  }
+}

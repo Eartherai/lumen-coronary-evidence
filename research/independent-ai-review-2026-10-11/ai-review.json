@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "reviewer_kind": "ai",
+  "record_state": "executed_ai_review_of_baseline_before_fixes",
+  "protocol_id": "lumen-independent-review-2026-10-11-v1",
+  "protocol_sha256": "8ba0a8b84661e5a2a43157fff47272a227a2cd7c2329eba372597693e5fa1d39",
+  "agent_or_model_reference": "/root/lumen_independent_ai_review (Codex AI agent; exact model identifier not independently captured)",
+  "reviewed_build_manifest_sha256": "85473965f569433aec400fc4db876528ada061c55bc8963ca20c7ba4b0b74463",
+  "review_started_at_utc": null,
+  "review_finished_at_utc": "2026-10-10T19:51:57.087769+00:00",
+  "tool_and_environment_scope": "CUA actual UI through a dedicated hidden Codex in-app browser tab at http://127.0.0.1:8770/, static Oct 10 baseline; default screenshots 1280x720. No viewport/global visibility modifications. Browser tab closed after task run. Browser version/device/GPU/FPS not measured. Files inspected only after first six tasks.",
+  "human_usability_status": "unmeasured_pending",
+  "human_signoff_completed": false,
+  "pool_with_human_sessions": false,
+  "human_task_timing_recorded": false,
+  "task_assessments": [
+    {
+      "task_id": "T1",
+      "status": "completed",
+      "evidence_mode": "browser_observed",
+      "actual_behavior": "Browsed all 242 development records, selected LAD, searched UCI411-276 and opened explorer. Full probability 22.5%, cutoff 39.0%, negative recorded label, negative matching flag. Final holdout excluded.",
+      "evidence_refs": [
+        "review.md"
+      ],
+      "limitations": "No human usability timing/comprehension measured."
+    },
+    {
+      "task_id": "T2",
+      "status": "completed",
+      "evidence_mode": "browser_observed",
+      "actual_behavior": "App challenge set LCX/missed positive/all flags agree/all folds/empty query. 9 matches; default inspector UCI411-020 positive truth, five negative flags. Cohort:60 errors/172 agreeing records. Agreement does not establish correctness or confidence.",
+      "evidence_refs": [
+        "review.md"
+      ],
+      "limitations": "Retained T1 state instead of a fresh reset; app challenge reset filters. No human task metrics."
+    },
+    {
+      "task_id": "T3",
+      "status": "completed",
+      "evidence_mode": "browser_observed",
+      "actual_behavior": "Self-prepared audit UCI411-057 LCX full. Learned 43.9% / 31.0% / positive; fixed 43.9% / 50.0% / negative. Cohort FN / FP 17 / 82 to 63 / 18. Changed decision rule and derived flags/counts, not probability or model fitting.",
+      "evidence_refs": [
+        "review.md"
+      ],
+      "limitations": "Agent prepared moderator state. Color/contribution/weight invariance source verified; probability and flags/counts browser observed."
+    },
+    {
+      "task_id": "T4",
+      "status": "completed",
+      "evidence_mode": "browser_observed",
+      "actual_behavior": "UCI411-128 LAD five flags positive / below / below / below / positive. Examination cell 36.1% at 50.0%, full 44.4% at 34.0%. Explorer target/input count/probability/explanation followed both selections. Profile differences combine separately fitted models; no causal test benefit or clinical acquisition order.",
+      "evidence_refs": [
+        "review.md"
+      ],
+      "limitations": "Agent prepared case from prior state. Prompt names full profile All measurements; UI uses All recorded inputs (+ echo)."
+    },
+    {
+      "task_id": "T5",
+      "status": "completed",
+      "evidence_mode": "browser_observed",
+      "actual_behavior": "Age 62 to 63 only, recalculate: 1 edited input; LAD 44.4% to 45.4%, cutoff 34.0%. Original labels hidden and reveal disabled; comparison paused. Restore returned original values/probability/comparison/reveal and reveal used. Edited outcome unobserved; sensitivity is noncausal.",
+      "evidence_refs": [
+        "review.md",
+        "negative-label-mismatch.jpg",
+        "negative-label-mismatch-visible.md"
+      ],
+      "limitations": "No counterfactual outcome observed; no treatment claim. Restore requires label reveal again, which was performed."
+    },
+    {
+      "task_id": "T6",
+      "status": "completed_with_evidence_limits",
+      "evidence_mode": "browser_observed",
+      "actual_behavior": "Prepared UCI411-171 CAD; selected LAD via anatomy label, not mesh. Drag/wheel visually rotated/enlarged heart. Focus/isolate invoked, overview restored. Baseline 0.569 + 55-term sum 2.248 = 2.817 log-odds, 94.4%. LDL contribution +0.676 log-odds is model association; probability/color estimate target status on generic whole vessel, not percent stenosis/patient anatomy/lesion location.",
+      "evidence_refs": [
+        "review.md",
+        "t6-complete-score.jpg",
+        "t6-explorer-visible.md"
+      ],
+      "limitations": "Focus/isolate UI commands completed but a later score-selector error discarded that call screenshot output; isolated rendering not separately retained or visually judged. Control logic source verified. Overview/rotation/zoom/score observed. No mesh ray-picking or FPS validation.",
+      "supplementary_evidence_mode": "source_verified_for_focus_isolate_logic"
+    }
+  ],
+  "code_review_scope": [
+    "Served baseline app.js, static-client.js, evidence-journey.js, cohort-audit.js and anatomy-controls.js",
+    "Current server.py and inference.py; source/artifact membership and schema checks",
+    "Frozen procedure declaration and training selection source read only",
+    "Saved actual-SHAP certificate inspection; no rerun",
+    "Official supplied research/source-extracts/Track A.txt",
+    "Protocol and answer key inspected after T1-T6"
+  ],
+  "findings": [
+    {
+      "id": "AI-20261011-01",
+      "severity": "P2",
+      "title": "Clear previous audit provenance when current case changes",
+      "evidence_modes": [
+        "browser_observed",
+        "source_verified"
+      ],
+      "trigger": "Open audit UCI411-057, then choose curated UCI411-128 from Development case.",
+      "observed": "Current case/explanation updates but hero notice retains UCI411-057 and says its predictions/actual labels are shown together.",
+      "consequence": "Conflicting case identity and outcome-aware selection provenance. No observed inference misrouting.",
+      "source_file": "coronary-evidence/dist/current-review-browser-2026-10-10/lumen-browser/app.js",
+      "source_lines": [
+        99,
+        218,
+        241
+      ],
+      "reproduction_steps": [
+        "Browse/search LCX UCI411-057 in audit.",
+        "Inspect LCX in explorer.",
+        "Select UCI411-128 in Development case.",
+        "Compare hero notice ID with selected case ID."
+      ],
+      "expected_behavior": "Notice should clear or describe actual current record/state.",
+      "bounded_fix": "Clear/recompute tour-note when a new load commits; retain valid current audit disclosure.",
+      "evidence_refs": [
+        "stale-audit-provenance.jpg"
+      ],
+      "resolution_scope": "Baseline defect; root implementing separately, no post-fix verification claimed."
+    },
+    {
+      "id": "AI-20261011-02",
+      "severity": "P2",
+      "title": "Distinguish false alarms from missed positives in revealed labels",
+      "evidence_modes": [
+        "browser_observed",
+        "source_verified"
+      ],
+      "trigger": "UCI411-128 full learned rule, reveal recorded labels.",
+      "observed": "LCX42.2% above35.0% cutoff is positive against negative label, yet reads Negative label \u00b7 prediction missed.",
+      "consequence": "Explorer error wording collapses FP/FN direction and conflicts with audit distinction.",
+      "source_file": "coronary-evidence/dist/current-review-browser-2026-10-10/lumen-browser/app.js",
+      "source_lines": [
+        150
+      ],
+      "reproduction_steps": [
+        "Select UCI411-128, full inputs, training-selected rule.",
+        "Reveal recorded labels.",
+        "Inspect LCX negative recorded label against its positive prediction."
+      ],
+      "expected_behavior": "False alarm for predicted positive/truth negative; missed positive for predicted negative/truth positive.",
+      "bounded_fix": "Derive outcome text from flag and truth; verify both mismatch directions under both rules and after restore.",
+      "evidence_refs": [
+        "negative-label-mismatch.jpg",
+        "negative-label-mismatch-visible.md"
+      ],
+      "resolution_scope": "Baseline defect; root implementing separately, no post-fix verification claimed."
+    }
+  ],
+  "remaining_limitations": [
+    "Build binding captured retrospectively; precise start UTC not captured before task run. Root reports served baseline unchanged; all23 manifest-listed files now match.",
+    "No independent human participants, human task metrics, human signoff or clinical validation.",
+    "No new release/post-fix UI verification in this review.",
+    "No device/GPU/browser-version measurement, FPS benchmark, mobile/reduced-motion/keyboard-only usability or mesh ray-picking test.",
+    "Malformed inputs, unknown-category edge cases, races, network/offline/loading failures and unavailable anatomy not exercised through UI; relevant protections source reviewed only.",
+    "Actual-SHAP certificate inspected, not rerun. Frozen outcomes not rescored and holdout prediction CSV not opened.",
+    "Public hosting/submission acceptance, report/video length and judge rehearsal not verified."
+  ],
+  "conclusion": "Five tasks completed and sixth core behavior completed with focus/isolate evidence limitation. Two baseline P2 wording/state defects confirmed; no P1 established. Serialized model/schema/cohort identities and official core software behavior align in the inspected scope. Human review/signoff remain pending; no clinical or competitive ranking claim.",
+  "notes": "AI task checks assess behavior/source truth. They do not represent human comprehension, human usability metrics or clinical validation.",
+  "reviewed_build_binding_phase": "retrospective_verified_after_ui",
+  "answer_key_read_after_first_six_tasks": true,
+  "no_neutral_human_moderator": true,
+  "evidence_verification_refs": [
+    "reviewed-static-manifest-verification.json",
+    "reviewed-static-manifest.json",
+    "source-identity-checks.json",
+    "served-data-source-parity.json",
+    "post-ui-source-snapshot.json"
+  ]
+}

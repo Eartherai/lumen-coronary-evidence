@@ -1,0 +1,25 @@
+{
+  "schema": "lumen-runtime-evidence-summary-v1",
+  "capture": "chromium-actions-final.json",
+  "capture_sha256": "a40a6105abe87a309f72c026ee122701d97e1bfab77e289a4887d4face345e40",
+  "site_manifest": "final-capture-static-manifest.json",
+  "site_manifest_sha256": "7d23aef3c69a714d09a2264ae0dd57e6e74ea7636267d3a73a33a3b215ccea5a",
+  "exact_site_bound_retrospectively": true,
+  "actual_ui_operator": "AI through CUA",
+  "human_usability_study": false,
+  "physical_devices": 1,
+  "status": "measured",
+  "duration_ms": 10000.800000011921,
+  "callbacks": 587,
+  "callback_rate": 58.68920759547516,
+  "completed_actions": 8,
+  "all_begun_actions": 8,
+  "dom_update_ms_range": [
+    4.0999999940395355,
+    12.399999991059303
+  ],
+  "dom_update_ms_median": 7.75,
+  "holdout_rescored": false,
+  "interpretation": "Foreground animation callbacks and main-thread render submission only; no GPU-completion or physical-display measurement.",
+  "timer_boundary": "Render/label work duration excludes runtime-probe and panel-update overhead; callback intervals include it."
+}

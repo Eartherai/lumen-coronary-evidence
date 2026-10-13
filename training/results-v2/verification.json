@@ -1,0 +1,11 @@
+{
+  "checked_development_predictions": 968,
+  "maximum_absolute_error": 3.3306690738754696e-16,
+  "case_predictions_checked": 32,
+  "portable_thresholds_match": true,
+  "target_and_nonfinite_inputs_rejected": true,
+  "null_and_unknown_category_diagnostics": true,
+  "reusable_fit_reproduces_outer_model_exactly": true,
+  "reusable_fit_rejects_holdout_training_identity": true,
+  "holdout_scored": false
+}

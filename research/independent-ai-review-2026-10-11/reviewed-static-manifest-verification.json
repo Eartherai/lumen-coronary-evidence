@@ -1,0 +1,173 @@
+{
+  "evidence_mode": "source_verified",
+  "binding_phase": "retrospective_after_ui",
+  "route": "http://127.0.0.1:8770/",
+  "source_directory": "/Users/earther/Desktop/IIT mandi/coronary-evidence/dist/current-review-browser-2026-10-10/lumen-browser",
+  "binding_basis": "Root agent identified this unchanged static directory as the served baseline; local static-manifest and all listed file hashes were verified retrospectively. No pre-task build hash was captured.",
+  "static_manifest_sha256": "85473965f569433aec400fc4db876528ada061c55bc8963ca20c7ba4b0b74463",
+  "checked_at_utc": "2026-10-10T19:49:22.960221+00:00",
+  "all_files_match": true,
+  "checks": [
+    {
+      "file": ".nojekyll",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "LICENSE",
+      "expected_sha256": "de65deb779996936f7eb08898658b65631d630f162df950c0b33cee422d99925",
+      "actual_sha256": "de65deb779996936f7eb08898658b65631d630f162df950c0b33cee422d99925",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "expected_sha256": "108d7daa006a67e7e94b5f101a46571d59f4b690d063f57f778d2cb94860f8dd",
+      "actual_sha256": "108d7daa006a67e7e94b5f101a46571d59f4b690d063f57f778d2cb94860f8dd",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "anatomy-controls.js",
+      "expected_sha256": "f1ea5b0a3ac6a8eb85dd2e987fa6bfb1f05a5e30f9660d9fdf54dd2a5dc74aac",
+      "actual_sha256": "f1ea5b0a3ac6a8eb85dd2e987fa6bfb1f05a5e30f9660d9fdf54dd2a5dc74aac",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "app.js",
+      "expected_sha256": "3eb4da5f2bfc2c2ec595f9320b1667b6abb35075b46c313b14ec513997483ec0",
+      "actual_sha256": "3eb4da5f2bfc2c2ec595f9320b1667b6abb35075b46c313b14ec513997483ec0",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "assets/anatomy-provenance.json",
+      "expected_sha256": "fcf1d507c05fcddcb1564490b4b4031177b52126684c51155bc89627dc363f91",
+      "actual_sha256": "fcf1d507c05fcddcb1564490b4b4031177b52126684c51155bc89627dc363f91",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "assets/anatomy.json",
+      "expected_sha256": "8d510e42449bef09ac17db074bb10146e354d37066631217ee9b1ea88c84fd3e",
+      "actual_sha256": "8d510e42449bef09ac17db074bb10146e354d37066631217ee9b1ea88c84fd3e",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "assets/clinical-groups.json",
+      "expected_sha256": "abaa2c77d7b4b1b48e3c78422ee50c5561761f34a61421f95f107372a6ca8d19",
+      "actual_sha256": "abaa2c77d7b4b1b48e3c78422ee50c5561761f34a61421f95f107372a6ca8d19",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "assets/cohort-audit-verification.json",
+      "expected_sha256": "bab7424b4f9debfa3e80a57931666de60997e6a559b50f635522b4cf7109c196",
+      "actual_sha256": "bab7424b4f9debfa3e80a57931666de60997e6a559b50f635522b4cf7109c196",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "assets/demo-comparison.png",
+      "expected_sha256": "603f8fec01a13d6e36791d9c8e75b8425b7a327793880f9c6707aebe2186a343",
+      "actual_sha256": "603f8fec01a13d6e36791d9c8e75b8425b7a327793880f9c6707aebe2186a343",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "assets/shap-verification.json",
+      "expected_sha256": "faf88489a2696f375a6250c54b303d15a4f8d4a774d143f6852254cbe7e51eff",
+      "actual_sha256": "faf88489a2696f375a6250c54b303d15a4f8d4a774d143f6852254cbe7e51eff",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "cohort-audit.js",
+      "expected_sha256": "836c5cb2510f0f2f2a3545323d5785f7455fdbe603f544d1816cdec9529f7a6e",
+      "actual_sha256": "836c5cb2510f0f2f2a3545323d5785f7455fdbe603f544d1816cdec9529f7a6e",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "data/evidence.json",
+      "expected_sha256": "5882095115fa45799ab6512027c8504914a893f8ed5266f69a8d983b410b2e5f",
+      "actual_sha256": "5882095115fa45799ab6512027c8504914a893f8ed5266f69a8d983b410b2e5f",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "data/final-evaluation.json",
+      "expected_sha256": "227d2919609e322eaa984f538aa4b67b901c9e35068331860687940cee45a1e8",
+      "actual_sha256": "227d2919609e322eaa984f538aa4b67b901c9e35068331860687940cee45a1e8",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "data/lumen-data.json",
+      "expected_sha256": "ee529086c8962855c37c68041db845017bf53b8a5ad58ee94ab1e48463c51c20",
+      "actual_sha256": "ee529086c8962855c37c68041db845017bf53b8a5ad58ee94ab1e48463c51c20",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "evidence-journey.js",
+      "expected_sha256": "c69a7f14481195e7f832b3b6571471428b945f1a3fac5a9e83a544895856fd07",
+      "actual_sha256": "c69a7f14481195e7f832b3b6571471428b945f1a3fac5a9e83a544895856fd07",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "index.html",
+      "expected_sha256": "1b994f88c26dcefce60f5c59b36e4875533f1d0c76f0aa78e938f7ee739f06d2",
+      "actual_sha256": "1b994f88c26dcefce60f5c59b36e4875533f1d0c76f0aa78e938f7ee739f06d2",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "static-client.js",
+      "expected_sha256": "98c55f2ce160614f40dd307aa82a0f4d1dfb2014c3eda795490ea54cc858ec07",
+      "actual_sha256": "98c55f2ce160614f40dd307aa82a0f4d1dfb2014c3eda795490ea54cc858ec07",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "style.css",
+      "expected_sha256": "4da7237e0425133672fc0636ff3a1e3b646931f2564e2bd3dcd856e85c942e2c",
+      "actual_sha256": "4da7237e0425133672fc0636ff3a1e3b646931f2564e2bd3dcd856e85c942e2c",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "vendor/THREE-LICENSE.txt",
+      "expected_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "actual_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "vendor/addons/controls/OrbitControls.js",
+      "expected_sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b",
+      "actual_sha256": "3d79d07ecb686b4e5d93232eedab255331c1beef711e13164eaa1f68655a5f2b",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "vendor/three.core.js",
+      "expected_sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+      "actual_sha256": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+      "matches": true,
+      "bytes_match": true
+    },
+    {
+      "file": "vendor/three.module.js",
+      "expected_sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "actual_sha256": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+      "matches": true,
+      "bytes_match": true
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "source_url": "https://zenodo.org/records/15826856/files/AngioCAD_Features.xlsx?download=1",
+  "dataset_doi": "10.5281/zenodo.15826856",
+  "license": "CC BY 4.0",
+  "retrieved_utc": "2026-10-10T19:42:14.590797+00:00",
+  "bytes": 129493,
+  "md5": "1617d242df42367787f445392729f35e",
+  "expected_host_md5": "1617d242df42367787f445392729f35e",
+  "sha256": "978f2415ab52f11724e1ef00bb63597b8497487afd84b97f7112fc7975a33295",
+  "inspection": "Only worksheet metadata and row 1 column headers decoded. No patient-level cells, outcomes, label workbook or videos read.",
+  "workbook_header_schema": [
+    {
+      "sheet": "Main",
+      "dimension": "A1:BH380",
+      "headers": [
+        {
+          "cell": "A1",
+          "header": "ID"
+        },
+        {
+          "cell": "B1",
+          "header": "Sex"
+        },
+        {
+          "cell": "C1",
+          "header": "Age"
+        },
+        {
+          "cell": "D1",
+          "header": "Length"
+        },
+        {
+          "cell": "E1",
+          "header": "Weight"
+        },
+        {
+          "cell": "F1",
+          "header": "BMI"
+        },
+        {
+          "cell": "G1",
+          "header": "dominance"
+        },
+        {
+          "cell": "H1",
+          "header": "Right Coronary Series"
+        },
+        {
+          "cell": "I1",
+          "header": "Left Coronary Series"
+        },
+        {
+          "cell": "J1",
+          "header": "Diagnosis"
+        },
+        {
+          "cell": "K1",
+          "header": "DM"
+        },
+        {
+          "cell": "L1",
+          "header": "HTN"
+        },
+        {
+          "cell": "M1",
+          "header": "LVEF"
+        },
+        {
+          "cell": "N1",
+          "header": "LVEF dysfunction"
+        },
+        {
+          "cell": "O1",
+          "header": "Hyperlipidemia"
+        },
+        {
+          "cell": "P1",
+          "header": "Current Smoker"
+        },
+        {
+          "cell": "Q1",
+          "header": "PVD"
+        },
+        {
+          "cell": "R1",
+          "header": "IHD"
+        },
+        {
+          "cell": "S1",
+          "header": "Stroke"
+        },
+        {
+          "cell": "T1",
+          "header": "Beta blocker"
+        },
+        {
+          "cell": "U1",
+          "header": "Alpha blocker"
+        },
+        {
+          "cell": "V1",
+          "header": "Diuretic"
+        },
+        {
+          "cell": "W1",
+          "header": "ACEI"
+        },
+        {
+          "cell": "X1",
+          "header": "ARB"
+        },
+        {
+          "cell": "Y1",
+          "header": "CCB"
+        },
+        {
+          "cell": "Z1",
+          "header": "ASA"
+        },
+        {
+          "cell": "AA1",
+          "header": "Clopidogrel"
+        },
+        {
+          "cell": "AB1",
+          "header": "Astatine"
+        },
+        {
+          "cell": "AC1",
+          "header": "TG"
+        },
+        {
+          "cell": "AD1",
+          "header": "Cholesterol"
+        },
+        {
+          "cell": "AE1",
+          "header": "HDL"
+        },
+        {
+          "cell": "AF1",
+          "header": "LDL"
+        },
+        {
+          "cell": "AG1",
+          "header": "FBS"
+        },
+        {
+          "cell": "AH1",
+          "header": "Cr"
+        },
+        {
+          "cell": "AI1",
+          "header": "BUN "
+        },
+        {
+          "cell": "AJ1",
+          "header": "Hgb"
+        },
+        {
+          "cell": "AK1",
+          "header": "Hct"
+        },
+        {
+          "cell": "AL1",
+          "header": "leukocytes"
+        },
+        {
+          "cell": "AM1",
+          "header": "Neut"
+        },
+        {
+          "cell": "AN1",
+          "header": "Monocyte"
+        },
+        {
+          "cell": "AO1",
+          "header": "MXD"
+        },
+        {
+          "cell": "AP1",
+          "header": "Lymph"
+        },
+        {
+          "cell": "AQ1",
+          "header": "PLT"
+        },
+        {
+          "cell": "AR1",
+          "header": "RDW"
+        },
+        {
+          "cell": "AS1",
+          "header": "Gensini Score"
+        },
+        {
+          "cell": "AT1",
+          "header": "LM"
+        },
+        {
+          "cell": "AU1",
+          "header": "Prox LAD"
+        },
+        {
+          "cell": "AV1",
+          "header": "Mid LAD"
+        },
+        {
+          "cell": "AW1",
+          "header": "Dist LAD"
+        },
+        {
+          "cell": "AX1",
+          "header": "1st dig"
+        },
+        {
+          "cell": "AY1",
+          "header": "2nd dig"
+        },
+        {
+          "cell": "AZ1",
+          "header": "Prox LCX"
+        },
+        {
+          "cell": "BA1",
+          "header": "Mid LCX"
+        },
+        {
+          "cell": "BB1",
+          "header": "Dist LCX"
+        },
+        {
+          "cell": "BC1",
+          "header": "OM"
+        },
+        {
+          "cell": "BD1",
+          "header": "Prox RCA"
+        },
+        {
+          "cell": "BE1",
+          "header": "Mid RCA"
+        },
+        {
+          "cell": "BF1",
+          "header": "Dist RCA"
+        },
+        {
+          "cell": "BG1",
+          "header": "PDA"
+        },
+        {
+          "cell": "BH1",
+          "header": "PLB"
+        }
+      ]
+    }
+  ]
+}

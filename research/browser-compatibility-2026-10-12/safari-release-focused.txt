@@ -1,0 +1,3 @@
+The following is a diff from the previous accessibility tree for Window: "Lumen | Coronary Evidence Explorer" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 60
++								522 text Opposite viewpoint of the same reference anatomy.

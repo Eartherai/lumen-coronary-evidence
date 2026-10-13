@@ -1,0 +1,10 @@
+{
+  "evidence_mode": "source_verified",
+  "scope": "Read-only object identity comparison; no fit/inference/performance rescore.",
+  "checks": {
+    "cohort_matches_source_artifact": true,
+    "availability_models_match_source": true,
+    "final_models_match_source": true,
+    "profile_feature_orders_match_source": true
+  }
+}

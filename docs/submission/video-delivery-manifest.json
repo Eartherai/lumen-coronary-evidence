@@ -1,0 +1,208 @@
+{
+  "schema": 2,
+  "status": "complete_bound_local_delivery",
+  "video": {
+    "file": "lumen-track-a-redesigned-demo-2026-10-11.mp4",
+    "bytes": 15240434,
+    "sha256": "aa5fb2909ceb018c94326f0ec18b7e565b1cc5e4d5bff0deaef40bb7b1b95dae"
+  },
+  "duration_seconds": 232.75,
+  "captions_cues": 26,
+  "source_archive": {
+    "file": "lumen-redesigned-demo-render-source-2026-10-11.zip",
+    "bytes": 20440229,
+    "sha256": "e491b01d93c02144f502c4de8eda3df38551552658fbb292d5934c81ba4a6bf6"
+  },
+  "files": [
+    {
+      "path": "00-VIDEO-README.md",
+      "bytes": 5535,
+      "sha256": "0cadd9102cfc259ea40775245ffda7c46f7242b00936481025481deb18ef93b8"
+    },
+    {
+      "path": "SCRIPT.md",
+      "bytes": 3805,
+      "sha256": "f5bc7886b8e11bd8dd806ce87b56aa77f9734541564a7132e672ddeca7a76a80"
+    },
+    {
+      "path": "SOURCE-PROVENANCE.json",
+      "bytes": 6159,
+      "sha256": "71bb1346d3a07bc730d6ccede3a4bf6dad0e577e625623c80daf76f548d171d2"
+    },
+    {
+      "path": "audio-levels.json",
+      "bytes": 5898,
+      "sha256": "418ecdf6fdd07bcc6a006debe88bbf7f3a4c4f8cddd9ea12049d024d343228cc"
+    },
+    {
+      "path": "chapters.json",
+      "bytes": 6496,
+      "sha256": "6353dbeb6912645c69b5d289a783184464cc20ea85d45dfa9729bdb4752ef491"
+    },
+    {
+      "path": "check-delivery.json",
+      "bytes": 4515,
+      "sha256": "a4ee9db04a37438a1891d7d63e626213fed7192549df0c48667dfdbca9bec449"
+    },
+    {
+      "path": "clean-build-verification.json",
+      "bytes": 6153,
+      "sha256": "c6dddb7bd8a264d45caf77ecc515ba1b80e7f53bd75ff63bfb4f7c311f7895ef"
+    },
+    {
+      "path": "encoded-audio-levels.log",
+      "bytes": 423,
+      "sha256": "3da6fa9b167687dc25ce1ca0bbbd3ac807ac24d3ff5b98efc5e903101df93455"
+    },
+    {
+      "path": "encoded-contact-sheet.jpg",
+      "bytes": 931772,
+      "sha256": "1eda41ef8c7be032bd4ff9c59e8e07abc91d9dca523e5b3d8579fc75bee929d3"
+    },
+    {
+      "path": "encoded-ffprobe.json",
+      "bytes": 3844,
+      "sha256": "a39baa3539358e05e95480f24a2e2e388e4c20699cd19c597dcacc0c697b1fd4"
+    },
+    {
+      "path": "encoded-frames/frame-00-at-12s.png",
+      "bytes": 666809,
+      "sha256": "f279495eb8522876d1a9ec0714025197934bf5e747327645212294d068a235b9"
+    },
+    {
+      "path": "encoded-frames/frame-01-at-40s.png",
+      "bytes": 800081,
+      "sha256": "0aa32422a30858b678b9650cce80a2aa56043ec24ec0004ce71ac3764b166ce0"
+    },
+    {
+      "path": "encoded-frames/frame-02-at-60s.png",
+      "bytes": 605555,
+      "sha256": "7b19606f54ba2b08a60fc768420887484a296f296bac9bd715fa39445eb2bdb4"
+    },
+    {
+      "path": "encoded-frames/frame-03-at-68s.png",
+      "bytes": 527248,
+      "sha256": "274137fb8690b32822e0c3f86ca9074bba36e22fd662bf8735bcda4dad4e0b94"
+    },
+    {
+      "path": "encoded-frames/frame-04-at-71.9013s.png",
+      "bytes": 585221,
+      "sha256": "936dbf62a36cfe96dbd2a38126fc22cc215b223a86d6aabd549016fd31cc0a03"
+    },
+    {
+      "path": "encoded-frames/frame-05-at-72.7613s.png",
+      "bytes": 736937,
+      "sha256": "22bebdeaf74fba232c15515d7191f302bf76deb0789b237c6b1ebc3658ba4238"
+    },
+    {
+      "path": "encoded-frames/frame-06-at-76.0078s.png",
+      "bytes": 795582,
+      "sha256": "227e0ba376c06d169de212f7a07e1521ab5ea8f58b01e6748dfd53f7bd9f8a68"
+    },
+    {
+      "path": "encoded-frames/frame-07-at-76.1778s.png",
+      "bytes": 803898,
+      "sha256": "8e761b2dca9f9c54d7492c39d271676e4ecfc86cc37f0da1db2a5c3ded9ac1db"
+    },
+    {
+      "path": "encoded-frames/frame-08-at-82s.png",
+      "bytes": 788803,
+      "sha256": "f721fda56c59fae0303a5099c85f594d5a078f8ebc142440e242c640ad611387"
+    },
+    {
+      "path": "encoded-frames/frame-09-at-98s.png",
+      "bytes": 563750,
+      "sha256": "8de72759fd94218d90d3873d1dc704003ba109c393d02969ac7268e4d91717c0"
+    },
+    {
+      "path": "encoded-frames/frame-10-at-110s.png",
+      "bytes": 558311,
+      "sha256": "4518b7ef5a8f7ee7e0de3b9e639cb81abc8da45e42a77fc6d899367f55de6d43"
+    },
+    {
+      "path": "encoded-frames/frame-11-at-117s.png",
+      "bytes": 560576,
+      "sha256": "29866c12776b2111bb33e9eb36143c3e15381e201fdeee607398eb3d5eea20f2"
+    },
+    {
+      "path": "encoded-frames/frame-12-at-122s.png",
+      "bytes": 517513,
+      "sha256": "ea2f11aceeca7cd015becb91c215db888d3ef92231d83e7f64a6e73b3833cdda"
+    },
+    {
+      "path": "encoded-frames/frame-13-at-143s.png",
+      "bytes": 478547,
+      "sha256": "96849b8ae0ae2379d073c61586e48bdc48fc34c038af4258c261a93cc57574cb"
+    },
+    {
+      "path": "encoded-frames/frame-14-at-183s.png",
+      "bytes": 621951,
+      "sha256": "0736e7011e77be35c6e939fd70ae8c94f35f2247e6d064b4e59606bb85154822"
+    },
+    {
+      "path": "encoded-frames/frame-15-at-219s.png",
+      "bytes": 777783,
+      "sha256": "bbcc796442dd832c89527808ca23abd68cefb24c7dbfd20a3825e874d2e11632"
+    },
+    {
+      "path": "encoded-frames/frame-16-at-225.76s.png",
+      "bytes": 784311,
+      "sha256": "5b30c589b9afc38e248f9824bd5f674f9a09e9528495895a9dd96f4f385a68b7"
+    },
+    {
+      "path": "encoded-verification.json",
+      "bytes": 5615,
+      "sha256": "edc1baefb9588228ad8e8b4c01feeb5ff98e62e8fecfb34e50029913832a01b6"
+    },
+    {
+      "path": "full-decode.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "lumen-redesigned-demo-render-source-2026-10-11.zip",
+      "bytes": 20440229,
+      "sha256": "e491b01d93c02144f502c4de8eda3df38551552658fbb292d5934c81ba4a6bf6"
+    },
+    {
+      "path": "lumen-track-a-redesigned-demo-2026-10-11.mp4",
+      "bytes": 15240434,
+      "sha256": "aa5fb2909ceb018c94326f0ec18b7e565b1cc5e4d5bff0deaef40bb7b1b95dae"
+    },
+    {
+      "path": "media-provenance.json",
+      "bytes": 14311,
+      "sha256": "01bce70b75ccb7e0d841690c3c3ccf3672e95686e75ad3c0df6379f76cd4a82d"
+    },
+    {
+      "path": "project-cover.png",
+      "bytes": 666809,
+      "sha256": "f279495eb8522876d1a9ec0714025197934bf5e747327645212294d068a235b9"
+    },
+    {
+      "path": "source-verification.json",
+      "bytes": 933,
+      "sha256": "f4e71a5734df8a9cc106e5c8a6407dcd4043cd97cc4f0108d6cd18f857d85bb5"
+    },
+    {
+      "path": "subtitles.srt",
+      "bytes": 2569,
+      "sha256": "97e8cc6ebccc26bec0e1625612e7dc520f0d79066733bf9fbbe3a3b5e2e1e2f9"
+    },
+    {
+      "path": "timeline-manifest.json",
+      "bytes": 1976,
+      "sha256": "850cd773539e00f7f52516e9c051e499c5db0131aeb27ae475a23ce929876241"
+    },
+    {
+      "path": "video-qa.json",
+      "bytes": 11599,
+      "sha256": "e298317f0e959a7d612a0d8098132c2ded7389f613a78b75ac1cd656cc48c797"
+    }
+  ],
+  "scientific_models_changed": false,
+  "holdout_rescored": false,
+  "human_review": false,
+  "audio_listening_review": false,
+  "YouTube_published_and_signed_out_verified": false
+}

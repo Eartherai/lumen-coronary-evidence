@@ -1,0 +1,71 @@
+{
+  "duration": 342.805,
+  "chapters": [
+    {
+      "id": "audit",
+      "start": 0,
+      "duration": 62.361,
+      "title": "Challenge the complete development cohort"
+    },
+    {
+      "id": "01",
+      "start": 62.361,
+      "duration": 41.93,
+      "title": "Make every estimate inspectable"
+    },
+    {
+      "id": "02",
+      "start": 104.291,
+      "duration": 47.583333,
+      "title": "Train, select, then evaluate"
+    },
+    {
+      "id": "03",
+      "start": 151.874,
+      "duration": 46.346,
+      "title": "Trace a real excluded case"
+    },
+    {
+      "id": "04",
+      "start": 198.22,
+      "duration": 46.858,
+      "title": "What evidence survives with fewer inputs?"
+    },
+    {
+      "id": "05",
+      "start": 245.078,
+      "duration": 49.546,
+      "title": "Keep the errors and tradeoffs visible"
+    },
+    {
+      "id": "06",
+      "start": 294.624,
+      "duration": 48.180667,
+      "title": "A reproducible working submission"
+    }
+  ],
+  "footage": "Real CUA browser screencasts at original speed, then held final captured frame",
+  "narration": "Local Kokoro af_heart speed 0.93, generated; no human narrator claimed",
+  "audit_opening": {
+    "media": "Actual CUA static screenshots, explicitly labelled; no simulated interaction",
+    "narration": "Bundled local Kokoro ONNX af_heart, speed .93, en-us",
+    "sources": {
+      "cohort-stable-lcx-miss.png": {
+        "sha256": "3ebaadfec7d76d86cf13c2ea6bb50b2e55d36dfc2ca043e85b21b4b3a7b9a80e",
+        "bytes": 94772
+      },
+      "arbitrary-case-anatomy.png": {
+        "sha256": "921875c549fb670cf1868a864f2464b699cb7baef253ed98e8ed53b05803d19b",
+        "bytes": 110181
+      },
+      "voice-audit.wav": {
+        "sha256": "1305b30d80dbbf3a4f96c83be47bdec598287667293f83b9c2e22be65ea71a3c",
+        "bytes": 2897388
+      },
+      "audit-opening.txt": {
+        "sha256": "2c80c1f0e7799c30d7d24e1302d9d86c1088f2f69908a7c9f384dda94238d36f",
+        "bytes": 862
+      }
+    }
+  }
+}

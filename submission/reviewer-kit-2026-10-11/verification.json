@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "verified_at_utc": "2026-10-10T19:46:14.334691+00:00",
+  "protocol_sha256": "8ba0a8b84661e5a2a43157fff47272a227a2cd7c2329eba372597693e5fa1d39",
+  "answer_key_sha256": "1fe620b9189bfffd38db5913d6725cd06d758e43f675444d1c7a6efcb9b718d7",
+  "checks": [
+    {
+      "check": "Preparatory file/source hashes and protocol bindings",
+      "status": "passed"
+    },
+    {
+      "check": "Six exact prompts, 960-second aggregate caps and independent AI/human templates",
+      "status": "passed"
+    },
+    {
+      "check": "Templates contain no completed human/AI results",
+      "status": "passed"
+    },
+    {
+      "check": "Frozen-model score reconstruction, sigmoid, and final confusion counts",
+      "status": "passed"
+    },
+    {
+      "check": "Current browser module filter/shared-rule/count/profile contract against answer key",
+      "status": "passed"
+    }
+  ],
+  "observed_browser_session": false,
+  "human_review_status": "unmeasured_pending",
+  "ai_review_status": "separate_fresh_review_pending",
+  "scope": "Preparatory protocol consistency checks only, not participant performance or browser interaction evidence.",
+  "frozen_models_or_final_evaluation_modified": false,
+  "holdout_rescored": false,
+  "git_status": "Workspace root is not a Git repository; no Git mutation performed."
+}

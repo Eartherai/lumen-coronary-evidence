@@ -1,0 +1,576 @@
+{
+  "archive": "https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/partof_BP3D_4.0_obj_99.zip",
+  "concepts": {
+    "heart": "FMA7088",
+    "LAD": "FMA3862",
+    "LCX": "FMA3895",
+    "RCA": "FMA50039"
+  },
+  "groups": {
+    "heart": [
+      "FJ2417",
+      "FJ2418",
+      "FJ2419",
+      "FJ2420",
+      "FJ2421",
+      "FJ2422",
+      "FJ2423",
+      "FJ2424",
+      "FJ2425",
+      "FJ2426",
+      "FJ2427",
+      "FJ2429",
+      "FJ2430",
+      "FJ2431",
+      "FJ2432",
+      "FJ2433",
+      "FJ2434",
+      "FJ2435",
+      "FJ2436",
+      "FJ2437",
+      "FJ2438",
+      "FJ2439",
+      "FJ2631",
+      "FJ2632",
+      "FJ2633",
+      "FJ2634",
+      "FJ2635",
+      "FJ2636",
+      "FJ2637",
+      "FJ2638",
+      "FJ2639",
+      "FJ2640",
+      "FJ2641",
+      "FJ2642",
+      "FJ2643",
+      "FJ2644",
+      "FJ2645",
+      "FJ2646",
+      "FJ2647",
+      "FJ2648",
+      "FJ2649",
+      "FJ2650",
+      "FJ2651",
+      "FJ2652",
+      "FJ2653",
+      "FJ2654",
+      "FJ2655",
+      "FJ2656",
+      "FJ2667",
+      "FJ2668",
+      "FJ2670",
+      "FJ2671",
+      "FJ2672",
+      "FJ2673",
+      "FJ2674",
+      "FJ2675",
+      "FJ2676",
+      "FJ2677",
+      "FJ2692",
+      "FJ2693",
+      "FJ2694",
+      "FJ2695",
+      "FJ2696",
+      "FJ2697",
+      "FJ2698",
+      "FJ2699",
+      "FJ2700",
+      "FJ2714",
+      "FJ2715",
+      "FJ2716",
+      "FJ2717",
+      "FJ2718",
+      "FJ2719",
+      "FJ2720",
+      "FJ2721",
+      "FJ2722",
+      "FJ2723",
+      "FJ2724",
+      "FJ2727",
+      "FJ2728",
+      "FJ2729",
+      "FJ2731",
+      "FJ2737"
+    ],
+    "LAD": [
+      "FJ2631",
+      "FJ2632",
+      "FJ2633",
+      "FJ2634",
+      "FJ2635",
+      "FJ2636",
+      "FJ2637",
+      "FJ2638",
+      "FJ2639",
+      "FJ2640",
+      "FJ2641",
+      "FJ2642",
+      "FJ2643",
+      "FJ2644",
+      "FJ2645",
+      "FJ2646",
+      "FJ2647",
+      "FJ2648"
+    ],
+    "LCX": [
+      "FJ2649",
+      "FJ2650",
+      "FJ2651",
+      "FJ2652",
+      "FJ2653",
+      "FJ2654"
+    ],
+    "RCA": [
+      "FJ2667",
+      "FJ2668",
+      "FJ2670",
+      "FJ2671",
+      "FJ2672",
+      "FJ2673",
+      "FJ2674",
+      "FJ2675",
+      "FJ2676",
+      "FJ2677",
+      "FJ2692",
+      "FJ2693",
+      "FJ2694",
+      "FJ2695",
+      "FJ2696",
+      "FJ2697",
+      "FJ2698",
+      "FJ2699",
+      "FJ2700",
+      "FJ2714",
+      "FJ2715",
+      "FJ2716",
+      "FJ2717",
+      "FJ2718",
+      "FJ2719",
+      "FJ2720",
+      "FJ2721",
+      "FJ2722",
+      "FJ2723"
+    ]
+  },
+  "files": [
+    {
+      "file": "FJ2417.obj",
+      "bytes": 78668,
+      "sha256": "b4888f2a738be2f11b98d909c3fc08c0a3ccb05f88a94e53d7e283ad17af15dc"
+    },
+    {
+      "file": "FJ2418.obj",
+      "bytes": 54781,
+      "sha256": "e462c4455225f7d99845af95988ca2d9885144fbb3f7567610ca5635ca3a3dbc"
+    },
+    {
+      "file": "FJ2419.obj",
+      "bytes": 59579,
+      "sha256": "05242b351343b3cce42237dd3e8256a53bb395eaee90e4e8a465578259b58fe8"
+    },
+    {
+      "file": "FJ2420.obj",
+      "bytes": 495303,
+      "sha256": "859e44dbbc0e66eb64da60eff23afba5c4bba1a9b6aaf260d075502c0f3c4f44"
+    },
+    {
+      "file": "FJ2421.obj",
+      "bytes": 532774,
+      "sha256": "ab4d65a190910effcffa60cb5522359756504edb45b9dd312971083cb70c3af7"
+    },
+    {
+      "file": "FJ2422.obj",
+      "bytes": 102175,
+      "sha256": "88654bd73fa155daf0b44fd67bccaec81c9e37c105e046076993f2684c463d95"
+    },
+    {
+      "file": "FJ2423.obj",
+      "bytes": 113625,
+      "sha256": "390747e238ba9239961d02d1e02516d7af7aacc86d2bc0c29fc835381032ceeb"
+    },
+    {
+      "file": "FJ2424.obj",
+      "bytes": 139100,
+      "sha256": "8bd340059ff697cfe9ce57f2427e8c5a982e248a1d2230d477a4fe094adc2a2a"
+    },
+    {
+      "file": "FJ2425.obj",
+      "bytes": 65827,
+      "sha256": "223233fef054fb67b81d27881f10a1acce47c9ade147546b6859fa90e4e37dc3"
+    },
+    {
+      "file": "FJ2426.obj",
+      "bytes": 57410,
+      "sha256": "a309412ea0b21043e9851a6e8d7d529db01034c379f0b846a49f2ac070c94bee"
+    },
+    {
+      "file": "FJ2427.obj",
+      "bytes": 62533,
+      "sha256": "2c07c02f4913f9ee34b4a169f64ab506394a751d0906fad9aa596329da703a1e"
+    },
+    {
+      "file": "FJ2429.obj",
+      "bytes": 51285,
+      "sha256": "83ad99e19bb6105883aa99a86a3c0089385dc5d2de96844c3e9eec6616e571e8"
+    },
+    {
+      "file": "FJ2430.obj",
+      "bytes": 48378,
+      "sha256": "92d65071f4ffc0bb22dcf5da52160cb22fd90056af85d9cbb0cb56794b8b5bac"
+    },
+    {
+      "file": "FJ2431.obj",
+      "bytes": 21437,
+      "sha256": "6ab13f8acf9a3cf93830ab28538e39c423b24c07ffad6c305196671dfc419df0"
+    },
+    {
+      "file": "FJ2432.obj",
+      "bytes": 274623,
+      "sha256": "bdcf7f32b2a16bd8d7b2920ac0f03958174c90d31353e9b38c4462aacfc038f3"
+    },
+    {
+      "file": "FJ2433.obj",
+      "bytes": 325362,
+      "sha256": "736c0689a5489394df568e2788d27e1a547d8fcbc464490e7bef94ba9c66e8e8"
+    },
+    {
+      "file": "FJ2434.obj",
+      "bytes": 85109,
+      "sha256": "ab3806e8ae151df2ea1973043cd5ffe48a89f73dc27c81b2a1d4c1b6cee51131"
+    },
+    {
+      "file": "FJ2435.obj",
+      "bytes": 56516,
+      "sha256": "410689ed978de91a6f14a3332f333b9b8db32931edb47e880cf7bc58b505d191"
+    },
+    {
+      "file": "FJ2436.obj",
+      "bytes": 302594,
+      "sha256": "d2d152ec63544d37077ede2c72f2e8ebd80eb98537386ab917c6a19788f8ed98"
+    },
+    {
+      "file": "FJ2437.obj",
+      "bytes": 56354,
+      "sha256": "510fbbf7a56981733876388838d5acfa392de92a37e84a68d489882e7a063dcb"
+    },
+    {
+      "file": "FJ2438.obj",
+      "bytes": 510081,
+      "sha256": "187235f3c3612ef27abde924d01c71579c2946435e64319164f43e5ad008284d"
+    },
+    {
+      "file": "FJ2439.obj",
+      "bytes": 1211686,
+      "sha256": "e7c21cd1659eced056eb56e28f4fa9019ace451ea6e0333097846177f807bb5a"
+    },
+    {
+      "file": "FJ2631.obj",
+      "bytes": 187042,
+      "sha256": "06c78376e08c2eed7416d0e2a841e47952b5d95cafa89fbcb7612c072cd65573"
+    },
+    {
+      "file": "FJ2632.obj",
+      "bytes": 8547,
+      "sha256": "71c8621f9ed5a9dd7814c054f9e6f2ec9a480b39141110615bc7090795040272"
+    },
+    {
+      "file": "FJ2633.obj",
+      "bytes": 32813,
+      "sha256": "3a38d05c39634da75a226de3a4665b02614bf38ab4ea3a39fe8ef1096c0d0296"
+    },
+    {
+      "file": "FJ2634.obj",
+      "bytes": 14845,
+      "sha256": "21dff12c8f9beef5d6022dda5c9d25419a72509e5a9fc2e4a33cafe771237442"
+    },
+    {
+      "file": "FJ2635.obj",
+      "bytes": 51356,
+      "sha256": "51114a0f6f2d95fbc18ddbce0cc19431a0b2cb55db18208029fce64f9128ec2c"
+    },
+    {
+      "file": "FJ2636.obj",
+      "bytes": 28747,
+      "sha256": "aa2166cc5bf12de992dd33eaee5953bc23bb739f62610bbbec345d6aea2c1ecc"
+    },
+    {
+      "file": "FJ2637.obj",
+      "bytes": 13107,
+      "sha256": "6c59d4cf0dbdb902fc83e5596f7a181bb66bcbeda24e10c8ce48d4661dfbe34d"
+    },
+    {
+      "file": "FJ2638.obj",
+      "bytes": 22811,
+      "sha256": "aa3ccf75d2a5a5fefe9665b5acafed8f1797f001a01da365bfdc709a8c84aa4b"
+    },
+    {
+      "file": "FJ2639.obj",
+      "bytes": 11516,
+      "sha256": "dc8bcfe30ddcaff7e1e9022bb1013bb884cd03a0fc9d9fae00a924c8d4eef955"
+    },
+    {
+      "file": "FJ2640.obj",
+      "bytes": 20312,
+      "sha256": "38bc0b0b2c9f8a7424098f9dbaa36ed57b07cb9a1211a86a823c779c419035b1"
+    },
+    {
+      "file": "FJ2641.obj",
+      "bytes": 31773,
+      "sha256": "27e5fff1fdeeff77e3c911ffe2a753279cb391b977f2de3f6ea17e21876b0dac"
+    },
+    {
+      "file": "FJ2642.obj",
+      "bytes": 58864,
+      "sha256": "e906224a535dbf5bfb2201cd6fc81880521aa02f5148ae1bbe67404ace96b3a6"
+    },
+    {
+      "file": "FJ2643.obj",
+      "bytes": 29635,
+      "sha256": "303086bfdcb88e2e9bb4cddcfaff2e9be2bf3f1db2c7943d8ccd4a7a38239fac"
+    },
+    {
+      "file": "FJ2644.obj",
+      "bytes": 20058,
+      "sha256": "203a8bc0e029a76f3b291729ebb4cbfd1155bb84ff5724d2eb51d5fa02d36aa9"
+    },
+    {
+      "file": "FJ2645.obj",
+      "bytes": 22293,
+      "sha256": "760b5d48099edb74a6b14fafe02b56ad076c4e4c27c8edb905f21929d192f8b5"
+    },
+    {
+      "file": "FJ2646.obj",
+      "bytes": 30481,
+      "sha256": "1e2f885bc9aafd4270895deb0000a970ca4e494e909e06a5f13b94858d0b8cc9"
+    },
+    {
+      "file": "FJ2647.obj",
+      "bytes": 21398,
+      "sha256": "cd55e20146fe1f08872c6733a2ed3ef5f2397235e2f7f8c77b883f64b5b67d57"
+    },
+    {
+      "file": "FJ2648.obj",
+      "bytes": 20029,
+      "sha256": "14c937696c6e76239474f760324389f5cc955cfe06570ec7c4f61eb4216e8894"
+    },
+    {
+      "file": "FJ2649.obj",
+      "bytes": 81034,
+      "sha256": "0603b5d96efc1cde531c9301a578b05c747080e9a845ca5b244b973c51b14d67"
+    },
+    {
+      "file": "FJ2650.obj",
+      "bytes": 29819,
+      "sha256": "ec32539fad28298dd01611d624051765eac07c989d461151996907381a1220d9"
+    },
+    {
+      "file": "FJ2651.obj",
+      "bytes": 37857,
+      "sha256": "2fb72c01e8e2b65a8f262e314a9b85cd1c2256defc2d00e1bd8d857013c28d54"
+    },
+    {
+      "file": "FJ2652.obj",
+      "bytes": 22770,
+      "sha256": "ebfa7ccd9598b689c247175e49c89ab8ea3baaef763b5554db38306a689be916"
+    },
+    {
+      "file": "FJ2653.obj",
+      "bytes": 20961,
+      "sha256": "fa365a612a1850f3628ef7224ce0988f1fe2d9cdb4e8c6aa4db10d2a1962a4c3"
+    },
+    {
+      "file": "FJ2654.obj",
+      "bytes": 13779,
+      "sha256": "2d4b35919118657f1d5b8d842d2c78021d4676f78082c71e55e7d8aba9616fa8"
+    },
+    {
+      "file": "FJ2655.obj",
+      "bytes": 37445,
+      "sha256": "6cc76de968f59ae4244f5990fc00023a1ad137e500eea7e3ab02740a9505e030"
+    },
+    {
+      "file": "FJ2656.obj",
+      "bytes": 49559,
+      "sha256": "30995a449ef7c390dcda7f800e38fb1656d23202b162c4a83abf160380dc4cbd"
+    },
+    {
+      "file": "FJ2667.obj",
+      "bytes": 25911,
+      "sha256": "6bb2898acda5680828658540ed9048abc51b9df9761fed5608567849fcbd6a61"
+    },
+    {
+      "file": "FJ2668.obj",
+      "bytes": 16403,
+      "sha256": "ecd7de3f9aa7a87a85da8abc9c023d6701040c3297fd1f6ba93d7875e871f611"
+    },
+    {
+      "file": "FJ2670.obj",
+      "bytes": 28946,
+      "sha256": "d23c5be67fc7e0a221e6d284772cf89bbc75b31a5bfa431210bd396be8d087b7"
+    },
+    {
+      "file": "FJ2671.obj",
+      "bytes": 32035,
+      "sha256": "095344f7ee5d89c8877b24c76fd57671491f34cb59e0fdf1f0738c54c239b200"
+    },
+    {
+      "file": "FJ2672.obj",
+      "bytes": 47953,
+      "sha256": "0adecd6703d24888e3c236c8a248393777a9b83d902ed9bfc69f258809188092"
+    },
+    {
+      "file": "FJ2673.obj",
+      "bytes": 23830,
+      "sha256": "b3fe7f8dd47fd7758fe4b2f8613c24c642be96d419a7699f85b44a2396a127a7"
+    },
+    {
+      "file": "FJ2674.obj",
+      "bytes": 18809,
+      "sha256": "605cda4cb28547b67d9569ff8576ab7dc9a945d47a9d8b4a15d9552c80daee91"
+    },
+    {
+      "file": "FJ2675.obj",
+      "bytes": 14384,
+      "sha256": "f0d843e88d508d4ab383c4e8131974d9fdcab3b340c87e3002fabde9cf23d3f4"
+    },
+    {
+      "file": "FJ2676.obj",
+      "bytes": 22236,
+      "sha256": "c588c075c7c665691e6789312dad8d86541a1d2916fb63c33d03e38266e213d7"
+    },
+    {
+      "file": "FJ2677.obj",
+      "bytes": 18722,
+      "sha256": "a63f5990cabf34ead2c743bda11b178cdb60a983e7d181c2b757757354f2681e"
+    },
+    {
+      "file": "FJ2692.obj",
+      "bytes": 62839,
+      "sha256": "560c831439ab349de9b564ca92ed175677a3d12963ccd5483314175948797347"
+    },
+    {
+      "file": "FJ2693.obj",
+      "bytes": 50463,
+      "sha256": "ec42da30e165d2cb4ccf189982843b88a8ba006daae95b99104a2061bf30633b"
+    },
+    {
+      "file": "FJ2694.obj",
+      "bytes": 30021,
+      "sha256": "2d2b675af567f743da81826537d13fe72087c98a39741f5848bb70b1676b5c75"
+    },
+    {
+      "file": "FJ2695.obj",
+      "bytes": 15955,
+      "sha256": "00e9b8257eed1ddb8bfb60dfe301b03c08fd8a6e4b83002dad567d8cc738ba73"
+    },
+    {
+      "file": "FJ2696.obj",
+      "bytes": 26378,
+      "sha256": "ec8ecd7100e6a34661db1a99861ef4f3df17c8ac87316cafac2dbf6f895efd5a"
+    },
+    {
+      "file": "FJ2697.obj",
+      "bytes": 17358,
+      "sha256": "e029d3b95fc5b032016ff1e0783a2c71623a55be49cdbbd4be37fcbbfed0117a"
+    },
+    {
+      "file": "FJ2698.obj",
+      "bytes": 17211,
+      "sha256": "2864725de555603dc502c206c9d12bef366358ee4064e8f375c1df9294b7f955"
+    },
+    {
+      "file": "FJ2699.obj",
+      "bytes": 11084,
+      "sha256": "b52176deba592a44bcec3e29d11a8cac00031cac0a35e215d06df515e3224fc4"
+    },
+    {
+      "file": "FJ2700.obj",
+      "bytes": 19414,
+      "sha256": "7c1bda6f9d3170fc5a553a5e917514bb7d108f6c3e37cbe912d6573d634fe983"
+    },
+    {
+      "file": "FJ2714.obj",
+      "bytes": 51289,
+      "sha256": "aa76ceec1e0b4e19b281a2da0e15328d2719eaa1d7b1a3666421bf11ab9c877a"
+    },
+    {
+      "file": "FJ2715.obj",
+      "bytes": 17089,
+      "sha256": "d34c2023e84119131841fe5a1e1251a7252d4900b62b2b1b61d29d3ece4cb51a"
+    },
+    {
+      "file": "FJ2716.obj",
+      "bytes": 17576,
+      "sha256": "ecb5e668e2cf43031263ceed40e29b6862519d8dadef6b21ef63c3398e2f81a5"
+    },
+    {
+      "file": "FJ2717.obj",
+      "bytes": 24860,
+      "sha256": "1dcde62744c8b83892ce1828179d736d2eafdf2fb3cbd74aa61658001dab686b"
+    },
+    {
+      "file": "FJ2718.obj",
+      "bytes": 13362,
+      "sha256": "07ca611daf69f5411871802dbf76e6845519b71df1ef39a772d648c7b1861414"
+    },
+    {
+      "file": "FJ2719.obj",
+      "bytes": 28575,
+      "sha256": "dd10bda525a6b29340babe9b70aa02f8273bedd77519fdc69398dc9f492001b7"
+    },
+    {
+      "file": "FJ2720.obj",
+      "bytes": 22830,
+      "sha256": "996196bea87629d81a5c2040b767026e2a0a77854500999fe9857f3f4a030f5f"
+    },
+    {
+      "file": "FJ2721.obj",
+      "bytes": 18829,
+      "sha256": "d42f1d3059c8a78d65b44ea7934deebd96dbc84338b30341a422a9ce1751c243"
+    },
+    {
+      "file": "FJ2722.obj",
+      "bytes": 23586,
+      "sha256": "f5de57227430b3622ad827348883760596469ed754c473685975be5247cc9abd"
+    },
+    {
+      "file": "FJ2723.obj",
+      "bytes": 281614,
+      "sha256": "a98fe0acbf5a00bd5f73dcbc47f01dfbb932ea72607fd2e74231f6cfe49619d1"
+    },
+    {
+      "file": "FJ2724.obj",
+      "bytes": 33912,
+      "sha256": "419e6a37e1fd0b0e7468654b6b58e561229a94f9641f5b04506271659017b2d4"
+    },
+    {
+      "file": "FJ2727.obj",
+      "bytes": 65358,
+      "sha256": "e482e49e0568a53afa594791946a4cb98ad774dbdf4db6bb32d7f9b3629bdced"
+    },
+    {
+      "file": "FJ2728.obj",
+      "bytes": 19148,
+      "sha256": "107b8fc3f7740ca108ac0d2b4b722d6242a3b78f8e67e29433ac56f08544a31b"
+    },
+    {
+      "file": "FJ2729.obj",
+      "bytes": 15253,
+      "sha256": "8b21e5b96cc8cdd8d4b63d798ff7ae01c0d0b335cc6f3fb8ae00b7895067ad48"
+    },
+    {
+      "file": "FJ2731.obj",
+      "bytes": 52848,
+      "sha256": "ac26ffa55a72b44913d761c6b922f6c000f9a229f29740ab765e5ef5fe43f9c5"
+    },
+    {
+      "file": "FJ2737.obj",
+      "bytes": 12645,
+      "sha256": "f350efef8902f0ca4c4ef440a650c3ec4515d6a412340beb596536f4b1b72f32"
+    }
+  ],
+  "license": "CC BY 4.0",
+  "license_url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "attribution": "BodyParts3D, \u00a9 The Database Center for Life Science licensed under CC Attribution 4.0 International",
+  "notes": "Generic anatomical reference. Not patient-specific anatomy or a lesion map. Original coordinates preserved."
+}

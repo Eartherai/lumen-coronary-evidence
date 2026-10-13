@@ -1,0 +1,25 @@
+{
+  "format": "lumen-read-only-async-state-audit-v1",
+  "reviewed_commit": "c8868fc37f58c8e2ca9c6ab41ba12a68c6791c84",
+  "source": "public/app.js",
+  "source_sha256": "83dff531a67c77415174dedd53722b9c04e42d13118f394052034e0c53173f4f",
+  "evidence_kind": "source-extracted loadCase with synthetic API responses and minimal DOM stubs; not a browser observation",
+  "failed_current_request": {
+    "current_case": "OLD",
+    "current_profile": "full",
+    "active_profile": "history",
+    "selector_case": "NEW",
+    "selector_profile": "history",
+    "caption": "OLD · old case",
+    "error": "Synthetic network failure",
+    "case_loading": false,
+    "reveal_disabled": false
+  },
+  "superseded_failure_after_new_success": {
+    "current_case": "B",
+    "selector_case": "B",
+    "error": "Synthetic superseded A network failure",
+    "error_hidden": false
+  },
+  "excluded": "No patient/model/holdout artifacts read. No browser or human usability claim."
+}
