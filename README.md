@@ -2,9 +2,9 @@
 
 **Multimodal AI Hackathon 2026 · Track A**
 
-[Six-page report](docs/submission/lumen-report.pdf) · [Recorded English demo (3:52.75)](docs/submission/lumen-demo.mp4) · [Project story](docs/submission/about-project.md)
+[Live interactive demo](https://eartherai.github.io/lumen-coronary-evidence/) · [Six-page report](https://eartherai.github.io/lumen-coronary-evidence/submission/lumen-report.pdf) · [Recorded English demo (3:52.75)](docs/submission/lumen-demo.mp4) · [Project story](docs/submission/about-project.md)
 
-The current application includes the 13 October Safari rendering correction. The report/demo preserve their earlier exact source bindings and unchanged scientific results. GitHub Pages deployment is configured by the included workflow; its verified URL will be recorded after deployment.
+The current application includes the 13 October Safari rendering correction. The report/demo preserve their earlier exact source bindings and unchanged scientific results. The GitHub Pages build/deploy and independent source workflows passed. Public app controls and exact downloadable report/media bytes were verified on 13 October 2026.
 
 Lumen makes coronary predictions inspectable across the complete 242-record development cohort. Find false alarms, missed positives and flags that change across five independently fitted input profiles. Open any record in named artery anatomy, trace its exact score, and compare the recorded outcome. Four prediction targets, fold-excluded models and 4,840 actual-SHAP checks support the evidence loop. Training runs on CPU; inference needs no hosted model API or machine-learning packages.
 
@@ -48,7 +48,7 @@ python3 -m http.server 8768 --bind 127.0.0.1 --directory dist
 
 Open **http://127.0.0.1:8768/site/** and select **Cohort audit**. Legacy Node checks verify all 160 introductory-case predictions plus edited/missing/unknown/synthetic-input comparisons. Separate cohort checks verify all 4,840 browser probabilities, scores, baselines and grouped terms against Python, all 100 fold exclusions, outcomes separated from prediction routes, and cached inference without POST requests. None recomputes holdout outcomes or metrics. Entered values remain in browser memory; public development inputs and recorded labels are included in the downloadable bundle. The approximately 9.38 MB site contains no final holdout input rows.
 
-The included [Pages workflow](.github/workflows/pages.yml) builds and publishes the optional browser demo using the same portable weights. The local Python app remains the reference API implementation. Hosting status and verified links are recorded after deployment.
+The included [Pages workflow](.github/workflows/pages.yml) builds and publishes the optional browser demo using the same portable weights. The local Python app remains the reference API implementation. The public demo is deployed at https://eartherai.github.io/lumen-coronary-evidence/ .
 
 ## Independent AI review and local runtime evidence
 

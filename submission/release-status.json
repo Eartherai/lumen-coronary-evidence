@@ -6,14 +6,13 @@
   "report_verified": true,
   "demo_video_verified": true,
   "static_demo_verified_locally": true,
-  "public_demo_url": null,
-  "public_github_url": null,
+  "public_demo_url": "https://eartherai.github.io/lumen-coronary-evidence/",
+  "public_github_url": "https://github.com/Eartherai/lumen-coronary-evidence",
   "youtube_url": null,
   "team_information_confirmed": false,
   "devpost_submitted": false,
   "local_artifacts_complete": true,
   "publication_pending": [
-    "Public GitHub repository",
     "Public or unlisted YouTube URL",
     "Real human information and eligibility",
     "Reviewed Devpost submission"
@@ -31,5 +30,9 @@
   "runtime_evidence_scope": "Local software callbacks and action endpoints on one Apple M5; not display/GPU completion or external model validation",
   "external_model_validation": false,
   "safari_rendering_check_scope": "13 October 2026 native Safari, clean exported code, initial mesh and selected/focused/isolated/opposite reference vessels on this one Mac; no frame-rate/human validation",
-  "browser_compatibility_receipt": "research/browser-compatibility-2026-10-12/release-verification.json"
+  "browser_compatibility_receipt": "research/browser-compatibility-2026-10-12/release-verification.json",
+  "public_report_url": "https://eartherai.github.io/lumen-coronary-evidence/submission/lumen-report.pdf",
+  "public_demo_verified": true,
+  "public_source_verified": true,
+  "public_browser_verification_date": "2026-10-13"
 }

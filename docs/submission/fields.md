@@ -1,3 +1,13 @@
+# Verified public fields - 13 October 2026
+
+GitHub repository link: https://github.com/Eartherai/lumen-coronary-evidence
+
+Live demo / Try it out: https://eartherai.github.io/lumen-coronary-evidence/
+
+Public six-page report: https://eartherai.github.io/lumen-coronary-evidence/submission/lumen-report.pdf
+
+Video demo link: actual YouTube URL is still required; the downloaded MP4 is available beside this guide. Team leader email: your real email. Track: A. Team Name: Lumen.
+
 # Dated original Devpost bundle field guide
 
 This copy describes the separate devpost-ready bundle. Its media/, gallery/, report/ and source/ paths are bundle paths rather than repository-relative links. In this repository, use the files beside this guide and the top-level README. Verified public repository/site/report URLs will be added to the current publication note after deployment.

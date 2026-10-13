@@ -1,0 +1,18 @@
+{
+  "schema": "lumen-publication-fields-v1",
+  "verified_utc": "2026-10-13T14:58:34.280141+00:00",
+  "repository_url": "https://github.com/Eartherai/lumen-coronary-evidence",
+  "demo_url": "https://eartherai.github.io/lumen-coronary-evidence/",
+  "report_url": "https://eartherai.github.io/lumen-coronary-evidence/submission/lumen-report.pdf",
+  "github_recorded_demo_url": "https://eartherai.github.io/lumen-coronary-evidence/submission/lumen-demo.mp4",
+  "youtube_url": null,
+  "account": "Eartherai",
+  "codex_collaborator_added": false,
+  "codex_coauthor_added": false,
+  "AI_assistance_disclosed": true,
+  "source_ci_run": "https://github.com/Eartherai/lumen-coronary-evidence/actions/runs/38417040900",
+  "pages_run": "https://github.com/Eartherai/lumen-coronary-evidence/actions/runs/38417040437",
+  "initial_published_commit": "9e1cf0cb31064df8fef9b13fc203eee476f85a0e",
+  "public_links_verified_without_authentication": true,
+  "devpost_submitted": false
+}
